@@ -1,0 +1,12 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+# FIXME: @johnnxcy 等 husky 修复了 #968 后移除这个
+# https://github.com/typicode/husky/issues/968#issuecomment-1176848345
+exec > /dev/tty 2>&1
+
+pnpm lint-staged --verbose --relative || {
+    echo
+    echo "pre-commit hook failed on lint affected files (add --no-verify to bypass)"
+    exit 1
+}

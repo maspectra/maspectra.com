@@ -8,7 +8,7 @@ module.exports = {
                 : `pnpm eslint --fix ${file}`
         );
     },
-    "*.{md}": (files) => {
+    "*.md": (files) => {
         return files.map((file) => `pnpm prettier --write ${file}`);
     }
 };

@@ -7,8 +7,7 @@ module.exports = {
     ignorePatterns: [
         ".eslintrc.js",
         "node_modules",
-        "babel.config.js",
-        "docusaurus.config.js",
+        "*.config.js",
         "sidebars.js"
     ],
     overrides: [
