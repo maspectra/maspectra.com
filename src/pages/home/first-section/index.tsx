@@ -11,48 +11,53 @@ import sharedCss from "@site/src/pages/home/shared.module.css";
 
 const FirstSection: React.FC = () => {
     return (
-        <div
-            className={clsx(
-                firstSectionCss.firstSection,
-                firstSectionCss.firstSectionContentStack
-            )}
-        >
+        <div className={firstSectionCss.firstSection}>
             <div
                 className={clsx(
-                    firstSectionCss.firstSectionTextContainer,
-                    firstSectionCss.firstSectionTextContainerWidth
+                    firstSectionCss.firstSectionContent,
+                    firstSectionCss.firstSectionContentStack
                 )}
             >
-                <h3 className={sharedCss.titleH3}>Heading 3</h3>
-                <h2 className={sharedCss.titleH2}>Heading 2</h2>
-                <p className={sharedCss.text}>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Aenean euismod bibendum laoreet. Proin gravida dolor sit
-                    amet lacus accumsan et viverra justo commodo. Proin sodales
-                    pulvinar sic tempor. Sociis natoque penatibus et magnis dis
-                    parturient montes, nascetur ridiculus mus
-                </p>
-                <div>
-                    <Button
-                        appearance="secondary"
-                        size="large"
-                        as="a"
-                        className={sharedCss.button}
-                        href="/"
-                        icon={<IconExternalLink />}
-                        iconPosition="after"
-                    >
-                        Playground
-                    </Button>
+                <div
+                    className={clsx(
+                        firstSectionCss.firstSectionTextContainer,
+                        firstSectionCss.firstSectionTextContainerWidth
+                    )}
+                >
+                    <h3 className={sharedCss.titleH3}>Heading 3</h3>
+                    <h2 className={sharedCss.titleH2}>Heading 2</h2>
+                    <p className={sharedCss.text}>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Aenean euismod bibendum laoreet. Proin gravida
+                        dolor sit amet lacus accumsan et viverra justo commodo.
+                        Proin sodales pulvinar sic tempor. Sociis natoque
+                        penatibus et magnis dis parturient montes, nascetur
+                        ridiculus mus
+                    </p>
+                    <div>
+                        <Button
+                            appearance="secondary"
+                            size="large"
+                            as="a"
+                            className={sharedCss.button}
+                            href="/"
+                            icon={<IconExternalLink />}
+                            iconPosition="after"
+                        >
+                            Playground
+                        </Button>
+                    </div>
                 </div>
-            </div>
-            <div
-                className={clsx(
-                    firstSectionCss.firstSectionImageContainer,
-                    firstSectionCss.firstSectionImageContainerWidth
-                )}
-            >
-                <ManWithMugCup className={firstSectionCss.firstSectionImage} />
+                <div
+                    className={clsx(
+                        firstSectionCss.firstSectionImageContainer,
+                        firstSectionCss.firstSectionImageContainerWidth
+                    )}
+                >
+                    <ManWithMugCup
+                        className={firstSectionCss.firstSectionImage}
+                    />
+                </div>
             </div>
         </div>
     );

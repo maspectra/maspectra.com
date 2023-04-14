@@ -11,10 +11,15 @@ const Header: React.FC = () => {
     return (
         <header>
             <div className={headerCss.hero}>
-                <div className={headerCss.heroContentStack}>
+                <div
+                    className={clsx(
+                        headerCss.heroContent,
+                        headerCss.heroContentStack
+                    )}
+                >
                     <div
                         className={clsx(
-                            headerCss.heroContent,
+                            headerCss.heroTextContainer,
                             headerCss.heroTextContainerWidth
                         )}
                     >
@@ -46,7 +51,7 @@ const Header: React.FC = () => {
                                 Get Started
                             </Button>
                             <Button
-                                appearance="secondary"
+                                appearance="outline"
                                 size="large"
                                 as="a"
                                 className={sharedCss.button}

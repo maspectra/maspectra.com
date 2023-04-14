@@ -7,7 +7,10 @@
     background-image: url("/img/lines-and-rings.jpg");
     background-size: cover;
     background-repeat: repeat;
-    padding: 8rem 8rem 2rem 8rem;
+    padding: 12rem 2em 6rem 2rem;
+
+    display: flex;
+    justify-content: center;
 }
 
 .hero::after {
@@ -15,20 +18,24 @@
     position: absolute;
     z-index: -1;
     inset: 0;
-    background-color: var(--docs-color-background-300);
-    opacity: 0.8;
+    background-color: var(--docs-color-background-100);
+    opacity: 0.85;
 }
 
 .heroContent {
     /* min-height: 600px; */
+    max-width: 1200px;
 }
 
 .heroContentStack {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    column-gap: 40px;
-    min-height: 600px;
+    column-gap: 80px;
+    min-height: calc(550px - 6rem);
+}
+
+.heroTextContainer {
 }
 
 .heroTextContainerWidth {
@@ -42,11 +49,14 @@
 .heroVideoContainer {
     /* placeholder */
     height: inherit;
+    padding-top: 4rem;
 }
 
 .heroVideoFrame {
     width: 100%;
-    height: 80%;
+    height: 60%;
+    border: 2px solid transparent;
+    border-radius: 12px;
 }
 
 /* Mobile */
@@ -69,12 +79,14 @@
     .heroVideoContainer {
         position: relative;
         width: 100%;
-        padding-bottom: 100%;
+        padding-bottom: 60%;
     }
 
     .heroVideoFrame {
         position: absolute;
         width: 100%;
         height: 100%;
+        border: 2px solid transparent;
+        border-radius: 12px;
     }
 }

@@ -4,11 +4,8 @@ import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 
 import Layout from "@theme/Layout";
 
-import {
-    FluentProvider,
-    webDarkTheme,
-    webLightTheme
-} from "@fluentui/react-components";
+import { FluentProvider } from "@fluentui/react-components";
+import { lightTheme, darkTheme } from "@site/src/components/fui-theme";
 import Header from "@site/src/pages/home/header";
 import FirstSection from "@site/src/pages/home/first-section";
 import SecondSection from "@site/src/pages/home/second-section";
@@ -17,7 +14,7 @@ import ThirdSection from "@site/src/pages/home/third-section";
 const Home: React.FC = () => {
     const { siteConfig } = useDocusaurusContext();
 
-    const [fuiTheme, setFuiTheme] = React.useState(webLightTheme);
+    const [fuiTheme, setFuiTheme] = React.useState(lightTheme);
 
     React.useEffect(() => {
         const _setAttribute = document.documentElement.setAttribute;
@@ -26,7 +23,7 @@ const Home: React.FC = () => {
             value: string
         ) => {
             if (key === "data-theme") {
-                setFuiTheme(value === "light" ? webLightTheme : webDarkTheme);
+                setFuiTheme(value === "light" ? lightTheme : darkTheme);
             }
             _setAttribute.call(document.documentElement, key, value);
         };

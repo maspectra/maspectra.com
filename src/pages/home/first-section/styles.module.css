@@ -1,14 +1,20 @@
+.firstSection {
+    background-color: var(--docs-color-background-200);
+
+    padding: 8rem 2rem 8rem 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.firstSectionContent {
+    max-width: 1200px;
+}
+
 .firstSectionContentStack {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     column-gap: 40px;
-}
-
-.firstSection {
-    background-color: var(--docs-color-background-200);
-
-    padding: 8rem 8rem 8rem 8rem;
 }
 
 .firstSectionTextContainer {

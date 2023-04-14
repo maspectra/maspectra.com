@@ -1,20 +1,27 @@
-.thirdSectionContentStack {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    column-gap: 40px;
-}
-
 .thirdSection {
     background-color: var(--docs-color-background-invert-200);
 
-    padding: 0rem 8rem 8rem 8rem;
+    padding: 0rem 2rem 8rem 2rem;
+
+    display: flex;
+    justify-content: center;
 }
 
 .thirdSection p,
 .thirdSection h2,
 .thirdSection h3 {
     color: var(--docs-color-text-invert);
+}
+
+.thirdSectionContent {
+    max-width: 1200px;
+}
+
+.thirdSectionContentStack {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    column-gap: 40px;
 }
 
 .thirdSectionTextContainer {

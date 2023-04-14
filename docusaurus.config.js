@@ -74,12 +74,16 @@ const config = {
                 },
                 items: [
                     {
-                        label: "Product",
-                        to: "/docs",
+                        to: "/docs/intro",
+                        label: "Get Started",
                         position: "left"
                     },
-                    { to: "/docs", label: "Get Started", position: "left" },
-                    { to: "/docs", label: "Examples", position: "left" },
+                    {
+                        to: "/docs/intro",
+                        label: "Examples",
+                        position: "left"
+                    },
+                    { to: "/blog", label: "Blogs", position: "left" },
                     {
                         href: "https://github.com",
                         label: "Community",

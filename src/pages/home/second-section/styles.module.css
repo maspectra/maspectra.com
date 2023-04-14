@@ -1,20 +1,26 @@
-.secondSectionContentStack {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    column-gap: 40px;
-}
-
 .secondSection {
     background-color: var(--docs-color-background-invert-200);
 
-    padding: 8rem 8rem 8rem 8rem;
+    padding: 8rem 2rem 8rem 2rem;
+    display: flex;
+    justify-content: center;
 }
 
 .secondSection p,
 .secondSection h2,
 .secondSection h3 {
     color: var(--docs-color-text-invert);
+}
+
+.secondSectionContent {
+    max-width: 1200px;
+}
+
+.secondSectionContentStack {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    column-gap: 40px;
 }
 
 .secondSectionTextContainer {
