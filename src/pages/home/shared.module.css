@@ -1,0 +1,39 @@
+.titleH1 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: normal;
+}
+
+.titleH2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: normal;
+}
+
+.titleH3 {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: normal;
+}
+
+.text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.button {
+    height: 48px;
+    width: auto;
+}
+
+.buttonsContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    column-gap: 18px;
+}
+
+.highlightText {
+    color: var(--ifm-color-primary-light);
+}

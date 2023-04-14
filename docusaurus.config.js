@@ -8,7 +8,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 const config = {
     title: "masolve",
     tagline: "Modeling and Simulation Solution",
-    favicon: "img/favicon.ico",
+    favicon: "img/logo/icon.ico",
 
     // Set the production url of your site here
     url: "https://your-docusaurus-test-site.com",
@@ -29,8 +29,10 @@ const config = {
     // to replace "en" with "zh-Hans".
     i18n: {
         defaultLocale: "en",
-        locales: ["en"]
+        locales: ["en", "zh-CN"]
     },
+
+    themes: ["@docusaurus/theme-live-codeblock"],
 
     presets: [
         [
@@ -64,23 +66,35 @@ const config = {
             // Replace with your project's social card
             image: "img/docusaurus-social-card.jpg",
             navbar: {
-                title: "My Site",
+                title: "Masolve",
+                hideOnScroll: false,
                 logo: {
-                    alt: "My Site Logo",
-                    src: "img/logo.svg"
+                    alt: "Masolve Logo",
+                    src: "img/logo/icon.svg"
                 },
                 items: [
                     {
-                        type: "doc",
-                        docId: "intro",
-                        position: "left",
-                        label: "Tutorial"
+                        label: "Product",
+                        to: "/docs",
+                        position: "left"
                     },
-                    { to: "/blog", label: "Blog", position: "left" },
+                    { to: "/docs", label: "Get Started", position: "left" },
+                    { to: "/docs", label: "Examples", position: "left" },
                     {
-                        href: "https://github.com/facebook/docusaurus",
-                        label: "GitHub",
+                        href: "https://github.com",
+                        label: "Community",
+                        position: "left",
+                        className: "masolve-portal-link"
+                    },
+                    {
+                        type: "localeDropdown",
                         position: "right"
+                    },
+                    {
+                        label: "Sign In",
+                        href: "https://github.com",
+                        position: "right",
+                        className: "masolve-portal-signup masolve-portal-link"
                     }
                 ]
             },
