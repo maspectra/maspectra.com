@@ -1,10 +1,14 @@
 .thirdSection {
-    background-color: var(--docs-color-background-invert-200);
+    background-color: var(--masolve-home-color-background-invert);
 
-    padding: 0rem 2rem 8rem 2rem;
+    padding: 0rem 4rem 8rem 4rem;
 
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    row-gap: 4rem;
 }
 
 .thirdSection p,
@@ -14,14 +18,15 @@
 }
 
 .thirdSectionContent {
-    max-width: 1200px;
+    max-width: var(--masolve-home-max-width);
 }
 
 .thirdSectionContentStack {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    column-gap: 40px;
+    column-gap: 2rem;
+    align-items: flex-start;
 }
 
 .thirdSectionTextContainer {
@@ -35,6 +40,11 @@
 .thirdSectionText1ContainerWidth,
 .thirdSectionText2ContainerWidth {
     width: 50%;
+}
+
+.thirdSectionContentText {
+    padding-bottom: 4px;
+    margin-bottom: 0px;
 }
 
 /* Mobile */

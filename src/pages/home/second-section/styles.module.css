@@ -1,7 +1,7 @@
 .secondSection {
-    background-color: var(--docs-color-background-invert-200);
+    background-color: var(--masolve-home-color-background-invert);
 
-    padding: 8rem 2rem 8rem 2rem;
+    padding: 8rem 4rem 2rem 4rem;
     display: flex;
     justify-content: center;
 }
@@ -13,14 +13,14 @@
 }
 
 .secondSectionContent {
-    max-width: 1200px;
+    max-width: var(--masolve-home-max-width);
 }
 
 .secondSectionContentStack {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    column-gap: 40px;
+    column-gap: 2rem;
 }
 
 .secondSectionTextContainer {
@@ -46,8 +46,8 @@
 }
 
 .secondSectionImage {
-    height: 320px;
-    width: 320px;
+    height: 420px;
+    width: 420px;
 }
 
 /* Mobile */

@@ -1,6 +1,5 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
-const path = require("node:path");
 const lightCodeTheme = require("prism-react-renderer/themes/github");
 const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
@@ -31,6 +30,12 @@ const config = {
         defaultLocale: "en",
         locales: ["en", "zh-CN"]
     },
+
+    stylesheets: [
+        {
+            href: "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        }
+    ],
 
     themes: ["@docusaurus/theme-live-codeblock"],
 

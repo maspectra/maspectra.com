@@ -35,6 +35,10 @@
 
     --docs-color-android: #44db85;
     --docs-color-apple: var(--docs-color-text) !important;
+
+    --masolve-home-color-h3: #6d6d70;
+    --masolve-home-color-background: rgba(248, 250, 252, 1);
+    --masolve-home-color-background-invert: rgba(30, 40, 53, 1);
 }
 
 [data-theme="dark"] {
@@ -57,6 +61,10 @@
     --docs-color-background-invert-300: #dcdcdc;
 
     --docs-color-code-background: #1e1e1e;
+
+    --masolve-home-color-h3: #6d6d70;
+    --masolve-home-color-background: rgba(30, 40, 53, 1);
+    --masolve-home-color-background-invert: rgba(248, 250, 252, 1);
 }
 
 :root {
@@ -83,6 +91,7 @@
     --ifm-color-primary-lightest: #6791fc;
 
     --ifm-navbar-shadow: none;
+    --ifm-navbar-padding-horizontal: 2rem;
     --ifm-toc-border-color: #dedede;
 
     --ifm-table-border-color: var(--docs-color-border);
@@ -90,6 +99,9 @@
 
     --ifm-code-font-size: 92%;
     --docusaurus-highlighted-code-line-bg: rgba(147, 178, 244, 0.38);
+
+    /* Custom Variables */
+    --masolve-home-max-width: 1200px;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -137,6 +149,13 @@
     --ifm-navbar-link-hover-color: #fff;
     color: #fff;
     border-radius: 0.4rem;
+
+    height: 36px;
+    width: 96px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .masolve-portal-signup:hover {
@@ -183,4 +202,12 @@ html[data-theme="dark"]
     :is(div[title="Expand sidebar"], button[title="Collapse sidebar"])
     svg {
     display: none;
+}
+
+.navbar {
+    justify-content: center;
+}
+
+.navbar__inner {
+    max-width: var(--masolve-home-max-width);
 }

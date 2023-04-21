@@ -2,11 +2,12 @@ import React from "react";
 
 import { Button } from "@fluentui/react-components";
 import clsx from "clsx";
+import Translate from "@docusaurus/Translate";
 import IconExternalLink from "@theme/Icon/ExternalLink";
 
 import firstSectionCss from "@site/src/pages/home/first-section/styles.module.css";
 
-import ManWithMugCup from "@site/static/img/man-with-mugcup.svg";
+import ManWithCode from "@site/static/img/man-with-code.svg";
 import sharedCss from "@site/src/pages/home/shared.module.css";
 
 const FirstSection: React.FC = () => {
@@ -24,27 +25,41 @@ const FirstSection: React.FC = () => {
                         firstSectionCss.firstSectionTextContainerWidth
                     )}
                 >
-                    <h3 className={sharedCss.titleH3}>Heading 3</h3>
-                    <h2 className={sharedCss.titleH2}>Heading 2</h2>
+                    <h3 className={sharedCss.titleH3}>
+                        <Translate>MASMOD</Translate>
+                    </h3>
+                    <h2 className={sharedCss.titleH2}>
+                        <Translate> MIDD workflow in Python</Translate>
+                    </h2>
                     <p className={sharedCss.text}>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing
-                        elit. Aenean euismod bibendum laoreet. Proin gravida
-                        dolor sit amet lacus accumsan et viverra justo commodo.
-                        Proin sodales pulvinar sic tempor. Sociis natoque
-                        penatibus et magnis dis parturient montes, nascetur
-                        ridiculus mus
+                        <Translate>
+                            Experience the endless possibilities of
+                            pharmacometrics modeling and simulation with
+                        </Translate>
+                        <b>
+                            <Translate>masmod</Translate>
+                        </b>
+                        <Translate>
+                            the powerful Python-based framework. You have
+                            everything you need and unlimited potential by
+                            incorporating AI models and other data science
+                            tools in the Python ecosystem.
+                        </Translate>
                     </p>
-                    <div>
+                    <div className={sharedCss.buttonsContainer}>
                         <Button
-                            appearance="secondary"
+                            appearance="outline"
                             size="large"
                             as="a"
-                            className={sharedCss.button}
+                            className={clsx(
+                                sharedCss.button,
+                                sharedCss.outlineButton
+                            )}
                             href="/"
                             icon={<IconExternalLink />}
                             iconPosition="after"
                         >
-                            Playground
+                            <Translate>Playground</Translate>
                         </Button>
                     </div>
                 </div>
@@ -54,7 +69,7 @@ const FirstSection: React.FC = () => {
                         firstSectionCss.firstSectionImageContainerWidth
                     )}
                 >
-                    <ManWithMugCup
+                    <ManWithCode
                         className={firstSectionCss.firstSectionImage}
                     />
                 </div>

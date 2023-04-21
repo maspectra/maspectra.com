@@ -3,6 +3,7 @@ import React from "react";
 import { Button } from "@fluentui/react-components";
 import clsx from "clsx";
 import IconExternalLink from "@theme/Icon/ExternalLink";
+import Translate from "@docusaurus/Translate";
 
 import headerCss from "@site/src/pages/home/header/styles.module.css";
 import sharedCss from "@site/src/pages/home/shared.module.css";
@@ -24,7 +25,7 @@ const Header: React.FC = () => {
                         )}
                     >
                         <h1 className={sharedCss.titleH1}>
-                            All-in-one solution for
+                            <Translate>All-in-one solution for</Translate>
                             <br />
                             <span
                                 className={clsx(
@@ -32,13 +33,15 @@ const Header: React.FC = () => {
                                     sharedCss.highlightText
                                 )}
                             >
-                                Modeling & Simulation
+                                <Translate>Modeling & Simulation</Translate>
                             </span>
                         </h1>
                         <p className={sharedCss.text}>
-                            Masolve™ unlocks the power to implement the Model
-                            Informed Drug Development (MIDD) approach in one
-                            software platform.
+                            <Translate>
+                                Masolve™ unlocks the power to implement the
+                                Model Informed Drug Development (MIDD) approach
+                                in one software platform.
+                            </Translate>
                         </p>
                         <div className={sharedCss.buttonsContainer}>
                             <Button
@@ -48,18 +51,21 @@ const Header: React.FC = () => {
                                 className={sharedCss.button}
                                 href="/"
                             >
-                                Get Started
+                                <Translate>Get Started</Translate>
                             </Button>
                             <Button
                                 appearance="outline"
                                 size="large"
                                 as="a"
-                                className={sharedCss.button}
+                                className={clsx(
+                                    sharedCss.button,
+                                    sharedCss.outlineButton
+                                )}
                                 href="/"
                                 icon={<IconExternalLink />}
                                 iconPosition="after"
                             >
-                                Playground
+                                <Translate>Playground</Translate>
                             </Button>
                         </div>
                     </div>

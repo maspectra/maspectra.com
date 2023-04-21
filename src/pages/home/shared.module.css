@@ -1,6 +1,6 @@
 .titleH1 {
     font-weight: 700;
-    font-size: 60px;
+    font-size: 56px;
     line-height: normal;
 }
 
@@ -8,30 +8,45 @@
     font-weight: 700;
     font-size: 36px;
     line-height: normal;
+    margin-top: 4px;
+    margin-bottom: 4px;
 }
 
 .titleH3 {
     font-weight: 400;
     font-size: 28px;
     line-height: normal;
+    color: var(--masolve-home-color-h3);
+    margin-top: 2px;
+    margin-bottom: 2px;
 }
 
 .text {
     font-weight: 400;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 30px;
+    font-family: "ArialMT", "Arial", sans-serif;
+
+    padding-bottom: 12px;
 }
 
-.button,
-.linkButton {
+.button {
     height: 48px;
     width: auto;
     font-weight: 700;
     font-size: 16px;
 }
 
-.linkButton {
+.buttonsContainer .outlineButton {
+    color: var(--ifm-color-primary);
+    border-color: var(--ifm-color-primary);
+}
+
+.buttonsContainer .linkButton {
     text-decoration: underline;
+    color: var(--ifm-color-primary);
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .buttonsContainer {

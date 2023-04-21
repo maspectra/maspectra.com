@@ -1,27 +1,27 @@
 .firstSection {
-    background-color: var(--docs-color-background-200);
+    background-color: var(--masolve-home-color-background);
 
-    padding: 8rem 2rem 8rem 2rem;
+    padding: 4rem 4rem 4rem 4rem;
     display: flex;
     justify-content: center;
 }
 
 .firstSectionContent {
-    max-width: 1200px;
+    max-width: var(--masolve-home-max-width);
 }
 
 .firstSectionContentStack {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    column-gap: 40px;
+    column-gap: 2rem;
 }
 
 .firstSectionTextContainer {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    row-gap: 2px;
+    row-gap: 4px;
     justify-content: center;
 }
 
@@ -40,8 +40,8 @@
 }
 
 .firstSectionImage {
-    height: 320px;
-    width: 320px;
+    height: 420px;
+    width: 420px;
 }
 
 /* Mobile */
