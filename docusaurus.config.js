@@ -90,7 +90,7 @@ const config = {
                     },
                     { to: "/blog", label: "Blogs", position: "left" },
                     {
-                        href: "https://github.com",
+                        href: "https://github.com/orgs/masolve/discussions",
                         label: "Community",
                         position: "left",
                         className: "masolve-portal-link"
@@ -123,17 +123,9 @@ const config = {
                         title: "Community",
                         items: [
                             {
-                                label: "Stack Overflow",
-                                href: "https://stackoverflow.com/questions/tagged/docusaurus"
+                                label: "Github Discussion",
+                                href: "https://github.com/orgs/masolve/discussions"
                             },
-                            {
-                                label: "Discord",
-                                href: "https://discordapp.com/invite/docusaurus"
-                            },
-                            {
-                                label: "Twitter",
-                                href: "https://twitter.com/docusaurus"
-                            }
                         ]
                     },
                     {
@@ -145,7 +137,7 @@ const config = {
                             },
                             {
                                 label: "GitHub",
-                                href: "https://github.com/facebook/docusaurus"
+                                href: "https://github.com/masolve/masolve.com"
                             }
                         ]
                     }
