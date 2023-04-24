@@ -25,16 +25,24 @@ const Header: React.FC = () => {
                         )}
                     >
                         <h1 className={sharedCss.titleH1}>
-                            <Translate>All-in-one solution for</Translate>
-                            <br />
-                            <span
-                                className={clsx(
-                                    sharedCss.titleH1,
-                                    sharedCss.highlightText
-                                )}
+                            <Translate
+                                values={{
+                                    target: (
+                                        <span
+                                            className={clsx(
+                                                sharedCss.titleH1,
+                                                sharedCss.highlightText
+                                            )}
+                                        >
+                                            <Translate>
+                                                Modeling & Simulation
+                                            </Translate>
+                                        </span>
+                                    )
+                                }}
                             >
-                                <Translate>Modeling & Simulation</Translate>
-                            </span>
+                                {"All-in-one solution for {target}"}
+                            </Translate>
                         </h1>
                         <p className={sharedCss.text}>
                             <Translate>

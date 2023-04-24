@@ -277,5 +277,116 @@
   "theme.tags.tagsPageTitle": {
     "message": "Tags",
     "description": "The title of the tag list page"
+  },
+  "MASMOD": {
+    "message": "MASMOD"
+  },
+  "MIDD workflow in Python": {
+    "message": "MIDD workflow in Python"
+  },
+  "Experience the endless possibilities of pharmacometrics modeling and simulation with": {
+    "message": "Experience the endless possibilities of pharmacometrics modeling and simulation with"
+  },
+  "masmod": {
+    "message": "masmod"
+  },
+  "the powerful Python-based framework. You have everything you need and unlimited potential by incorporating AI models and other data science tools in the Python ecosystem.": {
+    "message": "the powerful Python-based framework. You have everything you need and unlimited potential by incorporating AI models and other data science tools in the Python ecosystem."
+  },
+  "Playground": {
+    "message": "Playground"
+  },
+  "PD Models": {
+    "message": "PD Models"
+  },
+  "Descriptive Statistics": {
+    "message": "Descriptive Statistics"
+  },
+  "Frequency Analysis": {
+    "message": "Frequency Analysis"
+  },
+  "Correlation": {
+    "message": "Correlation"
+  },
+  "One/Two Sample T-test": {
+    "message": "One/Two Sample T-test"
+  },
+  "ANOVA": {
+    "message": "ANOVA"
+  },
+  "Nonparametric Analysis": {
+    "message": "Nonparametric Analysis"
+  },
+  "Linear Regression": {
+    "message": "Linear Regression"
+  },
+  "Keplan-Meier": {
+    "message": "Keplan-Meier"
+  },
+  "Cox regression": {
+    "message": "Cox regression"
+  },
+  "Data Split": {
+    "message": "Data Split"
+  },
+  "Data Pivot": {
+    "message": "Data Pivot"
+  },
+  "Explore MaSolve's potential with our documentation": {
+    "message": "Explore MaSolve's potential with our documentation"
+  },
+  "All-in-one solution for {target}": {
+    "message": "All-in-one solution for {target}"
+  },
+  "Modeling & Simulation": {
+    "message": "Modeling & Simulation"
+  },
+  "Masolve™ unlocks the power to implement the Model Informed Drug Development (MIDD) approach in one software platform.": {
+    "message": "Masolve™ unlocks the power to implement the Model Informed Drug Development (MIDD) approach in one software platform."
+  },
+  "Get Started": {
+    "message": "Get Started"
+  },
+  "It is proposed that simulation has a much broader potential to aid in the clinical development, regulatory review, commercialization, and medical application process.": {
+    "message": "It is proposed that simulation has a much broader potential to aid in the clinical development, regulatory review, commercialization, and medical application process."
+  },
+  "Founder of MIDD": {
+    "message": "Founder of MIDD"
+  },
+  "NCA & Compartmental Model": {
+    "message": "NCA & Compartmental Model"
+  },
+  "Robust and powerful noncompartmental/compartmental PK analysis for preclinical and clinical studies.": {
+    "message": "Robust and powerful noncompartmental/compartmental PK analysis for preclinical and clinical studies."
+  },
+  "Learn more": {
+    "message": "Learn more"
+  },
+  "Bioequivalence": {
+    "message": "Bioequivalence"
+  },
+  "MaSolve supports various ABE trial designs including crossover and parallel studies.": {
+    "message": "MaSolve supports various ABE trial designs including crossover and parallel studies."
+  },
+  "Exploratory statistics": {
+    "message": "Exploratory statistics"
+  },
+  "Effortlessly explore and visualize preclinical and clinical data with utmost efficiency.": {
+    "message": "Effortlessly explore and visualize preclinical and clinical data with utmost efficiency."
+  },
+  "Statistical tests & models": {
+    "message": "Statistical tests & models"
+  },
+  "Perform statistical tests and regression analysis for in-depth insights.": {
+    "message": "Perform statistical tests and regression analysis for in-depth insights."
+  },
+  "PHARMACOLOGY & STATISTICS": {
+    "message": "PHARMACOLOGY & STATISTICS"
+  },
+  "Data analysis in one platform": {
+    "message": "Data analysis in one platform"
+  },
+  "Consolidate multiple software functionalities into one streamlined platform for efficient drug development data analysis. Perform PK/PD and statistical analysis seamlessly from a single software. Experience a hassle-free workflow today!": {
+    "message": "Consolidate multiple software functionalities into one streamlined platform for efficient drug development data analysis. Perform PK/PD and statistical analysis seamlessly from a single software. Experience a hassle-free workflow today!"
   }
 }

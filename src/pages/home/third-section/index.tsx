@@ -21,7 +21,7 @@ const ThirdSection: React.FC = () => {
                 <div
                     className={clsx(
                         thirdSectionCss.thirdSectionTextContainer,
-                        thirdSectionCss.thirdSectionText1ContainerWidth
+                        thirdSectionCss.thirdSectionTextContainerWidth
                     )}
                 >
                     <h2 className={sharedCss.titleH2}>
@@ -58,7 +58,7 @@ const ThirdSection: React.FC = () => {
                 <div
                     className={clsx(
                         thirdSectionCss.thirdSectionTextContainer,
-                        thirdSectionCss.thirdSectionText1ContainerWidth
+                        thirdSectionCss.thirdSectionTextContainerWidth
                     )}
                 >
                     <h2 className={sharedCss.titleH2}>
@@ -102,7 +102,7 @@ const ThirdSection: React.FC = () => {
                 <div
                     className={clsx(
                         thirdSectionCss.thirdSectionTextContainer,
-                        thirdSectionCss.thirdSectionText1ContainerWidth
+                        thirdSectionCss.thirdSectionTextContainerWidth
                     )}
                 >
                     <h2 className={sharedCss.titleH2}>
@@ -139,7 +139,7 @@ const ThirdSection: React.FC = () => {
                 <div
                     className={clsx(
                         thirdSectionCss.thirdSectionTextContainer,
-                        thirdSectionCss.thirdSectionText1ContainerWidth
+                        thirdSectionCss.thirdSectionTextContainerWidth
                     )}
                 >
                     <h2 className={sharedCss.titleH2}>

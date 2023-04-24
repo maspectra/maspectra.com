@@ -29,7 +29,7 @@ const FirstSection: React.FC = () => {
                         <Translate>MASMOD</Translate>
                     </h3>
                     <h2 className={sharedCss.titleH2}>
-                        <Translate> MIDD workflow in Python</Translate>
+                        <Translate>MIDD workflow in Python</Translate>
                     </h2>
                     <p className={sharedCss.text}>
                         <Translate>

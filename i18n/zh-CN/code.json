@@ -335,8 +335,8 @@
     "Explore MaSolve's potential with our documentation": {
         "message": "查阅文档，探索 MaSolve 的无限可能"
     },
-    "All-in-one solution for": {
-        "message": "一体化解决方案"
+    "All-in-one solution for {target}": {
+        "message": "{target}一体化解决方案"
     },
     "Modeling & Simulation": {
         "message": "建模模拟"
