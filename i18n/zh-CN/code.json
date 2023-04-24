@@ -282,91 +282,91 @@
         "message": "MASMOD"
     },
     "MIDD workflow in Python": {
-        "message": "MIDD workflow in Python"
-    },
-    "Experience the endless possibilities of pharmacometrics modeling and simulation with": {
-        "message": "Experience the endless possibilities of pharmacometrics modeling and simulation with"
+        "message": "基于 Python 编程语言的 MIDD 工作流"
     },
     "masmod": {
         "message": "masmod"
     },
-    "the powerful Python-based framework. You have everything you need and unlimited potential by incorporating AI models and other data science tools in the Python ecosystem.": {
-        "message": "the powerful Python-based framework. You have everything you need and unlimited potential by incorporating AI models and other data science tools in the Python ecosystem."
+    "Experience the endless possibilities of pharmacometrics modeling and simulation with {what}. You have everything you need and unlimited potential by incorporating AI models and other data science tools in the Python ecosystem.": {
+        "message": "通过{what}，体验定量药理建模模拟的无限可能。可与 Python 生态中的 AI 模型，以及其他数据科学工具交互，解锁无限可能。"
+    },
+    "{masmod} - the powerful Python-based framework.": {
+        "message": "强大的 Python 建模模拟框架 {masmod}"
     },
     "Playground": {
         "message": "Playground"
     },
     "PD Models": {
-        "message": "PD Models"
+        "message": "PD 模型"
     },
     "Descriptive Statistics": {
-        "message": "Descriptive Statistics"
+        "message": "描述性统计"
     },
     "Frequency Analysis": {
-        "message": "Frequency Analysis"
+        "message": "频数分析"
     },
     "Correlation": {
-        "message": "Correlation"
+        "message": "相关性分析"
     },
     "One/Two Sample T-test": {
-        "message": "One/Two Sample T-test"
+        "message": "单/双样本 t-检验"
     },
     "ANOVA": {
         "message": "ANOVA"
     },
     "Nonparametric Analysis": {
-        "message": "Nonparametric Analysis"
+        "message": "非房室分析"
     },
     "Linear Regression": {
-        "message": "Linear Regression"
+        "message": "线性回归"
     },
     "Keplan-Meier": {
         "message": "Keplan-Meier"
     },
     "Cox regression": {
-        "message": "Cox regression"
+        "message": "Cox 回归"
     },
     "Data Split": {
-        "message": "Data Split"
+        "message": "数据切分"
     },
     "Data Pivot": {
-        "message": "Data Pivot"
+        "message": "数据转置"
     },
     "Explore MaSolve's potential with our documentation": {
-        "message": "Explore MaSolve's potential with our documentation"
+        "message": "查阅文档，探索 MaSolve 的无限可能"
     },
-    "All-in-one solution for": {
-        "message": "All-in-one solution for"
+    "All-in-one solution for {target}": {
+        "message": "{target}一体化解决方案"
     },
     "Modeling & Simulation": {
-        "message": "Modeling & Simulation"
+        "message": "建模模拟"
     },
     "Masolve™ unlocks the power to implement the Model Informed Drug Development (MIDD) approach in one software platform.": {
-        "message": "Masolve™ unlocks the power to implement the Model Informed Drug Development (MIDD) approach in one software platform."
+        "message": "Masolve™: 建模模拟 & MIDD 一站式工作站"
     },
     "Get Started": {
-        "message": "Get Started"
+        "message": "入门导览"
     },
     "PHARMACOLOGY & STATISTICS": {
-        "message": "PHARMACOLOGY & STATISTICS"
+        "message": "临床药理 & 统计"
     },
     "Data analysis in one platform": {
-        "message": "Data analysis in one platform"
+        "message": "同一平台下的数据分析工作流"
     },
     "Consolidate multiple software functionalities into one streamlined platform for efficient drug development data analysis. Perform PK/PD and statistical analysis seamlessly from a single software. Experience a hassle-free workflow today!": {
-        "message": "Consolidate multiple software functionalities into one streamlined platform for efficient drug development data analysis. Perform PK/PD and statistical analysis seamlessly from a single software. Experience a hassle-free workflow today!"
+        "message": "将多个软件功能整合到一个流畅的平台中，以进行高效的药物开发数据分析。从单个软件无缝执行PK/PD和统计分析，今天开始，体验流畅的工作流程！"
     },
     "It is proposed that simulation has a much broader potential to aid in the clinical development, regulatory review, commercialization, and medical application process.": {
         "message": "It is proposed that simulation has a much broader potential to aid in the clinical development, regulatory review, commercialization, and medical application process."
     },
     "Founder of MIDD": {
-        "message": "Founder of MIDD"
+        "message": "MIDD 先行者"
     },
     "NCA & Compartmental Model": {
-        "message": "NCA & Compartmental Model"
+        "message": "NCA & 房室模型"
     },
     "Robust and powerful noncompartmental/compartmental PK analysis for preclinical and clinical studies.": {
-        "message": "Robust and powerful noncompartmental/compartmental PK analysis for preclinical and clinical studies."
+        "message": "稳健、强大的非房室/房室模型 PK 分析，适用于临床前和临床试验各种场景。"
     },
     "Learn more": {
         "message": "了解更多"
@@ -375,18 +375,18 @@
         "message": "生物等效性"
     },
     "MaSolve supports various ABE trial designs including crossover and parallel studies.": {
-        "message": "MaSolve supports various ABE trial designs including crossover and parallel studies."
+        "message": "MaSolve 支持灵活的 ABE 试验设计，包括交叉和平行试验设计。"
     },
     "Exploratory statistics": {
-        "message": "Exploratory statistics"
+        "message": "探索性统计"
     },
     "Effortlessly explore and visualize preclinical and clinical data with utmost efficiency.": {
-        "message": "Effortlessly explore and visualize preclinical and clinical data with utmost efficiency."
+        "message": "轻松、高效探索临床前和临床数据，强大数据可视化功能。"
     },
     "Statistical tests & models": {
-        "message": "Statistical tests & models"
+        "message": "统计检验 & 模型"
     },
     "Perform statistical tests and regression analysis for in-depth insights.": {
-        "message": "Perform statistical tests and regression analysis for in-depth insights."
+        "message": "统计检验和回归分析，赋能药物研发。"
     }
 }

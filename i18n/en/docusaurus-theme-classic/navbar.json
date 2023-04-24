@@ -26,5 +26,9 @@
   "item.label.Sign In": {
     "message": "Sign In",
     "description": "Navbar item with label Sign In"
+  },
+  "item.label.Blogs": {
+    "message": "Blogs",
+    "description": "Navbar item with label Blogs"
   }
 }

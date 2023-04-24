@@ -24,6 +24,7 @@
 
 .heroContent {
     /* min-height: 600px; */
+    width: 100%;
     max-width: var(--masolve-home-max-width);
 }
 
@@ -36,6 +37,8 @@
 }
 
 .heroTextContainer {
+    align-items: flex-start;
+    justify-content: flex-start;
 }
 
 .heroTextContainerWidth {

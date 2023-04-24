@@ -19,6 +19,7 @@
 
 .thirdSectionContent {
     max-width: var(--masolve-home-max-width);
+    width: 100%;
 }
 
 .thirdSectionContentStack {
@@ -37,8 +38,7 @@
     justify-content: center;
 }
 
-.thirdSectionText1ContainerWidth,
-.thirdSectionText2ContainerWidth {
+.thirdSectionTextContainerWidth {
     width: 50%;
 }
 
@@ -56,8 +56,7 @@
         row-gap: 40px;
     }
 
-    .thirdSectionText1ContainerWidth,
-    .thirdSectionText2ContainerWidth {
+    .thirdSectionTextContainerWidth {
         width: 100%;
     }
 }
