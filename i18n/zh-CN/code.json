@@ -284,14 +284,14 @@
     "MIDD workflow in Python": {
         "message": "基于 Python 编程语言的 MIDD 工作流"
     },
-    "Experience the endless possibilities of pharmacometrics modeling and simulation with": {
-        "message": "体验定量药理建模模拟的无限可能"
-    },
     "masmod": {
         "message": "masmod"
     },
-    "the powerful Python-based framework. You have everything you need and unlimited potential by incorporating AI models and other data science tools in the Python ecosystem.": {
-        "message": "强大的 Python 建模模拟框架。可与 Python 生态中的 AI 模型，以及其他数据科学工具交互，解锁无限可能。"
+    "Experience the endless possibilities of pharmacometrics modeling and simulation with {what}. You have everything you need and unlimited potential by incorporating AI models and other data science tools in the Python ecosystem.": {
+        "message": "通过{what}，体验定量药理建模模拟的无限可能。可与 Python 生态中的 AI 模型，以及其他数据科学工具交互，解锁无限可能。"
+    },
+    "{masmod} - the powerful Python-based framework.": {
+        "message": "强大的 Python 建模模拟框架 {masmod}"
     },
     "Playground": {
         "message": "Playground"

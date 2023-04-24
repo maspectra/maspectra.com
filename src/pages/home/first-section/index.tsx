@@ -32,18 +32,24 @@ const FirstSection: React.FC = () => {
                         <Translate>MIDD workflow in Python</Translate>
                     </h2>
                     <p className={sharedCss.text}>
-                        <Translate>
-                            Experience the endless possibilities of
-                            pharmacometrics modeling and simulation with
-                        </Translate>
-                        <b>
-                            <Translate>masmod</Translate>
-                        </b>
-                        <Translate>
-                            the powerful Python-based framework. You have
-                            everything you need and unlimited potential by
-                            incorporating AI models and other data science
-                            tools in the Python ecosystem.
+                        <Translate
+                            values={{
+                                what: (
+                                    <Translate
+                                        values={{
+                                            masmod: <b>masmod</b>
+                                        }}
+                                    >
+                                        {
+                                            "{masmod} - the powerful Python-based framework"
+                                        }
+                                    </Translate>
+                                )
+                            }}
+                        >
+                            {
+                                "Experience the endless possibilities of pharmacometrics modeling and simulation with {what}. You have everything you need and unlimited potential by incorporating AI models and other data science tools in the Python ecosystem."
+                            }
                         </Translate>
                     </p>
                     <div className={sharedCss.buttonsContainer}>
