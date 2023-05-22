@@ -386,11 +386,20 @@
     "Data analysis in one platform": {
         "message": "Data analysis in one platform"
     },
-    "Consolidate multiple software functionalities into one streamlined platform for efficient drug development data analysis. Perform PK/PD and statistical analysis seamlessly from a single software. Experience a hassle-free workflow today!": {
-        "message": "Consolidate multiple software functionalities into one streamlined platform for efficient drug development data analysis. Perform PK/PD and statistical analysis seamlessly from a single software. Experience a hassle-free workflow today!"
+    "Consolidate multiple software functionalities into one streamlined platform for efficient drug development data analysis.": {
+        "message": "Consolidate multiple software functionalities into one streamlined platform for efficient drug development data analysis."
     },
-    "Experience the endless possibilities of pharmacometrics modeling and simulation with {what}. You have everything you need and unlimited potential by incorporating AI models and other data science tools in the Python ecosystem.": {
-        "message": "Experience the endless possibilities of pharmacometrics modeling and simulation with {what}. You have everything you need and unlimited potential by incorporating AI models and other data science tools in the Python ecosystem."
+    "Perform PK/PD and statistical analysis seamlessly from a single software.": {
+        "message": "Perform PK/PD and statistical analysis seamlessly from a single software."
+    },
+    "Experience a hassle-free workflow today!": {
+        "message": "Experience a hassle-free workflow today!"
+    },
+    "Experience the endless possibilities of pharmacometrics modeling and simulation with {what}.": {
+        "message": "Experience the endless possibilities of pharmacometrics modeling and simulation with {what}."
+    },
+    "You have everything you need and unlimited potential by incorporating AI models and other data science tools in the Python ecosystem.": {
+        "message": "You have everything you need and unlimited potential by incorporating AI models and other data science tools in the Python ecosystem."
     },
     "{masmod} - the powerful Python-based framework": {
         "message": "{masmod} - the powerful Python-based framework"

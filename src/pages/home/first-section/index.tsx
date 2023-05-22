@@ -48,8 +48,13 @@ const FirstSection: React.FC = () => {
                             }}
                         >
                             {
-                                "Experience the endless possibilities of pharmacometrics modeling and simulation with {what}. You have everything you need and unlimited potential by incorporating AI models and other data science tools in the Python ecosystem."
+                                "Experience the endless possibilities of pharmacometrics modeling and simulation with {what}."
                             }
+                        </Translate>
+                        <Translate>
+                            You have everything you need and unlimited
+                            potential by incorporating AI models and other data
+                            science tools in the Python ecosystem.
                         </Translate>
                     </p>
                     <div className={sharedCss.buttonsContainer}>

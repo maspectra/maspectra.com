@@ -287,10 +287,13 @@
     "masmod": {
         "message": "masmod"
     },
-    "Experience the endless possibilities of pharmacometrics modeling and simulation with {what}. You have everything you need and unlimited potential by incorporating AI models and other data science tools in the Python ecosystem.": {
-        "message": "通过{what}，体验定量药理建模模拟的无限可能。可与 Python 生态中的 AI 模型，以及其他数据科学工具交互，解锁无限可能。"
+    "Experience the endless possibilities of pharmacometrics modeling and simulation with {what}.": {
+        "message": "通过{what}，体验定量药理建模模拟的无限可能。"
     },
-    "{masmod} - the powerful Python-based framework.": {
+    "You have everything you need and unlimited potential by incorporating AI models and other data science tools in the Python ecosystem.": {
+        "message": "可与 Python 生态中的 AI 模型，以及其他数据科学工具交互，解锁无限可能。"
+    },
+    "{masmod} - the powerful Python-based framework": {
         "message": "强大的 Python 建模模拟框架 {masmod}"
     },
     "Playground": {
@@ -353,8 +356,14 @@
     "Data analysis in one platform": {
         "message": "同一平台下的数据分析工作流"
     },
-    "Consolidate multiple software functionalities into one streamlined platform for efficient drug development data analysis. Perform PK/PD and statistical analysis seamlessly from a single software. Experience a hassle-free workflow today!": {
-        "message": "将多个软件功能整合到一个流畅的平台中，以进行高效的药物开发数据分析。从单个软件无缝执行PK/PD和统计分析，今天开始，体验流畅的工作流程！"
+    "Consolidate multiple software functionalities into one streamlined platform for efficient drug development data analysis.": {
+        "message": "将多个软件功能整合到一个流畅的平台中，以进行高效的药物开发数据分析。"
+    },
+    "Perform PK/PD and statistical analysis seamlessly from a single software.": {
+        "message": "从单个软件无缝执行PK/PD和统计分。"
+    },
+    "Experience a hassle-free workflow today!": {
+        "message": "今天开始，体验流畅的工作流程！"
     },
     "It is proposed that simulation has a much broader potential to aid in the clinical development, regulatory review, commercialization, and medical application process.": {
         "message": "It is proposed that simulation has a much broader potential to aid in the clinical development, regulatory review, commercialization, and medical application process."

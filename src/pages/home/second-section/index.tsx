@@ -42,9 +42,14 @@ const SecondSection: React.FC = () => {
                         <Translate>
                             Consolidate multiple software functionalities into
                             one streamlined platform for efficient drug
-                            development data analysis. Perform PK/PD and
-                            statistical analysis seamlessly from a single
-                            software. Experience a hassle-free workflow today!
+                            development data analysis.
+                        </Translate>
+                        <Translate>
+                            Perform PK/PD and statistical analysis seamlessly
+                            from a single software.
+                        </Translate>
+                        <Translate>
+                            Experience a hassle-free workflow today!
                         </Translate>
                     </p>
                 </div>

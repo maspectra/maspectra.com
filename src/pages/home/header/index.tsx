@@ -84,8 +84,8 @@ const Header: React.FC = () => {
                         )}
                     >
                         <iframe
+                            src="//player.bilibili.com/player.html?aid=818467067&bvid=BV1oG4y1g7jn&cid=912752325&page=1"
                             className={headerCss.heroVideoFrame}
-                            src="//player.bilibili.com/player.html?aid=439902766&bvid=BV1sL411f7j8&page=1&high_quality=1"
                         />
                     </div>
                 </div>
