@@ -46,7 +46,7 @@ const Header: React.FC = () => {
                         </h1>
                         <p className={sharedCss.text}>
                             <Translate>
-                                Masolve™ unlocks the power to implement the
+                                MaSolve™ unlocks the power to implement the
                                 Model Informed Drug Development (MIDD) approach
                                 in one software platform.
                             </Translate>

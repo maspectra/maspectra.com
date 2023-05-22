@@ -5,7 +5,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-    title: "masolve",
+    title: "MaSolve",
     tagline: "Modeling and Simulation Solution",
     favicon: "img/logo/icon.ico",
 
@@ -71,10 +71,10 @@ const config = {
             // Replace with your project's social card
             image: "img/docusaurus-social-card.jpg",
             navbar: {
-                title: "Masolve",
+                title: "MaSolve",
                 hideOnScroll: false,
                 logo: {
-                    alt: "Masolve Logo",
+                    alt: "MaSolve Logo",
                     src: "img/logo/icon.svg"
                 },
                 items: [
@@ -92,6 +92,12 @@ const config = {
                     {
                         href: "https://github.com/orgs/masolve/discussions",
                         label: "Community",
+                        position: "left",
+                        className: "masolve-portal-link"
+                    },
+                    {
+                        href: "https://github.com/orgs/masolve/discussions",
+                        label: "Our Company",
                         position: "left",
                         className: "masolve-portal-link"
                     },
@@ -125,7 +131,7 @@ const config = {
                             {
                                 label: "Github Discussion",
                                 href: "https://github.com/orgs/masolve/discussions"
-                            },
+                            }
                         ]
                     },
                     {
@@ -142,7 +148,7 @@ const config = {
                         ]
                     }
                 ],
-                copyright: `Copyright © 2023 Masolve, Inc. Built with Docusaurus.`
+                copyright: `Copyright © 2023 MaSolve, Inc. Built with Docusaurus.`
             },
             prism: {
                 theme: lightCodeTheme,
