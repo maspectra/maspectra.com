@@ -1,4 +1,133 @@
 {
+    "PD Models": {
+        "message": "PD Models"
+    },
+    "Descriptive Statistics": {
+        "message": "Descriptive Statistics"
+    },
+    "Frequency Analysis": {
+        "message": "Frequency Analysis"
+    },
+    "Correlation": {
+        "message": "Correlation"
+    },
+    "One/Two Sample T-test": {
+        "message": "One/Two Sample T-test"
+    },
+    "ANOVA": {
+        "message": "ANOVA"
+    },
+    "Nonparametric Analysis": {
+        "message": "Nonparametric Analysis"
+    },
+    "Linear Regression": {
+        "message": "Linear Regression"
+    },
+    "Keplan-Meier": {
+        "message": "Keplan-Meier"
+    },
+    "Cox regression": {
+        "message": "Cox regression"
+    },
+    "Data Split": {
+        "message": "Data Split"
+    },
+    "Data Pivot": {
+        "message": "Data Pivot"
+    },
+    "Explore Maspectra's potential with our documentation": {
+        "message": "Explore Maspectra's potential with our documentation"
+    },
+    "All-in-one solution for {target}": {
+        "message": "All-in-one solution for {target}"
+    },
+    "Modeling & Simulation": {
+        "message": "Modeling & Simulation"
+    },
+    "Maspectra™ unlocks the power to implement the Model Informed Drug Development (MIDD) approach in one software platform.": {
+        "message": "Maspectra™ unlocks the power to implement the Model Informed Drug Development (MIDD) approach in one software platform."
+    },
+    "Get Started": {
+        "message": "Get Started"
+    },
+    "Playground": {
+        "message": "Playground"
+    },
+    "MASMOD": {
+        "message": "MASMOD"
+    },
+    "MIDD workflow in Python": {
+        "message": "MIDD workflow in Python"
+    },
+    "Experience the endless possibilities of pharmacometrics modeling and simulation with {what}.": {
+        "message": "Experience the endless possibilities of pharmacometrics modeling and simulation with {what}."
+    },
+    "{masmod} - the powerful Python-based framework": {
+        "message": "{masmod} - the powerful Python-based framework"
+    },
+    "You have everything you need and unlimited potential by incorporating AI models and other data science tools in the Python ecosystem.": {
+        "message": "You have everything you need and unlimited potential by incorporating AI models and other data science tools in the Python ecosystem."
+    },
+    "NCA & Compartmental Model": {
+        "message": "NCA & Compartmental Model"
+    },
+    "Robust and powerful noncompartmental/compartmental PK analysis for preclinical and clinical studies.": {
+        "message": "Robust and powerful noncompartmental/compartmental PK analysis for preclinical and clinical studies."
+    },
+    "Learn more": {
+        "message": "Learn more"
+    },
+    "Bioequivalence": {
+        "message": "Bioequivalence"
+    },
+    "Maspectra supports various ABE trial designs including crossover and parallel studies.": {
+        "message": "Maspectra supports various ABE trial designs including crossover and parallel studies."
+    },
+    "Exploratory statistics": {
+        "message": "Exploratory statistics"
+    },
+    "Effortlessly explore and visualize preclinical and clinical data with utmost efficiency.": {
+        "message": "Effortlessly explore and visualize preclinical and clinical data with utmost efficiency."
+    },
+    "Statistical tests & models": {
+        "message": "Statistical tests & models"
+    },
+    "Perform statistical tests and regression analysis for in-depth insights.": {
+        "message": "Perform statistical tests and regression analysis for in-depth insights."
+    },
+    "Ready to play with Maspectra?": {
+        "message": "Ready to play with Maspectra?"
+    },
+    "Maspectra is still a work in progress, but it will be generally available soon.": {
+        "message": "Maspectra is still a work in progress, but it will be generally available soon."
+    },
+    "You are welcome to join our wait list and we will notify you when it is ready.": {
+        "message": "You are welcome to join our wait list and we will notify you when it is ready."
+    },
+    "Sign Up and Join Wait List": {
+        "message": "Sign Up and Join Wait List"
+    },
+    "PHARMACOLOGY & STATISTICS": {
+        "message": "PHARMACOLOGY & STATISTICS"
+    },
+    "Data analysis in one platform": {
+        "message": "Data analysis in one platform"
+    },
+    "Consolidate multiple software functionalities into one streamlined platform for efficient drug development data analysis.": {
+        "message": "Consolidate multiple software functionalities into one streamlined platform for efficient drug development data analysis."
+    },
+    "Perform PK/PD and statistical analysis seamlessly from a single software.": {
+        "message": "Perform PK/PD and statistical analysis seamlessly from a single software."
+    },
+    "Experience a hassle-free MIDD workflow today!": {
+        "message": "Experience a hassle-free MIDD workflow today!"
+    },
+    "It is proposed that simulation has a much broader potential to aid in the clinical development, regulatory review, commercialization, and medical application process.": {
+        "message": "It is proposed that simulation has a much broader potential to aid in the clinical development, regulatory review, commercialization, and medical application process."
+    },
+    "Founder of MIDD": {
+        "message": "Founder of MIDD"
+    },
     "theme.ErrorPageContent.title": {
         "message": "This page crashed.",
         "description": "The title of the fallback page when the page crashed"
@@ -43,6 +172,10 @@
         "message": "Archive",
         "description": "The page & hero description of the blog archive page"
     },
+    "theme.BackToTopButton.buttonAriaLabel": {
+        "message": "Scroll back to top",
+        "description": "The ARIA label for the back to top button"
+    },
     "theme.blog.paginator.navAriaLabel": {
         "message": "Blog list page navigation",
         "description": "The ARIA label for the blog pagination"
@@ -54,10 +187,6 @@
     "theme.blog.paginator.olderEntries": {
         "message": "Older Entries",
         "description": "The label used to navigate to the older blog posts page (next page)"
-    },
-    "theme.BackToTopButton.buttonAriaLabel": {
-        "message": "Scroll back to top",
-        "description": "The ARIA label for the back to top button"
     },
     "theme.blog.post.paginator.navAriaLabel": {
         "message": "Blog post page navigation",
@@ -277,140 +406,5 @@
     "theme.tags.tagsPageTitle": {
         "message": "Tags",
         "description": "The title of the tag list page"
-    },
-    "MASMOD": {
-        "message": "MASMOD"
-    },
-    "MIDD workflow in Python": {
-        "message": "MIDD workflow in Python"
-    },
-    "Experience the endless possibilities of pharmacometrics modeling and simulation with": {
-        "message": "Experience the endless possibilities of pharmacometrics modeling and simulation with"
-    },
-    "masmod": {
-        "message": "masmod"
-    },
-    "Playground": {
-        "message": "Playground"
-    },
-    "PD Models": {
-        "message": "PD Models"
-    },
-    "Descriptive Statistics": {
-        "message": "Descriptive Statistics"
-    },
-    "Frequency Analysis": {
-        "message": "Frequency Analysis"
-    },
-    "Correlation": {
-        "message": "Correlation"
-    },
-    "One/Two Sample T-test": {
-        "message": "One/Two Sample T-test"
-    },
-    "ANOVA": {
-        "message": "ANOVA"
-    },
-    "Nonparametric Analysis": {
-        "message": "Nonparametric Analysis"
-    },
-    "Linear Regression": {
-        "message": "Linear Regression"
-    },
-    "Keplan-Meier": {
-        "message": "Keplan-Meier"
-    },
-    "Cox regression": {
-        "message": "Cox regression"
-    },
-    "Data Split": {
-        "message": "Data Split"
-    },
-    "Data Pivot": {
-        "message": "Data Pivot"
-    },
-    "Explore Maspectra's potential with our documentation": {
-        "message": "Explore Maspectra's potential with our documentation"
-    },
-    "All-in-one solution for {target}": {
-        "message": "All-in-one solution for {target}"
-    },
-    "Modeling & Simulation": {
-        "message": "Modeling & Simulation"
-    },
-    "Maspectra™ unlocks the power to implement the Model Informed Drug Development (MIDD) approach in one software platform.": {
-        "message": "Maspectra™ unlocks the power to implement the Model Informed Drug Development (MIDD) approach in one software platform. "
-    },
-    "Get Started": {
-        "message": "Get Started"
-    },
-    "It is proposed that simulation has a much broader potential to aid in the clinical development, regulatory review, commercialization, and medical application process.": {
-        "message": "It is proposed that simulation has a much broader potential to aid in the clinical development, regulatory review, commercialization, and medical application process. "
-    },
-    "Founder of MIDD": {
-        "message": "Founder of MIDD"
-    },
-    "NCA & Compartmental Model": {
-        "message": "NCA & Compartmental Model"
-    },
-    "Robust and powerful noncompartmental/compartmental PK analysis for preclinical and clinical studies.": {
-        "message": "Robust and powerful noncompartmental/compartmental PK analysis for preclinical and clinical studies. "
-    },
-    "Learn more": {
-        "message": "Learn more"
-    },
-    "Bioequivalence": {
-        "message": "Bioequivalence"
-    },
-    "Maspectra supports various ABE trial designs including crossover and parallel studies.": {
-        "message": "Maspectra supports various ABE trial designs including crossover and parallel studies. "
-    },
-    "Exploratory statistics": {
-        "message": "Exploratory statistics"
-    },
-    "Effortlessly explore and visualize preclinical and clinical data with utmost efficiency.": {
-        "message": "Effortlessly explore and visualize preclinical and clinical data with utmost efficiency. "
-    },
-    "Statistical tests & models": {
-        "message": "Statistical tests & models"
-    },
-    "Perform statistical tests and regression analysis for in-depth insights.": {
-        "message": "Perform statistical tests and regression analysis for in-depth insights. "
-    },
-    "PHARMACOLOGY & STATISTICS": {
-        "message": "PHARMACOLOGY & STATISTICS"
-    },
-    "Data analysis in one platform": {
-        "message": "Data analysis in one platform"
-    },
-    "Consolidate multiple software functionalities into one streamlined platform for efficient drug development data analysis.": {
-        "message": "Consolidate multiple software functionalities into one streamlined platform for efficient drug development data analysis. "
-    },
-    "Perform PK/PD and statistical analysis seamlessly from a single software.": {
-        "message": "Perform PK/PD and statistical analysis seamlessly from a single software. "
-    },
-    "Experience a hassle-free workflow today!": {
-        "message": "Experience a hassle-free workflow today!"
-    },
-    "Experience the endless possibilities of pharmacometrics modeling and simulation with {what}.": {
-        "message": "Experience the endless possibilities of pharmacometrics modeling and simulation with {what}. "
-    },
-    "You have everything you need and unlimited potential by incorporating AI models and other data science tools in the Python ecosystem.": {
-        "message": "You have everything you need and unlimited potential by incorporating AI models and other data science tools in the Python ecosystem. "
-    },
-    "{masmod} - the powerful Python-based framework": {
-        "message": "{masmod} - the powerful Python-based framework"
-    },
-    "Ready to play with Maspectra?": {
-        "message": "Ready to play with Maspectra?"
-    },
-    "Maspectra is still a work in progress, but it will be generally available soon.": {
-        "message": "Maspectra is still a work in progress, but it will be generally available soon. "
-    },
-    "You are welcome to join our wait list and we will notify you when it is ready.": {
-        "message": "You are welcome to join our wait list and we will notify you when it is ready. "
-    },
-    "Sign Up and Join Wait List": {
-        "message": "Sign Up and Join Wait List"
     }
 }

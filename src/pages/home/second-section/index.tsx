@@ -49,7 +49,7 @@ const SecondSection: React.FC = () => {
                             from a single software.
                         </Translate>
                         <Translate>
-                            Experience a hassle-free workflow today!
+                            Experience a hassle-free MIDD workflow today!
                         </Translate>
                     </p>
                 </div>

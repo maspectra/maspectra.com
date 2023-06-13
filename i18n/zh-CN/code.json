@@ -1,4 +1,133 @@
 {
+    "PD Models": {
+        "message": "PD 模型"
+    },
+    "Descriptive Statistics": {
+        "message": "描述性统计"
+    },
+    "Frequency Analysis": {
+        "message": "频数分析"
+    },
+    "Correlation": {
+        "message": "相关性分析"
+    },
+    "One/Two Sample T-test": {
+        "message": "单/双样本 t-检验"
+    },
+    "ANOVA": {
+        "message": "ANOVA"
+    },
+    "Nonparametric Analysis": {
+        "message": "非房室分析"
+    },
+    "Linear Regression": {
+        "message": "线性回归"
+    },
+    "Keplan-Meier": {
+        "message": "Keplan-Meier"
+    },
+    "Cox regression": {
+        "message": "Cox 回归"
+    },
+    "Data Split": {
+        "message": "数据切分"
+    },
+    "Data Pivot": {
+        "message": "数据转置"
+    },
+    "Explore Maspectra's potential with our documentation": {
+        "message": "查阅文档，探索 Maspectra 的无限可能"
+    },
+    "All-in-one solution for {target}": {
+        "message": "{target}一体化解决方案"
+    },
+    "Modeling & Simulation": {
+        "message": "建模模拟"
+    },
+    "Maspectra™ unlocks the power to implement the Model Informed Drug Development (MIDD) approach in one software platform.": {
+        "message": "Maspectra™ 作为一个一站式集成工作站，为模型引导的药物研发 (MIDD) 赋能"
+    },
+    "Get Started": {
+        "message": "入门导览"
+    },
+    "Playground": {
+        "message": "Playground"
+    },
+    "MASMOD": {
+        "message": "MASMOD"
+    },
+    "MIDD workflow in Python": {
+        "message": "基于 Python 编程语言的 MIDD 工作流·"
+    },
+    "Experience the endless possibilities of pharmacometrics modeling and simulation with {what}.": {
+        "message": "通过{what}，体验定量药理建模与模拟的无限可能。"
+    },
+    "{masmod} - the powerful Python-based framework": {
+        "message": "强大的 Python 建模与模拟框架 {masmod}"
+    },
+    "You have everything you need and unlimited potential by incorporating AI models and other data science tools in the Python ecosystem.": {
+        "message": "通过与 Python 生态中的 AI 模型，以及其他数据科学工具库相辅相成，你能够从百宝箱中获得你想要的建模工具，解锁更多的可能性。"
+    },
+    "NCA & Compartmental Model": {
+        "message": "非房室分析 & 房室模型"
+    },
+    "Robust and powerful noncompartmental/compartmental PK analysis for preclinical and clinical studies.": {
+        "message": "稳健而又强大的非房室分析/房室模型 PK 分析，适用于临床前和临床试验的各种场景。"
+    },
+    "Learn more": {
+        "message": "了解更多"
+    },
+    "Bioequivalence": {
+        "message": "生物等效性"
+    },
+    "Maspectra supports various ABE trial designs including crossover and parallel studies.": {
+        "message": "Maspectra 支持灵活的 ABE 实验设计，包括交叉和平行试验设计。"
+    },
+    "Exploratory statistics": {
+        "message": "探索性统计"
+    },
+    "Effortlessly explore and visualize preclinical and clinical data with utmost efficiency.": {
+        "message": "利用强大的数据可视化功能，轻松高效的探索并检视临床前和临床数据。"
+    },
+    "Statistical tests & models": {
+        "message": "统计检验 & 模型"
+    },
+    "Perform statistical tests and regression analysis for in-depth insights.": {
+        "message": "进行统计检验和回归分析，更加准确的剖析模型"
+    },
+    "PHARMACOLOGY & STATISTICS": {
+        "message": "临床药理 & 统计"
+    },
+    "Data analysis in one platform": {
+        "message": "同一平台下的数据分析工作流"
+    },
+    "Consolidate multiple software functionalities into one streamlined platform for efficient drug development data analysis.": {
+        "message": "将多个软件功能合众为一，整合到一个的集成式工作站平台中，以更加顺畅的形式进行高效的药物研发数据分析。"
+    },
+    "Perform PK/PD and statistical analysis seamlessly from a single software.": {
+        "message": "在同一软件中无缝执行 PK/PD 以及统计分析。"
+    },
+    "Experience a hassle-free MIDD workflow today!": {
+        "message": "立即体验一种全新的，更加自在的 MIDD 工作全流程！"
+    },
+    "It is proposed that simulation has a much broader potential to aid in the clinical development, regulatory review, commercialization, and medical application process.": {
+        "message": "It is proposed that simulation has a much broader potential to aid in the clinical development, regulatory review, commercialization, and medical application process."
+    },
+    "Founder of MIDD": {
+        "message": "MIDD 先行者"
+    },
+    "Ready to play with Maspectra?": {
+        "message": "想要立即体验 Maspectra?"
+    },
+    "Maspectra is still a work in progress, but it will be generally available soon.": {
+        "message": "我们的团队仍在努力完善 Maspectra 中，但我们很快能够对外开放下载。"
+    },
+    "You are welcome to join our wait list and we will notify you when it is ready.": {
+        "message": "你可以在注册账号后加入我们的等待名单，我们会在 Maspectra 准备就绪时通知你。"
+    },
+    "Sign Up and Join Wait List": {
+        "message": "注册账号并加入等待名单"
+    },
     "theme.ErrorPageContent.title": {
         "message": "页面已崩溃。",
         "description": "The title of the fallback page when the page crashed"
@@ -35,6 +164,10 @@
         "message": "警告",
         "description": "The default label used for the Caution admonition (:::caution)"
     },
+    "theme.BackToTopButton.buttonAriaLabel": {
+        "message": "回到顶部",
+        "description": "The ARIA label for the back to top button"
+    },
     "theme.blog.archive.title": {
         "message": "历史博文",
         "description": "The page & hero title of the blog archive page"
@@ -42,10 +175,6 @@
     "theme.blog.archive.description": {
         "message": "历史博文",
         "description": "The page & hero description of the blog archive page"
-    },
-    "theme.BackToTopButton.buttonAriaLabel": {
-        "message": "回到顶部",
-        "description": "The ARIA label for the back to top button"
     },
     "theme.blog.paginator.navAriaLabel": {
         "message": "博文列表分页导航",
@@ -95,13 +224,13 @@
         "message": "浅色模式",
         "description": "The name for the light color mode"
     },
-    "theme.docs.breadcrumbs.navAriaLabel": {
-        "message": "页面路径",
-        "description": "The ARIA label for the breadcrumbs"
-    },
     "theme.docs.DocCard.categoryDescription": {
         "message": "{count} 个项目",
         "description": "The default description for a category card in the generated index about how many items this category includes"
+    },
+    "theme.docs.breadcrumbs.navAriaLabel": {
+        "message": "页面路径",
+        "description": "The ARIA label for the breadcrumbs"
     },
     "theme.docs.paginator.navAriaLabel": {
         "message": "文档分页导航",
@@ -202,10 +331,6 @@
         "message": "主导航",
         "description": "The ARIA label for the main navigation"
     },
-    "theme.navbar.mobileLanguageDropdown.label": {
-        "message": "选择语言",
-        "description": "The label for the mobile language switcher dropdown"
-    },
     "theme.TOCCollapsible.toggleButtonLabel": {
         "message": "本页总览",
         "description": "The label used by the button on the collapsible TOC component"
@@ -237,6 +362,10 @@
     "theme.docs.sidebar.navAriaLabel": {
         "message": "文档侧边栏",
         "description": "The ARIA label for the sidebar navigation"
+    },
+    "theme.navbar.mobileLanguageDropdown.label": {
+        "message": "选择语言",
+        "description": "The label for the mobile language switcher dropdown"
     },
     "theme.docs.sidebar.closeSidebarButtonAriaLabel": {
         "message": "关闭导航栏",
@@ -277,137 +406,5 @@
     "theme.tags.tagsPageTitle": {
         "message": "标签",
         "description": "The title of the tag list page"
-    },
-    "MASMOD": {
-        "message": "MASMOD"
-    },
-    "MIDD workflow in Python": {
-        "message": "基于 Python 编程语言的 MIDD 工作流"
-    },
-    "masmod": {
-        "message": "masmod"
-    },
-    "Experience the endless possibilities of pharmacometrics modeling and simulation with {what}.": {
-        "message": "通过{what}，体验定量药理建模模拟的无限可能。"
-    },
-    "You have everything you need and unlimited potential by incorporating AI models and other data science tools in the Python ecosystem.": {
-        "message": "可与 Python 生态中的 AI 模型，以及其他数据科学工具交互，解锁无限可能。"
-    },
-    "{masmod} - the powerful Python-based framework": {
-        "message": "强大的 Python 建模模拟框架 {masmod}"
-    },
-    "Playground": {
-        "message": "Playground"
-    },
-    "PD Models": {
-        "message": "PD 模型"
-    },
-    "Descriptive Statistics": {
-        "message": "描述性统计"
-    },
-    "Frequency Analysis": {
-        "message": "频数分析"
-    },
-    "Correlation": {
-        "message": "相关性分析"
-    },
-    "One/Two Sample T-test": {
-        "message": "单/双样本 t-检验"
-    },
-    "ANOVA": {
-        "message": "ANOVA"
-    },
-    "Nonparametric Analysis": {
-        "message": "非房室分析"
-    },
-    "Linear Regression": {
-        "message": "线性回归"
-    },
-    "Keplan-Meier": {
-        "message": "Keplan-Meier"
-    },
-    "Cox regression": {
-        "message": "Cox 回归"
-    },
-    "Data Split": {
-        "message": "数据切分"
-    },
-    "Data Pivot": {
-        "message": "数据转置"
-    },
-    "Explore Maspectra's potential with our documentation": {
-        "message": "查阅文档，探索 Maspectra 的无限可能"
-    },
-    "All-in-one solution for {target}": {
-        "message": "{target}一体化解决方案"
-    },
-    "Modeling & Simulation": {
-        "message": "建模模拟"
-    },
-    "Maspectra™ unlocks the power to implement the Model Informed Drug Development (MIDD) approach in one software platform.": {
-        "message": "Maspectra™: 建模模拟 & MIDD 一站式工作站"
-    },
-    "Get Started": {
-        "message": "入门导览"
-    },
-    "PHARMACOLOGY & STATISTICS": {
-        "message": "临床药理 & 统计"
-    },
-    "Data analysis in one platform": {
-        "message": "同一平台下的数据分析工作流"
-    },
-    "Consolidate multiple software functionalities into one streamlined platform for efficient drug development data analysis.": {
-        "message": "将多个软件功能整合到一个流畅的平台中，以进行高效的药物开发数据分析。"
-    },
-    "Perform PK/PD and statistical analysis seamlessly from a single software.": {
-        "message": "从单个软件无缝执行PK/PD和统计分。"
-    },
-    "Experience a hassle-free workflow today!": {
-        "message": "今天开始，体验流畅的工作流程！"
-    },
-    "It is proposed that simulation has a much broader potential to aid in the clinical development, regulatory review, commercialization, and medical application process.": {
-        "message": "It is proposed that simulation has a much broader potential to aid in the clinical development, regulatory review, commercialization, and medical application process."
-    },
-    "Founder of MIDD": {
-        "message": "MIDD 先行者"
-    },
-    "NCA & Compartmental Model": {
-        "message": "NCA & 房室模型"
-    },
-    "Robust and powerful noncompartmental/compartmental PK analysis for preclinical and clinical studies.": {
-        "message": "稳健、强大的非房室/房室模型 PK 分析，适用于临床前和临床试验各种场景。"
-    },
-    "Learn more": {
-        "message": "了解更多"
-    },
-    "Bioequivalence": {
-        "message": "生物等效性"
-    },
-    "Maspectra supports various ABE trial designs including crossover and parallel studies.": {
-        "message": "Maspectra 支持灵活的 ABE 试验设计，包括交叉和平行试验设计。"
-    },
-    "Exploratory statistics": {
-        "message": "探索性统计"
-    },
-    "Effortlessly explore and visualize preclinical and clinical data with utmost efficiency.": {
-        "message": "轻松、高效探索临床前和临床数据，强大数据可视化功能。"
-    },
-    "Statistical tests & models": {
-        "message": "统计检验 & 模型"
-    },
-    "Perform statistical tests and regression analysis for in-depth insights.": {
-        "message": "统计检验和回归分析，赋能药物研发。"
-    },
-    "Ready to play with Maspectra?": {
-        "message": "想要立即体验 Maspectra?"
-    },
-    "Maspectra is still a work in progress, but it will be generally available soon.": {
-        "message": "Maspectra 还在完善中，很快能够对外开放下载。"
-    },
-    "You are welcome to join our wait list and we will notify you when it is ready.": {
-        "message": "你可以在注册账号后加入我们的等待名单，我们会在 Maspectra 准备就绪时通知你。"
-    },
-    "Sign Up and Join Wait List": {
-        "message": "注册账号并加入等待名单"
     }
 }
