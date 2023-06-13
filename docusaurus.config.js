@@ -111,7 +111,7 @@ const config = {
                     },
                     {
                         label: "Sign In",
-                        href: "https://github.com",
+                        href: "https://account.maspectra.com",
                         position: "right",
                         className:
                             "maspectra-portal-signup maspectra-portal-link"
