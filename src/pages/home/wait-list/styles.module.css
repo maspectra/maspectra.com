@@ -1,0 +1,26 @@
+.waitList {
+    background-color: var(--maspectra-home-color-background);
+
+    padding: 4rem 4rem 4rem 4rem;
+    display: flex;
+    justify-content: center;
+}
+
+.waitListContent {
+    max-width: 800px;
+}
+
+.waitListContentStack {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    row-gap: 2rem;
+}
+
+.waitListTextContainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    row-gap: 4px;
+    justify-content: center;
+}

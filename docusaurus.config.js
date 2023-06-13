@@ -5,7 +5,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-    title: "MaSolve",
+    title: "Maspectra",
     tagline: "Modeling and Simulation Solution",
     favicon: "img/logo/icon.ico",
 
@@ -18,7 +18,7 @@ const config = {
     // GitHub pages deployment config.
     // If you aren't using GitHub pages, you don't need these.
     organizationName: "mas", // Usually your GitHub org/user name.
-    projectName: "masolve.com", // Usually your repo name.
+    projectName: "maspectra.com", // Usually your repo name.
 
     onBrokenLinks: "throw",
     onBrokenMarkdownLinks: "warn",
@@ -71,35 +71,39 @@ const config = {
             // Replace with your project's social card
             image: "img/docusaurus-social-card.jpg",
             navbar: {
-                title: "MaSolve",
+                title: "Maspectra",
                 hideOnScroll: false,
                 logo: {
-                    alt: "MaSolve Logo",
+                    alt: "Maspectra Logo",
                     src: "img/logo/icon.svg"
                 },
                 items: [
+                    // {
+                    //     to: "/docs/intro",
+                    //     label: "Get Started",
+                    //     position: "left",
+                    // },
+                    // {
+                    //     to: "/docs/intro",
+                    //     label: "Examples",
+                    //     position: "left",
+                    // },
+                    // {
+                    //     to: "/blog",
+                    //     label: "Blogs",
+                    //     position: "left",
+                    // },
                     {
-                        to: "/docs/intro",
-                        label: "Get Started",
-                        position: "left"
-                    },
-                    {
-                        to: "/docs/intro",
-                        label: "Examples",
-                        position: "left"
-                    },
-                    { to: "/blog", label: "Blogs", position: "left" },
-                    {
-                        href: "https://github.com/orgs/masolve/discussions",
+                        href: "https://github.com/orgs/maspectra/discussions",
                         label: "Community",
                         position: "left",
-                        className: "masolve-portal-link"
+                        className: "maspectra-portal-link"
                     },
                     {
-                        href: "https://github.com/orgs/masolve/discussions",
+                        href: "https://github.com/orgs/maspectra/discussions",
                         label: "Our Company",
                         position: "left",
-                        className: "masolve-portal-link"
+                        className: "maspectra-portal-link"
                     },
                     {
                         type: "localeDropdown",
@@ -109,7 +113,8 @@ const config = {
                         label: "Sign In",
                         href: "https://github.com",
                         position: "right",
-                        className: "masolve-portal-signup masolve-portal-link"
+                        className:
+                            "maspectra-portal-signup maspectra-portal-link"
                     }
                 ]
             },
@@ -130,7 +135,7 @@ const config = {
                         items: [
                             {
                                 label: "Github Discussion",
-                                href: "https://github.com/orgs/masolve/discussions"
+                                href: "https://github.com/orgs/maspectra/discussions"
                             }
                         ]
                     },
@@ -143,12 +148,12 @@ const config = {
                             },
                             {
                                 label: "GitHub",
-                                href: "https://github.com/masolve/masolve.com"
+                                href: "https://github.com/maspectra/maspectra.com"
                             }
                         ]
                     }
                 ],
-                copyright: `Copyright © 2023 MaSolve, Inc. Built with Docusaurus.`
+                copyright: `Copyright © 2023 Maspectra, Inc. Built with Docusaurus.`
             },
             prism: {
                 theme: lightCodeTheme,

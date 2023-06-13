@@ -46,7 +46,7 @@ const Header: React.FC = () => {
                         </h1>
                         <p className={sharedCss.text}>
                             <Translate>
-                                MaSolve™ unlocks the power to implement the
+                                Maspectra™ unlocks the power to implement the
                                 Model Informed Drug Development (MIDD) approach
                                 in one software platform.
                             </Translate>
@@ -79,14 +79,22 @@ const Header: React.FC = () => {
                     </div>
                     <div
                         className={clsx(
-                            headerCss.heroVideoContainer,
-                            headerCss.heroVideoContainerWidth
+                            headerCss.heroFrameContainer,
+                            headerCss.heroFrameContainerWidth
                         )}
                     >
                         <iframe
+                            src="https://shaderpark.com/embed/-NWYL_u3OWjm0xlKX1P4"
+                            // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+                            /* @ts-ignore */
+                            // eslint-disable-next-line react/no-unknown-property
+                            frameborder="0"
+                            className={headerCss.heroFrame}
+                        />
+                        {/* <iframe
                             src="//player.bilibili.com/player.html?aid=818467067&bvid=BV1oG4y1g7jn&cid=912752325&page=1"
                             className={headerCss.heroVideoFrame}
-                        />
+                        /> */}
                     </div>
                 </div>
             </div>

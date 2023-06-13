@@ -3,19 +3,19 @@ import { Button, Divider } from "@fluentui/react-components";
 
 import Translate from "@docusaurus/Translate";
 
-import forthSectionCss from "@site/src/pages/home/forth-section/styles.module.css";
+import styles from "@site/src/pages/home/explore-card/styles.module.css";
 
-const ForthSection: React.FC = () => {
+const ExploreCard: React.FC = () => {
     return (
-        <div className={forthSectionCss.forthSection}>
-            <div className={forthSectionCss.forthSectionBg}>
-                <div className={forthSectionCss.bgInvert} />
-                <div className={forthSectionCss.bgBlank} />
+        <div className={styles.exploreCard}>
+            <div className={styles.exploreCardBg}>
+                <div className={styles.bgInvert} />
+                <div className={styles.bgBlank} />
             </div>
-            <div className={forthSectionCss.forthSectionContent}>
-                <div className={forthSectionCss.featureCardContainer}>
-                    <div className={forthSectionCss.featureListContainer}>
-                        <ul className={forthSectionCss.featureList}>
+            <div className={styles.exploreCardContent}>
+                <div className={styles.featureCardContainer}>
+                    <div className={styles.featureListContainer}>
+                        <ul className={styles.featureList}>
                             <li>
                                 <Translate>PD Models</Translate>
                             </li>
@@ -55,14 +55,15 @@ const ForthSection: React.FC = () => {
                         </ul>
                     </div>
                     <Divider vertical={false} />
-                    <div className={forthSectionCss.actionContainer}>
+                    <div className={styles.actionContainer}>
                         <Button
                             appearance="transparent"
                             as="a"
                             href="/docs/intro"
+                            disabled
                         >
                             <Translate>
-                                Explore MaSolve&apos;s potential with our
+                                Explore Maspectra&apos;s potential with our
                                 documentation
                             </Translate>
                         </Button>
@@ -73,4 +74,4 @@ const ForthSection: React.FC = () => {
     );
 };
 
-export default ForthSection;
+export default ExploreCard;

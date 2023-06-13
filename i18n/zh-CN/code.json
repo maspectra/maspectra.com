@@ -335,8 +335,8 @@
     "Data Pivot": {
         "message": "数据转置"
     },
-    "Explore MaSolve's potential with our documentation": {
-        "message": "查阅文档，探索 MaSolve 的无限可能"
+    "Explore Maspectra's potential with our documentation": {
+        "message": "查阅文档，探索 Maspectra 的无限可能"
     },
     "All-in-one solution for {target}": {
         "message": "{target}一体化解决方案"
@@ -344,8 +344,8 @@
     "Modeling & Simulation": {
         "message": "建模模拟"
     },
-    "MaSolve™ unlocks the power to implement the Model Informed Drug Development (MIDD) approach in one software platform.": {
-        "message": "MaSolve™: 建模模拟 & MIDD 一站式工作站"
+    "Maspectra™ unlocks the power to implement the Model Informed Drug Development (MIDD) approach in one software platform.": {
+        "message": "Maspectra™: 建模模拟 & MIDD 一站式工作站"
     },
     "Get Started": {
         "message": "入门导览"
@@ -383,8 +383,8 @@
     "Bioequivalence": {
         "message": "生物等效性"
     },
-    "MaSolve supports various ABE trial designs including crossover and parallel studies.": {
-        "message": "MaSolve 支持灵活的 ABE 试验设计，包括交叉和平行试验设计。"
+    "Maspectra supports various ABE trial designs including crossover and parallel studies.": {
+        "message": "Maspectra 支持灵活的 ABE 试验设计，包括交叉和平行试验设计。"
     },
     "Exploratory statistics": {
         "message": "探索性统计"
@@ -397,5 +397,17 @@
     },
     "Perform statistical tests and regression analysis for in-depth insights.": {
         "message": "统计检验和回归分析，赋能药物研发。"
+    },
+    "Ready to play with Maspectra?": {
+        "message": "想要立即体验 Maspectra?"
+    },
+    "Maspectra is still a work in progress, but it will be generally available soon.": {
+        "message": "Maspectra 还在完善中，很快能够对外开放下载。"
+    },
+    "You are welcome to join our wait list and we will notify you when it is ready.": {
+        "message": "你可以在注册账号后加入我们的等待名单，我们会在 Maspectra 准备就绪时通知你。"
+    },
+    "Sign Up and Join Wait List": {
+        "message": "注册账号并加入等待名单"
     }
 }

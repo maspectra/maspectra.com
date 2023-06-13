@@ -1,4 +1,4 @@
-.forthSection {
+.exploreCard {
     position: relative;
     isolation: isolate;
     overflow-x: scroll;
@@ -6,7 +6,7 @@
     padding: 4rem 4rem 4rem 4rem;
 }
 
-.forthSectionBg {
+.exploreCardBg {
     z-index: -1;
     height: 100%;
     position: absolute;
@@ -16,15 +16,15 @@
 
 .bgInvert {
     height: 65%;
-    background-color: var(--masolve-home-color-background-invert);
+    background-color: var(--maspectra-home-color-background-invert);
 }
 
 .bgBlank {
     height: 35%;
-    background-color: var(--masolve-home-color-background);
+    background-color: var(--maspectra-home-color-background);
 }
 
-.forthSectionContent {
+.exploreCardContent {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,7 +34,7 @@
 .featureCardContainer {
     display: flex;
     width: 80%;
-    max-width: var(--masolve-home-max-width);
+    max-width: var(--maspectra-home-max-width);
     flex-direction: column;
     flex-wrap: nowrap;
     font-family: "ArialMT", "Arial", sans-serif;

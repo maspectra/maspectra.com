@@ -1,5 +1,5 @@
 .secondSection {
-    background-color: var(--masolve-home-color-background-invert);
+    background-color: var(--maspectra-home-color-background-invert);
 
     padding: 8rem 4rem 2rem 4rem;
     display: flex;
@@ -13,7 +13,7 @@
 }
 
 .secondSectionContent {
-    max-width: var(--masolve-home-max-width);
+    max-width: var(--maspectra-home-max-width);
 }
 
 .secondSectionContentStack {

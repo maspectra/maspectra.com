@@ -1,30 +1,25 @@
 import React from "react";
 
-import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
-
 import Layout from "@theme/Layout";
 import Header from "@site/src/pages/home/header";
 // import QuoteSection from "@site/src/pages/home/quote-section";
-import FirstSection from "@site/src/pages/home/first-section";
+import MasmodIntro from "@site/src/pages/home/masmod-intro";
 import SecondSection from "@site/src/pages/home/second-section";
 import ThirdSection from "@site/src/pages/home/third-section";
-import ForthSection from "@site/src/pages/home/forth-section";
+import ExploreCard from "@site/src/pages/home/explore-card";
+import WaitList from "@site/src/pages/home/wait-list";
 
 const Home: React.FC = () => {
-    const { siteConfig } = useDocusaurusContext();
-
     return (
-        <Layout
-            title={`Hello ${siteConfig.title}`}
-            description="Description will go into a meta tag in <head />"
-        >
+        <Layout description="Maspectra™, MIDD development platform.">
             <Header />
             <main>
                 {/* <QuoteSection /> */}
-                <FirstSection />
+                <MasmodIntro />
                 <SecondSection />
                 <ThirdSection />
-                <ForthSection />
+                <ExploreCard />
+                <WaitList />
             </main>
         </Layout>
     );

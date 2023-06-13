@@ -5,24 +5,24 @@ import clsx from "clsx";
 import Translate from "@docusaurus/Translate";
 import IconExternalLink from "@theme/Icon/ExternalLink";
 
-import firstSectionCss from "@site/src/pages/home/first-section/styles.module.css";
+import styles from "@site/src/pages/home/masmod-intro/styles.module.css";
 
 import ManWithCode from "@site/static/img/man-with-code.svg";
 import sharedCss from "@site/src/pages/home/shared.module.css";
 
-const FirstSection: React.FC = () => {
+const MasmodIntro: React.FC = () => {
     return (
-        <div className={firstSectionCss.firstSection}>
+        <div className={styles.masmodIntro}>
             <div
                 className={clsx(
-                    firstSectionCss.firstSectionContent,
-                    firstSectionCss.firstSectionContentStack
+                    styles.masmodIntroContent,
+                    styles.masmodIntroContentStack
                 )}
             >
                 <div
                     className={clsx(
-                        firstSectionCss.firstSectionTextContainer,
-                        firstSectionCss.firstSectionTextContainerWidth
+                        styles.masmodIntroTextContainer,
+                        styles.masmodIntroTextContainerWidth
                     )}
                 >
                     <h3 className={sharedCss.titleH3}>
@@ -76,17 +76,15 @@ const FirstSection: React.FC = () => {
                 </div>
                 <div
                     className={clsx(
-                        firstSectionCss.firstSectionImageContainer,
-                        firstSectionCss.firstSectionImageContainerWidth
+                        styles.masmodIntroImageContainer,
+                        styles.masmodIntroImageContainerWidth
                     )}
                 >
-                    <ManWithCode
-                        className={firstSectionCss.firstSectionImage}
-                    />
+                    <ManWithCode className={styles.masmodIntroImage} />
                 </div>
             </div>
         </div>
     );
 };
 
-export default FirstSection;
+export default MasmodIntro;

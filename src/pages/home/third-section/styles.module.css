@@ -1,5 +1,5 @@
 .thirdSection {
-    background-color: var(--masolve-home-color-background-invert);
+    background-color: var(--maspectra-home-color-background-invert);
 
     padding: 0rem 4rem 8rem 4rem;
 
@@ -18,7 +18,7 @@
 }
 
 .thirdSectionContent {
-    max-width: var(--masolve-home-max-width);
+    max-width: var(--maspectra-home-max-width);
     width: 100%;
 }
 

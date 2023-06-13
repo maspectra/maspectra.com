@@ -48,6 +48,7 @@ const ThirdSection: React.FC = () => {
                                 sharedCss.linkButton
                             )}
                             href="/"
+                            disabled
                             icon={<IconExternalLink />}
                             iconPosition="after"
                         >
@@ -71,7 +72,7 @@ const ThirdSection: React.FC = () => {
                         )}
                     >
                         <Translate>
-                            MaSolve supports various ABE trial designs
+                            Maspectra supports various ABE trial designs
                             including crossover and parallel studies.
                         </Translate>
                     </p>
@@ -85,6 +86,7 @@ const ThirdSection: React.FC = () => {
                                 sharedCss.linkButton
                             )}
                             href="/"
+                            disabled
                             icon={<IconExternalLink />}
                             iconPosition="after"
                         >
@@ -129,6 +131,7 @@ const ThirdSection: React.FC = () => {
                                 sharedCss.linkButton
                             )}
                             href="/"
+                            disabled
                             icon={<IconExternalLink />}
                             iconPosition="after"
                         >
@@ -166,6 +169,7 @@ const ThirdSection: React.FC = () => {
                                 sharedCss.linkButton
                             )}
                             href="/"
+                            disabled
                             icon={<IconExternalLink />}
                             iconPosition="after"
                         >
