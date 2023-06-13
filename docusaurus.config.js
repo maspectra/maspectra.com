@@ -10,7 +10,7 @@ const config = {
     favicon: "img/logo/icon.ico",
 
     // Set the production url of your site here
-    url: "https://your-docusaurus-test-site.com",
+    url: "https://maspectra.com",
     // Set the /<baseUrl>/ pathname under which your site is served
     // For GitHub pages deployment, it is often '/<projectName>/'
     baseUrl: "/",
@@ -78,21 +78,21 @@ const config = {
                     src: "img/logo/icon.svg"
                 },
                 items: [
-                    // {
-                    //     to: "/docs/intro",
-                    //     label: "Get Started",
-                    //     position: "left",
-                    // },
-                    // {
-                    //     to: "/docs/intro",
-                    //     label: "Examples",
-                    //     position: "left",
-                    // },
-                    // {
-                    //     to: "/blog",
-                    //     label: "Blogs",
-                    //     position: "left",
-                    // },
+                    {
+                        to: "/docs/intro",
+                        label: "Get Started",
+                        position: "left"
+                    },
+                    {
+                        to: "/docs/intro",
+                        label: "Examples",
+                        position: "left"
+                    },
+                    {
+                        to: "/blog",
+                        label: "Blogs",
+                        position: "left"
+                    },
                     {
                         href: "https://github.com/orgs/maspectra/discussions",
                         label: "Community",

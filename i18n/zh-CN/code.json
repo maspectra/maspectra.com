@@ -45,7 +45,7 @@
         "message": "建模模拟"
     },
     "Maspectra™ unlocks the power to implement the Model Informed Drug Development (MIDD) approach in one software platform.": {
-        "message": "Maspectra™ 作为一个一站式集成工作站，为模型引导的药物研发 (MIDD) 赋能"
+        "message": "Maspectra™ 作为一个一站式集成工作站，为模型引导的药物研发 (MIDD) 赋能。"
     },
     "Get Started": {
         "message": "入门导览"
@@ -57,7 +57,7 @@
         "message": "MASMOD"
     },
     "MIDD workflow in Python": {
-        "message": "基于 Python 编程语言的 MIDD 工作流·"
+        "message": "基于 Python 编程语言的 MIDD 工作流"
     },
     "Experience the endless possibilities of pharmacometrics modeling and simulation with {what}.": {
         "message": "通过{what}，体验定量药理建模与模拟的无限可能。"
