@@ -153,7 +153,7 @@ const config = {
                         ]
                     }
                 ],
-                copyright: `Copyright © 2023 Maspectra, Inc. Built with Docusaurus.`
+                copyright: `Copyright © 2023 Maspectra, Inc. 沪 ICP 备 11002935 号`
             },
             prism: {
                 theme: lightCodeTheme,

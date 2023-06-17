@@ -60,14 +60,6 @@
     column-count: 3;
 }
 
-@media (max-width: 996px) {
-    .featureList {
-        column-count: 1;
-    }
-    .featureListContainer {
-        max-height: none;
-    }
-}
 
 .featureList li {
     break-inside: avoid;
@@ -82,8 +74,33 @@
 }
 
 .actionContainer {
-    height: 40px;
+    min-height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+
+/* Tablet or Mobile */
+@media only screen and (max-width: 1024px) {
+    .featureCardContainer {
+        min-width: 100%;
+    }
+
+    .featureList {
+        column-count: 1;
+    }
+    .featureListContainer {
+        max-height: none;
+        padding: 2rem 0.2rem 0rem 0.2rem;
+    }
+}
+
+/* Mobile */
+@media only screen and (max-width: 768px) {
+    .exploreCard {
+        padding-left: 1.6rem;
+        padding-right: 1.6rem;
+    }
+}
+

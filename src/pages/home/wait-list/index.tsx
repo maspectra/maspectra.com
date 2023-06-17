@@ -32,9 +32,21 @@ const WaitList: React.FC = () => {
                         </Translate>
                     </p>
                 </div>
-                <Button appearance="primary" size="large">
-                    <Translate>Sign Up and Join Wait List</Translate>
-                </Button>
+
+                <div
+                    className={clsx(
+                        sharedCss.buttonsContainer,
+                        sharedCss.buttonsStack
+                    )}
+                >
+                    <Button
+                        appearance="primary"
+                        size="large"
+                        className={sharedCss.button}
+                    >
+                        <Translate>Sign Up and Join Wait List</Translate>
+                    </Button>
+                </div>
             </div>
         </div>
     );

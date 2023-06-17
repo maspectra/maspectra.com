@@ -47,8 +47,13 @@
     margin-bottom: 0px;
 }
 
-/* Mobile */
-@media (max-width: 996px) {
+.learnMoreButton {
+    min-width: fit-content !important;
+    width: fit-content;
+}
+
+/* Tablet */
+@media only screen and (max-width: 1024px) {
     .thirdSectionContentStack {
         display: flex;
         flex-direction: column;
@@ -58,5 +63,13 @@
 
     .thirdSectionTextContainerWidth {
         width: 100%;
+    }
+}
+
+/* Mobile */
+@media only screen and (max-width: 768px) {
+    .thirdSection {
+        padding-left: 1.6rem;
+        padding-right: 1.6rem;
     }
 }

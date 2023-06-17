@@ -45,7 +45,8 @@ const ThirdSection: React.FC = () => {
                             as="a"
                             className={clsx(
                                 sharedCss.button,
-                                sharedCss.linkButton
+                                sharedCss.linkButton,
+                                thirdSectionCss.learnMoreButton
                             )}
                             href="/"
                             disabled
@@ -83,7 +84,8 @@ const ThirdSection: React.FC = () => {
                             as="a"
                             className={clsx(
                                 sharedCss.button,
-                                sharedCss.linkButton
+                                sharedCss.linkButton,
+                                thirdSectionCss.learnMoreButton
                             )}
                             href="/"
                             disabled
@@ -128,7 +130,8 @@ const ThirdSection: React.FC = () => {
                             as="a"
                             className={clsx(
                                 sharedCss.button,
-                                sharedCss.linkButton
+                                sharedCss.linkButton,
+                                thirdSectionCss.learnMoreButton
                             )}
                             href="/"
                             disabled
@@ -166,7 +169,8 @@ const ThirdSection: React.FC = () => {
                             as="a"
                             className={clsx(
                                 sharedCss.button,
-                                sharedCss.linkButton
+                                sharedCss.linkButton,
+                                thirdSectionCss.learnMoreButton
                             )}
                             href="/"
                             disabled

@@ -1,6 +1,10 @@
+.rootLayout {
+    min-width: 375px;
+}
+
 .titleH1 {
     font-weight: 700;
-    font-size: 56px;
+    font-size: 50px;
     line-height: normal;
 }
 
@@ -30,16 +34,23 @@
     padding-bottom: 12px;
 }
 
-.button {
-    height: 48px;
-    width: auto;
+.buttonsContainer .button {
+    height: 52px;
+    min-width: 200px;
     font-weight: 700;
     font-size: 16px;
 }
 
+.buttonsContainer {}
+
 .buttonsContainer .outlineButton {
     color: var(--ifm-color-primary);
     border-color: var(--ifm-color-primary);
+}
+
+.buttonsContainer .outlineButton[aria-disabled=true] {
+    color: var(--colorNeutralForegroundDisabled);
+    border-color: var(--colorNeutralForegroundDisabled);
 }
 
 .buttonsContainer .linkButton {
@@ -49,11 +60,25 @@
     padding-right: 0;
 }
 
-.buttonsContainer {
+.buttonsContainer .linkButton[aria-disabled=true] {
+    color: var(--colorNeutralForegroundDisabled);
+}
+
+
+.buttonsStack {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    column-gap: 18px;
+    column-gap: 0.5rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .buttonsStack {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        row-gap: 0.5rem;
+    }
 }
 
 .highlightText {

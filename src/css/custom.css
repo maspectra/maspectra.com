@@ -39,6 +39,8 @@
     --maspectra-home-color-h3: #6d6d70;
     --maspectra-home-color-background: rgba(248, 250, 252, 1);
     --maspectra-home-color-background-invert: rgba(30, 40, 53, 1);
+    --maspectra-home-color-disabled: #bdbdbd;
+
 }
 
 [data-theme="dark"] {
@@ -65,6 +67,7 @@
     --maspectra-home-color-h3: #6d6d70;
     --maspectra-home-color-background: rgba(30, 40, 53, 1);
     --maspectra-home-color-background-invert: rgb(206, 209, 216);
+    --maspectra-home-color-disabled: #5c5c5c;
 }
 
 :root {

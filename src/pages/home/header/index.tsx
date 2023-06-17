@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Button } from "@fluentui/react-components";
+import { Button, Tooltip } from "@fluentui/react-components";
 import clsx from "clsx";
 import IconExternalLink from "@theme/Icon/ExternalLink";
 import Translate from "@docusaurus/Translate";
@@ -34,6 +34,7 @@ const Header: React.FC = () => {
                                                 sharedCss.highlightText
                                             )}
                                         >
+                                            <br />
                                             <Translate>
                                                 Modeling & Simulation
                                             </Translate>
@@ -51,7 +52,12 @@ const Header: React.FC = () => {
                                 in one software platform.
                             </Translate>
                         </p>
-                        <div className={sharedCss.buttonsContainer}>
+                        <div
+                            className={clsx(
+                                sharedCss.buttonsContainer,
+                                sharedCss.buttonsStack
+                            )}
+                        >
                             <Button
                                 appearance="primary"
                                 size="large"
@@ -61,20 +67,27 @@ const Header: React.FC = () => {
                             >
                                 <Translate>Get Started</Translate>
                             </Button>
-                            <Button
-                                appearance="outline"
-                                size="large"
-                                as="a"
-                                className={clsx(
-                                    sharedCss.button,
-                                    sharedCss.outlineButton
-                                )}
-                                href="/"
-                                icon={<IconExternalLink />}
-                                iconPosition="after"
+                            <Tooltip
+                                content="Coming soon..."
+                                relationship="label"
                             >
-                                <Translate>Playground</Translate>
-                            </Button>
+                                <Button
+                                    appearance="outline"
+                                    size="large"
+                                    as="a"
+                                    disabled
+                                    className={clsx(
+                                        sharedCss.button,
+                                        sharedCss.outlineButton
+                                    )}
+                                    href="/"
+                                    icon={<IconExternalLink />}
+                                    iconPosition="after"
+                                >
+                                    Playground
+                                    {/* <Translate>Playground</Translate> */}
+                                </Button>
+                            </Tooltip>
                         </div>
                     </div>
                     <div

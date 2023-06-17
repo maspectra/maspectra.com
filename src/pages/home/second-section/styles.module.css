@@ -46,12 +46,12 @@
 }
 
 .secondSectionImage {
-    height: 420px;
-    width: 420px;
+    height: min(calc(100%), 420px);
+    width: min(calc(100%), 420px);
 }
 
-/* Mobile */
-@media (max-width: 996px) {
+/* Tablet */
+@media only screen and (max-width: 1024px) {
     .secondSectionContentStack {
         display: flex;
         flex-direction: column;
@@ -65,5 +65,13 @@
 
     .secondSectionImageContainerWidth {
         width: 100%;
+    }
+}
+
+/* Mobile */
+@media only screen and (max-width: 768px) {
+    .secondSection {
+        padding-left: 1.6rem;
+        padding-right: 1.6rem;
     }
 }

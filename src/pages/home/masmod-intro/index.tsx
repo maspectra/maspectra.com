@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Button } from "@fluentui/react-components";
+import { Button, Tooltip } from "@fluentui/react-components";
 import clsx from "clsx";
 import Translate from "@docusaurus/Translate";
 import IconExternalLink from "@theme/Icon/ExternalLink";
@@ -57,21 +57,29 @@ const MasmodIntro: React.FC = () => {
                             science tools in the Python ecosystem.
                         </Translate>
                     </p>
-                    <div className={sharedCss.buttonsContainer}>
-                        <Button
-                            appearance="outline"
-                            size="large"
-                            as="a"
-                            className={clsx(
-                                sharedCss.button,
-                                sharedCss.outlineButton
-                            )}
-                            href="/"
-                            icon={<IconExternalLink />}
-                            iconPosition="after"
-                        >
-                            <Translate>Playground</Translate>
-                        </Button>
+                    <div
+                        className={clsx(
+                            sharedCss.buttonsContainer,
+                            sharedCss.buttonsStack
+                        )}
+                    >
+                        <Tooltip content="Coming soon..." relationship="label">
+                            <Button
+                                appearance="outline"
+                                size="large"
+                                as="a"
+                                disabled
+                                className={clsx(
+                                    sharedCss.button,
+                                    sharedCss.outlineButton
+                                )}
+                                href="/"
+                                icon={<IconExternalLink />}
+                                iconPosition="after"
+                            >
+                                Playground
+                            </Button>
+                        </Tooltip>
                     </div>
                 </div>
                 <div
