@@ -1,5 +1,6 @@
 .rootLayout {
-    min-width: 375px;
+    /* minimum device width such as iPhone 3 */
+    min-width: 320px;
 }
 
 .titleH1 {
@@ -69,7 +70,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    column-gap: 0.5rem;
+    column-gap: 0.8rem;
 }
 
 @media only screen and (max-width: 768px) {

@@ -14,6 +14,10 @@ const App: React.FC = () => {
     const [fuiTheme, setFuiTheme] = React.useState(lightTheme);
 
     React.useEffect(() => {
+        const currentValue =
+            document.documentElement.getAttribute("data-theme");
+        setFuiTheme(currentValue === "light" ? lightTheme : darkTheme);
+
         const _setAttribute = document.documentElement.setAttribute;
         document.documentElement.setAttribute = (
             key: string,

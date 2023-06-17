@@ -9,11 +9,13 @@ import ThirdSection from "@site/src/pages/home/third-section";
 import ExploreCard from "@site/src/pages/home/explore-card";
 import WaitList from "@site/src/pages/home/wait-list";
 
+import sharedCss from "@site/src/pages/home/shared.module.css";
+
 const Home: React.FC = () => {
     return (
         <Layout description="Maspectra™, MIDD development platform.">
             <Header />
-            <main>
+            <main className={sharedCss.rootLayout}>
                 {/* <QuoteSection /> */}
                 <MasmodIntro />
                 <SecondSection />

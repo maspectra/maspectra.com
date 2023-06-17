@@ -70,6 +70,12 @@ const config = {
         ({
             // Replace with your project's social card
             image: "img/docusaurus-social-card.jpg",
+            metadata: [
+                {
+                    name: "keywords",
+                    content: "MIDD, modeling and simulation, tools"
+                }
+            ],
             navbar: {
                 title: "Maspectra",
                 hideOnScroll: false,
@@ -153,7 +159,7 @@ const config = {
                         ]
                     }
                 ],
-                copyright: `Copyright © 2023 Maspectra, Inc. 沪 ICP 备 11002935 号`
+                copyright: `Copyright © 2023 Maspectra, Inc.`
             },
             prism: {
                 theme: lightCodeTheme,

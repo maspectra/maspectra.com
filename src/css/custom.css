@@ -92,6 +92,7 @@
     --ifm-color-primary-light: #3d72f8;
     --ifm-color-primary-lighter: #477af8;
     --ifm-color-primary-lightest: #6791fc;
+    --ifm-color-primary-hover-bg: #115ea3;
 
     --ifm-navbar-shadow: none;
     --ifm-navbar-padding-horizontal: 2rem;
@@ -114,6 +115,7 @@
     --ifm-tabs-color-active: #1a90ff;
 
     --ifm-color-primary: rgba(22, 155, 213, 1);
+    --ifm-color-primary-hover-bg: #0f6cbd;
 
     --ifm-footer-background-color: #1c1c1c;
     --ifm-background-surface-color: #161616;
@@ -162,7 +164,18 @@
 }
 
 .maspectra-portal-signup:hover {
-    background-color: var(--ifm-color-primary-darker);
+    background-color: var(--ifm-color-primary-hover-bg);
+}
+
+@media screen and (max-width: 996px) {
+    .maspectra-portal-link {
+        margin: 0;
+        padding: 6px 12px 6px 12px;
+    }
+
+    .maspectra-portal-signup {
+        width: 100%;
+    }
 }
 
 .theme-doc-sidebar-container button[title="Collapse sidebar"],
