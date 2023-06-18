@@ -45,7 +45,7 @@
         "message": "Modeling & Simulation"
     },
     "Maspectra™ unlocks the power to implement the Model Informed Drug Development (MIDD) approach in one software platform.": {
-        "message": "Maspectra™ unlocks the power to implement the Model Informed Drug Development (MIDD) approach in one software platform."
+        "message": "Maspectra™ unlocks the power to implement the Model Informed Drug Development (MIDD) approach in one software platform. "
     },
     "Get Started": {
         "message": "Get Started"
@@ -60,19 +60,19 @@
         "message": "MIDD workflow in Python"
     },
     "Experience the endless possibilities of pharmacometrics modeling and simulation with {what}.": {
-        "message": "Experience the endless possibilities of pharmacometrics modeling and simulation with {what}."
+        "message": "Experience the endless possibilities of pharmacometrics modeling and simulation with {what}. "
     },
     "{masmod} - the powerful Python-based framework": {
         "message": "{masmod} - the powerful Python-based framework"
     },
     "You have everything you need and unlimited potential by incorporating AI models and other data science tools in the Python ecosystem.": {
-        "message": "You have everything you need and unlimited potential by incorporating AI models and other data science tools in the Python ecosystem."
+        "message": "You have everything you need and unlimited potential by incorporating AI models and other data science tools in the Python ecosystem. "
     },
     "NCA & Compartmental Model": {
         "message": "NCA & Compartmental Model"
     },
     "Robust and powerful noncompartmental/compartmental PK analysis for preclinical and clinical studies.": {
-        "message": "Robust and powerful noncompartmental/compartmental PK analysis for preclinical and clinical studies."
+        "message": "Robust and powerful noncompartmental/compartmental PK analysis for preclinical and clinical studies. "
     },
     "Learn more": {
         "message": "Learn more"
@@ -81,28 +81,28 @@
         "message": "Bioequivalence"
     },
     "Maspectra supports various ABE trial designs including crossover and parallel studies.": {
-        "message": "Maspectra supports various ABE trial designs including crossover and parallel studies."
+        "message": "Maspectra supports various ABE trial designs including crossover and parallel studies. "
     },
     "Exploratory statistics": {
         "message": "Exploratory statistics"
     },
     "Effortlessly explore and visualize preclinical and clinical data with utmost efficiency.": {
-        "message": "Effortlessly explore and visualize preclinical and clinical data with utmost efficiency."
+        "message": "Effortlessly explore and visualize preclinical and clinical data with utmost efficiency. "
     },
     "Statistical tests & models": {
         "message": "Statistical tests & models"
     },
     "Perform statistical tests and regression analysis for in-depth insights.": {
-        "message": "Perform statistical tests and regression analysis for in-depth insights."
+        "message": "Perform statistical tests and regression analysis for in-depth insights. "
     },
     "Ready to play with Maspectra?": {
         "message": "Ready to play with Maspectra?"
     },
     "Maspectra is still a work in progress, but it will be generally available soon.": {
-        "message": "Maspectra is still a work in progress, but it will be generally available soon."
+        "message": "Maspectra is still a work in progress, but it will be generally available soon. "
     },
     "You are welcome to join our wait list and we will notify you when it is ready.": {
-        "message": "You are welcome to join our wait list and we will notify you when it is ready."
+        "message": "You are welcome to join our wait list and we will notify you when it is ready. "
     },
     "Sign Up and Join Wait List": {
         "message": "Sign Up and Join Wait List"
@@ -114,16 +114,16 @@
         "message": "Data Analysis with all-in-one Platform"
     },
     "Consolidate multiple software functionalities into one streamlined platform for efficient drug development data analysis.": {
-        "message": "Consolidate multiple software functionalities into one streamlined platform for efficient drug development data analysis."
+        "message": "Consolidate multiple software functionalities into one streamlined platform for efficient drug development data analysis. "
     },
     "Perform PK/PD and statistical analysis seamlessly from a single software.": {
-        "message": "Perform PK/PD and statistical analysis seamlessly from a single software."
+        "message": "Perform PK/PD and statistical analysis seamlessly from a single software. "
     },
     "Experience a hassle-free MIDD workflow today!": {
         "message": "Experience a hassle-free MIDD workflow today!"
     },
     "It is proposed that simulation has a much broader potential to aid in the clinical development, regulatory review, commercialization, and medical application process.": {
-        "message": "It is proposed that simulation has a much broader potential to aid in the clinical development, regulatory review, commercialization, and medical application process."
+        "message": "It is proposed that simulation has a much broader potential to aid in the clinical development, regulatory review, commercialization, and medical application process. "
     },
     "Founder of MIDD": {
         "message": "Founder of MIDD"
@@ -406,5 +406,32 @@
     "theme.tags.tagsPageTitle": {
         "message": "Tags",
         "description": "The title of the tag list page"
+    },
+    "Workflow Visualization": {
+        "message": "Workflow Visualization"
+    },
+    "Summary Tables": {
+        "message": "Summary Tables"
+    },
+    "Plot Editor": {
+        "message": "Plot Editor"
+    },
+    "View your workflow in a single glance.": {
+        "message": "View your workflow in a single glance. "
+    },
+    "Present your workflow to your team and clients with ease. No more messy flowcharts!": {
+        "message": "Present your workflow to your team and clients with ease. No more messy flowcharts! "
+    },
+    "Understand your analysis results in prettier-formatted summary tables.": {
+        "message": "Understand your analysis results in prettier-formatted summary tables. "
+    },
+    "Export or copy summary tables with single click.": {
+        "message": "Export or copy summary tables with single click. "
+    },
+    "Better plotting experience with embedded powerful interactive plot editor.": {
+        "message": "Better plotting experience with embedded powerful interactive plot editor. "
+    },
+    "Customizing plot with border/color/point(line) type/layout and more as you want.": {
+        "message": "Customizing plot with border/color/point(line) type/layout and more as you want. "
     }
 }

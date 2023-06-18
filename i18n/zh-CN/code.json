@@ -406,5 +406,32 @@
     "theme.tags.tagsPageTitle": {
         "message": "标签",
         "description": "The title of the tag list page"
+    },
+    "Workflow Visualization": {
+        "message": "工作流可视化"
+    },
+    "Summary Tables": {
+        "message": "总结表格"
+    },
+    "Plot Editor": {
+        "message": "图形编辑器"
+    },
+    "View your workflow in a single glance.": {
+        "message": "一目了然的掌握工作流的全部内容。"
+    },
+    "Present your workflow to your team and clients with ease. No more messy flowcharts!": {
+        "message": "向你的团队和客户展现你的分析流程。不再被混乱的流程图困扰！"
+    },
+    "Understand your analysis results in prettier-formatted summary tables.": {
+        "message": "以更美观的形式展现你的分析结果。"
+    },
+    "Export or copy summary tables with single click.": {
+        "message": "一键导出或复制总结表格。"
+    },
+    "Better plotting experience with embedded powerful interactive plot editor.": {
+        "message": "内置强大的交互式图形编辑器，提供更好的绘图体验。"
+    },
+    "Customizing plot with border/color/point(line) type/layout and more as you want.": {
+        "message": "发挥你的想象力，自定义图形的边框/颜色/点(线)类型/布局等。"
     }
 }
