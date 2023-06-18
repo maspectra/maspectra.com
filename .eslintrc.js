@@ -25,6 +25,7 @@ module.exports = {
     rules: {
         "global-require": "warn",
         "i18next/no-literal-string": "off",
+        "import/no-unassigned-import": "off",
         "@typescript-eslint/no-var-requires": "warn",
         "@typescript-eslint/naming-convention": "warn",
         "import/order": [

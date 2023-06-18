@@ -45,7 +45,12 @@ const Header: React.FC = () => {
                                 {"All-in-one solution for {target}"}
                             </Translate>
                         </h1>
-                        <p className={sharedCss.text}>
+                        <p
+                            className={clsx(
+                                sharedCss.text,
+                                sharedCss.paragraph
+                            )}
+                        >
                             <Translate>
                                 Maspectra™ unlocks the power to implement the
                                 Model Informed Drug Development (MIDD) approach

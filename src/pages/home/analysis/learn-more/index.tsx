@@ -5,23 +5,23 @@ import clsx from "clsx";
 import IconExternalLink from "@theme/Icon/ExternalLink";
 import Translate from "@docusaurus/Translate";
 
-import thirdSectionCss from "@site/src/pages/home/third-section/styles.module.css";
+import learnMoreSectionCss from "@site/src/pages/home/analysis/learn-more/styles.module.css";
 
 import sharedCss from "@site/src/pages/home/shared.module.css";
 
-const ThirdSection: React.FC = () => {
+const LearnMoreSection: React.FC = () => {
     return (
-        <div className={thirdSectionCss.thirdSection}>
+        <div className={learnMoreSectionCss.learnMoreSection}>
             <div
                 className={clsx(
-                    thirdSectionCss.thirdSectionContent,
-                    thirdSectionCss.thirdSectionContentStack
+                    learnMoreSectionCss.learnMoreSectionContent,
+                    learnMoreSectionCss.learnMoreSectionContentStack
                 )}
             >
                 <div
                     className={clsx(
-                        thirdSectionCss.thirdSectionTextContainer,
-                        thirdSectionCss.thirdSectionTextContainerWidth
+                        learnMoreSectionCss.learnMoreSectionTextContainer,
+                        learnMoreSectionCss.learnMoreSectionTextContainerWidth
                     )}
                 >
                     <h2 className={sharedCss.titleH2}>
@@ -30,7 +30,7 @@ const ThirdSection: React.FC = () => {
                     <p
                         className={clsx(
                             sharedCss.text,
-                            thirdSectionCss.thirdSectionContentText
+                            learnMoreSectionCss.learnMoreSectionContentText
                         )}
                     >
                         <Translate>
@@ -46,7 +46,7 @@ const ThirdSection: React.FC = () => {
                             className={clsx(
                                 sharedCss.button,
                                 sharedCss.linkButton,
-                                thirdSectionCss.learnMoreButton
+                                learnMoreSectionCss.learnMoreButton
                             )}
                             href="/"
                             disabled
@@ -59,8 +59,8 @@ const ThirdSection: React.FC = () => {
                 </div>
                 <div
                     className={clsx(
-                        thirdSectionCss.thirdSectionTextContainer,
-                        thirdSectionCss.thirdSectionTextContainerWidth
+                        learnMoreSectionCss.learnMoreSectionTextContainer,
+                        learnMoreSectionCss.learnMoreSectionTextContainerWidth
                     )}
                 >
                     <h2 className={sharedCss.titleH2}>
@@ -69,7 +69,7 @@ const ThirdSection: React.FC = () => {
                     <p
                         className={clsx(
                             sharedCss.text,
-                            thirdSectionCss.thirdSectionContentText
+                            learnMoreSectionCss.learnMoreSectionContentText
                         )}
                     >
                         <Translate>
@@ -85,7 +85,7 @@ const ThirdSection: React.FC = () => {
                             className={clsx(
                                 sharedCss.button,
                                 sharedCss.linkButton,
-                                thirdSectionCss.learnMoreButton
+                                learnMoreSectionCss.learnMoreButton
                             )}
                             href="/"
                             disabled
@@ -99,14 +99,14 @@ const ThirdSection: React.FC = () => {
             </div>
             <div
                 className={clsx(
-                    thirdSectionCss.thirdSectionContent,
-                    thirdSectionCss.thirdSectionContentStack
+                    learnMoreSectionCss.learnMoreSectionContent,
+                    learnMoreSectionCss.learnMoreSectionContentStack
                 )}
             >
                 <div
                     className={clsx(
-                        thirdSectionCss.thirdSectionTextContainer,
-                        thirdSectionCss.thirdSectionTextContainerWidth
+                        learnMoreSectionCss.learnMoreSectionTextContainer,
+                        learnMoreSectionCss.learnMoreSectionTextContainerWidth
                     )}
                 >
                     <h2 className={sharedCss.titleH2}>
@@ -115,7 +115,7 @@ const ThirdSection: React.FC = () => {
                     <p
                         className={clsx(
                             sharedCss.text,
-                            thirdSectionCss.thirdSectionContentText
+                            learnMoreSectionCss.learnMoreSectionContentText
                         )}
                     >
                         <Translate>
@@ -131,7 +131,7 @@ const ThirdSection: React.FC = () => {
                             className={clsx(
                                 sharedCss.button,
                                 sharedCss.linkButton,
-                                thirdSectionCss.learnMoreButton
+                                learnMoreSectionCss.learnMoreButton
                             )}
                             href="/"
                             disabled
@@ -144,8 +144,8 @@ const ThirdSection: React.FC = () => {
                 </div>
                 <div
                     className={clsx(
-                        thirdSectionCss.thirdSectionTextContainer,
-                        thirdSectionCss.thirdSectionTextContainerWidth
+                        learnMoreSectionCss.learnMoreSectionTextContainer,
+                        learnMoreSectionCss.learnMoreSectionTextContainerWidth
                     )}
                 >
                     <h2 className={sharedCss.titleH2}>
@@ -154,7 +154,7 @@ const ThirdSection: React.FC = () => {
                     <p
                         className={clsx(
                             sharedCss.text,
-                            thirdSectionCss.thirdSectionContentText
+                            learnMoreSectionCss.learnMoreSectionContentText
                         )}
                     >
                         <Translate>
@@ -170,7 +170,7 @@ const ThirdSection: React.FC = () => {
                             className={clsx(
                                 sharedCss.button,
                                 sharedCss.linkButton,
-                                thirdSectionCss.learnMoreButton
+                                learnMoreSectionCss.learnMoreButton
                             )}
                             href="/"
                             disabled
@@ -186,4 +186,4 @@ const ThirdSection: React.FC = () => {
     );
 };
 
-export default ThirdSection;
+export default LearnMoreSection;

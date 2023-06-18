@@ -4,7 +4,7 @@ import { Button } from "@fluentui/react-components";
 import clsx from "clsx";
 import Translate from "@docusaurus/Translate";
 
-import waitListCss from "@site/src/pages/home/wait-list/styles.module.css";
+import waitListCss from "@site/src/pages/home/waitlist/styles.module.css";
 
 import sharedCss from "@site/src/pages/home/shared.module.css";
 

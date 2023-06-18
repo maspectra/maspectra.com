@@ -39,6 +39,7 @@
     --maspectra-home-color-h3: #6d6d70;
     --maspectra-home-color-background: rgba(248, 250, 252, 1);
     --maspectra-home-color-background-invert: rgba(30, 40, 53, 1);
+    --maspectra-home-color-background-invert-hover: rgba(58, 64, 72, 0.5);
     --maspectra-home-color-disabled: #bdbdbd;
 
 }

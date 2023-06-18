@@ -3,42 +3,42 @@ import React from "react";
 import clsx from "clsx";
 import Translate from "@docusaurus/Translate";
 
-import secondSectionCss from "@site/src/pages/home/second-section/styles.module.css";
+import styles from "@site/src/pages/home/analysis/analysis-intro/styles.module.css";
 import MainWithPoster from "@site/static/img/man-with-poster.svg";
 import sharedCss from "@site/src/pages/home/shared.module.css";
 
-const SecondSection: React.FC = () => {
+const AnalysisIntro: React.FC = () => {
     return (
-        <div className={secondSectionCss.secondSection}>
+        <div className={styles.analysisIntro}>
             <div
                 className={clsx(
-                    secondSectionCss.secondSectionContent,
-                    secondSectionCss.secondSectionContentStack
+                    styles.analysisIntroContent,
+                    styles.analysisIntroContentStack
                 )}
             >
                 <div
                     className={clsx(
-                        secondSectionCss.secondSectionImageContainer,
-                        secondSectionCss.secondSectionImageContainerWidth
+                        styles.analysisIntroImageContainer,
+                        styles.analysisIntroImageContainerWidth
                     )}
                 >
-                    <MainWithPoster
-                        className={secondSectionCss.secondSectionImage}
-                    />
+                    <MainWithPoster className={styles.analysisIntroImage} />
                 </div>
                 <div
                     className={clsx(
-                        secondSectionCss.secondSectionTextContainer,
-                        secondSectionCss.secondSectionTextContainerWidth
+                        styles.analysisIntroTextContainer,
+                        styles.analysisIntroTextContainerWidth
                     )}
                 >
                     <h3 className={sharedCss.titleH3}>
                         <Translate>PHARMACOLOGY & STATISTICS</Translate>
                     </h3>
                     <h2 className={sharedCss.titleH2}>
-                        <Translate>Data analysis in one platform</Translate>
+                        <Translate>
+                            Data Analysis with all-in-one Platform
+                        </Translate>
                     </h2>
-                    <p className={sharedCss.text}>
+                    <p className={clsx(sharedCss.text, sharedCss.paragraph)}>
                         <Translate>
                             Consolidate multiple software functionalities into
                             one streamlined platform for efficient drug
@@ -58,4 +58,4 @@ const SecondSection: React.FC = () => {
     );
 };
 
-export default SecondSection;
+export default AnalysisIntro;

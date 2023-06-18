@@ -1,29 +1,36 @@
-.secondSection {
+.learnMoreSection {
     background-color: var(--maspectra-home-color-background-invert);
 
-    padding: 8rem 4rem 2rem 4rem;
+    padding: 0rem 4rem 8rem 4rem;
+
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    row-gap: 4rem;
 }
 
-.secondSection p,
-.secondSection h2,
-.secondSection h3 {
+.learnMoreSection p,
+.learnMoreSection h2,
+.learnMoreSection h3 {
     color: var(--docs-color-text-invert);
 }
 
-.secondSectionContent {
+.learnMoreSectionContent {
     max-width: var(--maspectra-home-max-width);
+    width: 100%;
 }
 
-.secondSectionContentStack {
+.learnMoreSectionContentStack {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     column-gap: 2rem;
+    align-items: flex-start;
 }
 
-.secondSectionTextContainer {
+.learnMoreSectionTextContainer {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -31,46 +38,37 @@
     justify-content: center;
 }
 
-.secondSectionTextContainerWidth {
-    width: 55%;
+.learnMoreSectionTextContainerWidth {
+    width: 50%;
 }
 
-.secondSectionImageContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.learnMoreSectionContentText {
+    padding-bottom: 4px;
+    margin-bottom: 0px;
 }
 
-.secondSectionImageContainerWidth {
-    width: 45%;
-}
-
-.secondSectionImage {
-    height: min(calc(100%), 420px);
-    width: min(calc(100%), 420px);
+.learnMoreButton {
+    min-width: fit-content !important;
+    width: fit-content;
 }
 
 /* Tablet */
 @media only screen and (max-width: 1024px) {
-    .secondSectionContentStack {
+    .learnMoreSectionContentStack {
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
         row-gap: 40px;
     }
 
-    .secondSectionTextContainerWidth {
-        width: 100%;
-    }
-
-    .secondSectionImageContainerWidth {
+    .learnMoreSectionTextContainerWidth {
         width: 100%;
     }
 }
 
 /* Mobile */
 @media only screen and (max-width: 768px) {
-    .secondSection {
+    .learnMoreSection {
         padding-left: 1.6rem;
         padding-right: 1.6rem;
     }

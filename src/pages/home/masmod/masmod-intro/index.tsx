@@ -5,12 +5,12 @@ import clsx from "clsx";
 import Translate from "@docusaurus/Translate";
 import IconExternalLink from "@theme/Icon/ExternalLink";
 
-import styles from "@site/src/pages/home/masmod-intro/styles.module.css";
+import styles from "@site/src/pages/home/masmod/masmod-intro/styles.module.css";
 
 import ManWithCode from "@site/static/img/man-with-code.svg";
 import sharedCss from "@site/src/pages/home/shared.module.css";
 
-const MasmodIntro: React.FC = () => {
+const MasmodIntroSection: React.FC = () => {
     return (
         <div className={styles.masmodIntro}>
             <div
@@ -31,7 +31,7 @@ const MasmodIntro: React.FC = () => {
                     <h2 className={sharedCss.titleH2}>
                         <Translate>MIDD workflow in Python</Translate>
                     </h2>
-                    <p className={sharedCss.text}>
+                    <p className={clsx(sharedCss.text, sharedCss.paragraph)}>
                         <Translate
                             values={{
                                 what: (
@@ -95,4 +95,4 @@ const MasmodIntro: React.FC = () => {
     );
 };
 
-export default MasmodIntro;
+export default MasmodIntroSection;

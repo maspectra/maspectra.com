@@ -32,7 +32,11 @@
     line-height: 30px;
     font-family: "ArialMT", "Arial", sans-serif;
 
-    padding-bottom: 12px;
+    margin: 0;
+}
+
+.paragraph {
+    margin-bottom: 1.2rem;
 }
 
 .buttonsContainer .button {

@@ -3,11 +3,10 @@ import React from "react";
 import Layout from "@theme/Layout";
 import Header from "@site/src/pages/home/header";
 // import QuoteSection from "@site/src/pages/home/quote-section";
-import MasmodIntro from "@site/src/pages/home/masmod-intro";
-import SecondSection from "@site/src/pages/home/second-section";
-import ThirdSection from "@site/src/pages/home/third-section";
+import MasmodIntroSection from "@site/src/pages/home/masmod/masmod-intro";
+import AnalysisSection from "@site/src/pages/home/analysis";
 import ExploreCard from "@site/src/pages/home/explore-card";
-import WaitList from "@site/src/pages/home/wait-list";
+import WaitList from "@site/src/pages/home/waitlist";
 
 import sharedCss from "@site/src/pages/home/shared.module.css";
 
@@ -17,9 +16,8 @@ const Home: React.FC = () => {
             <Header />
             <main className={sharedCss.rootLayout}>
                 {/* <QuoteSection /> */}
-                <MasmodIntro />
-                <SecondSection />
-                <ThirdSection />
+                <MasmodIntroSection />
+                <AnalysisSection />
                 <ExploreCard />
                 <WaitList />
             </main>
