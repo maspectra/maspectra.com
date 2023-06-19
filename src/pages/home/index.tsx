@@ -3,7 +3,7 @@ import React from "react";
 import Layout from "@theme/Layout";
 import Header from "@site/src/pages/home/header";
 // import QuoteSection from "@site/src/pages/home/quote-section";
-import MasmodIntroSection from "@site/src/pages/home/masmod/masmod-intro";
+import MasmodSection from "@site/src/pages/home/masmod";
 import AnalysisSection from "@site/src/pages/home/analysis";
 import ExploreCard from "@site/src/pages/home/explore-card";
 import WaitList from "@site/src/pages/home/waitlist";
@@ -16,7 +16,7 @@ const Home: React.FC = () => {
             <Header />
             <main className={sharedCss.rootLayout}>
                 {/* <QuoteSection /> */}
-                <MasmodIntroSection />
+                <MasmodSection />
                 <AnalysisSection />
                 <ExploreCard />
                 <WaitList />

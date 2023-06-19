@@ -3,7 +3,7 @@ import React from "react";
 import clsx from "clsx";
 import { Image, TabList, Tab, TabListProps } from "@fluentui/react-components";
 import {
-    DataUsage24Regular,
+    DataUsageEdit24Regular,
     DataUsageEdit24Filled,
     DocumentTable24Filled,
     DocumentTable24Regular,
@@ -26,7 +26,7 @@ const DocumentTableIcon = bundleIcon(
 );
 const DataUsageEditIcon = bundleIcon(
     DataUsageEdit24Filled,
-    DataUsage24Regular
+    DataUsageEdit24Regular
 );
 
 const AnalysisScreenshots: React.FC = () => {

@@ -1,8 +1,7 @@
-.analysisScreenshots {
-    background-color: var(--maspectra-home-color-background-invert);
+.masmodScreenshots {
+    background-color: var(--maspectra-home-color-background);
 
-    padding: 0rem 4rem 8rem 4rem;
-
+    padding: 4rem 4rem 4rem 4rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,26 +10,26 @@
     row-gap: 4rem;
 }
 
-.analysisScreenshots p,
-.analysisScreenshots h2,
-.analysisScreenshots h3 {
-    color: var(--docs-color-text-invert);
+.masmodScreenshots p,
+.masmodScreenshots h2,
+.masmodScreenshots h3 {
+    color: var(--docs-color-text);
 }
 
-.analysisScreenshotsContent {
+.masmodScreenshotsContent {
     max-width: var(--maspectra-home-max-width);
     width: 100%;
 }
 
-.analysisScreenshotsContentStack {
+.masmodScreenshotsContentStack {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: nowrap;
-    column-gap: 2rem;
+    row-gap: 40px;
     align-items: flex-start;
 }
 
-.analysisScreenshotsTextContainer {
+.masmodScreenshotsTextContainer {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -39,58 +38,43 @@
     height: 100%;
 }
 
-.analysisScreenshotsTextContainerWidth {
+.masmodScreenshotsTextContainerWidth {
     width: 100%;
 }
 
-.analysisScreenshotsImageContainer {
+.masmodScreenshotsImageContainer {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.analysisScreenshotsImageContainerWidth {
+.masmodScreenshotsImageContainerWidth {
     width: 100%;
 }
 
-.analysisScreenshotsImage {
+.masmodScreenshotsImage {
     height: 100%;
     width: 100%;
 }
 
-.screenshotTabs .screenshotTabButton:hover {
-    background-color: var(--maspectra-home-color-background-invert-hover);
-}
-
-.screenshotTabs .screenshotTabButton span {
-    color: var(--docs-color-text-invert);
-}
-
 /* Tablet */
 @media only screen and (max-width: 1024px) {
-    .analysisScreenshotsContentStack {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        row-gap: 40px;
-    }
-
     .screenshotTabs {
         width: 100%;
     }
 
-    .analysisScreenshotsTextContainerWidth {
+    .masmodScreenshotsTextContainerWidth {
         width: 100%;
     }
 
-    .analysisScreenshotsImageContainerWidth {
+    .masmodScreenshotsImageContainerWidth {
         width: 100%;
     }
 }
 
 /* Mobile */
 @media only screen and (max-width: 768px) {
-    .analysisScreenshots {
+    .masmodScreenshots {
         padding-left: 1.6rem;
         padding-right: 1.6rem;
     }

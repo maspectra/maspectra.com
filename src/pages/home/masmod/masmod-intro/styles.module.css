@@ -6,6 +6,12 @@
     justify-content: center;
 }
 
+.masmodIntro p,
+.masmodIntro h2,
+.masmodIntro h3 {
+    color: var(--docs-color-text);
+}
+
 .masmodIntroContent {
     max-width: var(--maspectra-home-max-width);
 }

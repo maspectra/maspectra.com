@@ -14,7 +14,7 @@ import {
 import useBaseUrl from "@docusaurus/useBaseUrl";
 import Translate from "@docusaurus/Translate";
 
-import styles from "@site/src/pages/home/analysis/screenshots/styles.module.css";
+import styles from "@site/src/pages/home/masmod/screenshots/styles.module.css";
 import sharedCss from "@site/src/pages/home/shared.module.css";
 
 type ScreenshotTypes = "workflow" | "summary-tables" | "plot-editor";
@@ -29,7 +29,7 @@ const DataUsageEditIcon = bundleIcon(
     DataUsage24Regular
 );
 
-const AnalysisScreenshots: React.FC = () => {
+const MasmodScreenshots: React.FC = () => {
     const [selectedValue, setSelectedValue] =
         React.useState<ScreenshotTypes>("workflow");
 
@@ -49,17 +49,16 @@ const AnalysisScreenshots: React.FC = () => {
     const plotEditorImgUrl = useBaseUrl("/img/screenshots/plot-editor.png");
 
     return (
-        <div className={styles.analysisScreenshots}>
+        <div className={styles.masmodScreenshots}>
             <div
                 className={clsx(
-                    styles.analysisScreenshotsContent,
-                    styles.analysisScreenshotsContentStack
+                    styles.masmodScreenshotsContent,
+                    styles.masmodScreenshotsContentStack
                 )}
             >
                 <TabList
                     selectedValue={selectedValue}
                     onTabSelect={onTabSelect}
-                    vertical
                     appearance="subtle"
                     size="large"
                     className={styles.screenshotTabs}
@@ -96,13 +95,10 @@ const AnalysisScreenshots: React.FC = () => {
                     <div>
                         <div
                             className={clsx(
-                                styles.analysisScreenshotsTextContainer,
-                                styles.analysisScreenshotsTextContainerWidth
+                                styles.masmodScreenshotsTextContainer,
+                                styles.masmodScreenshotsTextContainerWidth
                             )}
                         >
-                            <h2 className={sharedCss.titleH2}>
-                                <Translate>Workflow Visualization</Translate>
-                            </h2>
                             <p
                                 className={clsx(
                                     sharedCss.text,
@@ -121,12 +117,12 @@ const AnalysisScreenshots: React.FC = () => {
                         </div>
                         <div
                             className={clsx(
-                                styles.analysisScreenshotsImageContainer,
-                                styles.analysisScreenshotsImageContainerWidth
+                                styles.masmodScreenshotsImageContainer,
+                                styles.masmodScreenshotsImageContainerWidth
                             )}
                         >
                             <Image
-                                className={styles.analysisScreenshotsImage}
+                                className={styles.masmodScreenshotsImage}
                                 src={workflowImgUrl}
                                 alt="workflow-visualization"
                             />
@@ -137,13 +133,10 @@ const AnalysisScreenshots: React.FC = () => {
                     <div>
                         <div
                             className={clsx(
-                                styles.analysisScreenshotsTextContainer,
-                                styles.analysisScreenshotsTextContainerWidth
+                                styles.masmodScreenshotsTextContainer,
+                                styles.masmodScreenshotsTextContainerWidth
                             )}
                         >
-                            <h2 className={sharedCss.titleH2}>
-                                <Translate>Summary Tables</Translate>
-                            </h2>
                             <p
                                 className={clsx(
                                     sharedCss.text,
@@ -162,12 +155,12 @@ const AnalysisScreenshots: React.FC = () => {
                         </div>
                         <div
                             className={clsx(
-                                styles.analysisScreenshotsImageContainer,
-                                styles.analysisScreenshotsImageContainerWidth
+                                styles.masmodScreenshotsImageContainer,
+                                styles.masmodScreenshotsImageContainerWidth
                             )}
                         >
                             <Image
-                                className={styles.analysisScreenshotsImage}
+                                className={styles.masmodScreenshotsImage}
                                 src={summaryTablesImgUrl}
                                 alt="summary-tables"
                             />
@@ -178,13 +171,10 @@ const AnalysisScreenshots: React.FC = () => {
                     <div>
                         <div
                             className={clsx(
-                                styles.analysisScreenshotsTextContainer,
-                                styles.analysisScreenshotsTextContainerWidth
+                                styles.masmodScreenshotsTextContainer,
+                                styles.masmodScreenshotsTextContainerWidth
                             )}
                         >
-                            <h2 className={sharedCss.titleH2}>
-                                <Translate>Plot Editor</Translate>
-                            </h2>
                             <p
                                 className={clsx(
                                     sharedCss.text,
@@ -204,12 +194,12 @@ const AnalysisScreenshots: React.FC = () => {
                         </div>
                         <div
                             className={clsx(
-                                styles.analysisScreenshotsImageContainer,
-                                styles.analysisScreenshotsImageContainerWidth
+                                styles.masmodScreenshotsImageContainer,
+                                styles.masmodScreenshotsImageContainerWidth
                             )}
                         >
                             <Image
-                                className={styles.analysisScreenshotsImage}
+                                className={styles.masmodScreenshotsImage}
                                 src={plotEditorImgUrl}
                                 alt="plot-editor"
                             />
@@ -221,4 +211,4 @@ const AnalysisScreenshots: React.FC = () => {
     );
 };
 
-export default AnalysisScreenshots;
+export default MasmodScreenshots;
