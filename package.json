@@ -13,7 +13,7 @@
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
     "typecheck": "tsc",
-    "pm2": "pm2 start --name maspectra.com pnpm -- serve -p 3000"
+    "pm2": "pm2 start --name maspectra.com pnpm -- serve -p 8088"
   },
   "dependencies": {
     "@docusaurus/core": "^2.4.1",
