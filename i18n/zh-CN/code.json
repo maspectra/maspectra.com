@@ -1,437 +1,434 @@
 {
-    "PD Models": {
-        "message": "PD 模型"
-    },
-    "Descriptive Statistics": {
-        "message": "描述性统计"
-    },
-    "Frequency Analysis": {
-        "message": "频数分析"
-    },
-    "Correlation": {
-        "message": "相关性分析"
-    },
-    "One/Two Sample T-test": {
-        "message": "单/双样本 t-检验"
-    },
-    "ANOVA": {
-        "message": "ANOVA"
-    },
-    "Nonparametric Analysis": {
-        "message": "非房室分析"
-    },
-    "Linear Regression": {
-        "message": "线性回归"
-    },
-    "Keplan-Meier": {
-        "message": "Keplan-Meier"
-    },
-    "Cox regression": {
-        "message": "Cox 回归"
-    },
-    "Data Split": {
-        "message": "数据切分"
-    },
-    "Data Pivot": {
-        "message": "数据转置"
-    },
-    "Explore Maspectra's potential with our documentation": {
-        "message": "查阅文档，探索 Maspectra 的无限可能"
-    },
-    "All-in-one solution for {target}": {
-        "message": "{target}一体化解决方案"
-    },
-    "Modeling & Simulation": {
-        "message": "建模模拟"
-    },
-    "Maspectra™ unlocks the power to implement the Model Informed Drug Development (MIDD) approach in one software platform.": {
-        "message": "Maspectra™ 作为一个一站式集成工作站，为模型引导的药物研发 (MIDD) 赋能。"
-    },
-    "Get Started": {
-        "message": "入门导览"
-    },
-    "Playground": {
-        "message": "Playground"
-    },
-    "MASMOD": {
-        "message": "MASMOD"
-    },
-    "MIDD workflow in Python": {
-        "message": "基于 Python 编程语言的 MIDD 工作流"
-    },
-    "Experience the endless possibilities of pharmacometrics modeling and simulation with {what}.": {
-        "message": "通过{what}，体验定量药理建模与模拟的无限可能。"
-    },
-    "{masmod} - the powerful Python-based framework": {
-        "message": "强大的 Python 建模与模拟框架 {masmod}"
-    },
-    "You have everything you need and unlimited potential by incorporating AI models and other data science tools in the Python ecosystem.": {
-        "message": "通过与 Python 生态中的 AI 模型，以及其他数据科学工具库相辅相成，你能够从百宝箱中获得你想要的建模工具，解锁更多的可能性。"
-    },
-    "NCA & Compartmental Model": {
-        "message": "非房室分析 & 房室模型"
-    },
-    "Robust and powerful noncompartmental/compartmental PK analysis for preclinical and clinical studies.": {
-        "message": "稳健而又强大的非房室分析/房室模型 PK 分析，适用于临床前和临床试验的各种场景。"
-    },
-    "Learn more": {
-        "message": "了解更多"
-    },
-    "Bioequivalence": {
-        "message": "生物等效性"
-    },
-    "Maspectra supports various ABE trial designs including crossover and parallel studies.": {
-        "message": "Maspectra 支持灵活的 ABE 实验设计，包括交叉和平行试验设计。"
-    },
-    "Exploratory statistics": {
-        "message": "探索性统计"
-    },
-    "Effortlessly explore and visualize preclinical and clinical data with utmost efficiency.": {
-        "message": "利用强大的数据可视化功能，轻松高效的探索并检视临床前和临床数据。"
-    },
-    "Statistical tests & models": {
-        "message": "统计检验 & 模型"
-    },
-    "Perform statistical tests and regression analysis for in-depth insights.": {
-        "message": "进行统计检验和回归分析，更加准确的剖析模型"
-    },
-    "PHARMACOLOGY & STATISTICS": {
-        "message": "临床药理 & 统计"
-    },
-    "Data Analysis with all-in-one Platform": {
-        "message": "基于一体化平台的数据分析工作流"
-    },
-    "Consolidate multiple software functionalities into one streamlined platform for efficient drug development data analysis.": {
-        "message": "将多个软件功能合众为一，整合到一个的集成式工作站平台中，以更加顺畅的形式进行高效的药物研发数据分析。"
-    },
-    "Perform PK/PD and statistical analysis seamlessly from a single software.": {
-        "message": "在同一软件中无缝执行 PK/PD 以及统计分析。"
-    },
-    "Experience a hassle-free MIDD workflow today!": {
-        "message": "立即体验一种全新的，更加自在的 MIDD 工作全流程！"
-    },
-    "It is proposed that simulation has a much broader potential to aid in the clinical development, regulatory review, commercialization, and medical application process.": {
-        "message": "It is proposed that simulation has a much broader potential to aid in the clinical development, regulatory review, commercialization, and medical application process."
-    },
-    "Founder of MIDD": {
-        "message": "MIDD 先行者"
-    },
-    "Ready to play with Maspectra?": {
-        "message": "想要立即体验 Maspectra?"
-    },
-    "Maspectra is still a work in progress, but it will be generally available soon.": {
-        "message": "我们的团队仍在努力完善 Maspectra 中，但我们很快能够对外开放下载。"
-    },
-    "You are welcome to join our wait list and we will notify you when it is ready.": {
-        "message": "你可以在注册账号后加入我们的等待名单，我们会在 Maspectra 准备就绪时通知你。"
-    },
-    "Sign Up and Join Wait List": {
-        "message": "注册账号并加入等待名单"
-    },
-    "theme.ErrorPageContent.title": {
-        "message": "页面已崩溃。",
-        "description": "The title of the fallback page when the page crashed"
-    },
-    "theme.NotFound.title": {
-        "message": "找不到页面",
-        "description": "The title of the 404 page"
-    },
-    "theme.NotFound.p1": {
-        "message": "我们找不到您要找的页面。",
-        "description": "The first paragraph of the 404 page"
-    },
-    "theme.NotFound.p2": {
-        "message": "请联系原始链接来源网站的所有者，并告知他们链接已损坏。",
-        "description": "The 2nd paragraph of the 404 page"
-    },
-    "theme.admonition.note": {
-        "message": "备注",
-        "description": "The default label used for the Note admonition (:::note)"
-    },
-    "theme.admonition.tip": {
-        "message": "提示",
-        "description": "The default label used for the Tip admonition (:::tip)"
-    },
-    "theme.admonition.danger": {
-        "message": "危险",
-        "description": "The default label used for the Danger admonition (:::danger)"
-    },
-    "theme.admonition.info": {
-        "message": "信息",
-        "description": "The default label used for the Info admonition (:::info)"
-    },
-    "theme.admonition.caution": {
-        "message": "警告",
-        "description": "The default label used for the Caution admonition (:::caution)"
-    },
-    "theme.BackToTopButton.buttonAriaLabel": {
-        "message": "回到顶部",
-        "description": "The ARIA label for the back to top button"
-    },
-    "theme.blog.archive.title": {
-        "message": "历史博文",
-        "description": "The page & hero title of the blog archive page"
-    },
-    "theme.blog.archive.description": {
-        "message": "历史博文",
-        "description": "The page & hero description of the blog archive page"
-    },
-    "theme.blog.paginator.navAriaLabel": {
-        "message": "博文列表分页导航",
-        "description": "The ARIA label for the blog pagination"
-    },
-    "theme.blog.paginator.newerEntries": {
-        "message": "较新的博文",
-        "description": "The label used to navigate to the newer blog posts page (previous page)"
-    },
-    "theme.blog.paginator.olderEntries": {
-        "message": "较旧的博文",
-        "description": "The label used to navigate to the older blog posts page (next page)"
-    },
-    "theme.blog.post.paginator.navAriaLabel": {
-        "message": "博文分页导航",
-        "description": "The ARIA label for the blog posts pagination"
-    },
-    "theme.blog.post.paginator.newerPost": {
-        "message": "较新一篇",
-        "description": "The blog post button label to navigate to the newer/previous post"
-    },
-    "theme.blog.post.paginator.olderPost": {
-        "message": "较旧一篇",
-        "description": "The blog post button label to navigate to the older/next post"
-    },
-    "theme.blog.post.plurals": {
-        "message": "{count} 篇博文",
-        "description": "Pluralized label for \"{count} posts\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
-    },
-    "theme.blog.tagTitle": {
-        "message": "{nPosts} 含有标签「{tagName}」",
-        "description": "The title of the page for a blog tag"
-    },
-    "theme.tags.tagsPageLink": {
-        "message": "查看所有标签",
-        "description": "The label of the link targeting the tag list page"
-    },
-    "theme.colorToggle.ariaLabel": {
-        "message": "切换浅色/暗黑模式（当前为{mode}）",
-        "description": "The ARIA label for the navbar color mode toggle"
-    },
-    "theme.colorToggle.ariaLabel.mode.dark": {
-        "message": "暗黑模式",
-        "description": "The name for the dark color mode"
-    },
-    "theme.colorToggle.ariaLabel.mode.light": {
-        "message": "浅色模式",
-        "description": "The name for the light color mode"
-    },
-    "theme.docs.DocCard.categoryDescription": {
-        "message": "{count} 个项目",
-        "description": "The default description for a category card in the generated index about how many items this category includes"
-    },
-    "theme.docs.breadcrumbs.navAriaLabel": {
-        "message": "页面路径",
-        "description": "The ARIA label for the breadcrumbs"
-    },
-    "theme.docs.paginator.navAriaLabel": {
-        "message": "文档分页导航",
-        "description": "The ARIA label for the docs pagination"
-    },
-    "theme.docs.paginator.previous": {
-        "message": "上一页",
-        "description": "The label used to navigate to the previous doc"
-    },
-    "theme.docs.paginator.next": {
-        "message": "下一页",
-        "description": "The label used to navigate to the next doc"
-    },
-    "theme.docs.tagDocListPageTitle.nDocsTagged": {
-        "message": "{count} 篇文档带有标签",
-        "description": "Pluralized label for \"{count} docs tagged\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
-    },
-    "theme.docs.tagDocListPageTitle": {
-        "message": "{nDocsTagged}「{tagName}」",
-        "description": "The title of the page for a docs tag"
-    },
-    "theme.docs.versionBadge.label": {
-        "message": "版本：{versionLabel}"
-    },
-    "theme.docs.versions.unreleasedVersionLabel": {
-        "message": "此为 {siteTitle} {versionLabel} 版尚未发行的文档。",
-        "description": "The label used to tell the user that he's browsing an unreleased doc version"
-    },
-    "theme.docs.versions.unmaintainedVersionLabel": {
-        "message": "此为 {siteTitle} {versionLabel} 版的文档，现已不再积极维护。",
-        "description": "The label used to tell the user that he's browsing an unmaintained doc version"
-    },
-    "theme.docs.versions.latestVersionSuggestionLabel": {
-        "message": "最新的文档请参阅 {latestVersionLink} ({versionLabel})。",
-        "description": "The label used to tell the user to check the latest version"
-    },
-    "theme.docs.versions.latestVersionLinkLabel": {
-        "message": "最新版本",
-        "description": "The label used for the latest version suggestion link label"
-    },
-    "theme.common.editThisPage": {
-        "message": "编辑此页",
-        "description": "The link label to edit the current page"
-    },
-    "theme.common.headingLinkTitle": {
-        "message": "{heading}的直接链接",
-        "description": "Title for link to heading"
-    },
-    "theme.lastUpdated.atDate": {
-        "message": "于 {date} ",
-        "description": "The words used to describe on which date a page has been last updated"
-    },
-    "theme.lastUpdated.byUser": {
-        "message": "由 {user} ",
-        "description": "The words used to describe by who the page has been last updated"
-    },
-    "theme.lastUpdated.lastUpdatedAtBy": {
-        "message": "最后{byUser}{atDate}更新",
-        "description": "The sentence used to display when a page has been last updated, and by who"
-    },
-    "theme.navbar.mobileVersionsDropdown.label": {
-        "message": "选择版本",
-        "description": "The label for the navbar versions dropdown on mobile view"
-    },
-    "theme.tags.tagsListLabel": {
-        "message": "标签：",
-        "description": "The label alongside a tag list"
-    },
-    "theme.AnnouncementBar.closeButtonAriaLabel": {
-        "message": "关闭",
-        "description": "The ARIA label for close button of announcement bar"
-    },
-    "theme.blog.sidebar.navAriaLabel": {
-        "message": "最近博文导航",
-        "description": "The ARIA label for recent posts in the blog sidebar"
-    },
-    "theme.CodeBlock.copied": {
-        "message": "复制成功",
-        "description": "The copied button label on code blocks"
-    },
-    "theme.CodeBlock.copyButtonAriaLabel": {
-        "message": "复制代码到剪贴板",
-        "description": "The ARIA label for copy code blocks button"
-    },
-    "theme.CodeBlock.copy": {
-        "message": "复制",
-        "description": "The copy button label on code blocks"
-    },
-    "theme.CodeBlock.wordWrapToggle": {
-        "message": "切换自动换行",
-        "description": "The title attribute for toggle word wrapping button of code block lines"
-    },
-    "theme.DocSidebarItem.toggleCollapsedCategoryAriaLabel": {
-        "message": "打开/收起侧边栏菜单「{label}」",
-        "description": "The ARIA label to toggle the collapsible sidebar category"
-    },
-    "theme.NavBar.navAriaLabel": {
-        "message": "主导航",
-        "description": "The ARIA label for the main navigation"
-    },
-    "theme.TOCCollapsible.toggleButtonLabel": {
-        "message": "本页总览",
-        "description": "The label used by the button on the collapsible TOC component"
-    },
-    "theme.blog.post.readMore": {
-        "message": "阅读更多",
-        "description": "The label used in blog post item excerpts to link to full blog posts"
-    },
-    "theme.blog.post.readMoreLabel": {
-        "message": "阅读 {title} 的全文",
-        "description": "The ARIA label for the link to full blog posts from excerpts"
-    },
-    "theme.blog.post.readingTime.plurals": {
-        "message": "阅读需 {readingTime} 分钟",
-        "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
-    },
-    "theme.docs.breadcrumbs.home": {
-        "message": "主页面",
-        "description": "The ARIA label for the home page in the breadcrumbs"
-    },
-    "theme.docs.sidebar.collapseButtonTitle": {
-        "message": "收起侧边栏",
-        "description": "The title attribute for collapse button of doc sidebar"
-    },
-    "theme.docs.sidebar.collapseButtonAriaLabel": {
-        "message": "收起侧边栏",
-        "description": "The title attribute for collapse button of doc sidebar"
-    },
-    "theme.docs.sidebar.navAriaLabel": {
-        "message": "文档侧边栏",
-        "description": "The ARIA label for the sidebar navigation"
-    },
-    "theme.navbar.mobileLanguageDropdown.label": {
-        "message": "选择语言",
-        "description": "The label for the mobile language switcher dropdown"
-    },
-    "theme.docs.sidebar.closeSidebarButtonAriaLabel": {
-        "message": "关闭导航栏",
-        "description": "The ARIA label for close button of mobile sidebar"
-    },
-    "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
-        "message": "← 回到主菜单",
-        "description": "The label of the back button to return to main menu, inside the mobile navbar sidebar secondary menu (notably used to display the docs sidebar)"
-    },
-    "theme.docs.sidebar.toggleSidebarButtonAriaLabel": {
-        "message": "切换导航栏",
-        "description": "The ARIA label for hamburger menu button of mobile navigation"
-    },
-    "theme.docs.sidebar.expandButtonTitle": {
-        "message": "展开侧边栏",
-        "description": "The ARIA label and title attribute for expand button of doc sidebar"
-    },
-    "theme.docs.sidebar.expandButtonAriaLabel": {
-        "message": "展开侧边栏",
-        "description": "The ARIA label and title attribute for expand button of doc sidebar"
-    },
-    "theme.Playground.result": {
-        "message": "结果",
-        "description": "The result label of the live codeblocks"
-    },
-    "theme.Playground.liveEditor": {
-        "message": "实时编辑器",
-        "description": "The live editor label of the live codeblocks"
-    },
-    "theme.ErrorPageContent.tryAgain": {
-        "message": "重试",
-        "description": "The label of the button to try again rendering when the React error boundary captures an error"
-    },
-    "theme.common.skipToMainContent": {
-        "message": "跳到主要内容",
-        "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
-    },
-    "theme.tags.tagsPageTitle": {
-        "message": "标签",
-        "description": "The title of the tag list page"
-    },
-    "Workflow Visualization": {
-        "message": "工作流可视化"
-    },
-    "Summary Tables": {
-        "message": "总结表格"
-    },
-    "Plot Editor": {
-        "message": "图形编辑器"
-    },
-    "View your workflow in a single glance.": {
-        "message": "一目了然的掌握工作流的全部内容。"
-    },
-    "Present your workflow to your team and clients with ease. No more messy flowcharts!": {
-        "message": "向你的团队和客户展现你的分析流程。不再被混乱的流程图困扰！"
-    },
-    "Understand your analysis results in prettier-formatted summary tables.": {
-        "message": "以更美观的形式展现你的分析结果。"
-    },
-    "Export or copy summary tables with single click.": {
-        "message": "一键导出或复制总结表格。"
-    },
-    "Better plotting experience with embedded powerful interactive plot editor.": {
-        "message": "内置强大的交互式图形编辑器，提供更好的绘图体验。"
-    },
-    "Customizing plot with border/color/point(line) type/layout and more as you want.": {
-        "message": "发挥你的想象力，自定义图形的边框/颜色/点(线)类型/布局等。"
-    }
+  "All-in-one solution for {target}": {
+    "message": "{target}一体化解决方案"
+  },
+  "Modeling & Simulation": {
+    "message": "建模 & 模拟"
+  },
+  "Maspectra™ unlocks the power to implement the Model Informed Drug Development (MIDD) approach in one software platform.": {
+    "message": "Maspectra™ 作为一个一站式集成工作站，为模型引导的药物研发 (MIDD) 赋能。"
+  },
+  "Get Started": {
+    "message": "入门导览"
+  },
+  "PD Models": {
+    "message": "PD 模型"
+  },
+  "Descriptive Statistics": {
+    "message": "描述性统计"
+  },
+  "Frequency Analysis": {
+    "message": "频数分析"
+  },
+  "Correlation": {
+    "message": "相关性分析"
+  },
+  "One/Two Sample T-test": {
+    "message": "单/双样本 T-检验"
+  },
+  "ANOVA": {
+    "message": "ANOVA"
+  },
+  "Nonparametric Analysis": {
+    "message": "非房室分析"
+  },
+  "Linear Regression": {
+    "message": "线性回归"
+  },
+  "Keplan-Meier": {
+    "message": "Keplan-Meier"
+  },
+  "Cox Regression": {
+    "message": "Cox 回归"
+  },
+  "Data Split": {
+    "message": "数据切分"
+  },
+  "Data Pivot": {
+    "message": "数据转置"
+  },
+  "Explore Maspectra's potential with our documentation": {
+    "message": "查阅文档，探索 Maspectra"
+  },
+  "Ready to play with Maspectra?": {
+    "message": "想要立即体验 Maspectra？"
+  },
+  "Maspectra is still a work in progress, but it will be generally available soon.": {
+    "message": "我们的团队仍在努力完善 Maspectra 中，但我们很快能够对外开放下载。"
+  },
+  "You are welcome to join our wait list and we will notify you when it is ready.": {
+    "message": "你可以在注册账号后加入我们的等待名单，我们会在 Maspectra 准备就绪时通知你。"
+  },
+  "Sign Up and Join Wait List": {
+    "message": "注册账号并加入等待名单"
+  },
+  "It is proposed that simulation has a much broader potential to aid in the clinical development, regulatory review, commercialization, and medical application process.": {
+    "message": "It is proposed that simulation has a much broader potential to aid in the clinical development, regulatory review, commercialization, and medical application process."
+  },
+  "Founder of MIDD": {
+    "message": "MIDD 先行者"
+  },
+  "MASMOD": {
+    "message": "MASMOD"
+  },
+  "MIDD workflow in Python": {
+    "message": "基于 Python 编程语言的 MIDD 工作流"
+  },
+  "Experience the endless possibilities of pharmacometrics modeling and simulation with {what}.": {
+    "message": "通过{what}，体验定量药理建模与模拟在药物研发流程中的无限可能。"
+  },
+  "{masmod} - the powerful Python-based framework": {
+    "message": "强大的 Python 建模与模拟框架 {masmod}"
+  },
+  "You have everything you need and unlimited potential by incorporating AI models and other data science tools in the Python ecosystem.": {
+    "message": "通过与 Python 生态中的 AI 模型，以及其他数据科学工具库相辅相成，你能够从百宝箱中获得你想要的建模工具，解锁更多的可能性。"
+  },
+  "PHARMACOLOGY & STATISTICS": {
+    "message": "临床药理 & 统计"
+  },
+  "Data Analysis with all-in-one Platform": {
+    "message": "基于一体化平台的数据分析工作流"
+  },
+  "Consolidate multiple software functionalities into one streamlined platform for efficient drug development data analysis.": {
+    "message": "将多个软件功能合众为一，整合到一个的集成式工作站平台中，以更加顺畅的形式进行高效的药物研发数据分析。"
+  },
+  "Perform PK/PD and statistical analysis seamlessly from a single software.": {
+    "message": "进行统计检验和回归分析，更加准确的剖析模型。"
+  },
+  "Experience a hassle-free MIDD workflow today!": {
+    "message": "立即体验一种全新的，更加自在的 MIDD 工作全流程！"
+  },
+  "Workflow Visualization": {
+    "message": "工作流可视化"
+  },
+  "Summary Tables": {
+    "message": "总结表格"
+  },
+  "Plot Editor": {
+    "message": "图形编辑器"
+  },
+  "View your workflow in a single glance.": {
+    "message": "一目了然的掌握分析工作流的全部内容。"
+  },
+  "Present your workflow to your team and clients with ease. No more messy flowcharts!": {
+    "message": "向你的团队和客户展现你的分析流程。不再被混乱的流程图困扰！"
+  },
+  "Understand your analysis results in prettier-formatted summary tables.": {
+    "message": "以更美观的形式展现你的分析结果。"
+  },
+  "Export or copy summary tables with single click.": {
+    "message": "一键导出或复制总结表格。"
+  },
+  "Better plotting experience with embedded powerful interactive plot editor.": {
+    "message": "内置强大的交互式图形编辑器，提供更好的绘图体验。"
+  },
+  "Customizing plot with border/color/point(line) type/layout and more as you want.": {
+    "message": "发挥你的想象力，自定义图形的边框/颜色/点(线)类型/布局等。"
+  },
+  "NCA & Compartmental Model": {
+    "message": "非房室分析 & 房室模型"
+  },
+  "Robust and powerful non-compartmental/compartmental PK analysis for preclinical and clinical studies.": {
+    "message": "稳健而又强大的非房室分析/房室模型 PK 分析，适用于临床前和临床试验的各种场景。"
+  },
+  "Learn more": {
+    "message": "了解更多"
+  },
+  "Bioequivalence": {
+    "message": "生物等效性"
+  },
+  "Maspectra™ supports various ABE trial designs including crossover and parallel studies.": {
+    "message": "Maspectra™ 支持灵活的 ABE 实验设计，包括交叉和平行试验设计。"
+  },
+  "Exploratory statistics": {
+    "message": "探索性统计"
+  },
+  "Effortlessly explore and visualize preclinical and clinical data with utmost efficiency.": {
+    "message": "利用强大的数据可视化功能，轻松高效的探索并检视临床前和临床数据。"
+  },
+  "Statistical tests & models": {
+    "message": "统计检验 & 模型"
+  },
+  "Perform statistical tests and regression analysis for in-depth insights.": {
+    "message": "进行统计检验和回归分析，更加准确的剖析模型。"
+  },
+  "theme.ErrorPageContent.title": {
+    "message": "页面已崩溃。",
+    "description": "The title of the fallback page when the page crashed"
+  },
+  "theme.NotFound.title": {
+    "message": "找不到页面",
+    "description": "The title of the 404 page"
+  },
+  "theme.NotFound.p1": {
+    "message": "我们找不到您要找的页面。",
+    "description": "The first paragraph of the 404 page"
+  },
+  "theme.NotFound.p2": {
+    "message": "请联系原始链接来源网站的所有者，并告知他们链接已损坏。",
+    "description": "The 2nd paragraph of the 404 page"
+  },
+  "theme.admonition.note": {
+    "message": "备注",
+    "description": "The default label used for the Note admonition (:::note)"
+  },
+  "theme.admonition.tip": {
+    "message": "提示",
+    "description": "The default label used for the Tip admonition (:::tip)"
+  },
+  "theme.admonition.danger": {
+    "message": "危险",
+    "description": "The default label used for the Danger admonition (:::danger)"
+  },
+  "theme.admonition.info": {
+    "message": "信息",
+    "description": "The default label used for the Info admonition (:::info)"
+  },
+  "theme.admonition.caution": {
+    "message": "警告",
+    "description": "The default label used for the Caution admonition (:::caution)"
+  },
+  "theme.BackToTopButton.buttonAriaLabel": {
+    "message": "回到顶部",
+    "description": "The ARIA label for the back to top button"
+  },
+  "theme.blog.archive.title": {
+    "message": "历史博文",
+    "description": "The page & hero title of the blog archive page"
+  },
+  "theme.blog.archive.description": {
+    "message": "历史博文",
+    "description": "The page & hero description of the blog archive page"
+  },
+  "theme.blog.paginator.navAriaLabel": {
+    "message": "博文列表分页导航",
+    "description": "The ARIA label for the blog pagination"
+  },
+  "theme.blog.paginator.newerEntries": {
+    "message": "较新的博文",
+    "description": "The label used to navigate to the newer blog posts page (previous page)"
+  },
+  "theme.blog.paginator.olderEntries": {
+    "message": "较旧的博文",
+    "description": "The label used to navigate to the older blog posts page (next page)"
+  },
+  "theme.blog.post.paginator.navAriaLabel": {
+    "message": "博文分页导航",
+    "description": "The ARIA label for the blog posts pagination"
+  },
+  "theme.blog.post.paginator.newerPost": {
+    "message": "较新一篇",
+    "description": "The blog post button label to navigate to the newer/previous post"
+  },
+  "theme.blog.post.paginator.olderPost": {
+    "message": "较旧一篇",
+    "description": "The blog post button label to navigate to the older/next post"
+  },
+  "theme.blog.post.plurals": {
+    "message": "{count} 篇博文",
+    "description": "Pluralized label for \"{count} posts\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.blog.tagTitle": {
+    "message": "{nPosts} 含有标签「{tagName}」",
+    "description": "The title of the page for a blog tag"
+  },
+  "theme.tags.tagsPageLink": {
+    "message": "查看所有标签",
+    "description": "The label of the link targeting the tag list page"
+  },
+  "theme.colorToggle.ariaLabel": {
+    "message": "切换浅色/暗黑模式（当前为{mode}）",
+    "description": "The ARIA label for the navbar color mode toggle"
+  },
+  "theme.colorToggle.ariaLabel.mode.dark": {
+    "message": "暗黑模式",
+    "description": "The name for the dark color mode"
+  },
+  "theme.colorToggle.ariaLabel.mode.light": {
+    "message": "浅色模式",
+    "description": "The name for the light color mode"
+  },
+  "theme.docs.breadcrumbs.navAriaLabel": {
+    "message": "页面路径",
+    "description": "The ARIA label for the breadcrumbs"
+  },
+  "theme.docs.DocCard.categoryDescription": {
+    "message": "{count} 个项目",
+    "description": "The default description for a category card in the generated index about how many items this category includes"
+  },
+  "theme.docs.paginator.navAriaLabel": {
+    "message": "文件选项卡",
+    "description": "The ARIA label for the docs pagination"
+  },
+  "theme.docs.paginator.previous": {
+    "message": "上一页",
+    "description": "The label used to navigate to the previous doc"
+  },
+  "theme.docs.paginator.next": {
+    "message": "下一页",
+    "description": "The label used to navigate to the next doc"
+  },
+  "theme.docs.tagDocListPageTitle.nDocsTagged": {
+    "message": "{count} 篇文档带有标签",
+    "description": "Pluralized label for \"{count} docs tagged\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.docs.tagDocListPageTitle": {
+    "message": "{nDocsTagged}「{tagName}」",
+    "description": "The title of the page for a docs tag"
+  },
+  "theme.docs.versionBadge.label": {
+    "message": "版本：{versionLabel}"
+  },
+  "theme.docs.versions.unreleasedVersionLabel": {
+    "message": "此为 {siteTitle} {versionLabel} 版尚未发行的文档。",
+    "description": "The label used to tell the user that he's browsing an unreleased doc version"
+  },
+  "theme.docs.versions.unmaintainedVersionLabel": {
+    "message": "此为 {siteTitle} {versionLabel} 版的文档，现已不再积极维护。",
+    "description": "The label used to tell the user that he's browsing an unmaintained doc version"
+  },
+  "theme.docs.versions.latestVersionSuggestionLabel": {
+    "message": "最新的文档请参阅 {latestVersionLink} ({versionLabel})。",
+    "description": "The label used to tell the user to check the latest version"
+  },
+  "theme.docs.versions.latestVersionLinkLabel": {
+    "message": "最新版本",
+    "description": "The label used for the latest version suggestion link label"
+  },
+  "theme.common.editThisPage": {
+    "message": "编辑此页",
+    "description": "The link label to edit the current page"
+  },
+  "theme.common.headingLinkTitle": {
+    "message": "{heading}的直接链接",
+    "description": "Title for link to heading"
+  },
+  "theme.lastUpdated.atDate": {
+    "message": "于 {date} ",
+    "description": "The words used to describe on which date a page has been last updated"
+  },
+  "theme.lastUpdated.byUser": {
+    "message": "由 {user} ",
+    "description": "The words used to describe by who the page has been last updated"
+  },
+  "theme.lastUpdated.lastUpdatedAtBy": {
+    "message": "最后{byUser}{atDate}更新",
+    "description": "The sentence used to display when a page has been last updated, and by who"
+  },
+  "theme.navbar.mobileVersionsDropdown.label": {
+    "message": "选择版本",
+    "description": "The label for the navbar versions dropdown on mobile view"
+  },
+  "theme.tags.tagsListLabel": {
+    "message": "标签：",
+    "description": "The label alongside a tag list"
+  },
+  "theme.AnnouncementBar.closeButtonAriaLabel": {
+    "message": "关闭",
+    "description": "The ARIA label for close button of announcement bar"
+  },
+  "theme.blog.sidebar.navAriaLabel": {
+    "message": "最近博文导航",
+    "description": "The ARIA label for recent posts in the blog sidebar"
+  },
+  "theme.CodeBlock.copied": {
+    "message": "复制成功",
+    "description": "The copied button label on code blocks"
+  },
+  "theme.CodeBlock.copyButtonAriaLabel": {
+    "message": "复制代码到剪贴板",
+    "description": "The ARIA label for copy code blocks button"
+  },
+  "theme.CodeBlock.copy": {
+    "message": "复制",
+    "description": "The copy button label on code blocks"
+  },
+  "theme.CodeBlock.wordWrapToggle": {
+    "message": "切换自动换行",
+    "description": "The title attribute for toggle word wrapping button of code block lines"
+  },
+  "theme.DocSidebarItem.toggleCollapsedCategoryAriaLabel": {
+    "message": "打开/收起侧边栏菜单「{label}」",
+    "description": "The ARIA label to toggle the collapsible sidebar category"
+  },
+  "theme.NavBar.navAriaLabel": {
+    "message": "主导航",
+    "description": "The ARIA label for the main navigation"
+  },
+  "theme.navbar.mobileLanguageDropdown.label": {
+    "message": "选择语言",
+    "description": "The label for the mobile language switcher dropdown"
+  },
+  "theme.TOCCollapsible.toggleButtonLabel": {
+    "message": "本页总览",
+    "description": "The label used by the button on the collapsible TOC component"
+  },
+  "theme.blog.post.readMore": {
+    "message": "阅读更多",
+    "description": "The label used in blog post item excerpts to link to full blog posts"
+  },
+  "theme.blog.post.readMoreLabel": {
+    "message": "阅读 {title} 的全文",
+    "description": "The ARIA label for the link to full blog posts from excerpts"
+  },
+  "theme.blog.post.readingTime.plurals": {
+    "message": "阅读需 {readingTime} 分钟",
+    "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.docs.breadcrumbs.home": {
+    "message": "主页面",
+    "description": "The ARIA label for the home page in the breadcrumbs"
+  },
+  "theme.docs.sidebar.collapseButtonTitle": {
+    "message": "收起侧边栏",
+    "description": "The title attribute for collapse button of doc sidebar"
+  },
+  "theme.docs.sidebar.collapseButtonAriaLabel": {
+    "message": "收起侧边栏",
+    "description": "The title attribute for collapse button of doc sidebar"
+  },
+  "theme.docs.sidebar.navAriaLabel": {
+    "message": "文档侧边栏",
+    "description": "The ARIA label for the sidebar navigation"
+  },
+  "theme.docs.sidebar.closeSidebarButtonAriaLabel": {
+    "message": "关闭导航栏",
+    "description": "The ARIA label for close button of mobile sidebar"
+  },
+  "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
+    "message": "← 回到主菜单",
+    "description": "The label of the back button to return to main menu, inside the mobile navbar sidebar secondary menu (notably used to display the docs sidebar)"
+  },
+  "theme.docs.sidebar.toggleSidebarButtonAriaLabel": {
+    "message": "切换导航栏",
+    "description": "The ARIA label for hamburger menu button of mobile navigation"
+  },
+  "theme.docs.sidebar.expandButtonTitle": {
+    "message": "展开侧边栏",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "theme.docs.sidebar.expandButtonAriaLabel": {
+    "message": "展开侧边栏",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "theme.Playground.result": {
+    "message": "结果",
+    "description": "The result label of the live codeblocks"
+  },
+  "theme.Playground.liveEditor": {
+    "message": "实时编辑器",
+    "description": "The live editor label of the live codeblocks"
+  },
+  "theme.ErrorPageContent.tryAgain": {
+    "message": "重试",
+    "description": "The label of the button to try again rendering when the React error boundary captures an error"
+  },
+  "theme.common.skipToMainContent": {
+    "message": "跳到主要内容",
+    "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
+  },
+  "theme.tags.tagsPageTitle": {
+    "message": "标签",
+    "description": "The title of the tag list page"
+  }
 }

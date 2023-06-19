@@ -1,75 +1,75 @@
 .learnMoreSection {
-    background-color: var(--maspectra-home-color-background-invert);
+  background-color: var(--maspectra-home-color-background-invert);
 
-    padding: 0rem 4rem 8rem 4rem;
+  padding: 0rem 4rem 8rem 4rem;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    row-gap: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  row-gap: 4rem;
 }
 
 .learnMoreSection p,
 .learnMoreSection h2,
 .learnMoreSection h3 {
-    color: var(--docs-color-text-invert);
+  color: var(--docs-color-text-invert);
 }
 
 .learnMoreSectionContent {
-    max-width: var(--maspectra-home-max-width);
-    width: 100%;
+  max-width: var(--maspectra-home-max-width);
+  width: 100%;
 }
 
 .learnMoreSectionContentStack {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    column-gap: 2rem;
-    align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  column-gap: 2rem;
+  align-items: flex-start;
 }
 
 .learnMoreSectionTextContainer {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    row-gap: 2px;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  row-gap: 2px;
+  justify-content: center;
 }
 
 .learnMoreSectionTextContainerWidth {
-    width: 50%;
+  width: 50%;
 }
 
 .learnMoreSectionContentText {
-    padding-bottom: 4px;
-    margin-bottom: 0px;
+  padding-bottom: 4px;
+  margin-bottom: 0px;
 }
 
 .learnMoreButton {
-    min-width: fit-content !important;
-    width: fit-content;
+  min-width: fit-content !important;
+  width: fit-content;
 }
 
 /* Tablet */
 @media only screen and (max-width: 1024px) {
-    .learnMoreSectionContentStack {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        row-gap: 40px;
-    }
+  .learnMoreSectionContentStack {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    row-gap: 40px;
+  }
 
-    .learnMoreSectionTextContainerWidth {
-        width: 100%;
-    }
+  .learnMoreSectionTextContainerWidth {
+    width: 100%;
+  }
 }
 
 /* Mobile */
 @media only screen and (max-width: 768px) {
-    .learnMoreSection {
-        padding-left: 1.6rem;
-        padding-right: 1.6rem;
-    }
+  .learnMoreSection {
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+  }
 }

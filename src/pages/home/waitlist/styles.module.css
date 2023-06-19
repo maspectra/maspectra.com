@@ -1,35 +1,34 @@
 .waitList {
-    background-color: var(--maspectra-home-color-background);
+  background-color: var(--maspectra-home-color-background);
 
-    padding: 4rem 4rem 4rem 4rem;
-    display: flex;
-    justify-content: center;
+  padding: 4rem 4rem 4rem 4rem;
+  display: flex;
+  justify-content: center;
 }
 
 .waitListContent {
-    max-width: 800px;
+  max-width: 800px;
 }
 
 .waitListContentStack {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    row-gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  row-gap: 2rem;
 }
 
 .waitListTextContainer {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    row-gap: 4px;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  row-gap: 4px;
+  justify-content: center;
 }
-
 
 /* Mobile */
 @media only screen and (max-width: 768px) {
-    .waitList {
-        padding-left: 1.6rem;
-        padding-right: 1.6rem;
-    }
+  .waitList {
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+  }
 }

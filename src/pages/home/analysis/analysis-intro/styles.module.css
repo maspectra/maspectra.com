@@ -1,77 +1,77 @@
 .analysisIntro {
-    background-color: var(--maspectra-home-color-background-invert);
+  background-color: var(--maspectra-home-color-background-invert);
 
-    padding: 8rem 4rem 2rem 4rem;
-    display: flex;
-    justify-content: center;
+  padding: 8rem 4rem 2rem 4rem;
+  display: flex;
+  justify-content: center;
 }
 
 .analysisIntro p,
 .analysisIntro h2,
 .analysisIntro h3 {
-    color: var(--docs-color-text-invert);
+  color: var(--docs-color-text-invert);
 }
 
 .analysisIntroContent {
-    max-width: var(--maspectra-home-max-width);
+  max-width: var(--maspectra-home-max-width);
 }
 
 .analysisIntroContentStack {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    column-gap: 2rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  column-gap: 2rem;
 }
 
 .analysisIntroTextContainer {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    row-gap: 2px;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  row-gap: 2px;
+  justify-content: center;
 }
 
 .analysisIntroTextContainerWidth {
-    width: 55%;
+  width: 55%;
 }
 
 .analysisIntroImageContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .analysisIntroImageContainerWidth {
-    width: 45%;
+  width: 45%;
 }
 
 .analysisIntroImage {
-    height: min(calc(100%), 420px);
-    width: min(calc(100%), 420px);
+  height: min(calc(100%), 420px);
+  width: min(calc(100%), 420px);
 }
 
 /* Tablet */
 @media only screen and (max-width: 1024px) {
-    .analysisIntroContentStack {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        row-gap: 40px;
-    }
+  .analysisIntroContentStack {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    row-gap: 40px;
+  }
 
-    .analysisIntroTextContainerWidth {
-        width: 100%;
-    }
+  .analysisIntroTextContainerWidth {
+    width: 100%;
+  }
 
-    .analysisIntroImageContainerWidth {
-        width: 100%;
-    }
+  .analysisIntroImageContainerWidth {
+    width: 100%;
+  }
 }
 
 /* Mobile */
 @media only screen and (max-width: 768px) {
-    .analysisIntro {
-        padding-left: 1.6rem;
-        padding-right: 1.6rem;
-    }
+  .analysisIntro {
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+  }
 }

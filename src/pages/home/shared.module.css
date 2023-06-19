@@ -1,91 +1,91 @@
 .rootLayout {
-    /* minimum device width such as iPhone 3 */
-    min-width: 320px;
+  /* minimum device width such as iPhone 3 */
+  min-width: 320px;
 }
 
 .titleH1 {
-    font-weight: 700;
-    font-size: 50px;
-    line-height: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: normal;
 }
 
 .titleH2 {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: normal;
-    margin-top: 4px;
-    margin-bottom: 4px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: normal;
+  margin-top: 4px;
+  margin-bottom: 4px;
 }
 
 .titleH3 {
-    font-weight: 400;
-    font-size: 28px;
-    line-height: normal;
-    color: var(--maspectra-home-color-h3);
-    margin-top: 2px;
-    margin-bottom: 2px;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: normal;
+  color: var(--maspectra-home-color-h3);
+  margin-top: 2px;
+  margin-bottom: 2px;
 }
 
 .text {
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 30px;
-    font-family: "ArialMT", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  font-family: "ArialMT", "Arial", sans-serif;
 
-    margin: 0;
+  margin: 0;
 }
 
 .paragraph {
-    margin-bottom: 1.2rem;
+  margin-bottom: 1.2rem;
 }
 
 .buttonsContainer .button {
-    height: 52px;
-    min-width: 200px;
-    font-weight: 700;
-    font-size: 16px;
+  height: 52px;
+  min-width: 200px;
+  font-weight: 700;
+  font-size: 16px;
 }
 
-.buttonsContainer {}
+.buttonsContainer {
+}
 
 .buttonsContainer .outlineButton {
-    color: var(--ifm-color-primary);
-    border-color: var(--ifm-color-primary);
+  color: var(--ifm-color-primary);
+  border-color: var(--ifm-color-primary);
 }
 
-.buttonsContainer .outlineButton[aria-disabled=true] {
-    color: var(--colorNeutralForegroundDisabled);
-    border-color: var(--colorNeutralForegroundDisabled);
+.buttonsContainer .outlineButton[aria-disabled="true"] {
+  color: var(--colorNeutralForegroundDisabled);
+  border-color: var(--colorNeutralForegroundDisabled);
 }
 
 .buttonsContainer .linkButton {
-    text-decoration: underline;
-    color: var(--ifm-color-primary);
-    padding-left: 0;
-    padding-right: 0;
+  text-decoration: underline;
+  color: var(--ifm-color-primary);
+  padding-left: 0;
+  padding-right: 0;
 }
 
-.buttonsContainer .linkButton[aria-disabled=true] {
-    color: var(--colorNeutralForegroundDisabled);
+.buttonsContainer .linkButton[aria-disabled="true"] {
+  color: var(--colorNeutralForegroundDisabled);
 }
-
 
 .buttonsStack {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    column-gap: 0.8rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  column-gap: 0.8rem;
 }
 
 @media only screen and (max-width: 768px) {
-    .buttonsStack {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        row-gap: 0.5rem;
-    }
+  .buttonsStack {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    row-gap: 0.5rem;
+  }
 }
 
 .highlightText {
-    color: var(--ifm-color-primary-dark);
+  color: var(--ifm-color-primary-dark);
 }

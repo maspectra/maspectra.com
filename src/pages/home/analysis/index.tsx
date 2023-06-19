@@ -4,13 +4,13 @@ import LearnMoreSection from "@site/src/pages/home/analysis/learn-more";
 import AnalysisScreenshots from "@site/src/pages/home/analysis/screenshots";
 
 const AnalysisSection: React.FC = () => {
-    return (
-        <>
-            <AnalysisIntro />
-            <LearnMoreSection />
-            <AnalysisScreenshots />
-        </>
-    );
+  return (
+    <>
+      <AnalysisIntro />
+      <LearnMoreSection />
+      <AnalysisScreenshots />
+    </>
+  );
 };
 
 export default AnalysisSection;

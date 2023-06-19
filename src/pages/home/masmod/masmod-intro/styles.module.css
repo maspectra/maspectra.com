@@ -1,79 +1,77 @@
 .masmodIntro {
-    background-color: var(--maspectra-home-color-background);
+  background-color: var(--maspectra-home-color-background);
 
-    padding: 4rem 4rem 4rem 4rem;
-    display: flex;
-    justify-content: center;
+  padding: 4rem 4rem 4rem 4rem;
+  display: flex;
+  justify-content: center;
 }
 
 .masmodIntro p,
 .masmodIntro h2,
 .masmodIntro h3 {
-    color: var(--docs-color-text);
+  color: var(--docs-color-text);
 }
 
 .masmodIntroContent {
-    max-width: var(--maspectra-home-max-width);
+  max-width: var(--maspectra-home-max-width);
 }
 
 .masmodIntroContentStack {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    column-gap: 2rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  column-gap: 2rem;
 }
 
 .masmodIntroTextContainer {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    row-gap: 4px;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  row-gap: 4px;
+  justify-content: center;
 }
 
 .masmodIntroTextContainerWidth {
-    width: 55%;
+  width: 55%;
 }
 
 .masmodIntroImageContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .masmodIntroImageContainerWidth {
-    width: 45%;
+  width: 45%;
 }
 
 .masmodIntroImage {
-    height: min(calc(100%), 420px);
-    width: min(calc(100%), 420px);
+  height: min(calc(100%), 420px);
+  width: min(calc(100%), 420px);
 }
 
 /* Tablet */
 @media only screen and (max-width: 1024px) {
-    .masmodIntroContentStack {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        row-gap: 40px;
-    }
+  .masmodIntroContentStack {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    row-gap: 40px;
+  }
 
-    .masmodIntroTextContainerWidth {
-        width: 100%;
-    }
+  .masmodIntroTextContainerWidth {
+    width: 100%;
+  }
 
-    .masmodIntroImageContainerWidth {
-        width: 100%;
-    }
+  .masmodIntroImageContainerWidth {
+    width: 100%;
+  }
 }
-
 
 /* Mobile */
 @media only screen and (max-width: 768px) {
-    .masmodIntro {
-        padding-left: 1.6rem;
-        padding-right: 1.6rem;
-    }
+  .masmodIntro {
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+  }
 }
-

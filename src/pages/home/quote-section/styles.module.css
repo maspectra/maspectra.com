@@ -1,33 +1,33 @@
 .quoteSection {
-    position: relative;
-    isolation: isolate;
-    overflow-x: scroll;
+  position: relative;
+  isolation: isolate;
+  overflow-x: scroll;
 }
 
 .quoteBg {
-    z-index: -1;
-    height: 100%;
-    position: absolute;
-    inset: 0;
-    min-width: 100%;
+  z-index: -1;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  min-width: 100%;
 }
 
 .bgBrand {
-    height: 40%;
-    background-color: var(--ifm-color-primary);
+  height: 40%;
+  background-color: var(--ifm-color-primary);
 }
 
 .bgBlank {
-    height: 60%;
-    background-color: var(--maspectra-home-color-background);
+  height: 60%;
+  background-color: var(--maspectra-home-color-background);
 }
 
 .quoteContent {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    column-gap: 3rem;
-    width: fit-content;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  column-gap: 3rem;
+  width: fit-content;
 
-    padding: 4rem 4rem 4rem 4rem;
+  padding: 4rem 4rem 4rem 4rem;
 }

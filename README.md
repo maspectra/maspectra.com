@@ -24,6 +24,12 @@ $ pnpm run build
 
 This command generates static content into the `build` directory and can be served using any static contents hosting service.
 
+#### Error: Cannot create a string longer than 0x1fffffe8 characters
+
+```
+$ export NODE_OPTIONS=--max-old-space-size=1536 && pnpm run build
+```
+
 ### Deployment
 
 Using SSH:

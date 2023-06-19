@@ -11,18 +11,18 @@ import WaitList from "@site/src/pages/home/waitlist";
 import sharedCss from "@site/src/pages/home/shared.module.css";
 
 const Home: React.FC = () => {
-    return (
-        <Layout description="Maspectra™, MIDD development platform.">
-            <Header />
-            <main className={sharedCss.rootLayout}>
-                {/* <QuoteSection /> */}
-                <MasmodSection />
-                <AnalysisSection />
-                <ExploreCard />
-                <WaitList />
-            </main>
-        </Layout>
-    );
+  return (
+    <Layout description="Maspectra™, MIDD development platform.">
+      <Header />
+      <main className={sharedCss.rootLayout}>
+        {/* <QuoteSection /> */}
+        <MasmodSection />
+        <AnalysisSection />
+        <ExploreCard />
+        <WaitList />
+      </main>
+    </Layout>
+  );
 };
 
 export default Home;

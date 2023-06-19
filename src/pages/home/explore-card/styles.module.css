@@ -1,106 +1,103 @@
 .exploreCard {
-    position: relative;
-    isolation: isolate;
-    overflow-x: scroll;
+  position: relative;
+  isolation: isolate;
+  overflow-x: scroll;
 
-    padding: 4rem 4rem 4rem 4rem;
+  padding: 4rem 4rem 4rem 4rem;
 }
 
 .exploreCardBg {
-    z-index: -1;
-    height: 100%;
-    position: absolute;
-    inset: 0;
-    min-width: 100%;
+  z-index: -1;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  min-width: 100%;
 }
 
 .bgInvert {
-    height: 65%;
-    background-color: var(--maspectra-home-color-background-invert);
+  height: 65%;
+  background-color: var(--maspectra-home-color-background-invert);
 }
 
 .bgBlank {
-    height: 35%;
-    background-color: var(--maspectra-home-color-background);
+  height: 35%;
+  background-color: var(--maspectra-home-color-background);
 }
 
 .exploreCardContent {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 .featureCardContainer {
-    display: flex;
-    width: 80%;
-    max-width: var(--maspectra-home-max-width);
-    flex-direction: column;
-    flex-wrap: nowrap;
-    font-family: "ArialMT", "Arial", sans-serif;
-    border-radius: 8px;
-    box-sizing: border-box;
-    box-shadow: rgba(0, 0, 0, 0.133) 0px 1.6px 3.6px 0px,
-        rgba(0, 0, 0, 0.11) 0px 0.3px 0.9px 0px;
+  display: flex;
+  width: 80%;
+  max-width: var(--maspectra-home-max-width);
+  flex-direction: column;
+  flex-wrap: nowrap;
+  font-family: "ArialMT", "Arial", sans-serif;
+  border-radius: 8px;
+  box-sizing: border-box;
+  box-shadow: rgba(0, 0, 0, 0.133) 0px 1.6px 3.6px 0px,
+    rgba(0, 0, 0, 0.11) 0px 0.3px 0.9px 0px;
 
-    background-color: var(--docs-color-background-200);
+  background-color: var(--docs-color-background-200);
 }
 
 .featureListContainer {
-    max-height: 200px;
-    overflow: auto;
+  max-height: 200px;
+  overflow: auto;
 
-    padding: 2rem 3rem 0rem 3rem;
+  padding: 2rem 3rem 0rem 3rem;
 
-    font-weight: 400;
-    font-size: 18px;
+  font-weight: 400;
+  font-size: 18px;
 }
 
 .featureList {
-    column-count: 3;
+  column-count: 3;
 }
 
-
 .featureList li {
-    break-inside: avoid;
-    padding-left: 0.5rem;
-    line-height: 36px;
+  break-inside: avoid;
+  padding-left: 0.5rem;
+  line-height: 36px;
 }
 
 .featureList li::marker {
-    content: "\f00c"; /* FontAwesome Unicode */
-    font: var(--fa-font-solid);
-    color: var(--ifm-color-primary);
+  content: "\f00c"; /* FontAwesome Unicode */
+  font: var(--fa-font-solid);
+  color: var(--ifm-color-primary);
 }
 
 .actionContainer {
-    min-height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  min-height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
 
 /* Tablet or Mobile */
 @media only screen and (max-width: 1024px) {
-    .featureCardContainer {
-        min-width: 100%;
-    }
+  .featureCardContainer {
+    min-width: 100%;
+  }
 
-    .featureList {
-        column-count: 1;
-    }
-    .featureListContainer {
-        max-height: none;
-        padding: 2rem 0.2rem 0rem 0.2rem;
-    }
+  .featureList {
+    column-count: 1;
+  }
+  .featureListContainer {
+    max-height: none;
+    padding: 2rem 0.2rem 0rem 0.2rem;
+  }
 }
 
 /* Mobile */
 @media only screen and (max-width: 768px) {
-    .exploreCard {
-        padding-left: 1.6rem;
-        padding-right: 1.6rem;
-    }
+  .exploreCard {
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+  }
 }
-
