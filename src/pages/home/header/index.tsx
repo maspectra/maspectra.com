@@ -5,16 +5,15 @@ import clsx from "clsx";
 import IconExternalLink from "@theme/Icon/ExternalLink";
 import Translate from "@docusaurus/Translate";
 import useBaseUrl from "@docusaurus/useBaseUrl";
-// import { useColorMode } from "@docusaurus/theme-common";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+import { useColorMode } from "@docusaurus/theme-common";
 
 import headerCss from "@site/src/pages/home/header/styles.module.css";
 import sharedCss from "@site/src/pages/home/shared.module.css";
 
 const Header: React.FC = () => {
   const lightScreenshotImg = useBaseUrl("img/interface-light.png");
-  // const darkScreenshotImg = useBaseUrl("img/interface-dark.png");
-
-  // const { colorMode } = useColorMode();
+  const darkScreenshotImg = useBaseUrl("img/interface-dark.png");
 
   return (
     <header>
@@ -91,11 +90,24 @@ const Header: React.FC = () => {
               headerCss.heroFrameContainerWidth
             )}
           >
-            <Image
-              alt="interface screenshot"
-              src={lightScreenshotImg}
-              className={headerCss.heroScreenshot}
-            />
+            <BrowserOnly>
+              {() => {
+                // eslint-disable-next-line react-hooks/rules-of-hooks
+                const { colorMode } = useColorMode();
+                return (
+                  <Image
+                    alt="interface screenshot"
+                    src={
+                      colorMode === "dark"
+                        ? darkScreenshotImg
+                        : lightScreenshotImg
+                    }
+                    className={headerCss.heroScreenshot}
+                  />
+                );
+              }}
+            </BrowserOnly>
+
             {/* <iframe
                             src="//player.bilibili.com/player.html?aid=818467067&bvid=BV1oG4y1g7jn&cid=912752325&page=1"
                             className={headerCss.heroVideoFrame}
