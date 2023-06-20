@@ -5,16 +5,16 @@ import clsx from "clsx";
 import IconExternalLink from "@theme/Icon/ExternalLink";
 import Translate from "@docusaurus/Translate";
 import useBaseUrl from "@docusaurus/useBaseUrl";
-import { useColorMode } from "@docusaurus/theme-common";
+// import { useColorMode } from "@docusaurus/theme-common";
 
 import headerCss from "@site/src/pages/home/header/styles.module.css";
 import sharedCss from "@site/src/pages/home/shared.module.css";
 
 const Header: React.FC = () => {
   const lightScreenshotImg = useBaseUrl("img/interface-light.png");
-  const darkScreenshotImg = useBaseUrl("img/interface-dark.png");
+  // const darkScreenshotImg = useBaseUrl("img/interface-dark.png");
 
-  const { colorMode } = useColorMode();
+  // const { colorMode } = useColorMode();
 
   return (
     <header>
@@ -93,9 +93,7 @@ const Header: React.FC = () => {
           >
             <Image
               alt="interface screenshot"
-              src={
-                colorMode === "dark" ? darkScreenshotImg : lightScreenshotImg
-              }
+              src={lightScreenshotImg}
               className={headerCss.heroScreenshot}
             />
             {/* <iframe
