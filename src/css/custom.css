@@ -134,6 +134,10 @@
   margin: 0 0.5rem;
 }
 
+.navbar__title {
+  font-size: 18px;
+}
+
 .maspectra-portal-link::after {
   content: url("data:image/svg+xml;base64,PHN2ZyBjbGFzcz0iTXVpU3ZnSWNvbi1yb290IE11aVN2Z0ljb24tZm9udFNpemVNZWRpdW0gTXVpQm94LXJvb3QgY3NzLTFvbTBoa2MiIGZvY3VzYWJsZT0iZmFsc2UiCiAgICBhcmlhLWhpZGRlbj0idHJ1ZSIgdmlld0JveD0iMCAwIDI0IDI0IiBkYXRhLXRlc3RpZD0iTGF1bmNoSWNvbiI+CiAgICA8cGF0aAogICAgICAgIGQ9Ik0xOSAxOUg1VjVoN1YzSDVjLTEuMTEgMC0yIC45LTIgMnYxNGMwIDEuMS44OSAyIDIgMmgxNGMxLjEgMCAyLS45IDItMnYtN2gtMnY3ek0xNCAzdjJoMy41OWwtOS44MyA5LjgzIDEuNDEgMS40MUwxOSA2LjQxVjEwaDJWM2gtN3oiPjwvcGF0aD4KPC9zdmc+");
 }
