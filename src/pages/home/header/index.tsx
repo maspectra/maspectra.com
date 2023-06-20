@@ -1,14 +1,21 @@
 import React from "react";
 
-import { Button, Tooltip } from "@fluentui/react-components";
+import { Button, Tooltip, Image } from "@fluentui/react-components";
 import clsx from "clsx";
 import IconExternalLink from "@theme/Icon/ExternalLink";
 import Translate from "@docusaurus/Translate";
+import useBaseUrl from "@docusaurus/useBaseUrl";
+import { useColorMode } from "@docusaurus/theme-common";
 
 import headerCss from "@site/src/pages/home/header/styles.module.css";
 import sharedCss from "@site/src/pages/home/shared.module.css";
 
 const Header: React.FC = () => {
+  const lightScreenshotImg = useBaseUrl("img/interface-light.png");
+  const darkScreenshotImg = useBaseUrl("img/interface-dark.png");
+
+  const { colorMode } = useColorMode();
+
   return (
     <header>
       <div className={headerCss.hero}>
@@ -84,13 +91,12 @@ const Header: React.FC = () => {
               headerCss.heroFrameContainerWidth
             )}
           >
-            <iframe
-              src="https://shaderpark.com/embed/-NWYL_u3OWjm0xlKX1P4"
-              // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-              /* @ts-ignore */
-              // eslint-disable-next-line react/no-unknown-property
-              frameborder="0"
-              className={headerCss.heroFrame}
+            <Image
+              alt="interface screenshot"
+              src={
+                colorMode === "dark" ? darkScreenshotImg : lightScreenshotImg
+              }
+              className={headerCss.heroScreenshot}
             />
             {/* <iframe
                             src="//player.bilibili.com/player.html?aid=818467067&bvid=BV1oG4y1g7jn&cid=912752325&page=1"
