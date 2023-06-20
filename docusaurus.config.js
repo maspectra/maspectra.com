@@ -97,7 +97,7 @@ const config = {
             position: "left"
           },
           {
-            to: "pathname:///apidoc",
+            to: "pathname:///apidoc/modules",
             label: "API Reference",
             position: "left"
           },
