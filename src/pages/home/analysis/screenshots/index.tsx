@@ -92,110 +92,116 @@ const AnalysisScreenshots: React.FC = () => {
             </p>
           </Tab>
         </TabList>
-        {selectedValue === "workflow" && (
-          <div>
-            <div
-              className={clsx(
-                styles.analysisScreenshotsTextContainer,
-                styles.analysisScreenshotsTextContainerWidth
-              )}
-            >
-              <h2 className={sharedCss.titleH2}>
-                <Translate>Workflow Visualization</Translate>
-              </h2>
-              <p className={clsx(sharedCss.text, sharedCss.paragraph)}>
-                <Translate>View your workflow in a single glance.</Translate>
-                <Translate>
-                  Present your workflow to your team and clients with ease. No
-                  more messy flowcharts!
-                </Translate>
-              </p>
-            </div>
-            <div
-              className={clsx(
-                styles.analysisScreenshotsImageContainer,
-                styles.analysisScreenshotsImageContainerWidth
-              )}
-            >
-              <Image
-                className={styles.analysisScreenshotsImage}
-                src={workflowImgUrl}
-                alt="workflow-visualization"
-              />
-            </div>
+        <div
+          style={{
+            display: selectedValue === "workflow" ? "block" : "none"
+          }}
+        >
+          <div
+            className={clsx(
+              styles.analysisScreenshotsTextContainer,
+              styles.analysisScreenshotsTextContainerWidth
+            )}
+          >
+            <h2 className={sharedCss.titleH2}>
+              <Translate>Workflow Visualization</Translate>
+            </h2>
+            <p className={clsx(sharedCss.text, sharedCss.paragraph)}>
+              <Translate>View your workflow in a single glance.</Translate>
+              <Translate>
+                Present your workflow to your team and clients with ease. No
+                more messy flowcharts!
+              </Translate>
+            </p>
           </div>
-        )}
-        {selectedValue === "summary-tables" && (
-          <div>
-            <div
-              className={clsx(
-                styles.analysisScreenshotsTextContainer,
-                styles.analysisScreenshotsTextContainerWidth
-              )}
-            >
-              <h2 className={sharedCss.titleH2}>
-                <Translate>Summary Tables</Translate>
-              </h2>
-              <p className={clsx(sharedCss.text, sharedCss.paragraph)}>
-                <Translate>
-                  Understand your analysis results in prettier-formatted
-                  summary tables.
-                </Translate>
-                <Translate>
-                  Export or copy summary tables with single click.
-                </Translate>
-              </p>
-            </div>
-            <div
-              className={clsx(
-                styles.analysisScreenshotsImageContainer,
-                styles.analysisScreenshotsImageContainerWidth
-              )}
-            >
-              <Image
-                className={styles.analysisScreenshotsImage}
-                src={summaryTablesImgUrl}
-                alt="summary-tables"
-              />
-            </div>
+          <div
+            className={clsx(
+              styles.analysisScreenshotsImageContainer,
+              styles.analysisScreenshotsImageContainerWidth
+            )}
+          >
+            <Image
+              className={styles.analysisScreenshotsImage}
+              src={workflowImgUrl}
+              alt="workflow-visualization"
+            />
           </div>
-        )}
-        {selectedValue === "plot-editor" && (
-          <div>
-            <div
-              className={clsx(
-                styles.analysisScreenshotsTextContainer,
-                styles.analysisScreenshotsTextContainerWidth
-              )}
-            >
-              <h2 className={sharedCss.titleH2}>
-                <Translate>Plot Editor</Translate>
-              </h2>
-              <p className={clsx(sharedCss.text, sharedCss.paragraph)}>
-                <Translate>
-                  Better plotting experience with embedded powerful interactive
-                  plot editor.
-                </Translate>
-                <Translate>
-                  Customizing plot with border/color/point(line) type/layout
-                  and more as you want.
-                </Translate>
-              </p>
-            </div>
-            <div
-              className={clsx(
-                styles.analysisScreenshotsImageContainer,
-                styles.analysisScreenshotsImageContainerWidth
-              )}
-            >
-              <Image
-                className={styles.analysisScreenshotsImage}
-                src={plotEditorImgUrl}
-                alt="plot-editor"
-              />
-            </div>
+        </div>
+        <div
+          style={{
+            display: selectedValue === "summary-tables" ? "block" : "none"
+          }}
+        >
+          <div
+            className={clsx(
+              styles.analysisScreenshotsTextContainer,
+              styles.analysisScreenshotsTextContainerWidth
+            )}
+          >
+            <h2 className={sharedCss.titleH2}>
+              <Translate>Summary Tables</Translate>
+            </h2>
+            <p className={clsx(sharedCss.text, sharedCss.paragraph)}>
+              <Translate>
+                Understand your analysis results in prettier-formatted summary
+                tables.
+              </Translate>
+              <Translate>
+                Export or copy summary tables with single click.
+              </Translate>
+            </p>
           </div>
-        )}
+          <div
+            className={clsx(
+              styles.analysisScreenshotsImageContainer,
+              styles.analysisScreenshotsImageContainerWidth
+            )}
+          >
+            <Image
+              className={styles.analysisScreenshotsImage}
+              src={summaryTablesImgUrl}
+              alt="summary-tables"
+            />
+          </div>
+        </div>
+        <div
+          style={{
+            display: selectedValue === "plot-editor" ? "block" : "none"
+          }}
+        >
+          <div
+            className={clsx(
+              styles.analysisScreenshotsTextContainer,
+              styles.analysisScreenshotsTextContainerWidth
+            )}
+          >
+            <h2 className={sharedCss.titleH2}>
+              <Translate>Plot Editor</Translate>
+            </h2>
+            <p className={clsx(sharedCss.text, sharedCss.paragraph)}>
+              <Translate>
+                Better plotting experience with embedded powerful interactive
+                plot editor.
+              </Translate>
+              <Translate>
+                Customizing plot with border/color/point(line) type/layout and
+                more as you want.
+              </Translate>
+            </p>
+          </div>
+          <div
+            className={clsx(
+              styles.analysisScreenshotsImageContainer,
+              styles.analysisScreenshotsImageContainerWidth
+            )}
+          >
+            <Image
+              className={styles.analysisScreenshotsImage}
+              src={plotEditorImgUrl}
+              alt="plot-editor"
+            />
+          </div>
+        </div>
       </div>
     </div>
   );

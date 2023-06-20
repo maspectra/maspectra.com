@@ -1,0 +1,875 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mas.libs.masmod.symbols._compartment &#8212; masmod  documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../../../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../../../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../../../../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/pygments.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../../../../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="../../../../../" id="documentation_options" src="../../../../../_static/documentation_options.js"></script>
+    <script src="../../../../../_static/jquery.js"></script>
+    <script src="../../../../../_static/underscore.js"></script>
+    <script src="../../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../../../../_static/doctools.js"></script>
+    <script src="../../../../../_static/sphinx_highlight.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '_modules/mas/libs/masmod/symbols/_compartment';</script>
+    <link rel="index" title="Index" href="../../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../../../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+<div class="bd-header__inner bd-page-width">
+  <label class="sidebar-toggle primary-toggle" for="__primary">
+    <span class="fa-solid fa-bars"></span>
+  </label>
+  
+  <div class="navbar-header-items__start">
+    
+      <div class="navbar-item">
+  
+
+<a class="navbar-brand logo" href="../../../../../index.html">
+  
+  
+  
+  
+  
+    <p class="title logo__title">masmod  documentation</p>
+  
+</a></div>
+    
+  </div>
+  
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item"><nav class="navbar-nav">
+  <p class="sidebar-header-items__title"
+     role="heading"
+     aria-level="1"
+     aria-label="Site Navigation">
+    Site Navigation
+  </p>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+        </div>
+      
+      
+        <div class="navbar-item">
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+    </div>
+  
+
+  
+</div>
+
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar hide-on-wide">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          <div class="navbar-item"><nav class="navbar-nav">
+  <p class="sidebar-header-items__title"
+     role="heading"
+     aria-level="1"
+     aria-label="Site Navigation">
+    Site Navigation
+  </p>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+  </ul>
+</nav></div>
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script></div>
+        
+      </div>
+    
+  </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+
+
+<nav aria-label="Breadcrumbs">
+  <ul class="bd-breadcrumbs" role="navigation" aria-label="Breadcrumb">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../../../../../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="../../../../index.html" class="nav-link">Module code</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page">mas.libs.masmod.symbols._compartment</li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <h1>Source code for mas.libs.masmod.symbols._compartment</h1><div class="highlight"><pre>
+<span></span><span class="c1"># _*_ coding: utf-8 _*_</span>
+<span class="c1">############################################################</span>
+<span class="c1"># File: @mas/masmod\symbols\_compartment.py</span>
+<span class="c1">#</span>
+<span class="c1"># Author: 许翀轶 &lt;chongyi.xu@drugchina.net&gt;</span>
+<span class="c1">#</span>
+<span class="c1"># File Created: 02/06/2023 04:01 pm</span>
+<span class="c1">#</span>
+<span class="c1"># Last Modified: 06/14/2023 09:49 am</span>
+<span class="c1">#</span>
+<span class="c1"># Modified By: 姚泽 &lt;ze.yao@drugchina.net&gt;</span>
+<span class="c1">#</span>
+<span class="c1"># Copyright (c) 2023 MaS Dev Team</span>
+<span class="c1">############################################################</span>
+<span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">annotations</span>
+
+<span class="kn">import</span> <span class="nn">ast</span>
+<span class="kn">import</span> <span class="nn">typing</span>
+
+<span class="kn">import</span> <span class="nn">sympy</span>
+
+<span class="kn">from</span> <span class="nn">mas.libs.masmod.symbols._common</span> <span class="kn">import</span> <span class="n">ValueType</span>
+<span class="kn">from</span> <span class="nn">mas.libs.masmod.symbols._expr</span> <span class="kn">import</span> <span class="n">Expression</span>
+<span class="kn">from</span> <span class="nn">mas.libs.masmod.symbols._symvar</span> <span class="kn">import</span> <span class="n">SymVar</span>
+<span class="kn">from</span> <span class="nn">mas.libs.phanpy.uid.nanoid</span> <span class="kn">import</span> <span class="n">generate_nanoid</span>
+
+<span class="n">__all__</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s2">&quot;IntegralT&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;INTEGRAL_T&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Compartment&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;DADt&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;CmtInitialA&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;CmtSolvedA&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;AWrt&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;DADtWrt&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Alag&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Fraction&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Rate&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Duration&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;_DADT_MP&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;_A_MP&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;_make_ode_subscript_ast&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;compartment&quot;</span>
+<span class="p">]</span>
+
+
+<span class="k">class</span> <span class="nc">IntegralT</span><span class="p">(</span><span class="n">sympy</span><span class="o">.</span><span class="n">Symbol</span><span class="p">):</span>
+    <span class="k">pass</span>
+
+
+<span class="n">INTEGRAL_T</span><span class="p">:</span> <span class="n">typing</span><span class="o">.</span><span class="n">Final</span><span class="p">[</span><span class="n">IntegralT</span><span class="p">]</span> <span class="o">=</span> <span class="n">IntegralT</span><span class="p">(</span><span class="s2">&quot;__t&quot;</span><span class="p">)</span>
+<span class="sd">&quot;&quot;&quot;An symbolic T which represents the timestamp in computation stage for ordinary differential equations&quot;&quot;&quot;</span>
+
+
+<span class="k">def</span> <span class="nf">_make_ode_subscript_ast</span><span class="p">(</span>
+    <span class="n">dummy_mp</span><span class="p">:</span> <span class="n">_AMp</span> <span class="o">|</span> <span class="n">_DADtMp</span><span class="p">,</span>
+    <span class="n">key</span><span class="p">:</span> <span class="n">Compartment</span> <span class="o">|</span> <span class="nb">tuple</span><span class="p">[</span><span class="n">Compartment</span><span class="p">,</span> <span class="n">SymVar</span> <span class="o">|</span> <span class="n">Compartment</span><span class="p">]</span> <span class="o">|</span>
+    <span class="nb">tuple</span><span class="p">[</span><span class="n">Compartment</span><span class="p">,</span> <span class="n">SymVar</span> <span class="o">|</span> <span class="n">Compartment</span><span class="p">,</span> <span class="n">SymVar</span> <span class="o">|</span> <span class="n">Compartment</span><span class="p">]</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="n">ast</span><span class="o">.</span><span class="n">Subscript</span><span class="p">:</span>
+    <span class="n">value</span> <span class="o">=</span> <span class="n">ast</span><span class="o">.</span><span class="n">Name</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="n">dummy_mp</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="nb">tuple</span><span class="p">):</span>
+        <span class="n">elts</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="n">ast</span><span class="o">.</span><span class="n">Attribute</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">part</span> <span class="ow">in</span> <span class="n">key</span><span class="p">:</span>
+            <span class="n">elts</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">ast</span><span class="o">.</span><span class="n">Attribute</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="n">ast</span><span class="o">.</span><span class="n">Name</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="s2">&quot;self&quot;</span><span class="p">),</span> <span class="n">attr</span><span class="o">=</span><span class="n">part</span><span class="o">.</span><span class="n">name</span><span class="p">))</span>
+        <span class="nb">slice</span> <span class="o">=</span> <span class="n">ast</span><span class="o">.</span><span class="n">Tuple</span><span class="p">(</span><span class="n">dims</span><span class="o">=</span><span class="n">elts</span><span class="p">,</span> <span class="n">elts</span><span class="o">=</span><span class="n">elts</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">ast</span><span class="o">.</span><span class="n">Subscript</span><span class="p">(</span><span class="nb">slice</span><span class="o">=</span><span class="nb">slice</span><span class="p">,</span> <span class="n">value</span><span class="o">=</span><span class="n">value</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">ast</span><span class="o">.</span><span class="n">Subscript</span><span class="p">(</span><span class="nb">slice</span><span class="o">=</span><span class="n">ast</span><span class="o">.</span><span class="n">Attribute</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="n">ast</span><span class="o">.</span><span class="n">Name</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="s2">&quot;self&quot;</span><span class="p">),</span> <span class="n">attr</span><span class="o">=</span><span class="n">key</span><span class="o">.</span><span class="n">name</span><span class="p">),</span> <span class="n">value</span><span class="o">=</span><span class="n">value</span><span class="p">)</span>
+
+
+<span class="k">class</span> <span class="nc">_DADtMp</span><span class="p">:</span>  <span class="c1"># Dummy</span>
+    <span class="n">name</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;__dAdt&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__setitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">key</span><span class="p">:</span> <span class="n">typing</span><span class="o">.</span><span class="n">Any</span><span class="p">,</span> <span class="n">value</span><span class="p">:</span> <span class="n">typing</span><span class="o">.</span><span class="n">Any</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">NotImplementedError</span><span class="p">()</span>
+
+    <span class="nd">@typing</span><span class="o">.</span><span class="n">overload</span>
+    <span class="k">def</span> <span class="fm">__getitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">key</span><span class="p">:</span> <span class="n">Compartment</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">DADt</span><span class="p">:</span>
+        <span class="o">...</span>
+
+    <span class="nd">@typing</span><span class="o">.</span><span class="n">overload</span>
+    <span class="k">def</span> <span class="fm">__getitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">key</span><span class="p">:</span> <span class="nb">tuple</span><span class="p">[</span><span class="n">Compartment</span><span class="p">,</span> <span class="n">SymVar</span><span class="p">]</span> <span class="o">|</span> <span class="nb">tuple</span><span class="p">[</span><span class="n">Compartment</span><span class="p">,</span> <span class="n">SymVar</span><span class="p">,</span> <span class="n">SymVar</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">DADtWrt</span><span class="p">:</span>
+        <span class="o">...</span>
+
+    <span class="k">def</span> <span class="fm">__getitem__</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span> <span class="n">key</span><span class="p">:</span> <span class="n">Compartment</span> <span class="o">|</span> <span class="nb">tuple</span><span class="p">[</span><span class="n">Compartment</span><span class="p">,</span> <span class="n">SymVar</span><span class="p">]</span> <span class="o">|</span> <span class="nb">tuple</span><span class="p">[</span><span class="n">Compartment</span><span class="p">,</span> <span class="n">SymVar</span><span class="p">,</span> <span class="n">SymVar</span><span class="p">]</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">DADt</span> <span class="o">|</span> <span class="n">DADtWrt</span><span class="p">:</span>
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="nb">tuple</span><span class="p">):</span>
+            <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">key</span><span class="p">)</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>  <span class="c1"># first order</span>
+                <span class="n">cmt</span><span class="p">,</span> <span class="n">wrt</span> <span class="o">=</span> <span class="n">key</span>
+                <span class="k">return</span> <span class="n">DADtWrt</span><span class="p">(</span><span class="n">cmt</span><span class="o">=</span><span class="n">cmt</span><span class="p">,</span> <span class="n">wrt</span><span class="o">=</span><span class="n">wrt</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>  <span class="c1"># second order</span>
+                <span class="n">cmt</span><span class="p">,</span> <span class="n">wrt</span><span class="p">,</span> <span class="n">wrt2nd</span> <span class="o">=</span> <span class="n">key</span>
+                <span class="k">return</span> <span class="n">DADtWrt</span><span class="p">(</span><span class="n">cmt</span><span class="o">=</span><span class="n">cmt</span><span class="p">,</span> <span class="n">wrt</span><span class="o">=</span><span class="n">wrt</span><span class="p">,</span> <span class="n">wrt2nd</span><span class="o">=</span><span class="n">wrt2nd</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">key</span><span class="o">.</span><span class="n">dAdt</span>
+
+
+<span class="n">_DADT_MP</span> <span class="o">=</span> <span class="n">_DADtMp</span><span class="p">()</span>
+
+
+<span class="k">class</span> <span class="nc">_AMp</span><span class="p">:</span>  <span class="c1"># Dummy</span>
+    <span class="n">name</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;__A&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__setitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">key</span><span class="p">:</span> <span class="n">typing</span><span class="o">.</span><span class="n">Any</span><span class="p">,</span> <span class="n">value</span><span class="p">:</span> <span class="n">typing</span><span class="o">.</span><span class="n">Any</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">NotImplementedError</span><span class="p">()</span>
+
+    <span class="nd">@typing</span><span class="o">.</span><span class="n">overload</span>
+    <span class="k">def</span> <span class="fm">__getitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">key</span><span class="p">:</span> <span class="n">Compartment</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">CmtSolvedA</span><span class="p">:</span>
+        <span class="o">...</span>
+
+    <span class="nd">@typing</span><span class="o">.</span><span class="n">overload</span>
+    <span class="k">def</span> <span class="fm">__getitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">key</span><span class="p">:</span> <span class="nb">tuple</span><span class="p">[</span><span class="n">Compartment</span><span class="p">,</span> <span class="n">SymVar</span><span class="p">]</span> <span class="o">|</span> <span class="nb">tuple</span><span class="p">[</span><span class="n">Compartment</span><span class="p">,</span> <span class="n">SymVar</span><span class="p">,</span> <span class="n">SymVar</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">AWrt</span><span class="p">:</span>
+        <span class="o">...</span>
+
+    <span class="k">def</span> <span class="fm">__getitem__</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span> <span class="n">key</span><span class="p">:</span> <span class="n">Compartment</span> <span class="o">|</span> <span class="nb">tuple</span><span class="p">[</span><span class="n">Compartment</span><span class="p">,</span> <span class="n">SymVar</span><span class="p">]</span> <span class="o">|</span> <span class="nb">tuple</span><span class="p">[</span><span class="n">Compartment</span><span class="p">,</span> <span class="n">SymVar</span><span class="p">,</span> <span class="n">SymVar</span><span class="p">]</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">CmtSolvedA</span> <span class="o">|</span> <span class="n">AWrt</span><span class="p">:</span>
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="nb">tuple</span><span class="p">):</span>
+            <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">key</span><span class="p">)</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>  <span class="c1"># first order</span>
+                <span class="n">cmt</span><span class="p">,</span> <span class="n">wrt</span> <span class="o">=</span> <span class="n">key</span>
+                <span class="k">return</span> <span class="n">AWrt</span><span class="p">(</span><span class="n">cmt</span><span class="o">=</span><span class="n">cmt</span><span class="p">,</span> <span class="n">wrt</span><span class="o">=</span><span class="n">wrt</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>  <span class="c1"># second order</span>
+                <span class="n">cmt</span><span class="p">,</span> <span class="n">wrt</span><span class="p">,</span> <span class="n">wrt2nd</span> <span class="o">=</span> <span class="n">key</span>
+                <span class="k">return</span> <span class="n">AWrt</span><span class="p">(</span><span class="n">cmt</span><span class="o">=</span><span class="n">cmt</span><span class="p">,</span> <span class="n">wrt</span><span class="o">=</span><span class="n">wrt</span><span class="p">,</span> <span class="n">wrt2nd</span><span class="o">=</span><span class="n">wrt2nd</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">key</span><span class="o">.</span><span class="n">A</span>
+
+
+<span class="n">_A_MP</span> <span class="o">=</span> <span class="n">_AMp</span><span class="p">()</span>
+
+
+<span class="k">class</span> <span class="nc">DADt</span><span class="p">(</span><span class="n">sympy</span><span class="o">.</span><span class="n">Symbol</span><span class="p">):</span>
+    <span class="vm">__slots__</span> <span class="o">=</span> <span class="p">(</span><span class="s2">&quot;_cmt&quot;</span><span class="p">,</span> <span class="s2">&quot;_expr&quot;</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="fm">__new__</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">cmt</span><span class="p">:</span> <span class="n">Compartment</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">DADt</span><span class="p">:</span>
+        <span class="n">name</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;dA_</span><span class="si">{</span><span class="n">cmt</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">dt&quot;</span>
+        <span class="n">instance</span> <span class="o">=</span> <span class="n">typing</span><span class="o">.</span><span class="n">cast</span><span class="p">(</span><span class="n">DADt</span><span class="p">,</span> <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__new__</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">name</span><span class="p">))</span>
+        <span class="n">instance</span><span class="o">.</span><span class="n">_cmt</span> <span class="o">=</span> <span class="n">cmt</span>
+        <span class="n">instance</span><span class="o">.</span><span class="n">_expr</span> <span class="o">=</span> <span class="n">sympy</span><span class="o">.</span><span class="n">Number</span><span class="p">(</span><span class="mf">0.</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">instance</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">cmt</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Compartment</span><span class="p">:</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cmt</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">expr</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Expression</span><span class="p">:</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_expr</span>
+
+
+<span class="k">class</span> <span class="nc">Alag</span><span class="p">(</span><span class="n">sympy</span><span class="o">.</span><span class="n">Symbol</span><span class="p">):</span>
+    <span class="vm">__slots__</span> <span class="o">=</span> <span class="p">(</span><span class="s2">&quot;_cmt&quot;</span><span class="p">,</span> <span class="s2">&quot;_expr&quot;</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="fm">__new__</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">cmt</span><span class="p">:</span> <span class="n">Compartment</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Alag</span><span class="p">:</span>
+        <span class="n">name</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;Alag_</span><span class="si">{</span><span class="n">cmt</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">&quot;</span>
+        <span class="n">instance</span> <span class="o">=</span> <span class="n">typing</span><span class="o">.</span><span class="n">cast</span><span class="p">(</span><span class="n">Alag</span><span class="p">,</span> <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__new__</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">name</span><span class="p">))</span>
+        <span class="n">instance</span><span class="o">.</span><span class="n">_cmt</span> <span class="o">=</span> <span class="n">cmt</span>
+        <span class="n">instance</span><span class="o">.</span><span class="n">_expr</span> <span class="o">=</span> <span class="mf">0.</span>
+        <span class="k">return</span> <span class="n">instance</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">cmt</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Compartment</span><span class="p">:</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cmt</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">expr</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Expression</span><span class="p">:</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_expr</span>
+
+
+<span class="k">class</span> <span class="nc">Fraction</span><span class="p">(</span><span class="n">sympy</span><span class="o">.</span><span class="n">Symbol</span><span class="p">):</span>
+    <span class="vm">__slots__</span> <span class="o">=</span> <span class="p">(</span><span class="s2">&quot;_cmt&quot;</span><span class="p">,</span> <span class="s2">&quot;_expr&quot;</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="fm">__new__</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">cmt</span><span class="p">:</span> <span class="n">Compartment</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Fraction</span><span class="p">:</span>
+        <span class="n">name</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;Fraction_</span><span class="si">{</span><span class="n">cmt</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">&quot;</span>
+        <span class="n">instance</span> <span class="o">=</span> <span class="n">typing</span><span class="o">.</span><span class="n">cast</span><span class="p">(</span><span class="n">Fraction</span><span class="p">,</span> <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__new__</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">name</span><span class="p">))</span>
+        <span class="n">instance</span><span class="o">.</span><span class="n">_cmt</span> <span class="o">=</span> <span class="n">cmt</span>
+        <span class="n">instance</span><span class="o">.</span><span class="n">_expr</span> <span class="o">=</span> <span class="mf">0.</span>
+        <span class="k">return</span> <span class="n">instance</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">cmt</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Compartment</span><span class="p">:</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cmt</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">expr</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Expression</span><span class="p">:</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_expr</span>
+
+
+<span class="k">class</span> <span class="nc">Rate</span><span class="p">(</span><span class="n">sympy</span><span class="o">.</span><span class="n">Symbol</span><span class="p">):</span>
+    <span class="vm">__slots__</span> <span class="o">=</span> <span class="p">(</span><span class="s2">&quot;_cmt&quot;</span><span class="p">,</span> <span class="s2">&quot;_expr&quot;</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="fm">__new__</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">cmt</span><span class="p">:</span> <span class="n">Compartment</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Rate</span><span class="p">:</span>
+        <span class="n">name</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;Rate_</span><span class="si">{</span><span class="n">cmt</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">&quot;</span>
+        <span class="n">instance</span> <span class="o">=</span> <span class="n">typing</span><span class="o">.</span><span class="n">cast</span><span class="p">(</span><span class="n">Rate</span><span class="p">,</span> <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__new__</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">name</span><span class="p">))</span>
+        <span class="n">instance</span><span class="o">.</span><span class="n">_cmt</span> <span class="o">=</span> <span class="n">cmt</span>
+        <span class="n">instance</span><span class="o">.</span><span class="n">_expr</span> <span class="o">=</span> <span class="mf">0.</span>
+        <span class="k">return</span> <span class="n">instance</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">cmt</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Compartment</span><span class="p">:</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cmt</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">expr</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Expression</span><span class="p">:</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_expr</span>
+
+
+<span class="k">class</span> <span class="nc">Duration</span><span class="p">(</span><span class="n">sympy</span><span class="o">.</span><span class="n">Symbol</span><span class="p">):</span>
+    <span class="vm">__slots__</span> <span class="o">=</span> <span class="p">(</span><span class="s2">&quot;_cmt&quot;</span><span class="p">,</span> <span class="s2">&quot;_expr&quot;</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="fm">__new__</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">cmt</span><span class="p">:</span> <span class="n">Compartment</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Duration</span><span class="p">:</span>
+        <span class="n">name</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;Duration_</span><span class="si">{</span><span class="n">cmt</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">&quot;</span>
+        <span class="n">instance</span> <span class="o">=</span> <span class="n">typing</span><span class="o">.</span><span class="n">cast</span><span class="p">(</span><span class="n">Duration</span><span class="p">,</span> <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__new__</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">name</span><span class="p">))</span>
+        <span class="n">instance</span><span class="o">.</span><span class="n">_cmt</span> <span class="o">=</span> <span class="n">cmt</span>
+        <span class="n">instance</span><span class="o">.</span><span class="n">_expr</span> <span class="o">=</span> <span class="mf">0.</span>
+        <span class="k">return</span> <span class="n">instance</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">cmt</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Compartment</span><span class="p">:</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cmt</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">expr</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Expression</span><span class="p">:</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_expr</span>
+
+
+<span class="k">class</span> <span class="nc">CmtInitialA</span><span class="p">(</span><span class="n">sympy</span><span class="o">.</span><span class="n">Symbol</span><span class="p">):</span>
+    <span class="vm">__slots__</span> <span class="o">=</span> <span class="p">(</span><span class="s2">&quot;_cmt&quot;</span><span class="p">,</span> <span class="s2">&quot;_expr&quot;</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="fm">__new__</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">cmt</span><span class="p">:</span> <span class="n">Compartment</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">CmtInitialA</span><span class="p">:</span>
+        <span class="n">name</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;A0_</span><span class="si">{</span><span class="n">cmt</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">&quot;</span>
+        <span class="n">instance</span> <span class="o">=</span> <span class="n">typing</span><span class="o">.</span><span class="n">cast</span><span class="p">(</span><span class="n">CmtInitialA</span><span class="p">,</span> <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__new__</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">name</span><span class="p">))</span>
+        <span class="n">instance</span><span class="o">.</span><span class="n">_cmt</span> <span class="o">=</span> <span class="n">cmt</span>
+        <span class="n">instance</span><span class="o">.</span><span class="n">_expr</span> <span class="o">=</span> <span class="mf">0.</span>
+        <span class="k">return</span> <span class="n">instance</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">cmt</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Compartment</span><span class="p">:</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cmt</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">expr</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Expression</span><span class="p">:</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_expr</span>
+
+
+<span class="k">class</span> <span class="nc">CmtSolvedA</span><span class="p">(</span><span class="n">sympy</span><span class="o">.</span><span class="n">Symbol</span><span class="p">):</span>
+    <span class="vm">__slots__</span> <span class="o">=</span> <span class="p">(</span><span class="s2">&quot;_cmt&quot;</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="fm">__new__</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">cmt</span><span class="p">:</span> <span class="n">Compartment</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">CmtSolvedA</span><span class="p">:</span>
+        <span class="n">name</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;A_</span><span class="si">{</span><span class="n">cmt</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">&quot;</span>
+        <span class="n">instance</span> <span class="o">=</span> <span class="n">typing</span><span class="o">.</span><span class="n">cast</span><span class="p">(</span><span class="n">CmtSolvedA</span><span class="p">,</span> <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__new__</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">name</span><span class="p">))</span>
+        <span class="n">instance</span><span class="o">.</span><span class="n">_cmt</span> <span class="o">=</span> <span class="n">cmt</span>
+        <span class="k">return</span> <span class="n">instance</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">cmt</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Compartment</span><span class="p">:</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cmt</span>
+
+
+<span class="k">class</span> <span class="nc">AWrt</span><span class="p">(</span><span class="n">sympy</span><span class="o">.</span><span class="n">Symbol</span><span class="p">):</span>
+    <span class="vm">__slots__</span> <span class="o">=</span> <span class="p">(</span><span class="s2">&quot;_cmt&quot;</span><span class="p">,</span> <span class="s2">&quot;_wrt&quot;</span><span class="p">,</span> <span class="s2">&quot;_wrt2nd&quot;</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="fm">__new__</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">cmt</span><span class="p">:</span> <span class="n">Compartment</span><span class="p">,</span> <span class="n">wrt</span><span class="p">:</span> <span class="n">SymVar</span><span class="p">,</span> <span class="n">wrt2nd</span><span class="p">:</span> <span class="n">SymVar</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">AWrt</span><span class="p">:</span>
+        <span class="n">name</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;dA_</span><span class="si">{</span><span class="n">cmt</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">_d</span><span class="si">{</span><span class="n">wrt</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">&quot;</span>
+        <span class="k">if</span> <span class="n">wrt2nd</span><span class="p">:</span>
+            <span class="n">name</span> <span class="o">+=</span> <span class="sa">f</span><span class="s2">&quot;_d</span><span class="si">{</span><span class="n">wrt2nd</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">&quot;</span>
+        <span class="n">instance</span> <span class="o">=</span> <span class="n">typing</span><span class="o">.</span><span class="n">cast</span><span class="p">(</span><span class="n">AWrt</span><span class="p">,</span> <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__new__</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">name</span><span class="p">))</span>
+        <span class="n">instance</span><span class="o">.</span><span class="n">_cmt</span> <span class="o">=</span> <span class="n">cmt</span>
+        <span class="n">instance</span><span class="o">.</span><span class="n">_wrt</span> <span class="o">=</span> <span class="n">wrt</span>
+        <span class="n">instance</span><span class="o">.</span><span class="n">_wrt2nd</span> <span class="o">=</span> <span class="n">wrt2nd</span>
+        <span class="k">return</span> <span class="n">instance</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">cmt</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Compartment</span><span class="p">:</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cmt</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">wrt</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">SymVar</span><span class="p">:</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_wrt</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">wrt2nd</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">SymVar</span> <span class="o">|</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_wrt2nd</span>
+
+
+<span class="k">class</span> <span class="nc">DADtWrt</span><span class="p">(</span><span class="n">sympy</span><span class="o">.</span><span class="n">Symbol</span><span class="p">):</span>
+
+    <span class="vm">__slots__</span> <span class="o">=</span> <span class="p">(</span><span class="s2">&quot;_cmt&quot;</span><span class="p">,</span> <span class="s2">&quot;_wrt&quot;</span><span class="p">,</span> <span class="s2">&quot;_wrt2nd&quot;</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="fm">__new__</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">cmt</span><span class="p">:</span> <span class="n">Compartment</span><span class="p">,</span> <span class="n">wrt</span><span class="p">:</span> <span class="n">SymVar</span><span class="p">,</span> <span class="n">wrt2nd</span><span class="p">:</span> <span class="n">SymVar</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">DADtWrt</span><span class="p">:</span>
+        <span class="n">name</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;dA_</span><span class="si">{</span><span class="n">cmt</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">dt_d</span><span class="si">{</span><span class="n">wrt</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">&quot;</span>
+        <span class="k">if</span> <span class="n">wrt2nd</span><span class="p">:</span>
+            <span class="n">name</span> <span class="o">+=</span> <span class="sa">f</span><span class="s2">&quot;_d</span><span class="si">{</span><span class="n">wrt2nd</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">&quot;</span>
+        <span class="n">instance</span> <span class="o">=</span> <span class="n">typing</span><span class="o">.</span><span class="n">cast</span><span class="p">(</span><span class="n">DADtWrt</span><span class="p">,</span> <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__new__</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">name</span><span class="p">))</span>
+        <span class="n">instance</span><span class="o">.</span><span class="n">_cmt</span> <span class="o">=</span> <span class="n">cmt</span>
+        <span class="n">instance</span><span class="o">.</span><span class="n">_wrt</span> <span class="o">=</span> <span class="n">wrt</span>
+        <span class="n">instance</span><span class="o">.</span><span class="n">_wrt2nd</span> <span class="o">=</span> <span class="n">wrt2nd</span>
+        <span class="k">return</span> <span class="n">instance</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">cmt</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Compartment</span><span class="p">:</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cmt</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">wrt</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">SymVar</span><span class="p">:</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_wrt</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">wrt2nd</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">SymVar</span> <span class="o">|</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_wrt2nd</span>
+
+
+<span class="k">class</span> <span class="nc">Compartment</span><span class="p">:</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span>
+        <span class="n">name</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+        <span class="n">init_value</span><span class="p">:</span> <span class="nb">float</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">default_dose</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span>
+        <span class="n">default_obs</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span>
+        <span class="n">alag</span><span class="p">:</span> <span class="nb">float</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">fraction</span><span class="p">:</span> <span class="nb">float</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">rate</span><span class="p">:</span> <span class="nb">float</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">duration</span><span class="p">:</span> <span class="nb">float</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__name</span> <span class="o">=</span> <span class="n">name</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__init_value</span> <span class="o">=</span> <span class="n">CmtInitialA</span><span class="p">(</span><span class="n">cmt</span><span class="o">=</span><span class="bp">self</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">init_value</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">__init_value</span><span class="o">.</span><span class="n">_expr</span> <span class="o">=</span> <span class="n">init_value</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">__default_dose</span> <span class="o">=</span> <span class="n">default_dose</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__default_obs</span> <span class="o">=</span> <span class="n">default_obs</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">__dAdt</span> <span class="o">=</span> <span class="n">DADt</span><span class="p">(</span><span class="n">cmt</span><span class="o">=</span><span class="bp">self</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">__alag</span> <span class="o">=</span> <span class="n">Alag</span><span class="p">(</span><span class="n">cmt</span><span class="o">=</span><span class="bp">self</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">alag</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">__alag</span><span class="o">.</span><span class="n">_expr</span> <span class="o">=</span> <span class="n">alag</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">__fraction</span> <span class="o">=</span> <span class="n">Fraction</span><span class="p">(</span><span class="n">cmt</span><span class="o">=</span><span class="bp">self</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">fraction</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">__fraction</span><span class="o">.</span><span class="n">_expr</span> <span class="o">=</span> <span class="n">fraction</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">__rate</span> <span class="o">=</span> <span class="n">Rate</span><span class="p">(</span><span class="n">cmt</span><span class="o">=</span><span class="bp">self</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">rate</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">__rate</span><span class="o">.</span><span class="n">_expr</span> <span class="o">=</span> <span class="n">rate</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">__duration</span> <span class="o">=</span> <span class="n">Duration</span><span class="p">(</span><span class="n">cmt</span><span class="o">=</span><span class="bp">self</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">duration</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">__duration</span><span class="o">.</span><span class="n">_expr</span> <span class="o">=</span> <span class="n">duration</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">__A</span> <span class="o">=</span> <span class="n">CmtSolvedA</span><span class="p">(</span><span class="n">cmt</span><span class="o">=</span><span class="bp">self</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">__deepcopy__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">memo</span><span class="p">:</span> <span class="n">typing</span><span class="o">.</span><span class="n">Any</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Compartment</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">Compartment</span><span class="p">(</span>
+            <span class="n">name</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">__name</span><span class="p">,</span>
+            <span class="n">init_value</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">__init_value</span><span class="o">.</span><span class="n">_expr</span><span class="p">,</span>
+            <span class="n">default_dose</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">default_dose</span><span class="p">,</span>
+            <span class="n">default_obs</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">default_obs</span><span class="p">,</span>
+            <span class="n">alag</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">alag</span><span class="o">.</span><span class="n">_expr</span><span class="p">,</span>
+            <span class="n">fraction</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">__fraction</span><span class="o">.</span><span class="n">_expr</span><span class="p">,</span>
+            <span class="n">rate</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">__rate</span><span class="o">.</span><span class="n">_expr</span><span class="p">,</span>
+            <span class="n">duration</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">__duration</span><span class="o">.</span><span class="n">_expr</span>
+        <span class="p">)</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">A</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">CmtSolvedA</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Amount of the compartment solved from differential equation</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            CmtSolvedA: Amount of the compartment</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__A</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">dAdt</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">DADt</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Differential equation of the compartment</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            DADt: the expression formula of differential equation</span>
+
+<span class="sd">        Examples:</span>
+<span class="sd">            &gt;&gt;&gt; central_cmt.dAdt = ka * dose_cmt.A - k * central_cmt.A</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__dAdt</span>
+
+    <span class="nd">@dAdt</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">dAdt</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">val</span><span class="p">:</span> <span class="n">Expression</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">val</span><span class="p">,</span> <span class="nb">int</span> <span class="o">|</span> <span class="nb">float</span> <span class="o">|</span> <span class="n">sympy</span><span class="o">.</span><span class="n">Expr</span><span class="p">):</span>
+            <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">()</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">__dAdt</span><span class="o">.</span><span class="n">_expr</span> <span class="o">=</span> <span class="n">val</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">name</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Name of the compartment</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            str: name</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__name</span>
+
+    <span class="nd">@name</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">name</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">val</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__name</span> <span class="o">=</span> <span class="n">val</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__A</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;A_</span><span class="si">{</span><span class="n">val</span><span class="si">}</span><span class="s2">&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__dAdt</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;dA_</span><span class="si">{</span><span class="n">val</span><span class="si">}</span><span class="s2">dt&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__alag</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;Alag_</span><span class="si">{</span><span class="n">val</span><span class="si">}</span><span class="s2">&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__fraction</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;Fraction_</span><span class="si">{</span><span class="n">val</span><span class="si">}</span><span class="s2">&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__rate</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;Rate_</span><span class="si">{</span><span class="n">val</span><span class="si">}</span><span class="s2">&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__duration</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;Duration_</span><span class="si">{</span><span class="n">val</span><span class="si">}</span><span class="s2">&quot;</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">alag</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Alag</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Absorption Lag of the compartment</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            Alag: the expression formula of alag</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__alag</span>
+
+    <span class="nd">@alag</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">alag</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">val</span><span class="p">:</span> <span class="n">Expression</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">val</span><span class="p">,</span> <span class="nb">int</span> <span class="o">|</span> <span class="nb">float</span> <span class="o">|</span> <span class="n">sympy</span><span class="o">.</span><span class="n">Expr</span><span class="p">):</span>
+            <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__alag</span><span class="o">.</span><span class="n">_expr</span> <span class="o">=</span> <span class="n">val</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">fraction</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Fraction</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;BioAvailability of the compartment</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            Fraction: the expression formula of BioAvailability</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__fraction</span>
+
+    <span class="nd">@fraction</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">fraction</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">val</span><span class="p">:</span> <span class="n">Expression</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">val</span><span class="p">,</span> <span class="nb">int</span> <span class="o">|</span> <span class="nb">float</span> <span class="o">|</span> <span class="n">sympy</span><span class="o">.</span><span class="n">Expr</span><span class="p">):</span>
+            <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__fraction</span><span class="o">.</span><span class="n">_expr</span> <span class="o">=</span> <span class="n">val</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">rate</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Rate</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Dosing rate of the compartment</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            Rate: the expression formula of dosing rate</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__rate</span>
+
+    <span class="nd">@rate</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">rate</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">val</span><span class="p">:</span> <span class="n">Expression</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">val</span><span class="p">,</span> <span class="nb">int</span> <span class="o">|</span> <span class="nb">float</span> <span class="o">|</span> <span class="n">sympy</span><span class="o">.</span><span class="n">Expr</span><span class="p">):</span>
+            <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__rate</span><span class="o">.</span><span class="n">_expr</span> <span class="o">=</span> <span class="n">val</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">duration</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Duration</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Dosing duration of the compartment</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            Duration: the expression formula of dosing duration</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__duration</span>
+
+    <span class="nd">@duration</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">duration</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">val</span><span class="p">:</span> <span class="n">Expression</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">val</span><span class="p">,</span> <span class="nb">int</span> <span class="o">|</span> <span class="nb">float</span> <span class="o">|</span> <span class="n">sympy</span><span class="o">.</span><span class="n">Expr</span><span class="p">):</span>
+            <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__duration</span><span class="o">.</span><span class="n">_expr</span> <span class="o">=</span> <span class="n">val</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">init_value</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">CmtInitialA</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Initial amount of the compartment A_0</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            CmtInitialA: the expression formula of initial amount</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__init_value</span>
+
+    <span class="nd">@init_value</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">init_value</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">val</span><span class="p">:</span> <span class="n">Expression</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">val</span><span class="p">,</span> <span class="nb">int</span> <span class="o">|</span> <span class="nb">float</span> <span class="o">|</span> <span class="n">sympy</span><span class="o">.</span><span class="n">Expr</span><span class="p">):</span>
+            <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__init_value</span><span class="o">.</span><span class="n">_expr</span> <span class="o">=</span> <span class="n">val</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">default_dose</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;If the compartment is set to be default dosing compartment</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            bool: True if default dosing</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__default_dose</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">default_obs</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;If the compartment is set to be default observation compartment</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            bool: True if default observation</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__default_obs</span>
+
+
+<div class="viewcode-block" id="compartment"><a class="viewcode-back" href="../../../../../masmod.symbols.html#masmod.api.compartment">[docs]</a><span class="k">def</span> <span class="nf">compartment</span><span class="p">(</span>
+    <span class="n">init_value</span><span class="p">:</span> <span class="n">ValueType</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">default_dose</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">default_obs</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Compartment</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Create an compartment variable</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        init_value (ValueType | None, optional): Initial value of the amount in compartment. Defaults to 0.</span>
+<span class="sd">        default_dose (bool, optional): If the compartment is default dosing compartment(DEPOT). Defaults to False.</span>
+<span class="sd">        default_obs (bool, optional): If the compartment is default observation compartment(CENTRAL). Defaults to False.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        Compartment: compartment variable</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">init_value</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">init_value</span> <span class="o">=</span> <span class="mf">0.</span>
+
+    <span class="n">name</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;__unnamed_cmt_</span><span class="si">{</span><span class="n">generate_nanoid</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span>
+
+    <span class="k">return</span> <span class="n">Compartment</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="n">name</span><span class="p">,</span> <span class="n">init_value</span><span class="o">=</span><span class="n">init_value</span><span class="p">,</span> <span class="n">default_dose</span><span class="o">=</span><span class="n">default_dose</span><span class="p">,</span> <span class="n">default_obs</span><span class="o">=</span><span class="n">default_obs</span><span class="p">)</span></div>
+</pre></div>
+
+                </article>
+              
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../../../../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+  <p class="copyright">
+    
+      © Copyright 2023, Maspectra Dev Team.
+      <br/>
+    
+  </p>
+</div>
+      
+        <div class="footer-item">
+  <p class="sphinx-version">
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 5.3.0.
+    <br/>
+  </p>
+</div>
+      
+    </div>
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item"><p class="theme-version">
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.13.3.
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>

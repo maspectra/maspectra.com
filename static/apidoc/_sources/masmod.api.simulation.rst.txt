@@ -1,0 +1,29 @@
+masmod.api.simulation package
+=============================
+
+Submodules
+----------
+
+masmod.api.simulation.parameter\_set module
+-------------------------------------------
+
+.. automodule:: masmod.api.simulation.parameter_set
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+masmod.api.simulation.simulation module
+---------------------------------------
+
+.. automodule:: masmod.api.simulation.simulation
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: masmod.api.simulation
+   :members:
+   :undoc-members:
+   :show-inheritance:

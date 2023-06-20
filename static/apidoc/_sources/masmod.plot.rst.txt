@@ -1,0 +1,77 @@
+masmod.plot package
+===================
+
+Submodules
+----------
+
+masmod.plot.abstract module
+---------------------------
+
+.. automodule:: masmod.plot.abstract
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+masmod.plot.abstract\_groupby module
+------------------------------------
+
+.. automodule:: masmod.plot.abstract_groupby
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+masmod.plot.explore module
+--------------------------
+
+.. automodule:: masmod.plot.explore
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+masmod.plot.gof\_plot module
+----------------------------
+
+.. automodule:: masmod.plot.gof_plot
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+masmod.plot.ind\_fit\_plot module
+---------------------------------
+
+.. automodule:: masmod.plot.ind_fit_plot
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+masmod.plot.interface module
+----------------------------
+
+.. automodule:: masmod.plot.interface
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+masmod.plot.iter\_plot module
+-----------------------------
+
+.. automodule:: masmod.plot.iter_plot
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+masmod.plot.simulate\_plot module
+---------------------------------
+
+.. automodule:: masmod.plot.simulate_plot
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: masmod.plot
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -1,0 +1,61 @@
+masmod.api.estimation package
+=============================
+
+Submodules
+----------
+
+masmod.api.estimation.bootstrap module
+--------------------------------------
+
+.. automodule:: masmod.api.estimation.bootstrap
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+masmod.api.estimation.estimation\_method module
+-----------------------------------------------
+
+.. automodule:: masmod.api.estimation.estimation_method
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+masmod.api.estimation.estimation\_result module
+-----------------------------------------------
+
+.. automodule:: masmod.api.estimation.estimation_result
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+masmod.api.estimation.fit\_result module
+----------------------------------------
+
+.. automodule:: masmod.api.estimation.fit_result
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+masmod.api.estimation.vpc module
+--------------------------------
+
+.. automodule:: masmod.api.estimation.vpc
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+masmod.api.estimation.wres module
+---------------------------------
+
+.. automodule:: masmod.api.estimation.wres
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: masmod.api.estimation
+   :members:
+   :undoc-members:
+   :show-inheritance:

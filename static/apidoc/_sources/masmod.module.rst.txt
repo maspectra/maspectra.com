@@ -1,0 +1,29 @@
+masmod.module package
+=====================
+
+Submodules
+----------
+
+masmod.module.module module
+---------------------------
+
+.. automodule:: masmod.module.module
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+masmod.module.pk\_module module
+-------------------------------
+
+.. automodule:: masmod.module.pk_module
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: masmod.module
+   :members:
+   :undoc-members:
+   :show-inheritance:

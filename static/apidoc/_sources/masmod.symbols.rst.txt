@@ -1,0 +1,10 @@
+masmod.symbols package
+======================
+
+Module contents
+---------------
+
+.. automodule:: masmod.symbols
+   :members:
+   :undoc-members:
+   :show-inheritance:

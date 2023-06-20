@@ -1,0 +1,1146 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>masmod package &#8212; masmod  documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'masmod';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+<div class="bd-header__inner bd-page-width">
+  <label class="sidebar-toggle primary-toggle" for="__primary">
+    <span class="fa-solid fa-bars"></span>
+  </label>
+  
+  <div class="navbar-header-items__start">
+    
+      <div class="navbar-item">
+  
+
+<a class="navbar-brand logo" href="index.html">
+  
+  
+  
+  
+  
+    <p class="title logo__title">masmod  documentation</p>
+  
+</a></div>
+    
+  </div>
+  
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item"><nav class="navbar-nav">
+  <p class="sidebar-header-items__title"
+     role="heading"
+     aria-level="1"
+     aria-label="Site Navigation">
+    Site Navigation
+  </p>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+        </div>
+      
+      
+        <div class="navbar-item">
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+    </div>
+  
+
+  
+    <label class="sidebar-toggle secondary-toggle" for="__secondary">
+      <span class="fa-solid fa-outdent"></span>
+    </label>
+  
+</div>
+
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          <div class="navbar-item"><nav class="navbar-nav">
+  <p class="sidebar-header-items__title"
+     role="heading"
+     aria-level="1"
+     aria-label="Site Navigation">
+    Site Navigation
+  </p>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+  </ul>
+</nav></div>
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item"><nav class="bd-docs-nav bd-links"
+     aria-label="Section Navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
+  <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="masmod.api.html">masmod.api package</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="masmod.api.data.html">masmod.api.data package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="masmod.api.estimation.html">masmod.api.estimation package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="masmod.api.simulation.html">masmod.api.simulation package</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="masmod.ast_worker.html">masmod.ast_worker package</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="masmod.ast_worker.if_else.html">masmod.ast_worker.if_else package</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="masmod.compiler.html">masmod.compiler package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="masmod.functional.html">masmod.functional package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="masmod.module.html">masmod.module package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="masmod.plot.html">masmod.plot package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="masmod.symbols.html">masmod.symbols package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="masmod.translator.html">masmod.translator package</a></li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+
+
+<nav aria-label="Breadcrumbs">
+  <ul class="bd-breadcrumbs" role="navigation" aria-label="Breadcrumb">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    <li class="breadcrumb-item active" aria-current="page">masmod package</li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section id="masmod-package">
+<h1>masmod package<a class="headerlink" href="#masmod-package" title="Permalink to this heading">#</a></h1>
+<section id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this heading">#</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="masmod.api.html">masmod.api package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="masmod.api.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="masmod.api.data.html">masmod.api.data package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.data.html#module-masmod.api.data">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="masmod.api.estimation.html">masmod.api.estimation package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.estimation.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.estimation.html#module-masmod.api.estimation.bootstrap">masmod.api.estimation.bootstrap module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.estimation.html#module-masmod.api.estimation.estimation_method">masmod.api.estimation.estimation_method module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.estimation.html#module-masmod.api.estimation.estimation_result">masmod.api.estimation.estimation_result module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.estimation.html#module-masmod.api.estimation.fit_result">masmod.api.estimation.fit_result module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.estimation.html#module-masmod.api.estimation.vpc">masmod.api.estimation.vpc module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.estimation.html#module-masmod.api.estimation.wres">masmod.api.estimation.wres module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.estimation.html#module-masmod.api.estimation">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="masmod.api.simulation.html">masmod.api.simulation package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.simulation.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.simulation.html#module-masmod.api.simulation.parameter_set">masmod.api.simulation.parameter_set module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.simulation.html#module-masmod.api.simulation.simulation">masmod.api.simulation.simulation module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.simulation.html#module-masmod.api.simulation">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="masmod.api.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="masmod.api.html#module-masmod.api.model">masmod.api.model module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="masmod.api.html#masmod.api.model.PopModel"><code class="docutils literal notranslate"><span class="pre">PopModel</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.model.PopModel.compute_ipred"><code class="docutils literal notranslate"><span class="pre">PopModel.compute_ipred()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.model.PopModel.compute_pred"><code class="docutils literal notranslate"><span class="pre">PopModel.compute_pred()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.model.PopModel.conditional_distribution"><code class="docutils literal notranslate"><span class="pre">PopModel.conditional_distribution()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.model.PopModel.data"><code class="docutils literal notranslate"><span class="pre">PopModel.data</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.model.PopModel.empirical_bayesian_estimation"><code class="docutils literal notranslate"><span class="pre">PopModel.empirical_bayesian_estimation()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.model.PopModel.fit"><code class="docutils literal notranslate"><span class="pre">PopModel.fit()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.model.PopModel.importance_sampling"><code class="docutils literal notranslate"><span class="pre">PopModel.importance_sampling()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.model.PopModel.init_pop_params"><code class="docutils literal notranslate"><span class="pre">PopModel.init_pop_params()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.model.PopModel.mod"><code class="docutils literal notranslate"><span class="pre">PopModel.mod</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.model.PopModel.model_ptr"><code class="docutils literal notranslate"><span class="pre">PopModel.model_ptr</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.model.PopModel.simulate"><code class="docutils literal notranslate"><span class="pre">PopModel.simulate()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="masmod.api.html#module-masmod.api.nonmem_compat">masmod.api.nonmem_compat module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="masmod.api.html#masmod.api.nonmem_compat.TranslateResult"><code class="docutils literal notranslate"><span class="pre">TranslateResult</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.nonmem_compat.TranslateResult.ctl_source"><code class="docutils literal notranslate"><span class="pre">TranslateResult.ctl_source</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.nonmem_compat.TranslateResult.mod_source"><code class="docutils literal notranslate"><span class="pre">TranslateResult.mod_source</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.nonmem_compat.TranslateResult.work_dir"><code class="docutils literal notranslate"><span class="pre">TranslateResult.work_dir</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="masmod.api.html#masmod.api.nonmem_compat.read_nonmem_data"><code class="docutils literal notranslate"><span class="pre">read_nonmem_data()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="masmod.api.html#masmod.api.nonmem_compat.split_nonmem_data"><code class="docutils literal notranslate"><span class="pre">split_nonmem_data()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="masmod.api.html#masmod.api.nonmem_compat.translate_nonmem"><code class="docutils literal notranslate"><span class="pre">translate_nonmem()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="masmod.api.html#module-masmod.api.parameters">masmod.api.parameters module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="masmod.api.html#masmod.api.parameters.PopParams"><code class="docutils literal notranslate"><span class="pre">PopParams</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.parameters.PopParams.as_pandas"><code class="docutils literal notranslate"><span class="pre">PopParams.as_pandas()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.parameters.PopParams.as_tabular_data"><code class="docutils literal notranslate"><span class="pre">PopParams.as_tabular_data()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.parameters.PopParams.epsilon_names"><code class="docutils literal notranslate"><span class="pre">PopParams.epsilon_names</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.parameters.PopParams.eta_names"><code class="docutils literal notranslate"><span class="pre">PopParams.eta_names</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.parameters.PopParams.from_ditto"><code class="docutils literal notranslate"><span class="pre">PopParams.from_ditto()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.parameters.PopParams.theta_names"><code class="docutils literal notranslate"><span class="pre">PopParams.theta_names</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="masmod.api.html#module-masmod.api.pk">masmod.api.pk module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="masmod.api.html#masmod.api.pk.EvOneCmtLinear"><code class="docutils literal notranslate"><span class="pre">EvOneCmtLinear</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.pk.EvOneCmtLinear.index_dosing_cmt"><code class="docutils literal notranslate"><span class="pre">EvOneCmtLinear.index_dosing_cmt</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.pk.EvOneCmtLinear.index_observe_cmt"><code class="docutils literal notranslate"><span class="pre">EvOneCmtLinear.index_observe_cmt</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.pk.EvOneCmtLinear.n_cmt"><code class="docutils literal notranslate"><span class="pre">EvOneCmtLinear.n_cmt</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.pk.EvOneCmtLinear.trans1"><code class="docutils literal notranslate"><span class="pre">EvOneCmtLinear.trans1</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.pk.EvOneCmtLinear.trans2"><code class="docutils literal notranslate"><span class="pre">EvOneCmtLinear.trans2</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="masmod.api.html#masmod.api.pk.EvThreeCmtLinear"><code class="docutils literal notranslate"><span class="pre">EvThreeCmtLinear</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.pk.EvThreeCmtLinear.index_dosing_cmt"><code class="docutils literal notranslate"><span class="pre">EvThreeCmtLinear.index_dosing_cmt</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.pk.EvThreeCmtLinear.index_observe_cmt"><code class="docutils literal notranslate"><span class="pre">EvThreeCmtLinear.index_observe_cmt</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.pk.EvThreeCmtLinear.n_cmt"><code class="docutils literal notranslate"><span class="pre">EvThreeCmtLinear.n_cmt</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.pk.EvThreeCmtLinear.trans1"><code class="docutils literal notranslate"><span class="pre">EvThreeCmtLinear.trans1</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.pk.EvThreeCmtLinear.trans4"><code class="docutils literal notranslate"><span class="pre">EvThreeCmtLinear.trans4</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.pk.EvThreeCmtLinear.trans6"><code class="docutils literal notranslate"><span class="pre">EvThreeCmtLinear.trans6</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="masmod.api.html#masmod.api.pk.EvTwoCmtLinear"><code class="docutils literal notranslate"><span class="pre">EvTwoCmtLinear</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.pk.EvTwoCmtLinear.index_dosing_cmt"><code class="docutils literal notranslate"><span class="pre">EvTwoCmtLinear.index_dosing_cmt</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.pk.EvTwoCmtLinear.index_observe_cmt"><code class="docutils literal notranslate"><span class="pre">EvTwoCmtLinear.index_observe_cmt</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.pk.EvTwoCmtLinear.n_cmt"><code class="docutils literal notranslate"><span class="pre">EvTwoCmtLinear.n_cmt</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.pk.EvTwoCmtLinear.trans1"><code class="docutils literal notranslate"><span class="pre">EvTwoCmtLinear.trans1</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.pk.EvTwoCmtLinear.trans3"><code class="docutils literal notranslate"><span class="pre">EvTwoCmtLinear.trans3</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.pk.EvTwoCmtLinear.trans4"><code class="docutils literal notranslate"><span class="pre">EvTwoCmtLinear.trans4</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.pk.EvTwoCmtLinear.trans5"><code class="docutils literal notranslate"><span class="pre">EvTwoCmtLinear.trans5</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.pk.EvTwoCmtLinear.trans6"><code class="docutils literal notranslate"><span class="pre">EvTwoCmtLinear.trans6</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="masmod.api.html#masmod.api.pk.IvOneCmtLinear"><code class="docutils literal notranslate"><span class="pre">IvOneCmtLinear</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.pk.IvOneCmtLinear.index_dosing_cmt"><code class="docutils literal notranslate"><span class="pre">IvOneCmtLinear.index_dosing_cmt</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.pk.IvOneCmtLinear.index_observe_cmt"><code class="docutils literal notranslate"><span class="pre">IvOneCmtLinear.index_observe_cmt</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.pk.IvOneCmtLinear.n_cmt"><code class="docutils literal notranslate"><span class="pre">IvOneCmtLinear.n_cmt</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.pk.IvOneCmtLinear.trans1"><code class="docutils literal notranslate"><span class="pre">IvOneCmtLinear.trans1</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.pk.IvOneCmtLinear.trans2"><code class="docutils literal notranslate"><span class="pre">IvOneCmtLinear.trans2</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="masmod.api.html#masmod.api.pk.IvOneCmtMichaelisMenten"><code class="docutils literal notranslate"><span class="pre">IvOneCmtMichaelisMenten</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.pk.IvOneCmtMichaelisMenten.index_dosing_cmt"><code class="docutils literal notranslate"><span class="pre">IvOneCmtMichaelisMenten.index_dosing_cmt</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.pk.IvOneCmtMichaelisMenten.index_observe_cmt"><code class="docutils literal notranslate"><span class="pre">IvOneCmtMichaelisMenten.index_observe_cmt</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.pk.IvOneCmtMichaelisMenten.n_cmt"><code class="docutils literal notranslate"><span class="pre">IvOneCmtMichaelisMenten.n_cmt</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.pk.IvOneCmtMichaelisMenten.trans1"><code class="docutils literal notranslate"><span class="pre">IvOneCmtMichaelisMenten.trans1</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="masmod.api.html#masmod.api.pk.IvThreeCmtLinear"><code class="docutils literal notranslate"><span class="pre">IvThreeCmtLinear</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.pk.IvThreeCmtLinear.index_dosing_cmt"><code class="docutils literal notranslate"><span class="pre">IvThreeCmtLinear.index_dosing_cmt</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.pk.IvThreeCmtLinear.index_observe_cmt"><code class="docutils literal notranslate"><span class="pre">IvThreeCmtLinear.index_observe_cmt</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.pk.IvThreeCmtLinear.n_cmt"><code class="docutils literal notranslate"><span class="pre">IvThreeCmtLinear.n_cmt</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.pk.IvThreeCmtLinear.trans1"><code class="docutils literal notranslate"><span class="pre">IvThreeCmtLinear.trans1</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.pk.IvThreeCmtLinear.trans4"><code class="docutils literal notranslate"><span class="pre">IvThreeCmtLinear.trans4</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.pk.IvThreeCmtLinear.trans6"><code class="docutils literal notranslate"><span class="pre">IvThreeCmtLinear.trans6</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="masmod.api.html#masmod.api.pk.IvTwoCmtLinear"><code class="docutils literal notranslate"><span class="pre">IvTwoCmtLinear</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.pk.IvTwoCmtLinear.index_dosing_cmt"><code class="docutils literal notranslate"><span class="pre">IvTwoCmtLinear.index_dosing_cmt</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.pk.IvTwoCmtLinear.index_observe_cmt"><code class="docutils literal notranslate"><span class="pre">IvTwoCmtLinear.index_observe_cmt</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.pk.IvTwoCmtLinear.n_cmt"><code class="docutils literal notranslate"><span class="pre">IvTwoCmtLinear.n_cmt</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.pk.IvTwoCmtLinear.trans1"><code class="docutils literal notranslate"><span class="pre">IvTwoCmtLinear.trans1</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.pk.IvTwoCmtLinear.trans3"><code class="docutils literal notranslate"><span class="pre">IvTwoCmtLinear.trans3</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.pk.IvTwoCmtLinear.trans4"><code class="docutils literal notranslate"><span class="pre">IvTwoCmtLinear.trans4</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.pk.IvTwoCmtLinear.trans5"><code class="docutils literal notranslate"><span class="pre">IvTwoCmtLinear.trans5</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.pk.IvTwoCmtLinear.trans6"><code class="docutils literal notranslate"><span class="pre">IvTwoCmtLinear.trans6</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="masmod.api.html#module-masmod.api.plot">masmod.api.plot module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="masmod.api.html#masmod.api.plot.GofPlot"><code class="docutils literal notranslate"><span class="pre">GofPlot</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="masmod.api.html#masmod.api.plot.IGroupbyablePlotlyPlot"><code class="docutils literal notranslate"><span class="pre">IGroupbyablePlotlyPlot</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.plot.IGroupbyablePlotlyPlot.groupby"><code class="docutils literal notranslate"><span class="pre">IGroupbyablePlotlyPlot.groupby()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="masmod.api.html#masmod.api.plot.IPlotlyPlot"><code class="docutils literal notranslate"><span class="pre">IPlotlyPlot</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.plot.IPlotlyPlot.figure"><code class="docutils literal notranslate"><span class="pre">IPlotlyPlot.figure</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.plot.IPlotlyPlot.show"><code class="docutils literal notranslate"><span class="pre">IPlotlyPlot.show()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="masmod.api.html#masmod.api.plot.IndFitPlot"><code class="docutils literal notranslate"><span class="pre">IndFitPlot</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="masmod.api.html#masmod.api.plot.IterPlot"><code class="docutils literal notranslate"><span class="pre">IterPlot</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="masmod.api.html#module-masmod.api.typing">masmod.api.typing module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="masmod.api.html#masmod.api.typing.IEstimationResult"><code class="docutils literal notranslate"><span class="pre">IEstimationResult</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.typing.IEstimationResult.compute_se"><code class="docutils literal notranslate"><span class="pre">IEstimationResult.compute_se()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.typing.IEstimationResult.converged"><code class="docutils literal notranslate"><span class="pre">IEstimationResult.converged</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.typing.IEstimationResult.empirical_bayesian_estimation"><code class="docutils literal notranslate"><span class="pre">IEstimationResult.empirical_bayesian_estimation</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.typing.IEstimationResult.final_obj_val"><code class="docutils literal notranslate"><span class="pre">IEstimationResult.final_obj_val</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.typing.IEstimationResult.final_pop_params"><code class="docutils literal notranslate"><span class="pre">IEstimationResult.final_pop_params</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.typing.IEstimationResult.ipred"><code class="docutils literal notranslate"><span class="pre">IEstimationResult.ipred</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.typing.IEstimationResult.iter_details"><code class="docutils literal notranslate"><span class="pre">IEstimationResult.iter_details</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.typing.IEstimationResult.n_iter"><code class="docutils literal notranslate"><span class="pre">IEstimationResult.n_iter</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.typing.IEstimationResult.plot_goodness_of_fit"><code class="docutils literal notranslate"><span class="pre">IEstimationResult.plot_goodness_of_fit()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.typing.IEstimationResult.plot_individual_fit"><code class="docutils literal notranslate"><span class="pre">IEstimationResult.plot_individual_fit()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.typing.IEstimationResult.pred"><code class="docutils literal notranslate"><span class="pre">IEstimationResult.pred</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.typing.IEstimationResult.rse"><code class="docutils literal notranslate"><span class="pre">IEstimationResult.rse</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.typing.IEstimationResult.shrinkage"><code class="docutils literal notranslate"><span class="pre">IEstimationResult.shrinkage</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="masmod.api.html#masmod.api.typing.IPopModel"><code class="docutils literal notranslate"><span class="pre">IPopModel</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.typing.IPopModel.compute_ipred"><code class="docutils literal notranslate"><span class="pre">IPopModel.compute_ipred()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.typing.IPopModel.compute_pred"><code class="docutils literal notranslate"><span class="pre">IPopModel.compute_pred()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.typing.IPopModel.conditional_distribution"><code class="docutils literal notranslate"><span class="pre">IPopModel.conditional_distribution()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.typing.IPopModel.data"><code class="docutils literal notranslate"><span class="pre">IPopModel.data</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.typing.IPopModel.empirical_bayesian_estimation"><code class="docutils literal notranslate"><span class="pre">IPopModel.empirical_bayesian_estimation()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.typing.IPopModel.fit"><code class="docutils literal notranslate"><span class="pre">IPopModel.fit()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.typing.IPopModel.importance_sampling"><code class="docutils literal notranslate"><span class="pre">IPopModel.importance_sampling()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.typing.IPopModel.init_pop_params"><code class="docutils literal notranslate"><span class="pre">IPopModel.init_pop_params()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.typing.IPopModel.mod"><code class="docutils literal notranslate"><span class="pre">IPopModel.mod</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.typing.IPopModel.model_ptr"><code class="docutils literal notranslate"><span class="pre">IPopModel.model_ptr</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.typing.IPopModel.simulate"><code class="docutils literal notranslate"><span class="pre">IPopModel.simulate()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="masmod.api.html#masmod.api.typing.ISimulationResult"><code class="docutils literal notranslate"><span class="pre">ISimulationResult</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.typing.ISimulationResult.plot_individual"><code class="docutils literal notranslate"><span class="pre">ISimulationResult.plot_individual()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.typing.ISimulationResult.plot_interval"><code class="docutils literal notranslate"><span class="pre">ISimulationResult.plot_interval()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.typing.ISimulationResult.simulated_df"><code class="docutils literal notranslate"><span class="pre">ISimulationResult.simulated_df</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.typing.ISimulationResult.y"><code class="docutils literal notranslate"><span class="pre">ISimulationResult.y</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="masmod.api.html#module-masmod.api">Module contents</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="masmod.api.html#masmod.api.Block"><code class="docutils literal notranslate"><span class="pre">Block</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.Block.as_full"><code class="docutils literal notranslate"><span class="pre">Block.as_full()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.Block.dimension"><code class="docutils literal notranslate"><span class="pre">Block.dimension</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.Block.tril"><code class="docutils literal notranslate"><span class="pre">Block.tril</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="masmod.api.html#masmod.api.EstimationResult"><code class="docutils literal notranslate"><span class="pre">EstimationResult</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.EstimationResult.converged"><code class="docutils literal notranslate"><span class="pre">EstimationResult.converged</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.EstimationResult.elapsed_time"><code class="docutils literal notranslate"><span class="pre">EstimationResult.elapsed_time</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.EstimationResult.empirical_bayesian_estimation"><code class="docutils literal notranslate"><span class="pre">EstimationResult.empirical_bayesian_estimation</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.EstimationResult.final_obj_val"><code class="docutils literal notranslate"><span class="pre">EstimationResult.final_obj_val</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.EstimationResult.final_pop_params"><code class="docutils literal notranslate"><span class="pre">EstimationResult.final_pop_params</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.EstimationResult.iter_details"><code class="docutils literal notranslate"><span class="pre">EstimationResult.iter_details</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.EstimationResult.n_iter"><code class="docutils literal notranslate"><span class="pre">EstimationResult.n_iter</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.EstimationResult.previous_est_result"><code class="docutils literal notranslate"><span class="pre">EstimationResult.previous_est_result</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.EstimationResult.shrinkage"><code class="docutils literal notranslate"><span class="pre">EstimationResult.shrinkage</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="masmod.api.html#masmod.api.EvOneCmtLinear"><code class="docutils literal notranslate"><span class="pre">EvOneCmtLinear</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.EvOneCmtLinear.index_dosing_cmt"><code class="docutils literal notranslate"><span class="pre">EvOneCmtLinear.index_dosing_cmt</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.EvOneCmtLinear.index_observe_cmt"><code class="docutils literal notranslate"><span class="pre">EvOneCmtLinear.index_observe_cmt</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.EvOneCmtLinear.n_cmt"><code class="docutils literal notranslate"><span class="pre">EvOneCmtLinear.n_cmt</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.EvOneCmtLinear.trans1"><code class="docutils literal notranslate"><span class="pre">EvOneCmtLinear.trans1</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.EvOneCmtLinear.trans2"><code class="docutils literal notranslate"><span class="pre">EvOneCmtLinear.trans2</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="masmod.api.html#masmod.api.EvThreeCmtLinear"><code class="docutils literal notranslate"><span class="pre">EvThreeCmtLinear</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.EvThreeCmtLinear.index_dosing_cmt"><code class="docutils literal notranslate"><span class="pre">EvThreeCmtLinear.index_dosing_cmt</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.EvThreeCmtLinear.index_observe_cmt"><code class="docutils literal notranslate"><span class="pre">EvThreeCmtLinear.index_observe_cmt</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.EvThreeCmtLinear.n_cmt"><code class="docutils literal notranslate"><span class="pre">EvThreeCmtLinear.n_cmt</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.EvThreeCmtLinear.trans1"><code class="docutils literal notranslate"><span class="pre">EvThreeCmtLinear.trans1</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.EvThreeCmtLinear.trans4"><code class="docutils literal notranslate"><span class="pre">EvThreeCmtLinear.trans4</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.EvThreeCmtLinear.trans6"><code class="docutils literal notranslate"><span class="pre">EvThreeCmtLinear.trans6</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="masmod.api.html#masmod.api.EvTwoCmtLinear"><code class="docutils literal notranslate"><span class="pre">EvTwoCmtLinear</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.EvTwoCmtLinear.index_dosing_cmt"><code class="docutils literal notranslate"><span class="pre">EvTwoCmtLinear.index_dosing_cmt</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.EvTwoCmtLinear.index_observe_cmt"><code class="docutils literal notranslate"><span class="pre">EvTwoCmtLinear.index_observe_cmt</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.EvTwoCmtLinear.n_cmt"><code class="docutils literal notranslate"><span class="pre">EvTwoCmtLinear.n_cmt</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.EvTwoCmtLinear.trans1"><code class="docutils literal notranslate"><span class="pre">EvTwoCmtLinear.trans1</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.EvTwoCmtLinear.trans3"><code class="docutils literal notranslate"><span class="pre">EvTwoCmtLinear.trans3</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.EvTwoCmtLinear.trans4"><code class="docutils literal notranslate"><span class="pre">EvTwoCmtLinear.trans4</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.EvTwoCmtLinear.trans5"><code class="docutils literal notranslate"><span class="pre">EvTwoCmtLinear.trans5</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.EvTwoCmtLinear.trans6"><code class="docutils literal notranslate"><span class="pre">EvTwoCmtLinear.trans6</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="masmod.api.html#masmod.api.FO"><code class="docutils literal notranslate"><span class="pre">FO()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="masmod.api.html#masmod.api.FOCEi"><code class="docutils literal notranslate"><span class="pre">FOCEi()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="masmod.api.html#masmod.api.FitResult"><code class="docutils literal notranslate"><span class="pre">FitResult</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.FitResult.compute_se"><code class="docutils literal notranslate"><span class="pre">FitResult.compute_se()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.FitResult.converged"><code class="docutils literal notranslate"><span class="pre">FitResult.converged</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.FitResult.elapsed_time"><code class="docutils literal notranslate"><span class="pre">FitResult.elapsed_time</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.FitResult.empirical_bayesian_estimation"><code class="docutils literal notranslate"><span class="pre">FitResult.empirical_bayesian_estimation</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.FitResult.estimations"><code class="docutils literal notranslate"><span class="pre">FitResult.estimations</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.FitResult.final_obj_val"><code class="docutils literal notranslate"><span class="pre">FitResult.final_obj_val</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.FitResult.final_pop_params"><code class="docutils literal notranslate"><span class="pre">FitResult.final_pop_params</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.FitResult.ipred"><code class="docutils literal notranslate"><span class="pre">FitResult.ipred</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.FitResult.iter_details"><code class="docutils literal notranslate"><span class="pre">FitResult.iter_details</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.FitResult.n_iter"><code class="docutils literal notranslate"><span class="pre">FitResult.n_iter</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.FitResult.plot_goodness_of_fit"><code class="docutils literal notranslate"><span class="pre">FitResult.plot_goodness_of_fit()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.FitResult.plot_individual_fit"><code class="docutils literal notranslate"><span class="pre">FitResult.plot_individual_fit()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.FitResult.plot_iteration_trace"><code class="docutils literal notranslate"><span class="pre">FitResult.plot_iteration_trace()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.FitResult.pred"><code class="docutils literal notranslate"><span class="pre">FitResult.pred</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.FitResult.rse"><code class="docutils literal notranslate"><span class="pre">FitResult.rse</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.FitResult.shrinkage"><code class="docutils literal notranslate"><span class="pre">FitResult.shrinkage</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.FitResult.simulate"><code class="docutils literal notranslate"><span class="pre">FitResult.simulate()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="masmod.api.html#masmod.api.IPlotlyPlot"><code class="docutils literal notranslate"><span class="pre">IPlotlyPlot</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.IPlotlyPlot.figure"><code class="docutils literal notranslate"><span class="pre">IPlotlyPlot.figure</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.IPlotlyPlot.show"><code class="docutils literal notranslate"><span class="pre">IPlotlyPlot.show()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="masmod.api.html#masmod.api.IvOneCmtLinear"><code class="docutils literal notranslate"><span class="pre">IvOneCmtLinear</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.IvOneCmtLinear.index_dosing_cmt"><code class="docutils literal notranslate"><span class="pre">IvOneCmtLinear.index_dosing_cmt</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.IvOneCmtLinear.index_observe_cmt"><code class="docutils literal notranslate"><span class="pre">IvOneCmtLinear.index_observe_cmt</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.IvOneCmtLinear.n_cmt"><code class="docutils literal notranslate"><span class="pre">IvOneCmtLinear.n_cmt</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.IvOneCmtLinear.trans1"><code class="docutils literal notranslate"><span class="pre">IvOneCmtLinear.trans1</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.IvOneCmtLinear.trans2"><code class="docutils literal notranslate"><span class="pre">IvOneCmtLinear.trans2</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="masmod.api.html#masmod.api.IvOneCmtMichaelisMenten"><code class="docutils literal notranslate"><span class="pre">IvOneCmtMichaelisMenten</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.IvOneCmtMichaelisMenten.index_dosing_cmt"><code class="docutils literal notranslate"><span class="pre">IvOneCmtMichaelisMenten.index_dosing_cmt</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.IvOneCmtMichaelisMenten.index_observe_cmt"><code class="docutils literal notranslate"><span class="pre">IvOneCmtMichaelisMenten.index_observe_cmt</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.IvOneCmtMichaelisMenten.n_cmt"><code class="docutils literal notranslate"><span class="pre">IvOneCmtMichaelisMenten.n_cmt</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.IvOneCmtMichaelisMenten.trans1"><code class="docutils literal notranslate"><span class="pre">IvOneCmtMichaelisMenten.trans1</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="masmod.api.html#masmod.api.IvThreeCmtLinear"><code class="docutils literal notranslate"><span class="pre">IvThreeCmtLinear</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.IvThreeCmtLinear.index_dosing_cmt"><code class="docutils literal notranslate"><span class="pre">IvThreeCmtLinear.index_dosing_cmt</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.IvThreeCmtLinear.index_observe_cmt"><code class="docutils literal notranslate"><span class="pre">IvThreeCmtLinear.index_observe_cmt</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.IvThreeCmtLinear.n_cmt"><code class="docutils literal notranslate"><span class="pre">IvThreeCmtLinear.n_cmt</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.IvThreeCmtLinear.trans1"><code class="docutils literal notranslate"><span class="pre">IvThreeCmtLinear.trans1</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.IvThreeCmtLinear.trans4"><code class="docutils literal notranslate"><span class="pre">IvThreeCmtLinear.trans4</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.IvThreeCmtLinear.trans6"><code class="docutils literal notranslate"><span class="pre">IvThreeCmtLinear.trans6</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="masmod.api.html#masmod.api.IvTwoCmtLinear"><code class="docutils literal notranslate"><span class="pre">IvTwoCmtLinear</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.IvTwoCmtLinear.index_dosing_cmt"><code class="docutils literal notranslate"><span class="pre">IvTwoCmtLinear.index_dosing_cmt</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.IvTwoCmtLinear.index_observe_cmt"><code class="docutils literal notranslate"><span class="pre">IvTwoCmtLinear.index_observe_cmt</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.IvTwoCmtLinear.n_cmt"><code class="docutils literal notranslate"><span class="pre">IvTwoCmtLinear.n_cmt</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.IvTwoCmtLinear.trans1"><code class="docutils literal notranslate"><span class="pre">IvTwoCmtLinear.trans1</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.IvTwoCmtLinear.trans3"><code class="docutils literal notranslate"><span class="pre">IvTwoCmtLinear.trans3</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.IvTwoCmtLinear.trans4"><code class="docutils literal notranslate"><span class="pre">IvTwoCmtLinear.trans4</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.IvTwoCmtLinear.trans5"><code class="docutils literal notranslate"><span class="pre">IvTwoCmtLinear.trans5</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.IvTwoCmtLinear.trans6"><code class="docutils literal notranslate"><span class="pre">IvTwoCmtLinear.trans6</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="masmod.api.html#masmod.api.Laplace"><code class="docutils literal notranslate"><span class="pre">Laplace()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="masmod.api.html#masmod.api.LoggingLogger"><code class="docutils literal notranslate"><span class="pre">LoggingLogger</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.LoggingLogger.ActionOnDisposed"><code class="docutils literal notranslate"><span class="pre">LoggingLogger.ActionOnDisposed</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.LoggingLogger.add_handler"><code class="docutils literal notranslate"><span class="pre">LoggingLogger.add_handler()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.LoggingLogger.critical"><code class="docutils literal notranslate"><span class="pre">LoggingLogger.critical()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.LoggingLogger.debug"><code class="docutils literal notranslate"><span class="pre">LoggingLogger.debug()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.LoggingLogger.error"><code class="docutils literal notranslate"><span class="pre">LoggingLogger.error()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.LoggingLogger.info"><code class="docutils literal notranslate"><span class="pre">LoggingLogger.info()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.LoggingLogger.name"><code class="docutils literal notranslate"><span class="pre">LoggingLogger.name</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.LoggingLogger.warning"><code class="docutils literal notranslate"><span class="pre">LoggingLogger.warning()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="masmod.api.html#masmod.api.ModelData"><code class="docutils literal notranslate"><span class="pre">ModelData</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.ModelData.__add__"><code class="docutils literal notranslate"><span class="pre">ModelData.__add__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.ModelData.add_covariates"><code class="docutils literal notranslate"><span class="pre">ModelData.add_covariates()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.ModelData.add_dosing"><code class="docutils literal notranslate"><span class="pre">ModelData.add_dosing()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.ModelData.add_sampling"><code class="docutils literal notranslate"><span class="pre">ModelData.add_sampling()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.ModelData.copy"><code class="docutils literal notranslate"><span class="pre">ModelData.copy()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.ModelData.dosing"><code class="docutils literal notranslate"><span class="pre">ModelData.dosing</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.ModelData.explore_bivariate_plot"><code class="docutils literal notranslate"><span class="pre">ModelData.explore_bivariate_plot()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.ModelData.explore_contour_plot"><code class="docutils literal notranslate"><span class="pre">ModelData.explore_contour_plot()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.ModelData.explore_covariates_plot"><code class="docutils literal notranslate"><span class="pre">ModelData.explore_covariates_plot()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.ModelData.nobs"><code class="docutils literal notranslate"><span class="pre">ModelData.nobs</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.ModelData.reserved_colnames"><code class="docutils literal notranslate"><span class="pre">ModelData.reserved_colnames</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.ModelData.sampling"><code class="docutils literal notranslate"><span class="pre">ModelData.sampling</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="masmod.api.html#masmod.api.Module"><code class="docutils literal notranslate"><span class="pre">Module</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.Module.pred"><code class="docutils literal notranslate"><span class="pre">Module.pred()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="masmod.api.html#masmod.api.ParameterSet"><code class="docutils literal notranslate"><span class="pre">ParameterSet</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.ParameterSet.to_dict"><code class="docutils literal notranslate"><span class="pre">ParameterSet.to_dict()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="masmod.api.html#masmod.api.PopModel"><code class="docutils literal notranslate"><span class="pre">PopModel</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.PopModel.compute_ipred"><code class="docutils literal notranslate"><span class="pre">PopModel.compute_ipred()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.PopModel.compute_pred"><code class="docutils literal notranslate"><span class="pre">PopModel.compute_pred()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.PopModel.conditional_distribution"><code class="docutils literal notranslate"><span class="pre">PopModel.conditional_distribution()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.PopModel.data"><code class="docutils literal notranslate"><span class="pre">PopModel.data</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.PopModel.empirical_bayesian_estimation"><code class="docutils literal notranslate"><span class="pre">PopModel.empirical_bayesian_estimation()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.PopModel.fit"><code class="docutils literal notranslate"><span class="pre">PopModel.fit()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.PopModel.importance_sampling"><code class="docutils literal notranslate"><span class="pre">PopModel.importance_sampling()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.PopModel.init_pop_params"><code class="docutils literal notranslate"><span class="pre">PopModel.init_pop_params()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.PopModel.mod"><code class="docutils literal notranslate"><span class="pre">PopModel.mod</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.PopModel.model_ptr"><code class="docutils literal notranslate"><span class="pre">PopModel.model_ptr</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.PopModel.simulate"><code class="docutils literal notranslate"><span class="pre">PopModel.simulate()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="masmod.api.html#masmod.api.PopParams"><code class="docutils literal notranslate"><span class="pre">PopParams</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.PopParams.as_pandas"><code class="docutils literal notranslate"><span class="pre">PopParams.as_pandas()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.PopParams.as_tabular_data"><code class="docutils literal notranslate"><span class="pre">PopParams.as_tabular_data()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.PopParams.epsilon_names"><code class="docutils literal notranslate"><span class="pre">PopParams.epsilon_names</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.PopParams.eta_names"><code class="docutils literal notranslate"><span class="pre">PopParams.eta_names</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.PopParams.from_ditto"><code class="docutils literal notranslate"><span class="pre">PopParams.from_ditto()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.PopParams.theta_names"><code class="docutils literal notranslate"><span class="pre">PopParams.theta_names</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="masmod.api.html#masmod.api.SAEM"><code class="docutils literal notranslate"><span class="pre">SAEM()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="masmod.api.html#masmod.api.column"><code class="docutils literal notranslate"><span class="pre">column()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="masmod.api.html#masmod.api.compartment"><code class="docutils literal notranslate"><span class="pre">compartment()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="masmod.api.html#masmod.api.et"><code class="docutils literal notranslate"><span class="pre">et()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="masmod.api.html#masmod.api.exp"><code class="docutils literal notranslate"><span class="pre">exp</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.exp.as_real_imag"><code class="docutils literal notranslate"><span class="pre">exp.as_real_imag()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.exp.base"><code class="docutils literal notranslate"><span class="pre">exp.base</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.exp.default_assumptions"><code class="docutils literal notranslate"><span class="pre">exp.default_assumptions</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.exp.eval"><code class="docutils literal notranslate"><span class="pre">exp.eval()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.exp.fdiff"><code class="docutils literal notranslate"><span class="pre">exp.fdiff()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.exp.taylor_term"><code class="docutils literal notranslate"><span class="pre">exp.taylor_term()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="masmod.api.html#masmod.api.likelihood"><code class="docutils literal notranslate"><span class="pre">likelihood()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="masmod.api.html#masmod.api.ln"><code class="docutils literal notranslate"><span class="pre">ln</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="masmod.api.html#masmod.api.log"><code class="docutils literal notranslate"><span class="pre">log</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.log.as_base_exp"><code class="docutils literal notranslate"><span class="pre">log.as_base_exp()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.log.as_real_imag"><code class="docutils literal notranslate"><span class="pre">log.as_real_imag()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.log.default_assumptions"><code class="docutils literal notranslate"><span class="pre">log.default_assumptions</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.log.eval"><code class="docutils literal notranslate"><span class="pre">log.eval()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.log.fdiff"><code class="docutils literal notranslate"><span class="pre">log.fdiff()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.log.inverse"><code class="docutils literal notranslate"><span class="pre">log.inverse()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.api.html#masmod.api.log.taylor_term"><code class="docutils literal notranslate"><span class="pre">log.taylor_term()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="masmod.api.html#masmod.api.mu"><code class="docutils literal notranslate"><span class="pre">mu()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="masmod.api.html#masmod.api.neg2ll"><code class="docutils literal notranslate"><span class="pre">neg2ll()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="masmod.api.html#masmod.api.omega"><code class="docutils literal notranslate"><span class="pre">omega()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="masmod.api.html#masmod.api.read_nonmem_data"><code class="docutils literal notranslate"><span class="pre">read_nonmem_data()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="masmod.api.html#masmod.api.sigma"><code class="docutils literal notranslate"><span class="pre">sigma()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="masmod.api.html#masmod.api.split_nonmem_data"><code class="docutils literal notranslate"><span class="pre">split_nonmem_data()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="masmod.api.html#masmod.api.theta"><code class="docutils literal notranslate"><span class="pre">theta()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="masmod.ast_worker.html">masmod.ast_worker package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="masmod.ast_worker.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="masmod.ast_worker.if_else.html">masmod.ast_worker.if_else package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="masmod.ast_worker.if_else.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.ast_worker.if_else.html#module-masmod.ast_worker.if_else.condition_hoist">masmod.ast_worker.if_else.condition_hoist module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.ast_worker.if_else.html#module-masmod.ast_worker.if_else.if_else">masmod.ast_worker.if_else.if_else module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.ast_worker.if_else.html#module-masmod.ast_worker.if_else.variable_hoist">masmod.ast_worker.if_else.variable_hoist module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.ast_worker.if_else.html#module-masmod.ast_worker.if_else.variable_override">masmod.ast_worker.if_else.variable_override module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.ast_worker.if_else.html#module-masmod.ast_worker.if_else">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="masmod.ast_worker.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="masmod.ast_worker.html#module-masmod.ast_worker.autodiff">masmod.ast_worker.autodiff module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="masmod.ast_worker.html#masmod.ast_worker.autodiff.AutoDiffDADtWrt"><code class="docutils literal notranslate"><span class="pre">AutoDiffDADtWrt</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="masmod.ast_worker.html#masmod.ast_worker.autodiff.AutoDiffDADtWrt.cmt"><code class="docutils literal notranslate"><span class="pre">AutoDiffDADtWrt.cmt</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.ast_worker.html#masmod.ast_worker.autodiff.AutoDiffDADtWrt.wrt"><code class="docutils literal notranslate"><span class="pre">AutoDiffDADtWrt.wrt</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.ast_worker.html#masmod.ast_worker.autodiff.AutoDiffDADtWrt.wrt2nd"><code class="docutils literal notranslate"><span class="pre">AutoDiffDADtWrt.wrt2nd</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="masmod.ast_worker.html#masmod.ast_worker.autodiff.AutoDiffNodeTransformer"><code class="docutils literal notranslate"><span class="pre">AutoDiffNodeTransformer</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="masmod.ast_worker.html#masmod.ast_worker.autodiff.AutoDiffNodeTransformer.insert_dosing_deriv_inline"><code class="docutils literal notranslate"><span class="pre">AutoDiffNodeTransformer.insert_dosing_deriv_inline()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.ast_worker.html#masmod.ast_worker.autodiff.AutoDiffNodeTransformer.insert_param_deriv_inline"><code class="docutils literal notranslate"><span class="pre">AutoDiffNodeTransformer.insert_param_deriv_inline()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.ast_worker.html#masmod.ast_worker.autodiff.AutoDiffNodeTransformer.insert_t0_update_inline"><code class="docutils literal notranslate"><span class="pre">AutoDiffNodeTransformer.insert_t0_update_inline()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.ast_worker.html#masmod.ast_worker.autodiff.AutoDiffNodeTransformer.subroutine"><code class="docutils literal notranslate"><span class="pre">AutoDiffNodeTransformer.subroutine</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.ast_worker.html#masmod.ast_worker.autodiff.AutoDiffNodeTransformer.visit_Assign"><code class="docutils literal notranslate"><span class="pre">AutoDiffNodeTransformer.visit_Assign()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.ast_worker.html#masmod.ast_worker.autodiff.AutoDiffNodeTransformer.visit_Attribute"><code class="docutils literal notranslate"><span class="pre">AutoDiffNodeTransformer.visit_Attribute()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.ast_worker.html#masmod.ast_worker.autodiff.AutoDiffNodeTransformer.visit_Call"><code class="docutils literal notranslate"><span class="pre">AutoDiffNodeTransformer.visit_Call()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.ast_worker.html#masmod.ast_worker.autodiff.AutoDiffNodeTransformer.visit_If"><code class="docutils literal notranslate"><span class="pre">AutoDiffNodeTransformer.visit_If()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="masmod.ast_worker.html#masmod.ast_worker.autodiff.AutoDiffTargetWrt"><code class="docutils literal notranslate"><span class="pre">AutoDiffTargetWrt</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="masmod.ast_worker.html#masmod.ast_worker.autodiff.AutoDiffTargetWrt.target_name"><code class="docutils literal notranslate"><span class="pre">AutoDiffTargetWrt.target_name</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.ast_worker.html#masmod.ast_worker.autodiff.AutoDiffTargetWrt.wrt"><code class="docutils literal notranslate"><span class="pre">AutoDiffTargetWrt.wrt</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.ast_worker.html#masmod.ast_worker.autodiff.AutoDiffTargetWrt.wrt2nd"><code class="docutils literal notranslate"><span class="pre">AutoDiffTargetWrt.wrt2nd</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="masmod.ast_worker.html#module-masmod.ast_worker.func_return">masmod.ast_worker.func_return module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="masmod.ast_worker.html#masmod.ast_worker.func_return.FuncReturnVisitor"><code class="docutils literal notranslate"><span class="pre">FuncReturnVisitor</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="masmod.ast_worker.html#masmod.ast_worker.func_return.FuncReturnVisitor.func_def"><code class="docutils literal notranslate"><span class="pre">FuncReturnVisitor.func_def</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.ast_worker.html#masmod.ast_worker.func_return.FuncReturnVisitor.return_expr"><code class="docutils literal notranslate"><span class="pre">FuncReturnVisitor.return_expr</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.ast_worker.html#masmod.ast_worker.func_return.FuncReturnVisitor.visit_FunctionDef"><code class="docutils literal notranslate"><span class="pre">FuncReturnVisitor.visit_FunctionDef()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.ast_worker.html#masmod.ast_worker.func_return.FuncReturnVisitor.visit_Return"><code class="docutils literal notranslate"><span class="pre">FuncReturnVisitor.visit_Return()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="masmod.ast_worker.html#module-masmod.ast_worker.integral_t_transformer">masmod.ast_worker.integral_t_transformer module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="masmod.ast_worker.html#masmod.ast_worker.integral_t_transformer.IntegralTTransformer"><code class="docutils literal notranslate"><span class="pre">IntegralTTransformer</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="masmod.ast_worker.html#masmod.ast_worker.integral_t_transformer.IntegralTTransformer.visit_Name"><code class="docutils literal notranslate"><span class="pre">IntegralTTransformer.visit_Name()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="masmod.ast_worker.html#module-masmod.ast_worker">Module contents</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="masmod.ast_worker.html#masmod.ast_worker.AutoDiffNodeTransformer"><code class="docutils literal notranslate"><span class="pre">AutoDiffNodeTransformer</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="masmod.ast_worker.html#masmod.ast_worker.AutoDiffNodeTransformer.insert_dosing_deriv_inline"><code class="docutils literal notranslate"><span class="pre">AutoDiffNodeTransformer.insert_dosing_deriv_inline()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.ast_worker.html#masmod.ast_worker.AutoDiffNodeTransformer.insert_param_deriv_inline"><code class="docutils literal notranslate"><span class="pre">AutoDiffNodeTransformer.insert_param_deriv_inline()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.ast_worker.html#masmod.ast_worker.AutoDiffNodeTransformer.insert_t0_update_inline"><code class="docutils literal notranslate"><span class="pre">AutoDiffNodeTransformer.insert_t0_update_inline()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.ast_worker.html#masmod.ast_worker.AutoDiffNodeTransformer.subroutine"><code class="docutils literal notranslate"><span class="pre">AutoDiffNodeTransformer.subroutine</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.ast_worker.html#masmod.ast_worker.AutoDiffNodeTransformer.visit_Assign"><code class="docutils literal notranslate"><span class="pre">AutoDiffNodeTransformer.visit_Assign()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.ast_worker.html#masmod.ast_worker.AutoDiffNodeTransformer.visit_Attribute"><code class="docutils literal notranslate"><span class="pre">AutoDiffNodeTransformer.visit_Attribute()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.ast_worker.html#masmod.ast_worker.AutoDiffNodeTransformer.visit_Call"><code class="docutils literal notranslate"><span class="pre">AutoDiffNodeTransformer.visit_Call()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.ast_worker.html#masmod.ast_worker.AutoDiffNodeTransformer.visit_If"><code class="docutils literal notranslate"><span class="pre">AutoDiffNodeTransformer.visit_If()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="masmod.ast_worker.html#masmod.ast_worker.FuncReturnVisitor"><code class="docutils literal notranslate"><span class="pre">FuncReturnVisitor</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="masmod.ast_worker.html#masmod.ast_worker.FuncReturnVisitor.func_def"><code class="docutils literal notranslate"><span class="pre">FuncReturnVisitor.func_def</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.ast_worker.html#masmod.ast_worker.FuncReturnVisitor.return_expr"><code class="docutils literal notranslate"><span class="pre">FuncReturnVisitor.return_expr</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.ast_worker.html#masmod.ast_worker.FuncReturnVisitor.visit_FunctionDef"><code class="docutils literal notranslate"><span class="pre">FuncReturnVisitor.visit_FunctionDef()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.ast_worker.html#masmod.ast_worker.FuncReturnVisitor.visit_Return"><code class="docutils literal notranslate"><span class="pre">FuncReturnVisitor.visit_Return()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="masmod.ast_worker.html#masmod.ast_worker.IfElseTransformer"><code class="docutils literal notranslate"><span class="pre">IfElseTransformer</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="masmod.ast_worker.html#masmod.ast_worker.IfElseTransformer.visit"><code class="docutils literal notranslate"><span class="pre">IfElseTransformer.visit()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="masmod.ast_worker.html#masmod.ast_worker.IntegralTTransformer"><code class="docutils literal notranslate"><span class="pre">IntegralTTransformer</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="masmod.ast_worker.html#masmod.ast_worker.IntegralTTransformer.visit_Name"><code class="docutils literal notranslate"><span class="pre">IntegralTTransformer.visit_Name()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="masmod.compiler.html">masmod.compiler package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="masmod.compiler.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="masmod.compiler.html#module-masmod.compiler.cc_compile">masmod.compiler.cc_compile module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="masmod.compiler.html#masmod.compiler.cc_compile.CCCompiler"><code class="docutils literal notranslate"><span class="pre">CCCompiler</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="masmod.compiler.html#masmod.compiler.cc_compile.CCCompiler.compile"><code class="docutils literal notranslate"><span class="pre">CCCompiler.compile()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="masmod.compiler.html#masmod.compiler.cc_compile.CompileResult"><code class="docutils literal notranslate"><span class="pre">CompileResult</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="masmod.compiler.html#masmod.compiler.cc_compile.CompileResult.target_file"><code class="docutils literal notranslate"><span class="pre">CompileResult.target_file</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="masmod.compiler.html#module-masmod.compiler">Module contents</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="masmod.compiler.html#masmod.compiler.CCCompiler"><code class="docutils literal notranslate"><span class="pre">CCCompiler</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="masmod.compiler.html#masmod.compiler.CCCompiler.compile"><code class="docutils literal notranslate"><span class="pre">CCCompiler.compile()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="masmod.functional.html">masmod.functional package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="masmod.functional.html#module-masmod.functional">Module contents</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="masmod.functional.html#masmod.functional.exp"><code class="docutils literal notranslate"><span class="pre">exp</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="masmod.functional.html#masmod.functional.exp.as_real_imag"><code class="docutils literal notranslate"><span class="pre">exp.as_real_imag()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.functional.html#masmod.functional.exp.base"><code class="docutils literal notranslate"><span class="pre">exp.base</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.functional.html#masmod.functional.exp.default_assumptions"><code class="docutils literal notranslate"><span class="pre">exp.default_assumptions</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.functional.html#masmod.functional.exp.eval"><code class="docutils literal notranslate"><span class="pre">exp.eval()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.functional.html#masmod.functional.exp.fdiff"><code class="docutils literal notranslate"><span class="pre">exp.fdiff()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.functional.html#masmod.functional.exp.taylor_term"><code class="docutils literal notranslate"><span class="pre">exp.taylor_term()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="masmod.functional.html#masmod.functional.ln"><code class="docutils literal notranslate"><span class="pre">ln</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="masmod.functional.html#masmod.functional.log"><code class="docutils literal notranslate"><span class="pre">log</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="masmod.functional.html#masmod.functional.log.as_base_exp"><code class="docutils literal notranslate"><span class="pre">log.as_base_exp()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.functional.html#masmod.functional.log.as_real_imag"><code class="docutils literal notranslate"><span class="pre">log.as_real_imag()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.functional.html#masmod.functional.log.default_assumptions"><code class="docutils literal notranslate"><span class="pre">log.default_assumptions</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.functional.html#masmod.functional.log.eval"><code class="docutils literal notranslate"><span class="pre">log.eval()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.functional.html#masmod.functional.log.fdiff"><code class="docutils literal notranslate"><span class="pre">log.fdiff()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.functional.html#masmod.functional.log.inverse"><code class="docutils literal notranslate"><span class="pre">log.inverse()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.functional.html#masmod.functional.log.taylor_term"><code class="docutils literal notranslate"><span class="pre">log.taylor_term()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="masmod.module.html">masmod.module package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="masmod.module.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="masmod.module.html#module-masmod.module.module">masmod.module.module module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="masmod.module.html#masmod.module.module.Module"><code class="docutils literal notranslate"><span class="pre">Module</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="masmod.module.html#masmod.module.module.Module.pred"><code class="docutils literal notranslate"><span class="pre">Module.pred()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="masmod.module.html#masmod.module.module.likelihood"><code class="docutils literal notranslate"><span class="pre">likelihood()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="masmod.module.html#masmod.module.module.neg2ll"><code class="docutils literal notranslate"><span class="pre">neg2ll()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="masmod.module.html#module-masmod.module.pk_module">masmod.module.pk_module module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="masmod.module.html#masmod.module.pk_module.PKModule"><code class="docutils literal notranslate"><span class="pre">PKModule</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="masmod.module.html#masmod.module.pk_module.PKModule.index_dosing_cmt"><code class="docutils literal notranslate"><span class="pre">PKModule.index_dosing_cmt</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.module.html#masmod.module.pk_module.PKModule.index_observe_cmt"><code class="docutils literal notranslate"><span class="pre">PKModule.index_observe_cmt</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.module.html#masmod.module.pk_module.PKModule.n_cmt"><code class="docutils literal notranslate"><span class="pre">PKModule.n_cmt</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="masmod.module.html#module-masmod.module">Module contents</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="masmod.module.html#masmod.module.Module"><code class="docutils literal notranslate"><span class="pre">Module</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="masmod.module.html#masmod.module.Module.pred"><code class="docutils literal notranslate"><span class="pre">Module.pred()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="masmod.module.html#masmod.module.likelihood"><code class="docutils literal notranslate"><span class="pre">likelihood()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="masmod.module.html#masmod.module.neg2ll"><code class="docutils literal notranslate"><span class="pre">neg2ll()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="masmod.plot.html">masmod.plot package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="masmod.plot.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="masmod.plot.html#module-masmod.plot.abstract">masmod.plot.abstract module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="masmod.plot.html#masmod.plot.abstract.AbstractPlotlyPlot"><code class="docutils literal notranslate"><span class="pre">AbstractPlotlyPlot</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="masmod.plot.html#masmod.plot.abstract.AbstractPlotlyPlot.figure"><code class="docutils literal notranslate"><span class="pre">AbstractPlotlyPlot.figure</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.plot.html#masmod.plot.abstract.AbstractPlotlyPlot.show"><code class="docutils literal notranslate"><span class="pre">AbstractPlotlyPlot.show()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="masmod.plot.html#module-masmod.plot.abstract_groupby">masmod.plot.abstract_groupby module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="masmod.plot.html#masmod.plot.abstract_groupby.AbstractGroupbyablePlotlyPlot"><code class="docutils literal notranslate"><span class="pre">AbstractGroupbyablePlotlyPlot</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="masmod.plot.html#masmod.plot.abstract_groupby.AbstractGroupbyablePlotlyPlot.groupby"><code class="docutils literal notranslate"><span class="pre">AbstractGroupbyablePlotlyPlot.groupby()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="masmod.plot.html#module-masmod.plot.explore">masmod.plot.explore module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="masmod.plot.html#masmod.plot.explore.BivariatePlot"><code class="docutils literal notranslate"><span class="pre">BivariatePlot</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="masmod.plot.html#masmod.plot.explore.ContourPlot"><code class="docutils literal notranslate"><span class="pre">ContourPlot</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="masmod.plot.html#masmod.plot.explore.CovariatesPlot"><code class="docutils literal notranslate"><span class="pre">CovariatesPlot</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="masmod.plot.html#masmod.plot.explore.LUV_to_XYZ"><code class="docutils literal notranslate"><span class="pre">LUV_to_XYZ()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="masmod.plot.html#masmod.plot.explore.XYZ_to_RGB"><code class="docutils literal notranslate"><span class="pre">XYZ_to_RGB()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="masmod.plot.html#masmod.plot.explore.eda_corr_plot_df"><code class="docutils literal notranslate"><span class="pre">eda_corr_plot_df()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="masmod.plot.html#masmod.plot.explore.get_color"><code class="docutils literal notranslate"><span class="pre">get_color()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="masmod.plot.html#masmod.plot.explore.polarLUV_to_LUV"><code class="docutils literal notranslate"><span class="pre">polarLUV_to_LUV()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="masmod.plot.html#module-masmod.plot.gof_plot">masmod.plot.gof_plot module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="masmod.plot.html#masmod.plot.gof_plot.GofPlot"><code class="docutils literal notranslate"><span class="pre">GofPlot</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="masmod.plot.html#masmod.plot.gof_plot.diagonal_range"><code class="docutils literal notranslate"><span class="pre">diagonal_range()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="masmod.plot.html#masmod.plot.gof_plot.trend_line"><code class="docutils literal notranslate"><span class="pre">trend_line()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="masmod.plot.html#module-masmod.plot.ind_fit_plot">masmod.plot.ind_fit_plot module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="masmod.plot.html#masmod.plot.ind_fit_plot.IndFitPlot"><code class="docutils literal notranslate"><span class="pre">IndFitPlot</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="masmod.plot.html#module-masmod.plot.interface">masmod.plot.interface module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="masmod.plot.html#masmod.plot.interface.IGroupbyablePlotlyPlot"><code class="docutils literal notranslate"><span class="pre">IGroupbyablePlotlyPlot</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="masmod.plot.html#masmod.plot.interface.IGroupbyablePlotlyPlot.groupby"><code class="docutils literal notranslate"><span class="pre">IGroupbyablePlotlyPlot.groupby()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="masmod.plot.html#masmod.plot.interface.IPlotlyPlot"><code class="docutils literal notranslate"><span class="pre">IPlotlyPlot</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="masmod.plot.html#masmod.plot.interface.IPlotlyPlot.figure"><code class="docutils literal notranslate"><span class="pre">IPlotlyPlot.figure</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.plot.html#masmod.plot.interface.IPlotlyPlot.show"><code class="docutils literal notranslate"><span class="pre">IPlotlyPlot.show()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="masmod.plot.html#module-masmod.plot.iter_plot">masmod.plot.iter_plot module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="masmod.plot.html#masmod.plot.iter_plot.IterPlot"><code class="docutils literal notranslate"><span class="pre">IterPlot</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="masmod.plot.html#module-masmod.plot.simulate_plot">masmod.plot.simulate_plot module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="masmod.plot.html#masmod.plot.simulate_plot.SimulateIndividualPlot"><code class="docutils literal notranslate"><span class="pre">SimulateIndividualPlot</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="masmod.plot.html#masmod.plot.simulate_plot.SimulateIntervalPlot"><code class="docutils literal notranslate"><span class="pre">SimulateIntervalPlot</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="masmod.plot.html#masmod.plot.simulate_plot.SimulateIntervalPlot.fill_colors"><code class="docutils literal notranslate"><span class="pre">SimulateIntervalPlot.fill_colors</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.plot.html#masmod.plot.simulate_plot.SimulateIntervalPlot.percents"><code class="docutils literal notranslate"><span class="pre">SimulateIntervalPlot.percents</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="masmod.plot.html#module-masmod.plot">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="masmod.symbols.html">masmod.symbols package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="masmod.symbols.html#module-masmod.symbols">Module contents</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="masmod.symbols.html#masmod.symbols.Block"><code class="docutils literal notranslate"><span class="pre">Block</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="masmod.symbols.html#masmod.symbols.Block.as_full"><code class="docutils literal notranslate"><span class="pre">Block.as_full()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.symbols.html#masmod.symbols.Block.dimension"><code class="docutils literal notranslate"><span class="pre">Block.dimension</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.symbols.html#masmod.symbols.Block.tril"><code class="docutils literal notranslate"><span class="pre">Block.tril</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="masmod.symbols.html#masmod.symbols.VarContext"><code class="docutils literal notranslate"><span class="pre">VarContext</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="masmod.symbols.html#masmod.symbols.VarContext.as_dict"><code class="docutils literal notranslate"><span class="pre">VarContext.as_dict()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.symbols.html#masmod.symbols.VarContext.copy"><code class="docutils literal notranslate"><span class="pre">VarContext.copy()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.symbols.html#masmod.symbols.VarContext.generic_T"><code class="docutils literal notranslate"><span class="pre">VarContext.generic_T</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.symbols.html#masmod.symbols.VarContext.get"><code class="docutils literal notranslate"><span class="pre">VarContext.get()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.symbols.html#masmod.symbols.VarContext.items"><code class="docutils literal notranslate"><span class="pre">VarContext.items()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.symbols.html#masmod.symbols.VarContext.keys"><code class="docutils literal notranslate"><span class="pre">VarContext.keys()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.symbols.html#masmod.symbols.VarContext.size"><code class="docutils literal notranslate"><span class="pre">VarContext.size()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.symbols.html#masmod.symbols.VarContext.subset"><code class="docutils literal notranslate"><span class="pre">VarContext.subset()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.symbols.html#masmod.symbols.VarContext.update"><code class="docutils literal notranslate"><span class="pre">VarContext.update()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.symbols.html#masmod.symbols.VarContext.values"><code class="docutils literal notranslate"><span class="pre">VarContext.values()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="masmod.symbols.html#masmod.symbols.column"><code class="docutils literal notranslate"><span class="pre">column()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="masmod.symbols.html#masmod.symbols.compartment"><code class="docutils literal notranslate"><span class="pre">compartment()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="masmod.symbols.html#masmod.symbols.mu"><code class="docutils literal notranslate"><span class="pre">mu()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="masmod.symbols.html#masmod.symbols.omega"><code class="docutils literal notranslate"><span class="pre">omega()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="masmod.symbols.html#masmod.symbols.sigma"><code class="docutils literal notranslate"><span class="pre">sigma()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="masmod.symbols.html#masmod.symbols.theta"><code class="docutils literal notranslate"><span class="pre">theta()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="masmod.translator.html">masmod.translator package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="masmod.translator.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="masmod.translator.html#module-masmod.translator.cc_trans">masmod.translator.cc_trans module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="masmod.translator.html#masmod.translator.cc_trans.CCTranslator"><code class="docutils literal notranslate"><span class="pre">CCTranslator</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="masmod.translator.html#masmod.translator.cc_trans.CCTranslator.MODULE_FACTORY_FUNC_NAME"><code class="docutils literal notranslate"><span class="pre">CCTranslator.MODULE_FACTORY_FUNC_NAME</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.translator.html#masmod.translator.cc_trans.CCTranslator.translate"><code class="docutils literal notranslate"><span class="pre">CCTranslator.translate()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="masmod.translator.html#masmod.translator.cc_trans.EvaluatedExpr"><code class="docutils literal notranslate"><span class="pre">EvaluatedExpr</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="masmod.translator.html#masmod.translator.cc_trans.EvaluatedExpr.is_name"><code class="docutils literal notranslate"><span class="pre">EvaluatedExpr.is_name</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.translator.html#masmod.translator.cc_trans.EvaluatedExpr.token"><code class="docutils literal notranslate"><span class="pre">EvaluatedExpr.token</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.translator.html#masmod.translator.cc_trans.EvaluatedExpr.typ"><code class="docutils literal notranslate"><span class="pre">EvaluatedExpr.typ</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.translator.html#masmod.translator.cc_trans.EvaluatedExpr.v"><code class="docutils literal notranslate"><span class="pre">EvaluatedExpr.v</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="masmod.translator.html#masmod.translator.cc_trans.FuncSignature"><code class="docutils literal notranslate"><span class="pre">FuncSignature</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="masmod.translator.html#masmod.translator.cc_trans.FuncSignature.args"><code class="docutils literal notranslate"><span class="pre">FuncSignature.args</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.translator.html#masmod.translator.cc_trans.FuncSignature.result_variables"><code class="docutils literal notranslate"><span class="pre">FuncSignature.result_variables</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.translator.html#masmod.translator.cc_trans.FuncSignature.return_type"><code class="docutils literal notranslate"><span class="pre">FuncSignature.return_type</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.translator.html#masmod.translator.cc_trans.FuncSignature.update_context"><code class="docutils literal notranslate"><span class="pre">FuncSignature.update_context</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="masmod.translator.html#masmod.translator.cc_trans.ValueType"><code class="docutils literal notranslate"><span class="pre">ValueType</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="masmod.translator.html#masmod.translator.cc_trans.ValueType.VALUE_TYPE_BOOL"><code class="docutils literal notranslate"><span class="pre">ValueType.VALUE_TYPE_BOOL</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.translator.html#masmod.translator.cc_trans.ValueType.VALUE_TYPE_CMT_PTR"><code class="docutils literal notranslate"><span class="pre">ValueType.VALUE_TYPE_CMT_PTR</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.translator.html#masmod.translator.cc_trans.ValueType.VALUE_TYPE_CMT_SYS_REF"><code class="docutils literal notranslate"><span class="pre">ValueType.VALUE_TYPE_CMT_SYS_REF</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.translator.html#masmod.translator.cc_trans.ValueType.VALUE_TYPE_CUBE_REF"><code class="docutils literal notranslate"><span class="pre">ValueType.VALUE_TYPE_CUBE_REF</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.translator.html#masmod.translator.cc_trans.ValueType.VALUE_TYPE_DOSING_PARAM"><code class="docutils literal notranslate"><span class="pre">ValueType.VALUE_TYPE_DOSING_PARAM</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.translator.html#masmod.translator.cc_trans.ValueType.VALUE_TYPE_DOSING_PARAM_CONST_REF"><code class="docutils literal notranslate"><span class="pre">ValueType.VALUE_TYPE_DOSING_PARAM_CONST_REF</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.translator.html#masmod.translator.cc_trans.ValueType.VALUE_TYPE_DOUBLE"><code class="docutils literal notranslate"><span class="pre">ValueType.VALUE_TYPE_DOUBLE</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.translator.html#masmod.translator.cc_trans.ValueType.VALUE_TYPE_DOUBLE_CONTEXT"><code class="docutils literal notranslate"><span class="pre">ValueType.VALUE_TYPE_DOUBLE_CONTEXT</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.translator.html#masmod.translator.cc_trans.ValueType.VALUE_TYPE_DOUBLE_CONTEXT_REF"><code class="docutils literal notranslate"><span class="pre">ValueType.VALUE_TYPE_DOUBLE_CONTEXT_REF</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.translator.html#masmod.translator.cc_trans.ValueType.VALUE_TYPE_INT"><code class="docutils literal notranslate"><span class="pre">ValueType.VALUE_TYPE_INT</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.translator.html#masmod.translator.cc_trans.ValueType.VALUE_TYPE_LONG"><code class="docutils literal notranslate"><span class="pre">ValueType.VALUE_TYPE_LONG</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.translator.html#masmod.translator.cc_trans.ValueType.VALUE_TYPE_MAT"><code class="docutils literal notranslate"><span class="pre">ValueType.VALUE_TYPE_MAT</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.translator.html#masmod.translator.cc_trans.ValueType.VALUE_TYPE_MAT_CONST_REF"><code class="docutils literal notranslate"><span class="pre">ValueType.VALUE_TYPE_MAT_CONST_REF</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.translator.html#masmod.translator.cc_trans.ValueType.VALUE_TYPE_MAT_REF"><code class="docutils literal notranslate"><span class="pre">ValueType.VALUE_TYPE_MAT_REF</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.translator.html#masmod.translator.cc_trans.ValueType.VALUE_TYPE_PK_PARAM"><code class="docutils literal notranslate"><span class="pre">ValueType.VALUE_TYPE_PK_PARAM</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.translator.html#masmod.translator.cc_trans.ValueType.VALUE_TYPE_PK_PARAM_CONST_REF"><code class="docutils literal notranslate"><span class="pre">ValueType.VALUE_TYPE_PK_PARAM_CONST_REF</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.translator.html#masmod.translator.cc_trans.ValueType.VALUE_TYPE_STRING"><code class="docutils literal notranslate"><span class="pre">ValueType.VALUE_TYPE_STRING</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.translator.html#masmod.translator.cc_trans.ValueType.VALUE_TYPE_STRING_CONTEXT"><code class="docutils literal notranslate"><span class="pre">ValueType.VALUE_TYPE_STRING_CONTEXT</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.translator.html#masmod.translator.cc_trans.ValueType.VALUE_TYPE_STRING_CONTEXT_REF"><code class="docutils literal notranslate"><span class="pre">ValueType.VALUE_TYPE_STRING_CONTEXT_REF</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.translator.html#masmod.translator.cc_trans.ValueType.VALUE_TYPE_SUBROUTINE"><code class="docutils literal notranslate"><span class="pre">ValueType.VALUE_TYPE_SUBROUTINE</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.translator.html#masmod.translator.cc_trans.ValueType.VALUE_TYPE_SUBROUTINE_REF"><code class="docutils literal notranslate"><span class="pre">ValueType.VALUE_TYPE_SUBROUTINE_REF</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.translator.html#masmod.translator.cc_trans.ValueType.VALUE_TYPE_VEC"><code class="docutils literal notranslate"><span class="pre">ValueType.VALUE_TYPE_VEC</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.translator.html#masmod.translator.cc_trans.ValueType.VALUE_TYPE_VEC_CONST_REF"><code class="docutils literal notranslate"><span class="pre">ValueType.VALUE_TYPE_VEC_CONST_REF</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.translator.html#masmod.translator.cc_trans.ValueType.VALUE_TYPE_VEC_REF"><code class="docutils literal notranslate"><span class="pre">ValueType.VALUE_TYPE_VEC_REF</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.translator.html#masmod.translator.cc_trans.ValueType.VALUE_TYPE_VOID"><code class="docutils literal notranslate"><span class="pre">ValueType.VALUE_TYPE_VOID</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.translator.html#masmod.translator.cc_trans.ValueType.can_be_eq_to"><code class="docutils literal notranslate"><span class="pre">ValueType.can_be_eq_to()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.translator.html#masmod.translator.cc_trans.ValueType.from_dtype"><code class="docutils literal notranslate"><span class="pre">ValueType.from_dtype()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.translator.html#masmod.translator.cc_trans.ValueType.from_val"><code class="docutils literal notranslate"><span class="pre">ValueType.from_val()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.translator.html#masmod.translator.cc_trans.ValueType.is_numeric"><code class="docutils literal notranslate"><span class="pre">ValueType.is_numeric()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.translator.html#masmod.translator.cc_trans.ValueType.to_cc_type"><code class="docutils literal notranslate"><span class="pre">ValueType.to_cc_type()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="masmod.translator.html#module-masmod.translator.sympy_ast_trans">masmod.translator.sympy_ast_trans module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="masmod.translator.html#masmod.translator.sympy_ast_trans.ASTSympyTranslator"><code class="docutils literal notranslate"><span class="pre">ASTSympyTranslator</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="masmod.translator.html#masmod.translator.sympy_ast_trans.ASTSympyTranslator.translate"><code class="docutils literal notranslate"><span class="pre">ASTSympyTranslator.translate()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="masmod.translator.html#module-masmod.translator">Module contents</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="masmod.translator.html#masmod.translator.ASTSympyTranslator"><code class="docutils literal notranslate"><span class="pre">ASTSympyTranslator</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="masmod.translator.html#masmod.translator.ASTSympyTranslator.translate"><code class="docutils literal notranslate"><span class="pre">ASTSympyTranslator.translate()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="masmod.translator.html#masmod.translator.CCTranslator"><code class="docutils literal notranslate"><span class="pre">CCTranslator</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="masmod.translator.html#masmod.translator.CCTranslator.MODULE_FACTORY_FUNC_NAME"><code class="docutils literal notranslate"><span class="pre">CCTranslator.MODULE_FACTORY_FUNC_NAME</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="masmod.translator.html#masmod.translator.CCTranslator.translate"><code class="docutils literal notranslate"><span class="pre">CCTranslator.translate()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+<section id="module-masmod">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-masmod" title="Permalink to this heading">#</a></h2>
+</section>
+</section>
+
+
+                </article>
+              
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#subpackages">Subpackages</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module-masmod">Module contents</a></li>
+</ul>
+  </nav></div>
+
+  <div class="sidebar-secondary-item">
+  <div class="tocsection sourcelink">
+    <a href="_sources/masmod.rst.txt">
+      <i class="fa-solid fa-file-lines"></i> Show Source
+    </a>
+  </div>
+</div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+  <p class="copyright">
+    
+      © Copyright 2023, Maspectra Dev Team.
+      <br/>
+    
+  </p>
+</div>
+      
+        <div class="footer-item">
+  <p class="sphinx-version">
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 5.3.0.
+    <br/>
+  </p>
+</div>
+      
+    </div>
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item"><p class="theme-version">
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.13.3.
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>

@@ -1,0 +1,1357 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>masmod.ast_worker.autodiff &#8212; masmod  documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/sphinx_highlight.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '_modules/masmod/ast_worker/autodiff';</script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+<div class="bd-header__inner bd-page-width">
+  <label class="sidebar-toggle primary-toggle" for="__primary">
+    <span class="fa-solid fa-bars"></span>
+  </label>
+  
+  <div class="navbar-header-items__start">
+    
+      <div class="navbar-item">
+  
+
+<a class="navbar-brand logo" href="../../../index.html">
+  
+  
+  
+  
+  
+    <p class="title logo__title">masmod  documentation</p>
+  
+</a></div>
+    
+  </div>
+  
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item"><nav class="navbar-nav">
+  <p class="sidebar-header-items__title"
+     role="heading"
+     aria-level="1"
+     aria-label="Site Navigation">
+    Site Navigation
+  </p>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+        </div>
+      
+      
+        <div class="navbar-item">
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+    </div>
+  
+
+  
+</div>
+
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar hide-on-wide">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          <div class="navbar-item"><nav class="navbar-nav">
+  <p class="sidebar-header-items__title"
+     role="heading"
+     aria-level="1"
+     aria-label="Site Navigation">
+    Site Navigation
+  </p>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+  </ul>
+</nav></div>
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script></div>
+        
+      </div>
+    
+  </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+
+
+<nav aria-label="Breadcrumbs">
+  <ul class="bd-breadcrumbs" role="navigation" aria-label="Breadcrumb">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../../../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="../../index.html" class="nav-link">Module code</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page">masmod.ast_worker.autodiff</li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <h1>Source code for masmod.ast_worker.autodiff</h1><div class="highlight"><pre>
+<span></span><span class="c1"># _*_ coding: utf-8 _*_</span>
+<span class="c1">############################################################</span>
+<span class="c1"># File: @mas/masmod\ast_worker\autodiff.py</span>
+<span class="c1">#</span>
+<span class="c1"># Author: Chongyi Xu &lt;johnny.xcy1997@outlook.com&gt;</span>
+<span class="c1">#</span>
+<span class="c1"># File Created: 12/01/2022 11:23 am</span>
+<span class="c1">#</span>
+<span class="c1"># Last Modified: 06/07/2023 03:56 pm</span>
+<span class="c1">#</span>
+<span class="c1"># Modified By: 许翀轶 &lt;chongyi.xu@drugchina.net&gt;</span>
+<span class="c1">#</span>
+<span class="c1"># Copyright (c) 2022 MaS Dev Team</span>
+<span class="c1">############################################################</span>
+<span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">annotations</span>
+
+<span class="kn">import</span> <span class="nn">ast</span>
+<span class="kn">import</span> <span class="nn">dataclasses</span>
+<span class="kn">import</span> <span class="nn">typing</span>
+
+<span class="kn">import</span> <span class="nn">sympy</span>
+
+<span class="kn">from</span> <span class="nn">mas.libs.masmod.ast_worker.if_else</span> <span class="kn">import</span> <span class="n">IfElseTransformer</span>
+<span class="kn">from</span> <span class="nn">mas.libs.masmod.module._interpret</span> <span class="kn">import</span> <span class="n">InterpretedModuleType</span><span class="p">,</span> <span class="n">PredFuncType</span>
+<span class="kn">from</span> <span class="nn">mas.libs.masmod.symbols</span> <span class="kn">import</span> <span class="n">AnyContext</span><span class="p">,</span> <span class="n">VarContext</span>
+<span class="kn">from</span> <span class="nn">mas.libs.masmod.symbols._compartment</span> <span class="kn">import</span> <span class="p">(</span>
+    <span class="n">_A_MP</span><span class="p">,</span>
+    <span class="n">_DADT_MP</span><span class="p">,</span>
+    <span class="n">Alag</span><span class="p">,</span>
+    <span class="n">AWrt</span><span class="p">,</span>
+    <span class="n">CmtInitialA</span><span class="p">,</span>
+    <span class="n">CmtSolvedA</span><span class="p">,</span>
+    <span class="n">Compartment</span><span class="p">,</span>
+    <span class="n">DADt</span><span class="p">,</span>
+    <span class="n">DADtWrt</span><span class="p">,</span>
+    <span class="n">Duration</span><span class="p">,</span>
+    <span class="n">Fraction</span><span class="p">,</span>
+    <span class="n">Rate</span><span class="p">,</span>
+    <span class="n">_make_ode_subscript_ast</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="kn">from</span> <span class="nn">mas.libs.masmod.symbols._dose</span> <span class="kn">import</span> <span class="n">_DOSE_PARAMS</span><span class="p">,</span> <span class="n">_make_dose_params_attribute_ast</span>
+<span class="kn">from</span> <span class="nn">mas.libs.masmod.symbols._omega</span> <span class="kn">import</span> <span class="n">Eta</span>
+<span class="kn">from</span> <span class="nn">mas.libs.masmod.symbols._pk</span> <span class="kn">import</span> <span class="p">(</span>
+    <span class="n">PKAnalyticalSolution</span><span class="p">,</span>
+    <span class="n">PKSolvedA</span><span class="p">,</span>
+    <span class="n">PKSolvedAIndexer</span><span class="p">,</span>
+    <span class="n">PKSolvedAWrt</span><span class="p">,</span>
+    <span class="n">PKSolvedF</span><span class="p">,</span>
+    <span class="n">PKSolvedFWrt</span><span class="p">,</span>
+    <span class="n">_make_solution_in_subscript_ast</span><span class="p">,</span>
+    <span class="n">_make_solution_out_subscript_ast</span><span class="p">,</span>
+    <span class="n">_SolutionInMp</span><span class="p">,</span>
+    <span class="n">_SolutionOutMp</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="kn">from</span> <span class="nn">mas.libs.masmod.symbols._sigma</span> <span class="kn">import</span> <span class="n">Eps</span>
+<span class="kn">from</span> <span class="nn">mas.libs.masmod.symbols._symvar</span> <span class="kn">import</span> <span class="n">SymVar</span>
+<span class="kn">from</span> <span class="nn">mas.libs.masmod.translator.sympy_ast_trans</span> <span class="kn">import</span> <span class="n">SYMPY_EXP_FUNC_NAME</span><span class="p">,</span> <span class="n">SYMPY_LOG_FUNC_NAME</span><span class="p">,</span> <span class="n">ASTSympyTranslator</span>
+<span class="kn">from</span> <span class="nn">mas.libs.masmod.utils.mask</span> <span class="kn">import</span> <span class="n">mask_variable</span>
+
+<span class="n">SYMPY_ZERO</span> <span class="o">=</span> <span class="n">sympy</span><span class="o">.</span><span class="n">Number</span><span class="p">(</span><span class="mf">0.</span><span class="p">)</span>
+
+
+<div class="viewcode-block" id="AutoDiffTargetWrt"><a class="viewcode-back" href="../../../masmod.ast_worker.html#masmod.ast_worker.autodiff.AutoDiffTargetWrt">[docs]</a><span class="nd">@dataclasses</span><span class="o">.</span><span class="n">dataclass</span>
+<span class="k">class</span> <span class="nc">AutoDiffTargetWrt</span><span class="p">:</span>
+    <span class="n">target_name</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="n">wrt</span><span class="p">:</span> <span class="n">SymVar</span>
+    <span class="n">wrt2nd</span><span class="p">:</span> <span class="n">SymVar</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>
+
+    <span class="k">def</span> <span class="fm">__hash__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+        <span class="k">return</span> <span class="nb">hash</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">target_name</span><span class="p">)</span> <span class="o">+</span> <span class="nb">hash</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">wrt</span><span class="p">)</span> <span class="o">+</span> <span class="nb">hash</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">wrt2nd</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="AutoDiffDADtWrt"><a class="viewcode-back" href="../../../masmod.ast_worker.html#masmod.ast_worker.autodiff.AutoDiffDADtWrt">[docs]</a><span class="nd">@dataclasses</span><span class="o">.</span><span class="n">dataclass</span>
+<span class="k">class</span> <span class="nc">AutoDiffDADtWrt</span><span class="p">:</span>
+    <span class="n">cmt</span><span class="p">:</span> <span class="n">Compartment</span>
+    <span class="n">wrt</span><span class="p">:</span> <span class="n">SymVar</span>
+    <span class="n">wrt2nd</span><span class="p">:</span> <span class="n">SymVar</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>
+
+    <span class="k">def</span> <span class="fm">__hash__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+        <span class="k">return</span> <span class="nb">hash</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">cmt</span><span class="p">)</span> <span class="o">+</span> <span class="nb">hash</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">wrt</span><span class="p">)</span> <span class="o">+</span> <span class="nb">hash</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">wrt2nd</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="AutoDiffNodeTransformer"><a class="viewcode-back" href="../../../masmod.ast_worker.html#masmod.ast_worker.autodiff.AutoDiffNodeTransformer">[docs]</a><span class="k">class</span> <span class="nc">AutoDiffNodeTransformer</span><span class="p">(</span><span class="n">ast</span><span class="o">.</span><span class="n">NodeTransformer</span><span class="p">):</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span>
+        <span class="n">source_code</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+        <span class="n">target_names</span><span class="p">:</span> <span class="nb">set</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>  <span class="c1"># return variable name</span>
+        <span class="n">mod_typ</span><span class="p">:</span> <span class="n">InterpretedModuleType</span><span class="p">,</span>
+        <span class="n">pred_variant</span><span class="p">:</span> <span class="n">PredFuncType</span><span class="p">,</span>
+        <span class="n">n_cmt</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span>
+        <span class="n">var_context</span><span class="p">:</span> <span class="n">VarContext</span><span class="p">[</span><span class="n">SymVar</span><span class="p">],</span>
+        <span class="n">cmt_context</span><span class="p">:</span> <span class="n">VarContext</span><span class="p">[</span><span class="n">Compartment</span><span class="p">],</span>
+        <span class="n">self_context</span><span class="p">:</span> <span class="n">AnyContext</span><span class="p">,</span>
+        <span class="n">local_context</span><span class="p">:</span> <span class="n">AnyContext</span><span class="p">,</span>
+        <span class="n">global_context</span><span class="p">:</span> <span class="n">AnyContext</span><span class="p">,</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_source_code</span> <span class="o">=</span> <span class="n">source_code</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_mod_typ</span><span class="p">:</span> <span class="n">InterpretedModuleType</span> <span class="o">=</span> <span class="n">mod_typ</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_pred_variant</span><span class="p">:</span> <span class="n">PredFuncType</span> <span class="o">=</span> <span class="n">pred_variant</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_var_context</span> <span class="o">=</span> <span class="n">var_context</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_cmt_context</span> <span class="o">=</span> <span class="n">cmt_context</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_n_cmt</span> <span class="o">=</span> <span class="n">n_cmt</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">_local_context</span> <span class="o">=</span> <span class="n">local_context</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_self_context</span> <span class="o">=</span> <span class="n">self_context</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_global_context</span> <span class="o">=</span> <span class="n">global_context</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_global_context</span><span class="p">[</span><span class="n">SYMPY_EXP_FUNC_NAME</span><span class="p">]</span> <span class="o">=</span> <span class="n">sympy</span><span class="o">.</span><span class="n">exp</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_global_context</span><span class="p">[</span><span class="n">SYMPY_LOG_FUNC_NAME</span><span class="p">]</span> <span class="o">=</span> <span class="n">sympy</span><span class="o">.</span><span class="n">log</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">_sympy_translator</span> <span class="o">=</span> <span class="n">ASTSympyTranslator</span><span class="p">(</span><span class="n">self_context</span><span class="o">=</span><span class="n">self_context</span><span class="p">,</span> <span class="n">local_context</span><span class="o">=</span><span class="n">local_context</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">target_names</span> <span class="o">=</span> <span class="n">target_names</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__subroutine</span><span class="p">:</span> <span class="nb">tuple</span><span class="p">[</span><span class="n">ast</span><span class="o">.</span><span class="n">Call</span><span class="p">,</span> <span class="n">PKAnalyticalSolution</span><span class="p">[</span><span class="n">typing</span><span class="o">.</span><span class="n">Any</span><span class="p">]]</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">_target_wrt_mp</span><span class="p">:</span> <span class="nb">dict</span><span class="p">[</span><span class="n">AutoDiffTargetWrt</span><span class="p">,</span> <span class="n">sympy</span><span class="o">.</span><span class="n">Expr</span><span class="p">]</span> <span class="o">=</span> <span class="p">{}</span>
+        <span class="c1"># self._target_wrt_2nd_mp: dict[AutoDiffTargetWrt2nd, sympy.Expr] = {}</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">_dAdt_wrt_mp</span><span class="p">:</span> <span class="nb">dict</span><span class="p">[</span><span class="n">AutoDiffDADtWrt</span><span class="p">,</span> <span class="n">sympy</span><span class="o">.</span><span class="n">Expr</span><span class="p">]</span> <span class="o">=</span> <span class="p">{}</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">_alag_mp</span><span class="p">:</span> <span class="nb">dict</span><span class="p">[</span><span class="n">Compartment</span><span class="p">,</span> <span class="n">sympy</span><span class="o">.</span><span class="n">Expr</span><span class="p">]</span> <span class="o">=</span> <span class="p">{}</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_rate_mp</span><span class="p">:</span> <span class="nb">dict</span><span class="p">[</span><span class="n">Compartment</span><span class="p">,</span> <span class="n">sympy</span><span class="o">.</span><span class="n">Expr</span><span class="p">]</span> <span class="o">=</span> <span class="p">{}</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_dur_mp</span><span class="p">:</span> <span class="nb">dict</span><span class="p">[</span><span class="n">Compartment</span><span class="p">,</span> <span class="n">sympy</span><span class="o">.</span><span class="n">Expr</span><span class="p">]</span> <span class="o">=</span> <span class="p">{}</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_a0_mp</span><span class="p">:</span> <span class="nb">dict</span><span class="p">[</span><span class="n">Compartment</span><span class="p">,</span> <span class="n">sympy</span><span class="o">.</span><span class="n">Expr</span><span class="p">]</span> <span class="o">=</span> <span class="p">{}</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_f_mp</span><span class="p">:</span> <span class="nb">dict</span><span class="p">[</span><span class="n">Compartment</span><span class="p">,</span> <span class="n">sympy</span><span class="o">.</span><span class="n">Expr</span><span class="p">]</span> <span class="o">=</span> <span class="p">{}</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">subroutine</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">PKAnalyticalSolution</span><span class="p">[</span><span class="n">typing</span><span class="o">.</span><span class="n">Any</span><span class="p">]</span> <span class="o">|</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__subroutine</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">__subroutine</span> <span class="k">else</span> <span class="kc">None</span>
+
+<div class="viewcode-block" id="AutoDiffNodeTransformer.insert_param_deriv_inline"><a class="viewcode-back" href="../../../masmod.ast_worker.html#masmod.ast_worker.autodiff.AutoDiffNodeTransformer.insert_param_deriv_inline">[docs]</a>    <span class="k">def</span> <span class="nf">insert_param_deriv_inline</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span>
+        <span class="n">node</span><span class="p">:</span> <span class="n">ast</span><span class="o">.</span><span class="n">FunctionDef</span><span class="p">,</span>
+        <span class="n">order_of_deriv</span><span class="p">:</span> <span class="n">typing</span><span class="o">.</span><span class="n">Literal</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span>
+        <span class="n">dAdt_deriv</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span>
+        <span class="n">simplify</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]]:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;通过 ast 遍历 node 的语法树, 为 parsing_term_names 中的所有变量添加对 var_context 中的变量的偏导</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            node (ast.FunctionDef): node 语法树</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            dict[str, list[str]]: 变量名为 key, 其对应的所有偏导的变量名为 value 的字典</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">result</span><span class="p">:</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]]</span> <span class="o">=</span> <span class="p">{}</span>
+        <span class="n">appending_assignments</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="n">ast</span><span class="o">.</span><span class="n">Assign</span> <span class="o">|</span> <span class="n">ast</span><span class="o">.</span><span class="n">AugAssign</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
+
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_mod_typ</span> <span class="o">==</span> <span class="s2">&quot;ode&quot;</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">dAdt_deriv</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">order_of_deriv</span> <span class="o">&gt;=</span> <span class="mi">1</span><span class="p">:</span>
+
+                    <span class="n">dAdt_wrt_1st_mp</span><span class="p">:</span> <span class="nb">dict</span><span class="p">[</span><span class="n">AutoDiffDADtWrt</span><span class="p">,</span> <span class="n">sympy</span><span class="o">.</span><span class="n">Expr</span><span class="p">]</span> <span class="o">=</span> <span class="p">{}</span>
+                    <span class="k">for</span> <span class="n">dAdt_wrt_key</span><span class="p">,</span> <span class="n">dAdt_wrt_val</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_dAdt_wrt_mp</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+                        <span class="k">if</span> <span class="n">dAdt_wrt_key</span><span class="o">.</span><span class="n">wrt2nd</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+                            <span class="n">dAdt_wrt_1st_mp</span><span class="p">[</span><span class="n">dAdt_wrt_key</span><span class="p">]</span> <span class="o">=</span> <span class="n">dAdt_wrt_val</span>
+
+                    <span class="n">exprs</span> <span class="o">=</span> <span class="p">[</span><span class="o">*</span><span class="n">dAdt_wrt_1st_mp</span><span class="o">.</span><span class="n">values</span><span class="p">()]</span>
+                    <span class="k">if</span> <span class="n">simplify</span><span class="p">:</span>
+                        <span class="n">refined_expressions</span><span class="p">,</span> <span class="n">assignments</span><span class="p">,</span> <span class="n">cse_ctx</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cse</span><span class="p">(</span><span class="n">exprs</span><span class="p">)</span>
+                        <span class="n">appending_assignments</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">assignments</span><span class="p">)</span>
+                    <span class="k">else</span><span class="p">:</span>
+                        <span class="n">refined_expressions</span> <span class="o">=</span> <span class="n">exprs</span>
+                        <span class="n">cse_ctx</span> <span class="o">=</span> <span class="kc">None</span>
+
+                    <span class="n">dAdt_wrt_1st_keys</span> <span class="o">=</span> <span class="p">[</span><span class="o">*</span><span class="n">dAdt_wrt_1st_mp</span><span class="o">.</span><span class="n">keys</span><span class="p">()]</span>
+
+                    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">dAdt_wrt_1st_keys</span><span class="p">)</span> <span class="o">!=</span> <span class="nb">len</span><span class="p">(</span><span class="n">exprs</span><span class="p">):</span>
+                        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Length mismatched&quot;</span><span class="p">)</span>
+
+                    <span class="k">while</span> <span class="n">dAdt_wrt_1st_keys</span><span class="p">:</span>
+                        <span class="n">key</span> <span class="o">=</span> <span class="n">dAdt_wrt_1st_keys</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>  <span class="c1"># pop first</span>
+                        <span class="n">expr</span> <span class="o">=</span> <span class="n">refined_expressions</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+                        <span class="n">cmt</span> <span class="o">=</span> <span class="n">key</span><span class="o">.</span><span class="n">cmt</span>
+                        <span class="n">wrt</span> <span class="o">=</span> <span class="n">key</span><span class="o">.</span><span class="n">wrt</span>
+                        <span class="n">translated_deriv</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_sympy_translator</span><span class="o">.</span><span class="n">translate</span><span class="p">(</span><span class="n">expr</span><span class="p">,</span> <span class="n">captured_ctx</span><span class="o">=</span><span class="n">cse_ctx</span><span class="p">)</span>
+                        <span class="n">appending_assignments</span><span class="o">.</span><span class="n">append</span><span class="p">(</span>
+                            <span class="n">ast</span><span class="o">.</span><span class="n">Assign</span><span class="p">(</span>
+                                <span class="n">targets</span><span class="o">=</span><span class="p">(</span><span class="n">_make_ode_subscript_ast</span><span class="p">(</span><span class="n">_DADT_MP</span><span class="p">,</span> <span class="p">(</span><span class="n">cmt</span><span class="p">,</span> <span class="n">wrt</span><span class="p">)),),</span>
+                                <span class="n">value</span><span class="o">=</span><span class="n">translated_deriv</span><span class="p">,</span>
+                                <span class="n">lineno</span><span class="o">=</span><span class="kc">None</span>
+                            <span class="p">)</span>
+                        <span class="p">)</span>
+
+                <span class="k">if</span> <span class="n">order_of_deriv</span> <span class="o">&gt;=</span> <span class="mi">2</span><span class="p">:</span>
+                    <span class="n">dAdt_wrt_2nd_mp</span><span class="p">:</span> <span class="nb">dict</span><span class="p">[</span><span class="n">AutoDiffDADtWrt</span><span class="p">,</span> <span class="n">sympy</span><span class="o">.</span><span class="n">Expr</span><span class="p">]</span> <span class="o">=</span> <span class="p">{}</span>
+                    <span class="k">for</span> <span class="n">dAdt_wrt_key</span><span class="p">,</span> <span class="n">dAdt_wrt_val</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_dAdt_wrt_mp</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+                        <span class="k">if</span> <span class="n">dAdt_wrt_key</span><span class="o">.</span><span class="n">wrt2nd</span><span class="p">:</span>
+                            <span class="n">dAdt_wrt_2nd_mp</span><span class="p">[</span><span class="n">dAdt_wrt_key</span><span class="p">]</span> <span class="o">=</span> <span class="n">dAdt_wrt_val</span>
+
+                    <span class="n">exprs</span> <span class="o">=</span> <span class="p">[</span><span class="o">*</span><span class="n">dAdt_wrt_2nd_mp</span><span class="o">.</span><span class="n">values</span><span class="p">()]</span>
+                    <span class="k">if</span> <span class="n">simplify</span><span class="p">:</span>
+                        <span class="n">refined_expressions</span><span class="p">,</span> <span class="n">assignments</span><span class="p">,</span> <span class="n">cse_ctx</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cse</span><span class="p">(</span><span class="n">exprs</span><span class="p">)</span>
+                        <span class="n">appending_assignments</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">assignments</span><span class="p">)</span>
+                    <span class="k">else</span><span class="p">:</span>
+                        <span class="n">refined_expressions</span> <span class="o">=</span> <span class="n">exprs</span>
+                        <span class="n">cse_ctx</span> <span class="o">=</span> <span class="kc">None</span>
+
+                    <span class="n">dAdt_wrt_2nd_keys</span> <span class="o">=</span> <span class="p">[</span><span class="o">*</span><span class="n">dAdt_wrt_2nd_mp</span><span class="o">.</span><span class="n">keys</span><span class="p">()]</span>
+
+                    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">dAdt_wrt_2nd_keys</span><span class="p">)</span> <span class="o">!=</span> <span class="nb">len</span><span class="p">(</span><span class="n">exprs</span><span class="p">):</span>
+                        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Length mismatched&quot;</span><span class="p">)</span>
+
+                    <span class="k">while</span> <span class="n">dAdt_wrt_2nd_keys</span><span class="p">:</span>
+                        <span class="n">key</span> <span class="o">=</span> <span class="n">dAdt_wrt_2nd_keys</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>  <span class="c1"># pop first</span>
+                        <span class="n">expr</span> <span class="o">=</span> <span class="n">refined_expressions</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+                        <span class="n">cmt</span> <span class="o">=</span> <span class="n">key</span><span class="o">.</span><span class="n">cmt</span>
+                        <span class="n">wrt</span> <span class="o">=</span> <span class="n">key</span><span class="o">.</span><span class="n">wrt</span>
+                        <span class="n">wrt2nd</span> <span class="o">=</span> <span class="n">key</span><span class="o">.</span><span class="n">wrt2nd</span>
+                        <span class="k">if</span> <span class="ow">not</span> <span class="n">wrt2nd</span><span class="p">:</span>
+                            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Invalid wrt2nd&quot;</span><span class="p">)</span>
+                        <span class="n">translated_deriv</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_sympy_translator</span><span class="o">.</span><span class="n">translate</span><span class="p">(</span><span class="n">expr</span><span class="p">,</span> <span class="n">captured_ctx</span><span class="o">=</span><span class="n">cse_ctx</span><span class="p">)</span>
+                        <span class="n">appending_assignments</span><span class="o">.</span><span class="n">append</span><span class="p">(</span>
+                            <span class="n">ast</span><span class="o">.</span><span class="n">Assign</span><span class="p">(</span>
+                                <span class="n">targets</span><span class="o">=</span><span class="p">(</span><span class="n">_make_ode_subscript_ast</span><span class="p">(</span><span class="n">_DADT_MP</span><span class="p">,</span> <span class="p">(</span><span class="n">cmt</span><span class="p">,</span> <span class="n">wrt</span><span class="p">,</span> <span class="n">wrt2nd</span><span class="p">)),),</span>
+                                <span class="n">value</span><span class="o">=</span><span class="n">translated_deriv</span><span class="p">,</span>
+                                <span class="n">lineno</span><span class="o">=</span><span class="kc">None</span>
+                            <span class="p">)</span>
+                        <span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">order_of_deriv</span> <span class="o">&gt;=</span> <span class="mi">1</span><span class="p">:</span>
+            <span class="n">target_wrt_1st_mp</span><span class="p">:</span> <span class="nb">dict</span><span class="p">[</span><span class="n">AutoDiffTargetWrt</span><span class="p">,</span> <span class="n">sympy</span><span class="o">.</span><span class="n">Expr</span><span class="p">]</span> <span class="o">=</span> <span class="p">{}</span>
+            <span class="k">for</span> <span class="n">target_wrt_key</span><span class="p">,</span> <span class="n">target_wrt_val</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_target_wrt_mp</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+                <span class="k">if</span> <span class="n">target_wrt_key</span><span class="o">.</span><span class="n">wrt2nd</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+                    <span class="n">target_wrt_1st_mp</span><span class="p">[</span><span class="n">target_wrt_key</span><span class="p">]</span> <span class="o">=</span> <span class="n">target_wrt_val</span>
+
+            <span class="n">exprs</span> <span class="o">=</span> <span class="p">[</span><span class="o">*</span><span class="n">target_wrt_1st_mp</span><span class="o">.</span><span class="n">values</span><span class="p">()]</span>
+            <span class="n">captured_ctx</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_local_context</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+            <span class="k">if</span> <span class="n">simplify</span><span class="p">:</span>
+                <span class="n">refined_expressions</span><span class="p">,</span> <span class="n">assignments</span><span class="p">,</span> <span class="n">cse_ctx</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cse</span><span class="p">(</span><span class="n">exprs</span><span class="p">)</span>
+                <span class="n">appending_assignments</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">assignments</span><span class="p">)</span>
+                <span class="n">captured_ctx</span> <span class="o">=</span> <span class="n">captured_ctx</span> <span class="o">+</span> <span class="n">cse_ctx</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">refined_expressions</span> <span class="o">=</span> <span class="n">exprs</span>
+                <span class="n">captured_ctx</span> <span class="o">=</span> <span class="kc">None</span>
+
+            <span class="n">target_wrt_1st_keys</span> <span class="o">=</span> <span class="p">[</span><span class="o">*</span><span class="n">target_wrt_1st_mp</span><span class="o">.</span><span class="n">keys</span><span class="p">()]</span>
+            <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">target_wrt_1st_keys</span><span class="p">)</span> <span class="o">!=</span> <span class="nb">len</span><span class="p">(</span><span class="n">exprs</span><span class="p">):</span>
+                <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Length mismatched&quot;</span><span class="p">)</span>
+
+            <span class="k">while</span> <span class="n">target_wrt_1st_keys</span><span class="p">:</span>
+                <span class="n">key</span> <span class="o">=</span> <span class="n">target_wrt_1st_keys</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>  <span class="c1"># pop first</span>
+                <span class="n">expr</span> <span class="o">=</span> <span class="n">refined_expressions</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+                <span class="n">target_name</span> <span class="o">=</span> <span class="n">key</span><span class="o">.</span><span class="n">target_name</span>
+                <span class="n">wrt_var</span> <span class="o">=</span> <span class="n">key</span><span class="o">.</span><span class="n">wrt</span>
+                <span class="n">masked_key</span> <span class="o">=</span> <span class="n">mask_variable</span><span class="p">(</span><span class="n">target_name</span><span class="p">)</span>
+                <span class="n">masked_term_name</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">masked_key</span><span class="si">}</span><span class="s2">_wrt_</span><span class="si">{</span><span class="n">wrt_var</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">&quot;</span>
+                <span class="k">if</span> <span class="n">masked_key</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">result</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+                    <span class="n">result</span><span class="p">[</span><span class="n">masked_key</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="n">masked_term_name</span><span class="p">]</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">result</span><span class="p">[</span><span class="n">masked_key</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">masked_term_name</span><span class="p">)</span>
+
+                <span class="n">ast_expr</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_sympy_translator</span><span class="o">.</span><span class="n">translate</span><span class="p">(</span><span class="n">expr</span><span class="p">,</span> <span class="n">captured_ctx</span><span class="o">=</span><span class="n">captured_ctx</span><span class="p">)</span>
+                <span class="n">appending_assignments</span><span class="o">.</span><span class="n">append</span><span class="p">(</span>
+                    <span class="n">ast</span><span class="o">.</span><span class="n">Assign</span><span class="p">(</span><span class="n">targets</span><span class="o">=</span><span class="p">(</span><span class="n">ast</span><span class="o">.</span><span class="n">Name</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="n">masked_term_name</span><span class="p">),),</span> <span class="n">value</span><span class="o">=</span><span class="n">ast_expr</span><span class="p">,</span> <span class="n">lineno</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+                <span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">order_of_deriv</span> <span class="o">&gt;=</span> <span class="mi">2</span><span class="p">:</span>
+            <span class="n">target_wrt_2nd_mp</span><span class="p">:</span> <span class="nb">dict</span><span class="p">[</span><span class="n">AutoDiffTargetWrt</span><span class="p">,</span> <span class="n">sympy</span><span class="o">.</span><span class="n">Expr</span><span class="p">]</span> <span class="o">=</span> <span class="p">{}</span>
+            <span class="k">for</span> <span class="n">target_wrt_key</span><span class="p">,</span> <span class="n">target_wrt_val</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_target_wrt_mp</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+                <span class="k">if</span> <span class="n">target_wrt_key</span><span class="o">.</span><span class="n">wrt2nd</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+                    <span class="n">target_wrt_2nd_mp</span><span class="p">[</span><span class="n">target_wrt_key</span><span class="p">]</span> <span class="o">=</span> <span class="n">target_wrt_val</span>
+
+            <span class="n">exprs</span> <span class="o">=</span> <span class="p">[</span><span class="o">*</span><span class="n">target_wrt_2nd_mp</span><span class="o">.</span><span class="n">values</span><span class="p">()]</span>
+            <span class="n">captured_ctx</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_local_context</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+            <span class="k">if</span> <span class="n">simplify</span><span class="p">:</span>
+                <span class="n">refined_expressions</span><span class="p">,</span> <span class="n">assignments</span><span class="p">,</span> <span class="n">cse_ctx</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cse</span><span class="p">(</span><span class="n">exprs</span><span class="p">)</span>
+                <span class="n">appending_assignments</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">assignments</span><span class="p">)</span>
+                <span class="n">captured_ctx</span> <span class="o">=</span> <span class="n">captured_ctx</span> <span class="o">+</span> <span class="n">cse_ctx</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">refined_expressions</span> <span class="o">=</span> <span class="n">exprs</span>
+                <span class="n">captured_ctx</span> <span class="o">=</span> <span class="kc">None</span>
+
+            <span class="n">target_wrt_2nd_keys</span> <span class="o">=</span> <span class="p">[</span><span class="o">*</span><span class="n">target_wrt_2nd_mp</span><span class="o">.</span><span class="n">keys</span><span class="p">()]</span>
+            <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">target_wrt_2nd_keys</span><span class="p">)</span> <span class="o">!=</span> <span class="nb">len</span><span class="p">(</span><span class="n">exprs</span><span class="p">):</span>
+                <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Length mismatched&quot;</span><span class="p">)</span>
+
+            <span class="k">while</span> <span class="n">target_wrt_2nd_keys</span><span class="p">:</span>
+                <span class="n">key</span> <span class="o">=</span> <span class="n">target_wrt_2nd_keys</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>  <span class="c1"># pop first</span>
+                <span class="n">expr</span> <span class="o">=</span> <span class="n">refined_expressions</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+                <span class="n">target_name</span> <span class="o">=</span> <span class="n">key</span><span class="o">.</span><span class="n">target_name</span>
+                <span class="n">wrt_var</span> <span class="o">=</span> <span class="n">key</span><span class="o">.</span><span class="n">wrt</span>
+                <span class="n">wrt2nd_var</span> <span class="o">=</span> <span class="n">key</span><span class="o">.</span><span class="n">wrt2nd</span>
+                <span class="k">if</span> <span class="n">wrt2nd_var</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+                    <span class="k">raise</span> <span class="ne">KeyError</span>
+                <span class="n">masked_key</span> <span class="o">=</span> <span class="n">mask_variable</span><span class="p">(</span><span class="n">target_name</span><span class="p">)</span>
+                <span class="n">masked_term_name</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">masked_key</span><span class="si">}</span><span class="s2">_wrt_</span><span class="si">{</span><span class="n">wrt_var</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">_wrt_</span><span class="si">{</span><span class="n">wrt2nd_var</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">&quot;</span>
+                <span class="k">if</span> <span class="n">masked_key</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">result</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+                    <span class="n">result</span><span class="p">[</span><span class="n">masked_key</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="n">masked_term_name</span><span class="p">]</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">result</span><span class="p">[</span><span class="n">masked_key</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">masked_term_name</span><span class="p">)</span>
+
+                <span class="n">ast_expr</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_sympy_translator</span><span class="o">.</span><span class="n">translate</span><span class="p">(</span><span class="n">expr</span><span class="p">,</span> <span class="n">captured_ctx</span><span class="o">=</span><span class="n">captured_ctx</span><span class="p">)</span>
+                <span class="n">appending_assignments</span><span class="o">.</span><span class="n">append</span><span class="p">(</span>
+                    <span class="n">ast</span><span class="o">.</span><span class="n">Assign</span><span class="p">(</span><span class="n">targets</span><span class="o">=</span><span class="p">(</span><span class="n">ast</span><span class="o">.</span><span class="n">Name</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="n">masked_term_name</span><span class="p">),),</span> <span class="n">value</span><span class="o">=</span><span class="n">ast_expr</span><span class="p">,</span> <span class="n">lineno</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+                <span class="p">)</span>
+
+        <span class="n">node</span><span class="o">.</span><span class="n">body</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">appending_assignments</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="n">result</span></div>
+
+<div class="viewcode-block" id="AutoDiffNodeTransformer.insert_dosing_deriv_inline"><a class="viewcode-back" href="../../../masmod.ast_worker.html#masmod.ast_worker.autodiff.AutoDiffNodeTransformer.insert_dosing_deriv_inline">[docs]</a>    <span class="k">def</span> <span class="nf">insert_dosing_deriv_inline</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">node</span><span class="p">:</span> <span class="n">ast</span><span class="o">.</span><span class="n">FunctionDef</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">appending_assignments</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="n">ast</span><span class="o">.</span><span class="n">stmt</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
+
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_mod_typ</span> <span class="o">==</span> <span class="s2">&quot;ode&quot;</span><span class="p">:</span>  <span class="c1"># only handle this with ode type</span>
+            <span class="k">for</span> <span class="n">alag_expr</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_alag_mp</span><span class="o">.</span><span class="n">values</span><span class="p">():</span>
+                <span class="k">for</span> <span class="n">var</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_var_context</span><span class="o">.</span><span class="n">values</span><span class="p">():</span>
+                    <span class="n">wrt_v</span> <span class="o">=</span> <span class="n">var</span>
+
+                    <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">var</span><span class="p">,</span> <span class="n">Eta</span><span class="p">):</span>  <span class="c1"># 只需要对 eta 的偏导</span>
+                        <span class="k">continue</span>
+
+                    <span class="n">partial_deriv</span> <span class="o">=</span> <span class="n">SYMPY_ZERO</span>
+                    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">alag_expr</span><span class="p">,</span> <span class="n">sympy</span><span class="o">.</span><span class="n">Expr</span><span class="p">):</span>
+                        <span class="n">partial_deriv</span> <span class="o">=</span> <span class="n">alag_expr</span><span class="o">.</span><span class="n">diff</span><span class="p">(</span><span class="n">wrt_v</span><span class="p">)</span>
+
+                    <span class="k">for</span> <span class="n">cmt</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cmt_context</span><span class="o">.</span><span class="n">values</span><span class="p">():</span>
+                        <span class="k">if</span> <span class="n">partial_deriv</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+                            <span class="c1"># NOTE: 修改 A[dosing_cmt, alag] 的初值，用于计算 DADalag</span>
+                            <span class="c1"># NONMEM 做法，数学原理见 TODO: issue#xxx</span>
+                            <span class="n">translated_deriv</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_sympy_translator</span><span class="o">.</span><span class="n">translate</span><span class="p">(</span><span class="n">partial_deriv</span> <span class="o">*</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+                            <span class="n">assignment</span> <span class="o">=</span> <span class="n">ast</span><span class="o">.</span><span class="n">Assign</span><span class="p">(</span>
+                                <span class="n">targets</span><span class="o">=</span><span class="p">(</span><span class="n">_make_ode_subscript_ast</span><span class="p">(</span><span class="n">_A_MP</span><span class="p">,</span> <span class="p">(</span><span class="n">cmt</span><span class="p">,</span> <span class="n">wrt_v</span><span class="p">)),),</span>
+                                <span class="n">value</span><span class="o">=</span><span class="n">ast</span><span class="o">.</span><span class="n">BinOp</span><span class="p">(</span>
+                                    <span class="n">left</span><span class="o">=</span><span class="n">_make_ode_subscript_ast</span><span class="p">(</span><span class="n">_DADT_MP</span><span class="p">,</span> <span class="n">cmt</span><span class="p">),</span> <span class="n">op</span><span class="o">=</span><span class="n">ast</span><span class="o">.</span><span class="n">Mult</span><span class="p">(),</span> <span class="n">right</span><span class="o">=</span><span class="n">translated_deriv</span>
+                                <span class="p">),</span>
+                                <span class="n">lineno</span><span class="o">=</span><span class="kc">None</span>
+                            <span class="p">)</span>
+                            <span class="n">appending_assignments</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">assignment</span><span class="p">)</span>
+
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_rate_mp</span> <span class="ow">and</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">_dur_mp</span><span class="p">:</span>
+                <span class="k">for</span> <span class="n">rate_expr</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_rate_mp</span><span class="o">.</span><span class="n">values</span><span class="p">():</span>
+                    <span class="k">for</span> <span class="n">var</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_var_context</span><span class="o">.</span><span class="n">values</span><span class="p">():</span>
+                        <span class="n">wrt_v</span> <span class="o">=</span> <span class="n">var</span>
+
+                        <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">var</span><span class="p">,</span> <span class="n">Eta</span><span class="p">):</span>  <span class="c1"># 只需要对 eta 的偏导</span>
+                            <span class="k">continue</span>
+
+                        <span class="n">partial_deriv</span> <span class="o">=</span> <span class="n">SYMPY_ZERO</span>
+                        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">rate_expr</span><span class="p">,</span> <span class="n">sympy</span><span class="o">.</span><span class="n">Expr</span><span class="p">):</span>
+                            <span class="n">partial_deriv</span> <span class="o">=</span> <span class="n">rate_expr</span><span class="o">.</span><span class="n">diff</span><span class="p">(</span><span class="n">wrt_v</span><span class="p">)</span>
+                        <span class="n">cmt_index</span> <span class="o">=</span> <span class="mi">0</span>
+                        <span class="k">for</span> <span class="n">cmt</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cmt_context</span><span class="o">.</span><span class="n">values</span><span class="p">():</span>
+                            <span class="n">cmt_index</span> <span class="o">+=</span> <span class="mi">1</span>
+                            <span class="k">if</span> <span class="n">partial_deriv</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+                                <span class="n">appending_assignments</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span>
+                                    <span class="bp">self</span><span class="o">.</span><span class="n">__get_dose_rate_deriv</span><span class="p">(</span><span class="n">cmt</span><span class="p">,</span> <span class="n">wrt_v</span><span class="p">,</span> <span class="n">partial_deriv</span><span class="p">,</span> <span class="n">cmt_index</span><span class="p">)</span>
+                                <span class="p">)</span>
+
+            <span class="k">elif</span> <span class="bp">self</span><span class="o">.</span><span class="n">_dur_mp</span> <span class="ow">and</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">_rate_mp</span><span class="p">:</span>
+                <span class="k">for</span> <span class="n">dur_expr</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_dur_mp</span><span class="o">.</span><span class="n">values</span><span class="p">():</span>
+                    <span class="k">for</span> <span class="n">var</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_var_context</span><span class="o">.</span><span class="n">values</span><span class="p">():</span>
+                        <span class="n">wrt_v</span> <span class="o">=</span> <span class="n">var</span>
+
+                        <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">var</span><span class="p">,</span> <span class="n">Eta</span><span class="p">):</span>  <span class="c1"># 只需要对 eta 的偏导</span>
+                            <span class="k">continue</span>
+
+                        <span class="n">partial_deriv</span> <span class="o">=</span> <span class="n">SYMPY_ZERO</span>
+                        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">dur_expr</span><span class="p">,</span> <span class="n">sympy</span><span class="o">.</span><span class="n">Expr</span><span class="p">):</span>
+                            <span class="n">partial_deriv</span> <span class="o">=</span> <span class="n">dur_expr</span><span class="o">.</span><span class="n">diff</span><span class="p">(</span><span class="n">wrt_v</span><span class="p">)</span>
+                        <span class="n">cmt_index</span> <span class="o">=</span> <span class="mi">0</span>
+                        <span class="k">for</span> <span class="n">cmt</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cmt_context</span><span class="o">.</span><span class="n">values</span><span class="p">():</span>
+                            <span class="n">cmt_index</span> <span class="o">+=</span> <span class="mi">1</span>
+                            <span class="k">if</span> <span class="n">partial_deriv</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+                                <span class="c1"># 添加 dur 导数</span>
+                                <span class="n">appending_assignments</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span>
+                                    <span class="bp">self</span><span class="o">.</span><span class="n">__get_dose_dur_deriv</span><span class="p">(</span><span class="n">cmt</span><span class="p">,</span> <span class="n">wrt_v</span><span class="p">,</span> <span class="n">partial_deriv</span><span class="p">,</span> <span class="n">cmt_index</span><span class="p">)</span>
+                                <span class="p">)</span>
+
+            <span class="k">elif</span> <span class="bp">self</span><span class="o">.</span><span class="n">_dur_mp</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">_rate_mp</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Both rate and duration are not supported as model parameters&quot;</span><span class="p">)</span>
+
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_f_mp</span><span class="p">:</span>
+                <span class="k">for</span> <span class="n">f_expr</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_f_mp</span><span class="o">.</span><span class="n">values</span><span class="p">():</span>
+                    <span class="k">for</span> <span class="n">var</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_var_context</span><span class="o">.</span><span class="n">values</span><span class="p">():</span>
+                        <span class="n">wrt_v</span> <span class="o">=</span> <span class="n">var</span>
+
+                        <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">var</span><span class="p">,</span> <span class="n">Eta</span><span class="p">):</span>  <span class="c1"># 只需要对 eta 的偏导</span>
+                            <span class="k">continue</span>
+
+                        <span class="n">partial_deriv</span> <span class="o">=</span> <span class="n">SYMPY_ZERO</span>
+                        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">f_expr</span><span class="p">,</span> <span class="n">sympy</span><span class="o">.</span><span class="n">Expr</span><span class="p">):</span>
+                            <span class="n">partial_deriv</span> <span class="o">=</span> <span class="n">f_expr</span><span class="o">.</span><span class="n">diff</span><span class="p">(</span><span class="n">wrt_v</span><span class="p">)</span>
+                        <span class="n">cmt_index</span> <span class="o">=</span> <span class="mi">0</span>
+                        <span class="k">for</span> <span class="n">cmt</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cmt_context</span><span class="o">.</span><span class="n">values</span><span class="p">():</span>
+                            <span class="n">cmt_index</span> <span class="o">+=</span> <span class="mi">1</span>
+                            <span class="k">if</span> <span class="n">partial_deriv</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+                                <span class="c1"># 添加 f 导数</span>
+                                <span class="n">appending_assignments</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span>
+                                    <span class="bp">self</span><span class="o">.</span><span class="n">__get_dose_f_deriv</span><span class="p">(</span><span class="n">cmt</span><span class="p">,</span> <span class="n">wrt_v</span><span class="p">,</span> <span class="n">partial_deriv</span><span class="p">,</span> <span class="n">cmt_index</span><span class="p">)</span>
+                                <span class="p">)</span>
+
+        <span class="n">node</span><span class="o">.</span><span class="n">body</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">appending_assignments</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="AutoDiffNodeTransformer.insert_t0_update_inline"><a class="viewcode-back" href="../../../masmod.ast_worker.html#masmod.ast_worker.autodiff.AutoDiffNodeTransformer.insert_t0_update_inline">[docs]</a>    <span class="k">def</span> <span class="nf">insert_t0_update_inline</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">node</span><span class="p">:</span> <span class="n">ast</span><span class="o">.</span><span class="n">FunctionDef</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">appending_assignments</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="n">ast</span><span class="o">.</span><span class="n">Assign</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
+
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_mod_typ</span> <span class="o">==</span> <span class="s2">&quot;ode&quot;</span><span class="p">:</span>  <span class="c1"># only handle this with ode type</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_a0_mp</span><span class="p">:</span>
+                <span class="k">for</span> <span class="n">a0_cmt</span><span class="p">,</span> <span class="n">a0_expr</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_a0_mp</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+                    <span class="k">for</span> <span class="n">var</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_var_context</span><span class="o">.</span><span class="n">values</span><span class="p">():</span>
+                        <span class="n">wrt_v</span> <span class="o">=</span> <span class="n">var</span>
+
+                        <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">var</span><span class="p">,</span> <span class="n">Eta</span><span class="p">):</span>  <span class="c1"># 只需要对 eta 的偏导</span>
+                            <span class="k">continue</span>
+
+                        <span class="n">partial_deriv</span> <span class="o">=</span> <span class="n">SYMPY_ZERO</span>
+                        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">a0_expr</span><span class="p">,</span> <span class="n">sympy</span><span class="o">.</span><span class="n">Expr</span><span class="p">):</span>
+                            <span class="n">partial_deriv</span> <span class="o">=</span> <span class="n">a0_expr</span><span class="o">.</span><span class="n">diff</span><span class="p">(</span><span class="n">wrt_v</span><span class="p">)</span>
+
+                        <span class="k">for</span> <span class="n">cmt</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cmt_context</span><span class="o">.</span><span class="n">values</span><span class="p">():</span>
+                            <span class="k">if</span> <span class="n">partial_deriv</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+                                <span class="c1"># 添加 A0 导数: A0&#39;*F</span>
+                                <span class="n">f_expr</span> <span class="o">=</span> <span class="n">ast</span><span class="o">.</span><span class="n">Attribute</span><span class="p">(</span>
+                                    <span class="n">attr</span><span class="o">=</span><span class="s2">&quot;fraction&quot;</span><span class="p">,</span>
+                                    <span class="n">value</span><span class="o">=</span><span class="n">ast</span><span class="o">.</span><span class="n">Attribute</span><span class="p">(</span><span class="n">attr</span><span class="o">=</span><span class="n">cmt</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="n">value</span><span class="o">=</span><span class="n">ast</span><span class="o">.</span><span class="n">Name</span><span class="p">(</span><span class="s1">&#39;self&#39;</span><span class="p">),</span> <span class="n">lineno</span><span class="o">=</span><span class="kc">None</span><span class="p">),</span>
+                                    <span class="n">lineno</span><span class="o">=</span><span class="kc">None</span>
+                                <span class="p">)</span>
+                                <span class="k">if</span> <span class="n">a0_cmt</span><span class="o">.</span><span class="n">name</span> <span class="o">==</span> <span class="n">cmt</span><span class="o">.</span><span class="n">name</span><span class="p">:</span>
+                                    <span class="n">assignment</span> <span class="o">=</span> <span class="n">ast</span><span class="o">.</span><span class="n">Assign</span><span class="p">(</span>
+                                        <span class="n">targets</span><span class="o">=</span><span class="p">(</span><span class="n">_make_ode_subscript_ast</span><span class="p">(</span><span class="n">_A_MP</span><span class="p">,</span> <span class="p">(</span><span class="n">cmt</span><span class="p">,</span> <span class="n">wrt_v</span><span class="p">)),),</span>
+                                        <span class="n">value</span><span class="o">=</span><span class="n">ast</span><span class="o">.</span><span class="n">BinOp</span><span class="p">(</span>
+                                            <span class="n">left</span><span class="o">=</span><span class="n">f_expr</span><span class="p">,</span>
+                                            <span class="n">op</span><span class="o">=</span><span class="n">ast</span><span class="o">.</span><span class="n">Mult</span><span class="p">(),</span>
+                                            <span class="n">right</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_sympy_translator</span><span class="o">.</span><span class="n">translate</span><span class="p">(</span><span class="n">partial_deriv</span><span class="p">),</span>
+                                            <span class="n">lineno</span><span class="o">=</span><span class="kc">None</span>
+                                        <span class="p">),</span>
+                                        <span class="n">lineno</span><span class="o">=</span><span class="kc">None</span>
+                                    <span class="p">)</span>
+                                <span class="k">else</span><span class="p">:</span>
+                                    <span class="n">assignment</span> <span class="o">=</span> <span class="n">ast</span><span class="o">.</span><span class="n">Assign</span><span class="p">(</span>
+                                        <span class="n">targets</span><span class="o">=</span><span class="p">(</span><span class="n">_make_ode_subscript_ast</span><span class="p">(</span><span class="n">_A_MP</span><span class="p">,</span> <span class="p">(</span><span class="n">cmt</span><span class="p">,</span> <span class="n">wrt_v</span><span class="p">)),),</span>
+                                        <span class="n">value</span><span class="o">=</span><span class="n">ast</span><span class="o">.</span><span class="n">Constant</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span>
+                                        <span class="n">lineno</span><span class="o">=</span><span class="kc">None</span>
+                                    <span class="p">)</span>
+                                <span class="n">appending_assignments</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">assignment</span><span class="p">)</span>
+
+        <span class="n">node</span><span class="o">.</span><span class="n">body</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">appending_assignments</span><span class="p">)</span></div>
+
+    <span class="k">def</span> <span class="nf">__get_dose_dur_deriv</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">cmt</span><span class="p">:</span> <span class="n">Compartment</span><span class="p">,</span> <span class="n">wrt_v</span><span class="p">:</span> <span class="n">SymVar</span><span class="p">,</span> <span class="n">partial_deriv</span><span class="p">:</span> <span class="n">typing</span><span class="o">.</span><span class="n">Any</span><span class="p">,</span>
+                                <span class="n">cmt_index</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="n">ast</span><span class="o">.</span><span class="n">stmt</span><span class="p">]:</span>
+        <span class="n">appending_assignments</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="n">ast</span><span class="o">.</span><span class="n">stmt</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="c1"># 添加 dur 导数</span>
+        <span class="n">f_expr</span> <span class="o">=</span> <span class="n">ast</span><span class="o">.</span><span class="n">Attribute</span><span class="p">(</span>
+            <span class="n">attr</span><span class="o">=</span><span class="s2">&quot;fraction&quot;</span><span class="p">,</span> <span class="n">value</span><span class="o">=</span><span class="n">ast</span><span class="o">.</span><span class="n">Attribute</span><span class="p">(</span><span class="n">attr</span><span class="o">=</span><span class="n">cmt</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="n">value</span><span class="o">=</span><span class="n">ast</span><span class="o">.</span><span class="n">Name</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="s1">&#39;self&#39;</span><span class="p">),</span> <span class="n">lineno</span><span class="o">=</span><span class="kc">None</span><span class="p">),</span> <span class="n">lineno</span><span class="o">=</span><span class="kc">None</span>
+        <span class="p">)</span>
+        <span class="n">rate_expr</span> <span class="o">=</span> <span class="n">_make_dose_params_attribute_ast</span><span class="p">(</span><span class="n">_DOSE_PARAMS</span><span class="p">,</span> <span class="s2">&quot;rate&quot;</span><span class="p">)</span>
+
+        <span class="n">rate_div_dur</span> <span class="o">=</span> <span class="n">ast</span><span class="o">.</span><span class="n">BinOp</span><span class="p">(</span>
+            <span class="n">left</span><span class="o">=</span><span class="n">rate_expr</span><span class="p">,</span>
+            <span class="n">op</span><span class="o">=</span><span class="n">ast</span><span class="o">.</span><span class="n">Div</span><span class="p">(),</span>
+            <span class="n">right</span><span class="o">=</span><span class="n">ast</span><span class="o">.</span><span class="n">Attribute</span><span class="p">(</span>
+                <span class="n">attr</span><span class="o">=</span><span class="s2">&quot;duration&quot;</span><span class="p">,</span>
+                <span class="n">value</span><span class="o">=</span><span class="n">ast</span><span class="o">.</span><span class="n">Attribute</span><span class="p">(</span><span class="n">attr</span><span class="o">=</span><span class="n">cmt</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="n">value</span><span class="o">=</span><span class="n">ast</span><span class="o">.</span><span class="n">Name</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="s1">&#39;self&#39;</span><span class="p">),</span> <span class="n">lineno</span><span class="o">=</span><span class="kc">None</span><span class="p">),</span>
+                <span class="n">lineno</span><span class="o">=</span><span class="kc">None</span>
+            <span class="p">)</span>
+        <span class="p">)</span>
+        <span class="n">translated_deriv</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_sympy_translator</span><span class="o">.</span><span class="n">translate</span><span class="p">(</span><span class="n">partial_deriv</span><span class="p">)</span>  <span class="c1"># dur/d_eta</span>
+        <span class="n">_dduration</span> <span class="o">=</span> <span class="n">ast</span><span class="o">.</span><span class="n">BinOp</span><span class="p">(</span><span class="n">left</span><span class="o">=</span><span class="n">f_expr</span><span class="p">,</span> <span class="n">op</span><span class="o">=</span><span class="n">ast</span><span class="o">.</span><span class="n">Mult</span><span class="p">(),</span> <span class="n">right</span><span class="o">=</span><span class="n">rate_div_dur</span><span class="p">,</span> <span class="n">lineno</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+        <span class="n">dduration</span> <span class="o">=</span> <span class="n">ast</span><span class="o">.</span><span class="n">BinOp</span><span class="p">(</span><span class="n">left</span><span class="o">=</span><span class="n">_dduration</span><span class="p">,</span> <span class="n">op</span><span class="o">=</span><span class="n">ast</span><span class="o">.</span><span class="n">Mult</span><span class="p">(),</span> <span class="n">right</span><span class="o">=</span><span class="n">translated_deriv</span><span class="p">,</span> <span class="n">lineno</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+        <span class="c1"># 滴注开始</span>
+        <span class="n">assignment</span> <span class="o">=</span> <span class="n">ast</span><span class="o">.</span><span class="n">Assign</span><span class="p">(</span>
+            <span class="n">targets</span><span class="o">=</span><span class="p">(</span><span class="n">_make_ode_subscript_ast</span><span class="p">(</span><span class="n">_DADT_MP</span><span class="p">,</span> <span class="p">(</span><span class="n">cmt</span><span class="p">,</span> <span class="n">wrt_v</span><span class="p">)),),</span>
+            <span class="n">value</span><span class="o">=</span><span class="n">ast</span><span class="o">.</span><span class="n">BinOp</span><span class="p">(</span>
+                <span class="n">left</span><span class="o">=</span><span class="n">_make_ode_subscript_ast</span><span class="p">(</span><span class="n">_DADT_MP</span><span class="p">,</span> <span class="p">(</span><span class="n">cmt</span><span class="p">,</span> <span class="n">wrt_v</span><span class="p">)),</span>
+                <span class="n">op</span><span class="o">=</span><span class="n">ast</span><span class="o">.</span><span class="n">Add</span><span class="p">(),</span>
+                <span class="n">right</span><span class="o">=</span><span class="n">ast</span><span class="o">.</span><span class="n">UnaryOp</span><span class="p">(</span><span class="n">op</span><span class="o">=</span><span class="n">ast</span><span class="o">.</span><span class="n">USub</span><span class="p">(),</span> <span class="n">operand</span><span class="o">=</span><span class="n">dduration</span><span class="p">),</span>
+                <span class="n">lineno</span><span class="o">=</span><span class="kc">None</span>
+            <span class="p">),</span>
+            <span class="n">lineno</span><span class="o">=</span><span class="kc">None</span>
+        <span class="p">)</span>
+        <span class="n">appending_assignments</span><span class="o">.</span><span class="n">append</span><span class="p">(</span>
+            <span class="n">ast</span><span class="o">.</span><span class="n">If</span><span class="p">(</span>
+                <span class="n">test</span><span class="o">=</span><span class="n">ast</span><span class="o">.</span><span class="n">Call</span><span class="p">(</span>
+                    <span class="n">func</span><span class="o">=</span><span class="n">_make_dose_params_attribute_ast</span><span class="p">(</span><span class="n">_DOSE_PARAMS</span><span class="p">,</span> <span class="s2">&quot;is_infusion_d_start&quot;</span><span class="p">),</span>
+                    <span class="n">args</span><span class="o">=</span><span class="p">[</span><span class="n">ast</span><span class="o">.</span><span class="n">Constant</span><span class="p">(</span><span class="n">cmt_index</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)],</span>
+                    <span class="n">kwargs</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                    <span class="n">keywords</span><span class="o">=</span><span class="p">[]</span>
+                <span class="p">),</span>
+                <span class="n">body</span><span class="o">=</span><span class="p">[</span><span class="n">assignment</span><span class="p">],</span>
+                <span class="n">orelse</span><span class="o">=</span><span class="p">[],</span>
+                <span class="n">lineno</span><span class="o">=</span><span class="kc">None</span>
+            <span class="p">)</span>
+        <span class="p">)</span>
+
+        <span class="c1"># 滴注结束</span>
+        <span class="n">dadt_assignment</span> <span class="o">=</span> <span class="n">ast</span><span class="o">.</span><span class="n">Assign</span><span class="p">(</span>
+            <span class="n">targets</span><span class="o">=</span><span class="p">(</span><span class="n">_make_ode_subscript_ast</span><span class="p">(</span><span class="n">_DADT_MP</span><span class="p">,</span> <span class="p">(</span><span class="n">cmt</span><span class="p">,</span> <span class="n">wrt_v</span><span class="p">)),),</span>
+            <span class="n">value</span><span class="o">=</span><span class="n">ast</span><span class="o">.</span><span class="n">BinOp</span><span class="p">(</span>
+                <span class="n">left</span><span class="o">=</span><span class="n">_make_ode_subscript_ast</span><span class="p">(</span><span class="n">_DADT_MP</span><span class="p">,</span> <span class="p">(</span><span class="n">cmt</span><span class="p">,</span> <span class="n">wrt_v</span><span class="p">)),</span>
+                <span class="n">op</span><span class="o">=</span><span class="n">ast</span><span class="o">.</span><span class="n">Sub</span><span class="p">(),</span>
+                <span class="n">right</span><span class="o">=</span><span class="n">ast</span><span class="o">.</span><span class="n">UnaryOp</span><span class="p">(</span><span class="n">op</span><span class="o">=</span><span class="n">ast</span><span class="o">.</span><span class="n">USub</span><span class="p">(),</span> <span class="n">operand</span><span class="o">=</span><span class="n">dduration</span><span class="p">),</span>
+                <span class="n">lineno</span><span class="o">=</span><span class="kc">None</span>
+            <span class="p">),</span>
+            <span class="n">lineno</span><span class="o">=</span><span class="kc">None</span>
+        <span class="p">)</span>
+        <span class="n">body</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="n">body</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">dadt_assignment</span><span class="p">)</span>
+
+        <span class="n">a_assignment</span> <span class="o">=</span> <span class="n">ast</span><span class="o">.</span><span class="n">Assign</span><span class="p">(</span>
+            <span class="n">targets</span><span class="o">=</span><span class="p">(</span><span class="n">_make_ode_subscript_ast</span><span class="p">(</span><span class="n">_A_MP</span><span class="p">,</span> <span class="p">(</span><span class="n">cmt</span><span class="p">,</span> <span class="n">wrt_v</span><span class="p">)),),</span>
+            <span class="n">value</span><span class="o">=</span><span class="n">ast</span><span class="o">.</span><span class="n">BinOp</span><span class="p">(</span>
+                <span class="n">left</span><span class="o">=</span><span class="n">_make_ode_subscript_ast</span><span class="p">(</span><span class="n">_A_MP</span><span class="p">,</span> <span class="p">(</span><span class="n">cmt</span><span class="p">,</span> <span class="n">wrt_v</span><span class="p">)),</span>
+                <span class="n">op</span><span class="o">=</span><span class="n">ast</span><span class="o">.</span><span class="n">Add</span><span class="p">(),</span>
+                <span class="n">right</span><span class="o">=</span><span class="n">ast</span><span class="o">.</span><span class="n">BinOp</span><span class="p">(</span><span class="n">left</span><span class="o">=</span><span class="n">rate_expr</span><span class="p">,</span> <span class="n">op</span><span class="o">=</span><span class="n">ast</span><span class="o">.</span><span class="n">Mult</span><span class="p">(),</span> <span class="n">right</span><span class="o">=</span><span class="n">translated_deriv</span><span class="p">,</span> <span class="n">lineno</span><span class="o">=</span><span class="kc">None</span><span class="p">),</span>
+                <span class="n">lineno</span><span class="o">=</span><span class="kc">None</span>
+            <span class="p">),</span>
+            <span class="n">lineno</span><span class="o">=</span><span class="kc">None</span>
+        <span class="p">)</span>
+        <span class="n">body</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">a_assignment</span><span class="p">)</span>
+        <span class="n">test</span> <span class="o">=</span> <span class="n">ast</span><span class="o">.</span><span class="n">Call</span><span class="p">(</span>
+            <span class="n">func</span><span class="o">=</span><span class="n">_make_dose_params_attribute_ast</span><span class="p">(</span><span class="n">_DOSE_PARAMS</span><span class="p">,</span> <span class="s2">&quot;is_infusion_d_end&quot;</span><span class="p">),</span>
+            <span class="n">args</span><span class="o">=</span><span class="p">[</span><span class="n">ast</span><span class="o">.</span><span class="n">Constant</span><span class="p">(</span><span class="n">cmt_index</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)],</span>
+            <span class="n">kwargs</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+            <span class="n">keywords</span><span class="o">=</span><span class="p">[]</span>
+        <span class="p">)</span>
+
+        <span class="n">appending_assignments</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">ast</span><span class="o">.</span><span class="n">If</span><span class="p">(</span><span class="n">test</span><span class="o">=</span><span class="n">test</span><span class="p">,</span> <span class="n">body</span><span class="o">=</span><span class="n">body</span><span class="p">,</span> <span class="n">orelse</span><span class="o">=</span><span class="p">[],</span> <span class="n">lineno</span><span class="o">=</span><span class="kc">None</span><span class="p">))</span>
+        <span class="k">return</span> <span class="n">appending_assignments</span>
+
+    <span class="k">def</span> <span class="nf">__get_dose_rate_deriv</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">cmt</span><span class="p">:</span> <span class="n">Compartment</span><span class="p">,</span> <span class="n">wrt_v</span><span class="p">:</span> <span class="n">SymVar</span><span class="p">,</span> <span class="n">partial_deriv</span><span class="p">:</span> <span class="n">typing</span><span class="o">.</span><span class="n">Any</span><span class="p">,</span>
+                                <span class="n">cmt_index</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="n">ast</span><span class="o">.</span><span class="n">stmt</span><span class="p">]:</span>
+        <span class="n">appending_assignments</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="n">ast</span><span class="o">.</span><span class="n">stmt</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="c1"># 添加 rate 导数</span>
+
+        <span class="n">drate_deta</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_sympy_translator</span><span class="o">.</span><span class="n">translate</span><span class="p">(</span><span class="n">partial_deriv</span><span class="p">)</span>  <span class="c1"># drate/d_eta</span>
+
+        <span class="c1"># 滴注开始</span>
+        <span class="n">assignment</span> <span class="o">=</span> <span class="n">ast</span><span class="o">.</span><span class="n">Assign</span><span class="p">(</span>
+            <span class="n">targets</span><span class="o">=</span><span class="p">(</span><span class="n">_make_ode_subscript_ast</span><span class="p">(</span><span class="n">_DADT_MP</span><span class="p">,</span> <span class="p">(</span><span class="n">cmt</span><span class="p">,</span> <span class="n">wrt_v</span><span class="p">)),),</span>
+            <span class="n">value</span><span class="o">=</span><span class="n">ast</span><span class="o">.</span><span class="n">BinOp</span><span class="p">(</span><span class="n">left</span><span class="o">=</span><span class="n">_make_ode_subscript_ast</span><span class="p">(</span><span class="n">_DADT_MP</span><span class="p">,</span> <span class="p">(</span><span class="n">cmt</span><span class="p">,</span> <span class="n">wrt_v</span><span class="p">)),</span> <span class="n">op</span><span class="o">=</span><span class="n">ast</span><span class="o">.</span><span class="n">Add</span><span class="p">(),</span> <span class="n">right</span><span class="o">=</span><span class="n">drate_deta</span><span class="p">),</span>
+            <span class="n">lineno</span><span class="o">=</span><span class="kc">None</span>
+        <span class="p">)</span>
+        <span class="n">appending_assignments</span><span class="o">.</span><span class="n">append</span><span class="p">(</span>
+            <span class="n">ast</span><span class="o">.</span><span class="n">If</span><span class="p">(</span>
+                <span class="n">test</span><span class="o">=</span><span class="n">ast</span><span class="o">.</span><span class="n">Call</span><span class="p">(</span>
+                    <span class="n">func</span><span class="o">=</span><span class="n">_make_dose_params_attribute_ast</span><span class="p">(</span><span class="n">_DOSE_PARAMS</span><span class="p">,</span> <span class="s2">&quot;is_infusion_r_start&quot;</span><span class="p">),</span>
+                    <span class="n">args</span><span class="o">=</span><span class="p">[</span><span class="n">ast</span><span class="o">.</span><span class="n">Constant</span><span class="p">(</span><span class="n">cmt_index</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)],</span>
+                    <span class="n">kwargs</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                    <span class="n">keywords</span><span class="o">=</span><span class="p">[]</span>
+                <span class="p">),</span>
+                <span class="n">body</span><span class="o">=</span><span class="p">[</span><span class="n">assignment</span><span class="p">],</span>
+                <span class="n">orelse</span><span class="o">=</span><span class="p">[],</span>
+                <span class="n">lineno</span><span class="o">=</span><span class="kc">None</span>
+            <span class="p">)</span>
+        <span class="p">)</span>
+
+        <span class="c1"># 滴注结束</span>
+        <span class="n">body</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="n">dadt_assignment</span> <span class="o">=</span> <span class="n">ast</span><span class="o">.</span><span class="n">Assign</span><span class="p">(</span>
+            <span class="n">targets</span><span class="o">=</span><span class="p">(</span><span class="n">_make_ode_subscript_ast</span><span class="p">(</span><span class="n">_DADT_MP</span><span class="p">,</span> <span class="p">(</span><span class="n">cmt</span><span class="p">,</span> <span class="n">wrt_v</span><span class="p">)),),</span>
+            <span class="n">value</span><span class="o">=</span><span class="n">ast</span><span class="o">.</span><span class="n">BinOp</span><span class="p">(</span><span class="n">left</span><span class="o">=</span><span class="n">_make_ode_subscript_ast</span><span class="p">(</span><span class="n">_DADT_MP</span><span class="p">,</span> <span class="p">(</span><span class="n">cmt</span><span class="p">,</span> <span class="n">wrt_v</span><span class="p">)),</span> <span class="n">op</span><span class="o">=</span><span class="n">ast</span><span class="o">.</span><span class="n">Sub</span><span class="p">(),</span> <span class="n">right</span><span class="o">=</span><span class="n">drate_deta</span><span class="p">),</span>
+            <span class="n">lineno</span><span class="o">=</span><span class="kc">None</span>
+        <span class="p">)</span>
+        <span class="n">body</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">dadt_assignment</span><span class="p">)</span>
+        <span class="n">dur_expr</span> <span class="o">=</span> <span class="n">_make_dose_params_attribute_ast</span><span class="p">(</span><span class="n">_DOSE_PARAMS</span><span class="p">,</span> <span class="s2">&quot;dur&quot;</span><span class="p">)</span>
+        <span class="n">a_assignment</span> <span class="o">=</span> <span class="n">ast</span><span class="o">.</span><span class="n">Assign</span><span class="p">(</span>
+            <span class="n">targets</span><span class="o">=</span><span class="p">(</span><span class="n">_make_ode_subscript_ast</span><span class="p">(</span><span class="n">_A_MP</span><span class="p">,</span> <span class="p">(</span><span class="n">cmt</span><span class="p">,</span> <span class="n">wrt_v</span><span class="p">)),),</span>
+            <span class="n">value</span><span class="o">=</span><span class="n">ast</span><span class="o">.</span><span class="n">BinOp</span><span class="p">(</span>
+                <span class="n">left</span><span class="o">=</span><span class="n">_make_ode_subscript_ast</span><span class="p">(</span><span class="n">_A_MP</span><span class="p">,</span> <span class="p">(</span><span class="n">cmt</span><span class="p">,</span> <span class="n">wrt_v</span><span class="p">)),</span>
+                <span class="n">op</span><span class="o">=</span><span class="n">ast</span><span class="o">.</span><span class="n">Sub</span><span class="p">(),</span>
+                <span class="n">right</span><span class="o">=</span><span class="n">ast</span><span class="o">.</span><span class="n">BinOp</span><span class="p">(</span><span class="n">left</span><span class="o">=</span><span class="n">dur_expr</span><span class="p">,</span> <span class="n">op</span><span class="o">=</span><span class="n">ast</span><span class="o">.</span><span class="n">Mult</span><span class="p">(),</span> <span class="n">right</span><span class="o">=</span><span class="n">drate_deta</span><span class="p">,</span> <span class="n">lineno</span><span class="o">=</span><span class="kc">None</span><span class="p">),</span>
+                <span class="n">lineno</span><span class="o">=</span><span class="kc">None</span>
+            <span class="p">),</span>
+            <span class="n">lineno</span><span class="o">=</span><span class="kc">None</span>
+        <span class="p">)</span>
+        <span class="n">body</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">a_assignment</span><span class="p">)</span>
+
+        <span class="n">appending_assignments</span><span class="o">.</span><span class="n">append</span><span class="p">(</span>
+            <span class="n">ast</span><span class="o">.</span><span class="n">If</span><span class="p">(</span>
+                <span class="n">test</span><span class="o">=</span><span class="n">ast</span><span class="o">.</span><span class="n">Call</span><span class="p">(</span>
+                    <span class="n">func</span><span class="o">=</span><span class="n">_make_dose_params_attribute_ast</span><span class="p">(</span><span class="n">_DOSE_PARAMS</span><span class="p">,</span> <span class="s2">&quot;is_infusion_r_end&quot;</span><span class="p">),</span>
+                    <span class="n">args</span><span class="o">=</span><span class="p">[</span><span class="n">ast</span><span class="o">.</span><span class="n">Constant</span><span class="p">(</span><span class="n">cmt_index</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)],</span>
+                    <span class="n">kwargs</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                    <span class="n">keywords</span><span class="o">=</span><span class="p">[]</span>
+                <span class="p">),</span>
+                <span class="n">body</span><span class="o">=</span><span class="n">body</span><span class="p">,</span>
+                <span class="n">orelse</span><span class="o">=</span><span class="p">[],</span>
+                <span class="n">lineno</span><span class="o">=</span><span class="kc">None</span>
+            <span class="p">)</span>
+        <span class="p">)</span>
+        <span class="k">return</span> <span class="n">appending_assignments</span>
+
+    <span class="k">def</span> <span class="nf">__get_dose_f_deriv</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">cmt</span><span class="p">:</span> <span class="n">Compartment</span><span class="p">,</span> <span class="n">wrt_v</span><span class="p">:</span> <span class="n">SymVar</span><span class="p">,</span> <span class="n">partial_deriv</span><span class="p">:</span> <span class="n">typing</span><span class="o">.</span><span class="n">Any</span><span class="p">,</span>
+                            <span class="n">cmt_index</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="n">ast</span><span class="o">.</span><span class="n">stmt</span><span class="p">]:</span>
+        <span class="n">appending_assignments</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="n">ast</span><span class="o">.</span><span class="n">stmt</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
+
+        <span class="n">df_deta</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_sympy_translator</span><span class="o">.</span><span class="n">translate</span><span class="p">(</span><span class="n">partial_deriv</span><span class="p">)</span>  <span class="c1"># df/d_eta</span>
+        <span class="n">dadt_deta</span> <span class="o">=</span> <span class="n">ast</span><span class="o">.</span><span class="n">BinOp</span><span class="p">(</span>
+            <span class="n">left</span><span class="o">=</span><span class="n">_make_dose_params_attribute_ast</span><span class="p">(</span><span class="n">_DOSE_PARAMS</span><span class="p">,</span> <span class="s2">&quot;amt&quot;</span><span class="p">),</span> <span class="n">op</span><span class="o">=</span><span class="n">ast</span><span class="o">.</span><span class="n">Mult</span><span class="p">(),</span> <span class="n">right</span><span class="o">=</span><span class="n">df_deta</span><span class="p">,</span> <span class="n">lineno</span><span class="o">=</span><span class="kc">None</span>
+        <span class="p">)</span>
+
+        <span class="c1"># bolus</span>
+        <span class="n">assignment</span> <span class="o">=</span> <span class="n">ast</span><span class="o">.</span><span class="n">Assign</span><span class="p">(</span>
+            <span class="n">targets</span><span class="o">=</span><span class="p">(</span><span class="n">_make_ode_subscript_ast</span><span class="p">(</span><span class="n">_A_MP</span><span class="p">,</span> <span class="p">(</span><span class="n">cmt</span><span class="p">,</span> <span class="n">wrt_v</span><span class="p">)),),</span>
+            <span class="n">value</span><span class="o">=</span><span class="n">ast</span><span class="o">.</span><span class="n">BinOp</span><span class="p">(</span><span class="n">left</span><span class="o">=</span><span class="n">_make_ode_subscript_ast</span><span class="p">(</span><span class="n">_A_MP</span><span class="p">,</span> <span class="p">(</span><span class="n">cmt</span><span class="p">,</span> <span class="n">wrt_v</span><span class="p">)),</span> <span class="n">op</span><span class="o">=</span><span class="n">ast</span><span class="o">.</span><span class="n">Add</span><span class="p">(),</span> <span class="n">right</span><span class="o">=</span><span class="n">dadt_deta</span><span class="p">),</span>
+            <span class="n">lineno</span><span class="o">=</span><span class="kc">None</span>
+        <span class="p">)</span>
+        <span class="n">appending_assignments</span><span class="o">.</span><span class="n">append</span><span class="p">(</span>
+            <span class="n">ast</span><span class="o">.</span><span class="n">If</span><span class="p">(</span>
+                <span class="n">test</span><span class="o">=</span><span class="n">ast</span><span class="o">.</span><span class="n">Call</span><span class="p">(</span>
+                    <span class="n">func</span><span class="o">=</span><span class="n">_make_dose_params_attribute_ast</span><span class="p">(</span><span class="n">_DOSE_PARAMS</span><span class="p">,</span> <span class="s2">&quot;is_bolus&quot;</span><span class="p">),</span>
+                    <span class="n">args</span><span class="o">=</span><span class="p">[</span><span class="n">ast</span><span class="o">.</span><span class="n">Constant</span><span class="p">(</span><span class="n">cmt_index</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)],</span>
+                    <span class="n">kwargs</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                    <span class="n">keywords</span><span class="o">=</span><span class="p">[]</span>
+                <span class="p">),</span>
+                <span class="n">body</span><span class="o">=</span><span class="p">[</span><span class="n">assignment</span><span class="p">],</span>
+                <span class="n">orelse</span><span class="o">=</span><span class="p">[],</span>
+                <span class="n">lineno</span><span class="o">=</span><span class="kc">None</span>
+            <span class="p">)</span>
+        <span class="p">)</span>
+
+        <span class="c1"># 滴注结束</span>
+        <span class="n">a_assignment</span> <span class="o">=</span> <span class="n">ast</span><span class="o">.</span><span class="n">Assign</span><span class="p">(</span>
+            <span class="n">targets</span><span class="o">=</span><span class="p">(</span><span class="n">_make_ode_subscript_ast</span><span class="p">(</span><span class="n">_A_MP</span><span class="p">,</span> <span class="p">(</span><span class="n">cmt</span><span class="p">,</span> <span class="n">wrt_v</span><span class="p">)),),</span>
+            <span class="n">value</span><span class="o">=</span><span class="n">ast</span><span class="o">.</span><span class="n">BinOp</span><span class="p">(</span>
+                <span class="n">left</span><span class="o">=</span><span class="n">_make_ode_subscript_ast</span><span class="p">(</span><span class="n">_A_MP</span><span class="p">,</span> <span class="p">(</span><span class="n">cmt</span><span class="p">,</span> <span class="n">wrt_v</span><span class="p">)),</span>
+                <span class="n">op</span><span class="o">=</span><span class="n">ast</span><span class="o">.</span><span class="n">Add</span><span class="p">(),</span>
+                <span class="n">right</span><span class="o">=</span><span class="n">ast</span><span class="o">.</span><span class="n">BinOp</span><span class="p">(</span>
+                    <span class="n">left</span><span class="o">=</span><span class="n">_make_dose_params_attribute_ast</span><span class="p">(</span><span class="n">_DOSE_PARAMS</span><span class="p">,</span> <span class="s2">&quot;amt&quot;</span><span class="p">),</span>
+                    <span class="n">op</span><span class="o">=</span><span class="n">ast</span><span class="o">.</span><span class="n">Mult</span><span class="p">(),</span>
+                    <span class="n">right</span><span class="o">=</span><span class="n">ast</span><span class="o">.</span><span class="n">Attribute</span><span class="p">(</span>
+                        <span class="n">attr</span><span class="o">=</span><span class="s2">&quot;fraction&quot;</span><span class="p">,</span>
+                        <span class="n">value</span><span class="o">=</span><span class="n">ast</span><span class="o">.</span><span class="n">Attribute</span><span class="p">(</span><span class="n">attr</span><span class="o">=</span><span class="n">cmt</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="n">value</span><span class="o">=</span><span class="n">ast</span><span class="o">.</span><span class="n">Name</span><span class="p">(</span><span class="s1">&#39;self&#39;</span><span class="p">),</span> <span class="n">lineno</span><span class="o">=</span><span class="kc">None</span><span class="p">),</span>
+                        <span class="n">lineno</span><span class="o">=</span><span class="kc">None</span>
+                    <span class="p">),</span>
+                    <span class="n">lineno</span><span class="o">=</span><span class="kc">None</span>
+                <span class="p">),</span>
+                <span class="n">lineno</span><span class="o">=</span><span class="kc">None</span>
+            <span class="p">),</span>
+            <span class="n">lineno</span><span class="o">=</span><span class="kc">None</span>
+        <span class="p">)</span>
+
+        <span class="n">appending_assignments</span><span class="o">.</span><span class="n">append</span><span class="p">(</span>
+            <span class="n">ast</span><span class="o">.</span><span class="n">If</span><span class="p">(</span>
+                <span class="n">test</span><span class="o">=</span><span class="n">ast</span><span class="o">.</span><span class="n">Call</span><span class="p">(</span>
+                    <span class="n">func</span><span class="o">=</span><span class="n">_make_dose_params_attribute_ast</span><span class="p">(</span><span class="n">_DOSE_PARAMS</span><span class="p">,</span> <span class="s2">&quot;is_infusion_end&quot;</span><span class="p">),</span>
+                    <span class="n">args</span><span class="o">=</span><span class="p">[</span><span class="n">ast</span><span class="o">.</span><span class="n">Constant</span><span class="p">(</span><span class="n">cmt_index</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)],</span>
+                    <span class="n">kwargs</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                    <span class="n">keywords</span><span class="o">=</span><span class="p">[]</span>
+                <span class="p">),</span>
+                <span class="n">body</span><span class="o">=</span><span class="p">[</span><span class="n">a_assignment</span><span class="p">],</span>
+                <span class="n">orelse</span><span class="o">=</span><span class="p">[],</span>
+                <span class="n">lineno</span><span class="o">=</span><span class="kc">None</span>
+            <span class="p">)</span>
+        <span class="p">)</span>
+        <span class="k">return</span> <span class="n">appending_assignments</span>
+
+<div class="viewcode-block" id="AutoDiffNodeTransformer.visit_If"><a class="viewcode-back" href="../../../masmod.ast_worker.html#masmod.ast_worker.autodiff.AutoDiffNodeTransformer.visit_If">[docs]</a>    <span class="k">def</span> <span class="nf">visit_If</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">node</span><span class="p">:</span> <span class="n">ast</span><span class="o">.</span><span class="n">If</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">typing</span><span class="o">.</span><span class="n">Any</span><span class="p">:</span>
+        <span class="n">transformer</span> <span class="o">=</span> <span class="n">IfElseTransformer</span><span class="p">(</span>
+            <span class="n">source_code</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_source_code</span><span class="p">,</span> <span class="n">global_context</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_global_context</span><span class="p">,</span> <span class="n">local_context</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_local_context</span>
+        <span class="p">)</span>
+        <span class="n">transformed_node</span><span class="p">:</span> <span class="n">typing</span><span class="o">.</span><span class="n">Any</span> <span class="o">=</span> <span class="n">transformer</span><span class="o">.</span><span class="n">visit</span><span class="p">(</span><span class="n">node</span><span class="p">)</span>
+
+        <span class="n">_node</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="n">ast</span><span class="o">.</span><span class="n">stmt</span><span class="p">]</span>
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">transformed_node</span><span class="p">,</span> <span class="n">typing</span><span class="o">.</span><span class="n">Iterable</span><span class="p">):</span>
+            <span class="n">_node</span> <span class="o">=</span> <span class="n">typing</span><span class="o">.</span><span class="n">cast</span><span class="p">(</span><span class="nb">list</span><span class="p">[</span><span class="n">ast</span><span class="o">.</span><span class="n">stmt</span><span class="p">],</span> <span class="n">transformed_node</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">_node</span> <span class="o">=</span> <span class="p">[</span><span class="n">transformed_node</span><span class="p">]</span>
+        <span class="n">transformed</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="n">ast</span><span class="o">.</span><span class="n">stmt</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
+
+        <span class="k">for</span> <span class="n">child_node</span> <span class="ow">in</span> <span class="n">_node</span><span class="p">:</span>
+            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">child_node</span><span class="p">,</span> <span class="n">ast</span><span class="o">.</span><span class="n">Assign</span><span class="p">):</span>
+                <span class="k">if</span> <span class="n">child_node</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">transformer</span><span class="o">.</span><span class="n">variable_hoist_transformer</span><span class="o">.</span><span class="n">hoisting_assignments</span><span class="o">.</span><span class="n">values</span><span class="p">():</span>
+                    <span class="n">transformed</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">visit_Assign</span><span class="p">(</span><span class="n">child_node</span><span class="p">))</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">transformed</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">child_node</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">transformed</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">child_node</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="n">transformed</span></div>
+
+<div class="viewcode-block" id="AutoDiffNodeTransformer.visit_Attribute"><a class="viewcode-back" href="../../../masmod.ast_worker.html#masmod.ast_worker.autodiff.AutoDiffNodeTransformer.visit_Attribute">[docs]</a>    <span class="k">def</span> <span class="nf">visit_Attribute</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">node</span><span class="p">:</span> <span class="n">ast</span><span class="o">.</span><span class="n">Attribute</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">typing</span><span class="o">.</span><span class="n">Any</span><span class="p">:</span>
+        <span class="n">_node</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">generic_visit</span><span class="p">(</span><span class="n">node</span><span class="p">)</span>
+        <span class="n">expr</span> <span class="o">=</span> <span class="nb">eval</span><span class="p">(</span><span class="n">ast</span><span class="o">.</span><span class="n">unparse</span><span class="p">(</span><span class="n">_node</span><span class="p">),</span> <span class="bp">self</span><span class="o">.</span><span class="n">_global_context</span><span class="o">.</span><span class="n">as_dict</span><span class="p">(),</span> <span class="bp">self</span><span class="o">.</span><span class="n">_local_context</span><span class="o">.</span><span class="n">as_dict</span><span class="p">())</span>
+
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">expr</span><span class="p">,</span> <span class="n">CmtSolvedA</span><span class="p">):</span>
+            <span class="k">return</span> <span class="n">_make_ode_subscript_ast</span><span class="p">(</span><span class="n">_A_MP</span><span class="p">,</span> <span class="n">expr</span><span class="o">.</span><span class="n">cmt</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">expr</span><span class="p">,</span> <span class="n">DADt</span><span class="p">):</span>
+            <span class="k">return</span> <span class="n">_make_ode_subscript_ast</span><span class="p">(</span><span class="n">_DADT_MP</span><span class="p">,</span> <span class="n">expr</span><span class="o">.</span><span class="n">cmt</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">expr</span><span class="p">,</span> <span class="n">PKSolvedF</span><span class="p">):</span>
+            <span class="k">return</span> <span class="n">_make_solution_out_subscript_ast</span><span class="p">(</span><span class="s2">&quot;F&quot;</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">expr</span><span class="p">,</span> <span class="n">PKSolvedA</span><span class="p">):</span>
+            <span class="k">return</span> <span class="n">_make_solution_out_subscript_ast</span><span class="p">(</span><span class="n">expr</span><span class="o">.</span><span class="n">index</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">expr</span><span class="p">,</span> <span class="n">PKSolvedAIndexer</span><span class="p">):</span>
+            <span class="k">return</span> <span class="n">ast</span><span class="o">.</span><span class="n">Name</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="n">_SolutionOutMp</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">_node</span></div>
+
+<div class="viewcode-block" id="AutoDiffNodeTransformer.visit_Call"><a class="viewcode-back" href="../../../masmod.ast_worker.html#masmod.ast_worker.autodiff.AutoDiffNodeTransformer.visit_Call">[docs]</a>    <span class="k">def</span> <span class="nf">visit_Call</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">node</span><span class="p">:</span> <span class="n">ast</span><span class="o">.</span><span class="n">Call</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">typing</span><span class="o">.</span><span class="n">Any</span><span class="p">:</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">__subroutine</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">expr</span> <span class="o">=</span> <span class="nb">eval</span><span class="p">(</span><span class="n">ast</span><span class="o">.</span><span class="n">unparse</span><span class="p">(</span><span class="n">node</span><span class="p">),</span> <span class="bp">self</span><span class="o">.</span><span class="n">_global_context</span><span class="o">.</span><span class="n">as_dict</span><span class="p">(),</span> <span class="bp">self</span><span class="o">.</span><span class="n">_local_context</span><span class="o">.</span><span class="n">as_dict</span><span class="p">())</span>
+            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">expr</span><span class="p">,</span> <span class="n">PKAnalyticalSolution</span><span class="p">):</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">__subroutine</span> <span class="o">=</span> <span class="n">node</span><span class="p">,</span> <span class="n">expr</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">generic_visit</span><span class="p">(</span><span class="n">node</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="AutoDiffNodeTransformer.visit_Assign"><a class="viewcode-back" href="../../../masmod.ast_worker.html#masmod.ast_worker.autodiff.AutoDiffNodeTransformer.visit_Assign">[docs]</a>    <span class="k">def</span> <span class="nf">visit_Assign</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">node</span><span class="p">:</span> <span class="n">ast</span><span class="o">.</span><span class="n">Assign</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">typing</span><span class="o">.</span><span class="n">Any</span><span class="p">:</span>
+        <span class="n">lhs</span> <span class="o">=</span> <span class="n">node</span><span class="o">.</span><span class="n">targets</span>
+        <span class="n">_node</span><span class="p">:</span> <span class="n">typing</span><span class="o">.</span><span class="n">Any</span> <span class="o">=</span> <span class="n">node</span>
+
+        <span class="c1"># deal with diff</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">lhs</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+            <span class="n">token</span> <span class="o">=</span> <span class="n">lhs</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+
+            <span class="n">maybe_assign_subroutine</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__subroutine</span> <span class="ow">is</span> <span class="kc">None</span>
+            <span class="n">node</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="n">rhs</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">visit</span><span class="p">(</span><span class="n">node</span><span class="o">.</span><span class="n">value</span><span class="p">)</span>
+
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">__subroutine</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="ow">and</span> <span class="n">maybe_assign_subroutine</span><span class="p">:</span>
+                <span class="c1"># subroutine is newly assigned</span>
+                <span class="n">subroutine_ast</span><span class="p">,</span> <span class="n">subroutine_obj</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__subroutine</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">_local_context</span><span class="p">[</span><span class="n">_SolutionOutMp</span><span class="o">.</span><span class="n">name</span><span class="p">]</span> <span class="o">=</span> <span class="n">_SolutionOutMp</span><span class="p">(</span><span class="n">subroutine</span><span class="o">=</span><span class="n">subroutine_obj</span><span class="p">)</span>
+                <span class="n">_node</span> <span class="o">=</span> <span class="p">[</span>
+                    <span class="o">*</span><span class="bp">self</span><span class="o">.</span><span class="n">_create_subroutine_args</span><span class="p">(</span><span class="n">subroutine</span><span class="o">=</span><span class="n">subroutine_obj</span><span class="p">),</span>
+                    <span class="n">ast</span><span class="o">.</span><span class="n">Assign</span><span class="p">(</span><span class="n">targets</span><span class="o">=</span><span class="p">(</span><span class="n">ast</span><span class="o">.</span><span class="n">Name</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="n">_SolutionOutMp</span><span class="o">.</span><span class="n">name</span><span class="p">),),</span> <span class="n">value</span><span class="o">=</span><span class="n">subroutine_ast</span><span class="p">,</span> <span class="n">lineno</span><span class="o">=</span><span class="kc">None</span><span class="p">),</span>
+                    <span class="n">node</span>
+                <span class="p">]</span>
+
+            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">token</span><span class="p">,</span> <span class="n">ast</span><span class="o">.</span><span class="n">Name</span><span class="p">):</span>
+                <span class="k">if</span> <span class="n">token</span><span class="o">.</span><span class="n">id</span> <span class="ow">not</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_local_context</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+                    <span class="n">rhs_expr</span> <span class="o">=</span> <span class="nb">eval</span><span class="p">(</span><span class="n">ast</span><span class="o">.</span><span class="n">unparse</span><span class="p">(</span><span class="n">rhs</span><span class="p">),</span> <span class="bp">self</span><span class="o">.</span><span class="n">_global_context</span><span class="o">.</span><span class="n">as_dict</span><span class="p">(),</span> <span class="bp">self</span><span class="o">.</span><span class="n">_local_context</span><span class="o">.</span><span class="n">as_dict</span><span class="p">())</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">rhs_expr</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_local_context</span><span class="p">,</span> <span class="n">token</span><span class="o">.</span><span class="n">id</span><span class="p">)</span>
+                <span class="c1"># rhs_expr = eval(ast.unparse(node.value), self._global_context.as_dict(), self._local_context.as_dict())</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">_local_context</span><span class="p">[</span><span class="n">token</span><span class="o">.</span><span class="n">id</span><span class="p">]</span> <span class="o">=</span> <span class="n">rhs_expr</span>
+
+                <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">rhs_expr</span><span class="p">,</span> <span class="n">PKAnalyticalSolution</span><span class="p">):</span>
+                    <span class="n">node</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="n">ast</span><span class="o">.</span><span class="n">Name</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="n">_SolutionOutMp</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+
+                <span class="k">if</span> <span class="n">token</span><span class="o">.</span><span class="n">id</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">target_names</span><span class="p">:</span>  <span class="c1"># 只对返回值 y 求导</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">_target_wrt_mp</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_get_target_wrt</span><span class="p">(</span><span class="n">target</span><span class="o">=</span><span class="n">token</span><span class="o">.</span><span class="n">id</span><span class="p">,</span> <span class="n">value</span><span class="o">=</span><span class="n">rhs_expr</span><span class="p">))</span>
+
+            <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">token</span><span class="p">,</span> <span class="n">ast</span><span class="o">.</span><span class="n">Attribute</span><span class="p">):</span>
+                <span class="n">_token</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">visit</span><span class="p">(</span><span class="n">token</span><span class="p">)</span>
+                <span class="n">lhs_expr</span> <span class="o">=</span> <span class="nb">eval</span><span class="p">(</span><span class="n">ast</span><span class="o">.</span><span class="n">unparse</span><span class="p">(</span><span class="n">_token</span><span class="p">),</span> <span class="bp">self</span><span class="o">.</span><span class="n">_global_context</span><span class="o">.</span><span class="n">as_dict</span><span class="p">(),</span> <span class="bp">self</span><span class="o">.</span><span class="n">_local_context</span><span class="o">.</span><span class="n">as_dict</span><span class="p">())</span>
+                <span class="n">_node</span><span class="o">.</span><span class="n">targets</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">_token</span>
+
+                <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">lhs_expr</span><span class="p">,</span> <span class="n">DADt</span><span class="p">):</span>
+                    <span class="n">rhs_expr</span> <span class="o">=</span> <span class="nb">eval</span><span class="p">(</span><span class="n">ast</span><span class="o">.</span><span class="n">unparse</span><span class="p">(</span><span class="n">rhs</span><span class="p">),</span> <span class="bp">self</span><span class="o">.</span><span class="n">_global_context</span><span class="o">.</span><span class="n">as_dict</span><span class="p">(),</span> <span class="bp">self</span><span class="o">.</span><span class="n">_local_context</span><span class="o">.</span><span class="n">as_dict</span><span class="p">())</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">_dAdt_wrt_mp</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_get_dAdt_wrt</span><span class="p">(</span><span class="n">target</span><span class="o">=</span><span class="n">lhs_expr</span><span class="p">,</span> <span class="n">value</span><span class="o">=</span><span class="n">rhs_expr</span><span class="p">))</span>  <span class="c1"># dAdt 对 eta 的一阶导</span>
+                <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">lhs_expr</span><span class="p">,</span> <span class="n">Alag</span><span class="p">):</span>
+                    <span class="n">rhs_expr</span> <span class="o">=</span> <span class="nb">eval</span><span class="p">(</span><span class="n">ast</span><span class="o">.</span><span class="n">unparse</span><span class="p">(</span><span class="n">rhs</span><span class="p">),</span> <span class="bp">self</span><span class="o">.</span><span class="n">_global_context</span><span class="o">.</span><span class="n">as_dict</span><span class="p">(),</span> <span class="bp">self</span><span class="o">.</span><span class="n">_local_context</span><span class="o">.</span><span class="n">as_dict</span><span class="p">())</span>
+                    <span class="n">dosing_cmt</span> <span class="o">=</span> <span class="n">lhs_expr</span><span class="o">.</span><span class="n">cmt</span>
+                    <span class="k">if</span> <span class="n">dosing_cmt</span> <span class="ow">not</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_alag_mp</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+                        <span class="bp">self</span><span class="o">.</span><span class="n">_alag_mp</span><span class="p">[</span><span class="n">dosing_cmt</span><span class="p">]</span> <span class="o">=</span> <span class="n">rhs_expr</span>
+                <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">lhs_expr</span><span class="p">,</span> <span class="n">Rate</span><span class="p">):</span>
+                    <span class="n">rhs_expr</span> <span class="o">=</span> <span class="nb">eval</span><span class="p">(</span><span class="n">ast</span><span class="o">.</span><span class="n">unparse</span><span class="p">(</span><span class="n">rhs</span><span class="p">),</span> <span class="bp">self</span><span class="o">.</span><span class="n">_global_context</span><span class="o">.</span><span class="n">as_dict</span><span class="p">(),</span> <span class="bp">self</span><span class="o">.</span><span class="n">_local_context</span><span class="o">.</span><span class="n">as_dict</span><span class="p">())</span>
+                    <span class="n">dosing_cmt</span> <span class="o">=</span> <span class="n">lhs_expr</span><span class="o">.</span><span class="n">cmt</span>
+
+                    <span class="k">if</span> <span class="n">dosing_cmt</span> <span class="ow">not</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_rate_mp</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+                        <span class="bp">self</span><span class="o">.</span><span class="n">_rate_mp</span><span class="p">[</span><span class="n">dosing_cmt</span><span class="p">]</span> <span class="o">=</span> <span class="n">rhs_expr</span>
+                <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">lhs_expr</span><span class="p">,</span> <span class="n">Duration</span><span class="p">):</span>
+                    <span class="n">rhs_expr</span> <span class="o">=</span> <span class="nb">eval</span><span class="p">(</span><span class="n">ast</span><span class="o">.</span><span class="n">unparse</span><span class="p">(</span><span class="n">rhs</span><span class="p">),</span> <span class="bp">self</span><span class="o">.</span><span class="n">_global_context</span><span class="o">.</span><span class="n">as_dict</span><span class="p">(),</span> <span class="bp">self</span><span class="o">.</span><span class="n">_local_context</span><span class="o">.</span><span class="n">as_dict</span><span class="p">())</span>
+                    <span class="n">dosing_cmt</span> <span class="o">=</span> <span class="n">lhs_expr</span><span class="o">.</span><span class="n">cmt</span>
+
+                    <span class="k">if</span> <span class="n">dosing_cmt</span> <span class="ow">not</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_dur_mp</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+                        <span class="bp">self</span><span class="o">.</span><span class="n">_dur_mp</span><span class="p">[</span><span class="n">dosing_cmt</span><span class="p">]</span> <span class="o">=</span> <span class="n">rhs_expr</span>
+                <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">lhs_expr</span><span class="p">,</span> <span class="n">CmtInitialA</span><span class="p">):</span>
+                    <span class="n">rhs_expr</span> <span class="o">=</span> <span class="nb">eval</span><span class="p">(</span><span class="n">ast</span><span class="o">.</span><span class="n">unparse</span><span class="p">(</span><span class="n">rhs</span><span class="p">),</span> <span class="bp">self</span><span class="o">.</span><span class="n">_global_context</span><span class="o">.</span><span class="n">as_dict</span><span class="p">(),</span> <span class="bp">self</span><span class="o">.</span><span class="n">_local_context</span><span class="o">.</span><span class="n">as_dict</span><span class="p">())</span>
+                    <span class="n">dosing_cmt</span> <span class="o">=</span> <span class="n">lhs_expr</span><span class="o">.</span><span class="n">cmt</span>
+
+                    <span class="k">if</span> <span class="n">dosing_cmt</span> <span class="ow">not</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_a0_mp</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+                        <span class="bp">self</span><span class="o">.</span><span class="n">_a0_mp</span><span class="p">[</span><span class="n">dosing_cmt</span><span class="p">]</span> <span class="o">=</span> <span class="n">rhs_expr</span>
+                <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">lhs_expr</span><span class="p">,</span> <span class="n">Fraction</span><span class="p">):</span>
+                    <span class="c1"># TODO: @xuchongyi 补充 Rate | Duration | Fraction | A0 的 梯度</span>
+                    <span class="n">rhs_expr</span> <span class="o">=</span> <span class="nb">eval</span><span class="p">(</span><span class="n">ast</span><span class="o">.</span><span class="n">unparse</span><span class="p">(</span><span class="n">rhs</span><span class="p">),</span> <span class="bp">self</span><span class="o">.</span><span class="n">_global_context</span><span class="o">.</span><span class="n">as_dict</span><span class="p">(),</span> <span class="bp">self</span><span class="o">.</span><span class="n">_local_context</span><span class="o">.</span><span class="n">as_dict</span><span class="p">())</span>
+                    <span class="n">dosing_cmt</span> <span class="o">=</span> <span class="n">lhs_expr</span><span class="o">.</span><span class="n">cmt</span>
+
+                    <span class="k">if</span> <span class="n">dosing_cmt</span> <span class="ow">not</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_f_mp</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+                        <span class="bp">self</span><span class="o">.</span><span class="n">_f_mp</span><span class="p">[</span><span class="n">dosing_cmt</span><span class="p">]</span> <span class="o">=</span> <span class="n">rhs_expr</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="k">raise</span> <span class="ne">NotImplementedError</span><span class="p">()</span>
+
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">evaluated</span> <span class="o">=</span> <span class="nb">eval</span><span class="p">(</span><span class="n">ast</span><span class="o">.</span><span class="n">unparse</span><span class="p">(</span><span class="n">token</span><span class="p">),</span> <span class="bp">self</span><span class="o">.</span><span class="n">_global_context</span><span class="o">.</span><span class="n">as_dict</span><span class="p">(),</span> <span class="bp">self</span><span class="o">.</span><span class="n">_local_context</span><span class="o">.</span><span class="n">as_dict</span><span class="p">())</span>
+                <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">evaluated</span><span class="p">,</span> <span class="n">DADtWrt</span> <span class="o">|</span> <span class="n">DADt</span><span class="p">):</span>
+                    <span class="k">pass</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="k">raise</span> <span class="ne">NotImplementedError</span><span class="p">(</span><span class="n">evaluated</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">NotImplementedError</span><span class="p">()</span>
+
+        <span class="k">return</span> <span class="n">_node</span></div>
+
+    <span class="k">def</span> <span class="nf">_get_target_wrt</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">target</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">value</span><span class="p">:</span> <span class="n">typing</span><span class="o">.</span><span class="n">Any</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span><span class="p">[</span><span class="n">AutoDiffTargetWrt</span><span class="p">,</span> <span class="n">sympy</span><span class="o">.</span><span class="n">Expr</span><span class="p">]:</span>
+        <span class="c1"># partial_deriv_assignments: list[ast.Assign] = []</span>
+        <span class="n">target_wrt</span><span class="p">:</span> <span class="nb">dict</span><span class="p">[</span><span class="n">AutoDiffTargetWrt</span><span class="p">,</span> <span class="n">sympy</span><span class="o">.</span><span class="n">Expr</span><span class="p">]</span> <span class="o">=</span> <span class="p">{}</span>
+        <span class="k">for</span> <span class="n">wrt_index</span><span class="p">,</span> <span class="n">wrt</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_var_context</span><span class="o">.</span><span class="n">values</span><span class="p">()):</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">wrt</span><span class="p">,</span> <span class="n">Eta</span> <span class="o">|</span> <span class="n">Eps</span><span class="p">):</span>  <span class="c1"># NOTE: dydp 只需要对 eta, eps 的一阶导</span>
+                <span class="k">continue</span>
+
+            <span class="n">key1st</span> <span class="o">=</span> <span class="n">AutoDiffTargetWrt</span><span class="p">(</span><span class="n">target_name</span><span class="o">=</span><span class="n">target</span><span class="p">,</span> <span class="n">wrt</span><span class="o">=</span><span class="n">wrt</span><span class="p">)</span>
+
+            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">sympy</span><span class="o">.</span><span class="n">Expr</span><span class="p">):</span>
+                <span class="n">partial_deriv</span> <span class="o">=</span> <span class="n">value</span><span class="o">.</span><span class="n">diff</span><span class="p">(</span><span class="n">wrt</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>  <span class="c1"># 任何常数对任何参数求导都是 0</span>
+                <span class="n">partial_deriv</span> <span class="o">=</span> <span class="n">SYMPY_ZERO</span>
+
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_mod_typ</span> <span class="o">==</span> <span class="s2">&quot;ode&quot;</span><span class="p">:</span>
+                <span class="k">for</span> <span class="n">cmt</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cmt_context</span><span class="o">.</span><span class="n">values</span><span class="p">():</span>
+                    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">sympy</span><span class="o">.</span><span class="n">Expr</span><span class="p">)</span> <span class="ow">and</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">wrt</span><span class="p">,</span> <span class="n">Eta</span><span class="p">):</span>
+                        <span class="n">A_wrt_var</span> <span class="o">=</span> <span class="n">AWrt</span><span class="p">(</span><span class="n">cmt</span><span class="o">=</span><span class="n">cmt</span><span class="p">,</span> <span class="n">wrt</span><span class="o">=</span><span class="n">wrt</span><span class="p">)</span>
+                        <span class="n">partial_deriv</span> <span class="o">+=</span> <span class="n">value</span><span class="o">.</span><span class="n">diff</span><span class="p">(</span><span class="n">cmt</span><span class="o">.</span><span class="n">A</span><span class="p">)</span> <span class="o">*</span> <span class="n">A_wrt_var</span>
+
+            <span class="k">elif</span> <span class="bp">self</span><span class="o">.</span><span class="n">_mod_typ</span> <span class="o">==</span> <span class="s2">&quot;advan&quot;</span><span class="p">:</span>
+                <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">__subroutine</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+                    <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Subroutine trans is not defined&quot;</span><span class="p">)</span>
+                <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">sympy</span><span class="o">.</span><span class="n">Expr</span><span class="p">)</span> <span class="ow">and</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">wrt</span><span class="p">,</span> <span class="n">Eta</span><span class="p">):</span>
+                    <span class="n">solved_F_wrt_var</span> <span class="o">=</span> <span class="n">PKSolvedFWrt</span><span class="p">(</span><span class="n">subroutine</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">__subroutine</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">wrt</span><span class="o">=</span><span class="n">wrt</span><span class="p">)</span>
+                    <span class="n">partial_deriv</span> <span class="o">+=</span> <span class="n">value</span><span class="o">.</span><span class="n">diff</span><span class="p">(</span><span class="n">PKSolvedF</span><span class="p">(</span><span class="n">subroutine</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">__subroutine</span><span class="p">[</span><span class="mi">1</span><span class="p">]))</span> <span class="o">*</span> <span class="n">solved_F_wrt_var</span>
+
+                    <span class="k">for</span> <span class="n">cmt_index</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_n_cmt</span><span class="p">):</span>
+                        <span class="n">solved_A_wrt_var</span> <span class="o">=</span> <span class="n">PKSolvedAWrt</span><span class="p">(</span><span class="n">subroutine</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">__subroutine</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">index</span><span class="o">=</span><span class="n">cmt_index</span><span class="p">,</span> <span class="n">wrt</span><span class="o">=</span><span class="n">wrt</span><span class="p">)</span>
+                        <span class="n">partial_deriv</span> <span class="o">+=</span> <span class="n">value</span><span class="o">.</span><span class="n">diff</span><span class="p">(</span>
+                            <span class="n">PKSolvedA</span><span class="p">(</span><span class="n">subroutine</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">__subroutine</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">index</span><span class="o">=</span><span class="n">cmt_index</span><span class="p">)</span>
+                        <span class="p">)</span> <span class="o">*</span> <span class="n">solved_A_wrt_var</span>
+
+            <span class="n">target_wrt</span><span class="p">[</span><span class="n">key1st</span><span class="p">]</span> <span class="o">=</span> <span class="n">target_wrt</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">key1st</span><span class="p">,</span> <span class="n">SYMPY_ZERO</span><span class="p">)</span> <span class="o">+</span> <span class="n">partial_deriv</span>
+
+            <span class="k">for</span> <span class="n">wrt2nd_index</span><span class="p">,</span> <span class="n">wrt2nd</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_var_context</span><span class="o">.</span><span class="n">values</span><span class="p">()):</span>
+                <span class="c1"># NOTE: dydp 只需要对 eta &amp; eps 的二阶混合偏导 (Y)</span>
+                <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_pred_variant</span> <span class="o">==</span> <span class="s2">&quot;y&quot;</span><span class="p">:</span>
+                    <span class="k">if</span> <span class="ow">not</span> <span class="p">(</span><span class="nb">isinstance</span><span class="p">(</span><span class="n">wrt</span><span class="p">,</span> <span class="n">Eta</span><span class="p">)</span> <span class="ow">and</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">wrt2nd</span><span class="p">,</span> <span class="n">Eps</span><span class="p">)):</span>
+                        <span class="k">continue</span>
+                <span class="c1"># NOTE: dydp 只需要对 eta &amp; eta 的二阶混合偏导 (LIKELIHOOD)</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="k">if</span> <span class="ow">not</span> <span class="p">(</span><span class="nb">isinstance</span><span class="p">(</span><span class="n">wrt</span><span class="p">,</span> <span class="n">Eta</span><span class="p">)</span> <span class="ow">and</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">wrt2nd</span><span class="p">,</span> <span class="n">Eta</span><span class="p">)</span> <span class="ow">and</span> <span class="n">wrt_index</span> <span class="o">&lt;=</span> <span class="n">wrt2nd_index</span><span class="p">):</span>
+                        <span class="k">continue</span>
+
+                <span class="n">key2nd</span> <span class="o">=</span> <span class="n">AutoDiffTargetWrt</span><span class="p">(</span><span class="n">target_name</span><span class="o">=</span><span class="n">target</span><span class="p">,</span> <span class="n">wrt</span><span class="o">=</span><span class="n">wrt</span><span class="p">,</span> <span class="n">wrt2nd</span><span class="o">=</span><span class="n">wrt2nd</span><span class="p">)</span>
+
+                <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_mod_typ</span> <span class="o">==</span> <span class="s2">&quot;ode&quot;</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">_pred_variant</span> <span class="o">!=</span> <span class="s2">&quot;y&quot;</span><span class="p">:</span>
+                    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">sympy</span><span class="o">.</span><span class="n">Expr</span><span class="p">):</span>
+                        <span class="n">partial_deriv_2nd</span> <span class="o">=</span> <span class="n">value</span><span class="o">.</span><span class="n">diff</span><span class="p">(</span><span class="n">wrt</span><span class="p">,</span> <span class="n">wrt2nd</span><span class="p">)</span>
+                    <span class="k">else</span><span class="p">:</span>  <span class="c1"># 任何常数对任何参数求导都是 0</span>
+                        <span class="n">partial_deriv_2nd</span> <span class="o">=</span> <span class="n">SYMPY_ZERO</span>
+
+                    <span class="c1"># special case, 2nd for eta is required in ode form if is LIKELIHOOD Modeling</span>
+                    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">wrt</span><span class="p">,</span> <span class="n">Eta</span><span class="p">)</span> <span class="ow">and</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">wrt2nd</span><span class="p">,</span> <span class="n">Eta</span><span class="p">):</span>
+                        <span class="k">for</span> <span class="n">cmt1_index</span><span class="p">,</span> <span class="n">cmt1</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_cmt_context</span><span class="o">.</span><span class="n">values</span><span class="p">()):</span>
+                            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">sympy</span><span class="o">.</span><span class="n">Expr</span><span class="p">):</span>
+                                <span class="n">A1_wrt_var1</span> <span class="o">=</span> <span class="n">AWrt</span><span class="p">(</span><span class="n">cmt</span><span class="o">=</span><span class="n">cmt1</span><span class="p">,</span> <span class="n">wrt</span><span class="o">=</span><span class="n">wrt</span><span class="p">)</span>
+                                <span class="n">partial_deriv_2nd</span> <span class="o">+=</span> <span class="n">value</span><span class="o">.</span><span class="n">diff</span><span class="p">(</span><span class="n">cmt1</span><span class="o">.</span><span class="n">A</span><span class="p">,</span> <span class="n">wrt2nd</span><span class="p">)</span> <span class="o">*</span> <span class="n">A1_wrt_var1</span>
+
+                                <span class="n">A1_wrt_var2</span> <span class="o">=</span> <span class="n">AWrt</span><span class="p">(</span><span class="n">cmt</span><span class="o">=</span><span class="n">cmt1</span><span class="p">,</span> <span class="n">wrt</span><span class="o">=</span><span class="n">wrt2nd</span><span class="p">)</span>
+                                <span class="n">partial_deriv_2nd</span> <span class="o">+=</span> <span class="n">value</span><span class="o">.</span><span class="n">diff</span><span class="p">(</span><span class="n">cmt1</span><span class="o">.</span><span class="n">A</span><span class="p">,</span> <span class="n">wrt</span><span class="p">)</span> <span class="o">*</span> <span class="n">A1_wrt_var2</span>
+
+                                <span class="n">A1_wrt_var1_var2</span> <span class="o">=</span> <span class="n">AWrt</span><span class="p">(</span><span class="n">cmt</span><span class="o">=</span><span class="n">cmt1</span><span class="p">,</span> <span class="n">wrt</span><span class="o">=</span><span class="n">wrt</span><span class="p">,</span> <span class="n">wrt2nd</span><span class="o">=</span><span class="n">wrt2nd</span><span class="p">)</span>
+                                <span class="n">partial_deriv_2nd</span> <span class="o">+=</span> <span class="n">value</span><span class="o">.</span><span class="n">diff</span><span class="p">(</span><span class="n">cmt1</span><span class="o">.</span><span class="n">A</span><span class="p">)</span> <span class="o">*</span> <span class="n">A1_wrt_var1_var2</span>
+
+                                <span class="k">for</span> <span class="n">cmt2_index</span><span class="p">,</span> <span class="n">cmt2</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_cmt_context</span><span class="o">.</span><span class="n">values</span><span class="p">()):</span>
+                                    <span class="k">if</span> <span class="n">cmt1_index</span> <span class="o">&lt;=</span> <span class="n">cmt2_index</span><span class="p">:</span>
+                                        <span class="n">A2_wrt_var1</span> <span class="o">=</span> <span class="n">AWrt</span><span class="p">(</span><span class="n">cmt</span><span class="o">=</span><span class="n">cmt2</span><span class="p">,</span> <span class="n">wrt</span><span class="o">=</span><span class="n">wrt</span><span class="p">)</span>
+                                        <span class="c1"># A2_wrt_var2 = AWrt(cmt=cmt2, wrt=wrt2nd)</span>
+
+                                        <span class="c1"># partial_deriv_2nd += value.diff(cmt1.A, cmt2.A) * A1_wrt_var1 * A2_wrt_var2</span>
+                                        <span class="n">partial_deriv_2nd</span> <span class="o">+=</span> <span class="n">value</span><span class="o">.</span><span class="n">diff</span><span class="p">(</span><span class="n">cmt2</span><span class="o">.</span><span class="n">A</span><span class="p">,</span> <span class="n">cmt1</span><span class="o">.</span><span class="n">A</span><span class="p">)</span> <span class="o">*</span> <span class="n">A2_wrt_var1</span> <span class="o">*</span> <span class="n">A1_wrt_var2</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">sympy</span><span class="o">.</span><span class="n">Expr</span><span class="p">):</span>
+                        <span class="n">partial_deriv_2nd</span> <span class="o">=</span> <span class="n">partial_deriv</span><span class="o">.</span><span class="n">diff</span><span class="p">(</span><span class="n">wrt2nd</span><span class="p">)</span>
+                    <span class="k">else</span><span class="p">:</span>  <span class="c1"># 任何常数对任何参数求导都是 0</span>
+                        <span class="n">partial_deriv_2nd</span> <span class="o">=</span> <span class="n">SYMPY_ZERO</span>
+
+                <span class="c1"># TODO: FIXME: 这里需要 ADVAN / deta 的二阶导</span>
+                <span class="c1"># elif self._mod_typ == &quot;advan&quot;:</span>
+                <span class="c1">#     if isinstance(value, sympy.Expr):</span>
+                <span class="c1">#         solved_F_wrt_var = PKSolvedFWrt(wrt=wrt)</span>
+                <span class="c1">#         partial_deriv += value.diff(_PK_SOLVED_F) * solved_F_wrt_var</span>
+
+                <span class="n">target_wrt</span><span class="p">[</span><span class="n">key2nd</span><span class="p">]</span> <span class="o">=</span> <span class="n">target_wrt</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">key2nd</span><span class="p">,</span> <span class="n">SYMPY_ZERO</span><span class="p">)</span> <span class="o">+</span> <span class="n">partial_deriv_2nd</span>
+
+        <span class="k">return</span> <span class="n">target_wrt</span>
+
+    <span class="k">def</span> <span class="nf">_get_dAdt_wrt</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">target</span><span class="p">:</span> <span class="n">DADt</span><span class="p">,</span> <span class="n">value</span><span class="p">:</span> <span class="n">typing</span><span class="o">.</span><span class="n">Any</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span><span class="p">[</span><span class="n">AutoDiffDADtWrt</span><span class="p">,</span> <span class="n">sympy</span><span class="o">.</span><span class="n">Expr</span><span class="p">]:</span>
+        <span class="n">dAdt_wrt</span><span class="p">:</span> <span class="nb">dict</span><span class="p">[</span><span class="n">AutoDiffDADtWrt</span><span class="p">,</span> <span class="n">sympy</span><span class="o">.</span><span class="n">Expr</span><span class="p">]</span> <span class="o">=</span> <span class="p">{}</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_mod_typ</span> <span class="o">!=</span> <span class="s2">&quot;ode&quot;</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">dAdt_wrt</span>
+        <span class="k">for</span> <span class="n">wrt1_index</span><span class="p">,</span> <span class="n">wrt1</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_var_context</span><span class="o">.</span><span class="n">values</span><span class="p">()):</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">wrt1</span><span class="p">,</span> <span class="n">Eta</span><span class="p">):</span>  <span class="c1"># NOTE: dAdt/dp 只需要对 eta 的一阶导</span>
+                <span class="k">continue</span>
+
+            <span class="n">key1</span> <span class="o">=</span> <span class="n">AutoDiffDADtWrt</span><span class="p">(</span><span class="n">cmt</span><span class="o">=</span><span class="n">target</span><span class="o">.</span><span class="n">cmt</span><span class="p">,</span> <span class="n">wrt</span><span class="o">=</span><span class="n">wrt1</span><span class="p">)</span>
+
+            <span class="n">partial_deriv</span><span class="p">:</span> <span class="n">sympy</span><span class="o">.</span><span class="n">Expr</span>
+            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">sympy</span><span class="o">.</span><span class="n">Expr</span><span class="p">):</span>
+                <span class="n">partial_deriv</span> <span class="o">=</span> <span class="n">value</span><span class="o">.</span><span class="n">diff</span><span class="p">(</span><span class="n">wrt1</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>  <span class="c1"># 任何常数对任何参数求导都是 0</span>
+                <span class="n">partial_deriv</span> <span class="o">=</span> <span class="n">SYMPY_ZERO</span>
+
+            <span class="k">for</span> <span class="n">cmt</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cmt_context</span><span class="o">.</span><span class="n">values</span><span class="p">():</span>
+                <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">sympy</span><span class="o">.</span><span class="n">Expr</span><span class="p">):</span>
+                    <span class="n">A_wrt_var1</span> <span class="o">=</span> <span class="n">AWrt</span><span class="p">(</span><span class="n">cmt</span><span class="o">=</span><span class="n">cmt</span><span class="p">,</span> <span class="n">wrt</span><span class="o">=</span><span class="n">wrt1</span><span class="p">)</span>
+                    <span class="n">partial_deriv</span> <span class="o">+=</span> <span class="n">value</span><span class="o">.</span><span class="n">diff</span><span class="p">(</span><span class="n">cmt</span><span class="o">.</span><span class="n">A</span><span class="p">)</span> <span class="o">*</span> <span class="n">A_wrt_var1</span>
+
+            <span class="n">dAdt_wrt</span><span class="p">[</span><span class="n">key1</span><span class="p">]</span> <span class="o">=</span> <span class="n">dAdt_wrt</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">key1</span><span class="p">,</span> <span class="n">SYMPY_ZERO</span><span class="p">)</span> <span class="o">+</span> <span class="n">partial_deriv</span>
+
+            <span class="c1"># if it is ode and we are predicting likelihood, we need 2nd order derivative</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_mod_typ</span> <span class="o">==</span> <span class="s2">&quot;ode&quot;</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">_pred_variant</span> <span class="o">!=</span> <span class="s2">&quot;y&quot;</span><span class="p">:</span>
+                <span class="k">for</span> <span class="n">wrt2_index</span><span class="p">,</span> <span class="n">wrt2</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_var_context</span><span class="o">.</span><span class="n">values</span><span class="p">()):</span>
+                    <span class="c1"># only case we need to compute 2nd order ode</span>
+                    <span class="k">if</span> <span class="ow">not</span> <span class="p">(</span><span class="nb">isinstance</span><span class="p">(</span><span class="n">wrt1</span><span class="p">,</span> <span class="n">Eta</span><span class="p">)</span> <span class="ow">and</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">wrt2</span><span class="p">,</span> <span class="n">Eta</span><span class="p">)</span> <span class="ow">and</span> <span class="n">wrt1_index</span> <span class="o">&lt;=</span> <span class="n">wrt2_index</span><span class="p">):</span>
+                        <span class="k">continue</span>
+
+                    <span class="n">key2</span> <span class="o">=</span> <span class="n">AutoDiffDADtWrt</span><span class="p">(</span><span class="n">cmt</span><span class="o">=</span><span class="n">target</span><span class="o">.</span><span class="n">cmt</span><span class="p">,</span> <span class="n">wrt</span><span class="o">=</span><span class="n">wrt1</span><span class="p">,</span> <span class="n">wrt2nd</span><span class="o">=</span><span class="n">wrt2</span><span class="p">)</span>
+
+                    <span class="n">partial_deriv_2nd</span><span class="p">:</span> <span class="n">sympy</span><span class="o">.</span><span class="n">Expr</span>
+                    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">sympy</span><span class="o">.</span><span class="n">Expr</span><span class="p">):</span>
+                        <span class="n">partial_deriv_2nd</span> <span class="o">=</span> <span class="n">value</span><span class="o">.</span><span class="n">diff</span><span class="p">(</span><span class="n">wrt1</span><span class="p">,</span> <span class="n">wrt2</span><span class="p">)</span>
+                    <span class="k">else</span><span class="p">:</span>  <span class="c1"># 任何常数对任何参数求导都是 0</span>
+                        <span class="n">partial_deriv_2nd</span> <span class="o">=</span> <span class="n">SYMPY_ZERO</span>
+
+                    <span class="k">for</span> <span class="n">cmt1_index</span><span class="p">,</span> <span class="n">cmt1</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_cmt_context</span><span class="o">.</span><span class="n">values</span><span class="p">()):</span>
+                        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">sympy</span><span class="o">.</span><span class="n">Expr</span><span class="p">):</span>
+                            <span class="n">dAdt_dp1_dA1</span> <span class="o">=</span> <span class="n">value</span><span class="o">.</span><span class="n">diff</span><span class="p">(</span><span class="n">wrt1</span><span class="p">,</span> <span class="n">cmt1</span><span class="o">.</span><span class="n">A</span><span class="p">)</span>
+                            <span class="n">A1_wrt_p2</span> <span class="o">=</span> <span class="n">AWrt</span><span class="p">(</span><span class="n">cmt</span><span class="o">=</span><span class="n">cmt1</span><span class="p">,</span> <span class="n">wrt</span><span class="o">=</span><span class="n">wrt2</span><span class="p">)</span>
+                            <span class="n">partial_deriv_2nd</span> <span class="o">+=</span> <span class="n">dAdt_dp1_dA1</span> <span class="o">*</span> <span class="n">A1_wrt_p2</span>
+
+                            <span class="n">dAdt_dA1_dp1</span> <span class="o">=</span> <span class="n">value</span><span class="o">.</span><span class="n">diff</span><span class="p">(</span><span class="n">cmt1</span><span class="o">.</span><span class="n">A</span><span class="p">,</span> <span class="n">wrt1</span><span class="p">)</span>
+                            <span class="n">partial_deriv_2nd</span> <span class="o">+=</span> <span class="n">dAdt_dA1_dp1</span> <span class="o">*</span> <span class="n">A1_wrt_p2</span>
+
+                            <span class="k">for</span> <span class="n">cmt2_index</span><span class="p">,</span> <span class="n">cmt2</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_cmt_context</span><span class="o">.</span><span class="n">values</span><span class="p">()):</span>
+                                <span class="k">if</span> <span class="n">cmt1_index</span> <span class="o">&lt;=</span> <span class="n">cmt2_index</span><span class="p">:</span>
+                                    <span class="n">dAdt_dA1_dA2</span> <span class="o">=</span> <span class="n">value</span><span class="o">.</span><span class="n">diff</span><span class="p">(</span><span class="n">cmt1</span><span class="o">.</span><span class="n">A</span><span class="p">,</span> <span class="n">cmt2</span><span class="o">.</span><span class="n">A</span><span class="p">)</span>
+                                    <span class="n">A1_wrt_p1</span> <span class="o">=</span> <span class="n">AWrt</span><span class="p">(</span><span class="n">cmt</span><span class="o">=</span><span class="n">cmt1</span><span class="p">,</span> <span class="n">wrt</span><span class="o">=</span><span class="n">wrt1</span><span class="p">)</span>
+                                    <span class="n">A2_wrt_p2</span> <span class="o">=</span> <span class="n">AWrt</span><span class="p">(</span><span class="n">cmt</span><span class="o">=</span><span class="n">cmt2</span><span class="p">,</span> <span class="n">wrt</span><span class="o">=</span><span class="n">wrt2</span><span class="p">)</span>
+
+                                    <span class="n">partial_deriv_2nd</span> <span class="o">+=</span> <span class="n">dAdt_dA1_dA2</span> <span class="o">*</span> <span class="n">A1_wrt_p1</span> <span class="o">*</span> <span class="n">A2_wrt_p2</span>
+
+                            <span class="n">A1_wrt_p1_p2</span> <span class="o">=</span> <span class="n">AWrt</span><span class="p">(</span><span class="n">cmt</span><span class="o">=</span><span class="n">cmt1</span><span class="p">,</span> <span class="n">wrt</span><span class="o">=</span><span class="n">wrt1</span><span class="p">,</span> <span class="n">wrt2nd</span><span class="o">=</span><span class="n">wrt2</span><span class="p">)</span>
+                            <span class="n">dAdt_dA1</span> <span class="o">=</span> <span class="n">value</span><span class="o">.</span><span class="n">diff</span><span class="p">(</span><span class="n">cmt1</span><span class="o">.</span><span class="n">A</span><span class="p">)</span>
+                            <span class="n">partial_deriv_2nd</span> <span class="o">+=</span> <span class="n">dAdt_dA1</span> <span class="o">*</span> <span class="n">A1_wrt_p1_p2</span>
+
+                    <span class="n">dAdt_wrt</span><span class="p">[</span><span class="n">key2</span><span class="p">]</span> <span class="o">=</span> <span class="n">dAdt_wrt</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">key2</span><span class="p">,</span> <span class="n">SYMPY_ZERO</span><span class="p">)</span> <span class="o">+</span> <span class="n">partial_deriv_2nd</span>
+
+        <span class="c1"># for cmt1_index, cmt1 in enumerate(self._cmt_context.values()):</span>
+        <span class="c1">#     wrt = cmt1.A</span>
+        <span class="c1">#     key1 = AutoDiffDADtWrt(cmt=target.cmt, wrt=wrt.cmt)</span>
+
+        <span class="c1">#     if isinstance(value, sympy.Expr):</span>
+        <span class="c1">#         partial_deriv = value.diff(wrt)</span>
+        <span class="c1">#     else:  # 任何常数对任何参数求导都是 0</span>
+        <span class="c1">#         partial_deriv = SYMPY_ZERO</span>
+
+        <span class="c1">#     dAdt_wrt[key1] = dAdt_wrt.get(key1, SYMPY_ZERO) + partial_deriv</span>
+
+        <span class="k">return</span> <span class="n">dAdt_wrt</span>
+
+    <span class="k">def</span> <span class="nf">_create_subroutine_args</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">subroutine</span><span class="p">:</span> <span class="n">PKAnalyticalSolution</span><span class="p">[</span><span class="n">typing</span><span class="o">.</span><span class="n">Any</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="n">ast</span><span class="o">.</span><span class="n">Assign</span><span class="p">]:</span>
+        <span class="n">assignments</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="n">ast</span><span class="o">.</span><span class="n">Assign</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">param_name</span><span class="p">,</span> <span class="n">param_expr</span> <span class="ow">in</span> <span class="n">subroutine</span><span class="o">.</span><span class="n">params</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+            <span class="k">if</span> <span class="n">param_expr</span><span class="p">:</span>
+                <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">param_expr</span><span class="p">,</span> <span class="n">sympy</span><span class="o">.</span><span class="n">Expr</span><span class="p">):</span>
+                    <span class="n">translated_param</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_sympy_translator</span><span class="o">.</span><span class="n">translate</span><span class="p">(</span><span class="n">param_expr</span><span class="p">)</span>
+                    <span class="n">assignments</span><span class="o">.</span><span class="n">append</span><span class="p">(</span>
+                        <span class="n">ast</span><span class="o">.</span><span class="n">Assign</span><span class="p">(</span>
+                            <span class="n">targets</span><span class="o">=</span><span class="p">(</span><span class="n">_make_solution_in_subscript_ast</span><span class="p">(</span><span class="n">param_name</span><span class="o">=</span><span class="n">param_name</span><span class="p">),),</span>
+                            <span class="n">value</span><span class="o">=</span><span class="n">translated_param</span><span class="p">,</span>
+                            <span class="n">lineno</span><span class="o">=</span><span class="kc">None</span>
+                        <span class="p">)</span>
+                    <span class="p">)</span>
+
+                <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">param_expr</span><span class="p">,</span> <span class="nb">int</span> <span class="o">|</span> <span class="nb">float</span><span class="p">):</span>
+                    <span class="n">assignments</span><span class="o">.</span><span class="n">append</span><span class="p">(</span>
+                        <span class="n">ast</span><span class="o">.</span><span class="n">Assign</span><span class="p">(</span>
+                            <span class="n">targets</span><span class="o">=</span><span class="p">(</span><span class="n">_make_solution_in_subscript_ast</span><span class="p">(</span><span class="n">param_name</span><span class="p">),),</span> <span class="n">value</span><span class="o">=</span><span class="n">param_expr</span><span class="p">,</span> <span class="n">lineno</span><span class="o">=</span><span class="kc">None</span>
+                        <span class="p">)</span>
+                    <span class="p">)</span>
+
+                <span class="k">for</span> <span class="n">wrt</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_var_context</span><span class="o">.</span><span class="n">values</span><span class="p">():</span>
+                    <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">wrt</span><span class="p">,</span> <span class="n">Eta</span><span class="p">):</span>  <span class="c1"># NOTE: dAdt/dp 只需要对 eta 的一阶导</span>
+                        <span class="k">continue</span>
+
+                    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">param_expr</span><span class="p">,</span> <span class="n">sympy</span><span class="o">.</span><span class="n">Expr</span><span class="p">):</span>
+                        <span class="n">partial_deriv</span> <span class="o">=</span> <span class="n">param_expr</span><span class="o">.</span><span class="n">diff</span><span class="p">(</span><span class="n">wrt</span><span class="p">)</span>
+                    <span class="k">else</span><span class="p">:</span>  <span class="c1"># 任何常数对任何参数求导都是 0</span>
+                        <span class="n">partial_deriv</span> <span class="o">=</span> <span class="n">SYMPY_ZERO</span>
+
+                    <span class="n">translated_param</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_sympy_translator</span><span class="o">.</span><span class="n">translate</span><span class="p">(</span><span class="n">partial_deriv</span><span class="p">)</span>
+                    <span class="n">assignments</span><span class="o">.</span><span class="n">append</span><span class="p">(</span>
+                        <span class="n">ast</span><span class="o">.</span><span class="n">Assign</span><span class="p">(</span>
+                            <span class="n">targets</span><span class="o">=</span><span class="p">(</span><span class="n">_make_solution_in_subscript_ast</span><span class="p">(</span><span class="n">param_name</span><span class="o">=</span><span class="n">param_name</span><span class="p">,</span> <span class="n">wrt</span><span class="o">=</span><span class="n">wrt</span><span class="p">),),</span>
+                            <span class="n">value</span><span class="o">=</span><span class="n">translated_param</span><span class="p">,</span>
+                            <span class="n">lineno</span><span class="o">=</span><span class="kc">None</span>
+                        <span class="p">)</span>
+                    <span class="p">)</span>
+
+        <span class="c1"># assignments.append(ast.Assign(targets=(ast.Name(id=solution_in.name), )))</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_local_context</span><span class="p">[</span><span class="n">_SolutionInMp</span><span class="o">.</span><span class="n">name</span><span class="p">]</span> <span class="o">=</span> <span class="n">_SolutionInMp</span><span class="p">(</span><span class="n">subroutine</span><span class="o">=</span><span class="n">subroutine</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">assignments</span>
+
+    <span class="k">def</span> <span class="nf">_cse</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">exprs</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="n">sympy</span><span class="o">.</span><span class="n">Expr</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">tuple</span><span class="p">[</span><span class="nb">list</span><span class="p">[</span><span class="n">sympy</span><span class="o">.</span><span class="n">Expr</span><span class="p">],</span> <span class="nb">list</span><span class="p">[</span><span class="n">ast</span><span class="o">.</span><span class="n">Assign</span><span class="p">],</span> <span class="n">VarContext</span><span class="p">[</span><span class="n">sympy</span><span class="o">.</span><span class="n">Expr</span><span class="p">]]:</span>
+        <span class="n">cse_ctx</span> <span class="o">=</span> <span class="n">VarContext</span><span class="p">[</span><span class="n">sympy</span><span class="o">.</span><span class="n">Expr</span><span class="p">]()</span>
+        <span class="n">captured_ctx</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_local_context</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>  <span class="c1"># 这个 context 专门用来处理临时变量</span>
+        <span class="n">appending_assignments</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="n">ast</span><span class="o">.</span><span class="n">Assign</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="n">common_sub_expressions</span><span class="p">,</span> <span class="n">refined_expressions</span> <span class="o">=</span> <span class="n">sympy</span><span class="o">.</span><span class="n">cse</span><span class="p">(</span><span class="n">exprs</span><span class="p">,</span> <span class="n">symbols</span><span class="o">=</span><span class="n">sympy</span><span class="o">.</span><span class="n">numbered_symbols</span><span class="p">(</span><span class="n">prefix</span><span class="o">=</span><span class="s2">&quot;__&quot;</span><span class="p">))</span>
+
+        <span class="n">sub_expr_term</span><span class="p">:</span> <span class="n">sympy</span><span class="o">.</span><span class="n">Symbol</span>
+        <span class="n">sub_expr</span><span class="p">:</span> <span class="n">sympy</span><span class="o">.</span><span class="n">Expr</span>
+        <span class="n">ast_expr</span><span class="p">:</span> <span class="n">ast</span><span class="o">.</span><span class="n">expr</span>
+        <span class="k">for</span> <span class="n">sub_expr_term</span><span class="p">,</span> <span class="n">sub_expr</span> <span class="ow">in</span> <span class="n">common_sub_expressions</span><span class="p">:</span>
+            <span class="n">cse_ctx</span><span class="p">[</span><span class="n">sub_expr_term</span><span class="o">.</span><span class="n">name</span><span class="p">]</span> <span class="o">=</span> <span class="n">sub_expr</span>
+            <span class="n">ast_expr</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_sympy_translator</span><span class="o">.</span><span class="n">translate</span><span class="p">(</span><span class="n">sub_expr</span><span class="p">,</span> <span class="n">captured_ctx</span><span class="o">=</span><span class="n">captured_ctx</span> <span class="o">+</span> <span class="n">cse_ctx</span><span class="p">)</span>
+
+            <span class="n">appending_assignments</span><span class="o">.</span><span class="n">append</span><span class="p">(</span>
+                <span class="n">ast</span><span class="o">.</span><span class="n">Assign</span><span class="p">(</span><span class="n">targets</span><span class="o">=</span><span class="p">(</span><span class="n">ast</span><span class="o">.</span><span class="n">Name</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="n">sub_expr_term</span><span class="o">.</span><span class="n">name</span><span class="p">),),</span> <span class="n">value</span><span class="o">=</span><span class="n">ast_expr</span><span class="p">,</span> <span class="n">lineno</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+            <span class="p">)</span>
+
+        <span class="k">return</span> <span class="n">refined_expressions</span><span class="p">,</span> <span class="n">appending_assignments</span><span class="p">,</span> <span class="n">cse_ctx</span></div>
+</pre></div>
+
+                </article>
+              
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+  <p class="copyright">
+    
+      © Copyright 2023, Maspectra Dev Team.
+      <br/>
+    
+  </p>
+</div>
+      
+        <div class="footer-item">
+  <p class="sphinx-version">
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 5.3.0.
+    <br/>
+  </p>
+</div>
+      
+    </div>
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item"><p class="theme-version">
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.13.3.
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>

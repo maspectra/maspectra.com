@@ -1,0 +1,10 @@
+masmod.functional package
+=========================
+
+Module contents
+---------------
+
+.. automodule:: masmod.functional
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -1,0 +1,45 @@
+masmod.ast\_worker.if\_else package
+===================================
+
+Submodules
+----------
+
+masmod.ast\_worker.if\_else.condition\_hoist module
+---------------------------------------------------
+
+.. automodule:: masmod.ast_worker.if_else.condition_hoist
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+masmod.ast\_worker.if\_else.if\_else module
+-------------------------------------------
+
+.. automodule:: masmod.ast_worker.if_else.if_else
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+masmod.ast\_worker.if\_else.variable\_hoist module
+--------------------------------------------------
+
+.. automodule:: masmod.ast_worker.if_else.variable_hoist
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+masmod.ast\_worker.if\_else.variable\_override module
+-----------------------------------------------------
+
+.. automodule:: masmod.ast_worker.if_else.variable_override
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: masmod.ast_worker.if_else
+   :members:
+   :undoc-members:
+   :show-inheritance:

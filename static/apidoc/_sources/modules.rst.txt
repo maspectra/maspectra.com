@@ -1,0 +1,7 @@
+masmod
+======
+
+.. toctree::
+   :maxdepth: 4
+
+   masmod

@@ -5,7 +5,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "Maspectra",
+  title: "Maspectra - All-in-one modeling and simulation solution",
   tagline: "Modeling and Simulation Solution",
   favicon: "img/logo/icon.ico",
 
@@ -49,7 +49,14 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/"
+            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+
+          exclude: [
+            // '**/_*.{js,jsx,ts,tsx,md,mdx}',
+            // '**/_*/**',
+            "**/*.test.{js,jsx,ts,tsx}",
+            "**/__tests__/**"
+          ]
         },
         blog: {
           showReadingTime: true,
@@ -90,13 +97,8 @@ const config = {
             position: "left"
           },
           {
-            to: "/docs/intro",
-            label: "Examples",
-            position: "left"
-          },
-          {
-            to: "/blog",
-            label: "Blogs",
+            to: "pathname:///apidoc",
+            label: "API Reference",
             position: "left"
           },
           {

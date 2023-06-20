@@ -1,0 +1,71 @@
+masmod.api package
+==================
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   masmod.api.data
+   masmod.api.estimation
+   masmod.api.simulation
+
+Submodules
+----------
+
+masmod.api.model module
+-----------------------
+
+.. automodule:: masmod.api.model
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+masmod.api.nonmem\_compat module
+--------------------------------
+
+.. automodule:: masmod.api.nonmem_compat
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+masmod.api.parameters module
+----------------------------
+
+.. automodule:: masmod.api.parameters
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+masmod.api.pk module
+--------------------
+
+.. automodule:: masmod.api.pk
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+masmod.api.plot module
+----------------------
+
+.. automodule:: masmod.api.plot
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+masmod.api.typing module
+------------------------
+
+.. automodule:: masmod.api.typing
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: masmod.api
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -1,0 +1,29 @@
+masmod.translator package
+=========================
+
+Submodules
+----------
+
+masmod.translator.cc\_trans module
+----------------------------------
+
+.. automodule:: masmod.translator.cc_trans
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+masmod.translator.sympy\_ast\_trans module
+------------------------------------------
+
+.. automodule:: masmod.translator.sympy_ast_trans
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: masmod.translator
+   :members:
+   :undoc-members:
+   :show-inheritance:

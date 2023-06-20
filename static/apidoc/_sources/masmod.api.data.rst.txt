@@ -1,0 +1,10 @@
+masmod.api.data package
+=======================
+
+Module contents
+---------------
+
+.. automodule:: masmod.api.data
+   :members:
+   :undoc-members:
+   :show-inheritance:
