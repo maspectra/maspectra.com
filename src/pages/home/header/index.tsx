@@ -90,7 +90,15 @@ const Header: React.FC = () => {
               headerCss.heroFrameContainerWidth
             )}
           >
-            <BrowserOnly>
+            <BrowserOnly
+              fallback={
+                <Image
+                  alt="interface screenshot"
+                  src={lightScreenshotImg}
+                  className={headerCss.heroScreenshot}
+                />
+              }
+            >
               {() => {
                 // eslint-disable-next-line react-hooks/rules-of-hooks
                 const { colorMode } = useColorMode();
