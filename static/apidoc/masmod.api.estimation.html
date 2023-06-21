@@ -388,17 +388,31 @@ document.write(`
 <dl class="py property">
 <dt class="sig sig-object py" id="masmod.api.estimation.bootstrap.BootstrapResult.df">
 <em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">df</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">DataFrame</span></em><a class="headerlink" href="#masmod.api.estimation.bootstrap.BootstrapResult.df" title="Permalink to this definition">#</a></dt>
-<dd></dd></dl>
+<dd><p>Bootstrap Result Data</p>
+</dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="masmod.api.estimation.bootstrap.BootstrapResult.level">
 <em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">level</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#masmod.api.estimation.bootstrap.BootstrapResult.level" title="Permalink to this definition">#</a></dt>
-<dd></dd></dl>
+<dd><p>The confidence interval level</p>
+</dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="masmod.api.estimation.bootstrap.BootstrapResult.show_level">
 <span class="sig-name descname"><span class="pre">show_level</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">level</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#masmod.api.estimation.bootstrap.BootstrapResult" title="masmod.api.estimation.bootstrap.BootstrapResult"><span class="pre">BootstrapResult</span></a></span></span><a class="headerlink" href="#masmod.api.estimation.bootstrap.BootstrapResult.show_level" title="Permalink to this definition">#</a></dt>
-<dd></dd></dl>
+<dd><p>Change the confidence interval level in bootstrap</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>level</strong> (<em>float</em>) – confidence interval level, between 0~1</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The result with new confidence interval level</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="#masmod.api.estimation.bootstrap.BootstrapResult" title="masmod.api.estimation.bootstrap.BootstrapResult">BootstrapResult</a></p>
+</dd>
+</dl>
+</dd></dl>
 
 </dd></dl>
 
@@ -410,7 +424,6 @@ document.write(`
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>fit_result</strong> – The result of the model fit</p></li>
-<li><p><strong>model</strong> – The population model</p></li>
 <li><p><strong>samples</strong> – The number of bootstraps</p></li>
 <li><p><strong>seed</strong> – Random seed</p></li>
 </ul>
@@ -569,7 +582,8 @@ document.write(`
 <dl class="py property">
 <dt class="sig sig-object py" id="masmod.api.estimation.estimation_result.EstimationResult.shrinkage">
 <em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">shrinkage</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ndarray</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">dtype</span><span class="p"><span class="pre">[</span></span><span class="pre">float64</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#masmod.api.estimation.estimation_result.EstimationResult.shrinkage" title="Permalink to this definition">#</a></dt>
-<dd></dd></dl>
+<dd><p>Shrinkage Of Omega</p>
+</dd></dl>
 
 </dd></dl>
 
@@ -631,7 +645,8 @@ document.write(`
 <dl class="py property">
 <dt class="sig sig-object py" id="masmod.api.estimation.fit_result.EstimationResult.shrinkage">
 <em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">shrinkage</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ndarray</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">dtype</span><span class="p"><span class="pre">[</span></span><span class="pre">float64</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#masmod.api.estimation.fit_result.EstimationResult.shrinkage" title="Permalink to this definition">#</a></dt>
-<dd></dd></dl>
+<dd><p>Shrinkage Of Omega</p>
+</dd></dl>
 
 </dd></dl>
 
@@ -645,27 +660,57 @@ document.write(`
 <dl class="py property">
 <dt class="sig sig-object py" id="masmod.api.estimation.vpc.VpcResult.ci_df">
 <em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ci_df</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">DataFrame</span></em><a class="headerlink" href="#masmod.api.estimation.vpc.VpcResult.ci_df" title="Permalink to this definition">#</a></dt>
-<dd></dd></dl>
+<dd><p>The confidence interval data in VPC</p>
+</dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="masmod.api.estimation.vpc.VpcResult.level">
 <em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">level</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#masmod.api.estimation.vpc.VpcResult.level" title="Permalink to this definition">#</a></dt>
-<dd></dd></dl>
+<dd><p>The confidence interval level</p>
+</dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="masmod.api.estimation.vpc.VpcResult.show_bin">
 <span class="sig-name descname"><span class="pre">show_bin</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">auto_bin</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">int</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">min_points_in_each_bin</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#masmod.api.estimation.vpc.VpcResult" title="masmod.api.estimation.vpc.VpcResult"><span class="pre">VpcResult</span></a></span></span><a class="headerlink" href="#masmod.api.estimation.vpc.VpcResult.show_bin" title="Permalink to this definition">#</a></dt>
-<dd></dd></dl>
+<dd><p>Set the auto bin settings in VPC</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>auto_bin</strong> (<em>bool</em><em> | </em><em>int</em><em> | </em><em>tuple</em><em>[</em><em>int</em><em>, </em><em>int</em><em>]</em><em>, </em><em>optional</em>) – Whether to automatically calculate bin, optional parameters include False: regardless of bin; True : Calculated according to the default setting; int: the number of bins; tuple[int, int]: the range for bins.</p></li>
+<li><p><strong>min_points_in_each_bin</strong> (<em>int</em><em> | </em><em>None</em><em>, </em><em>optional</em>) – The min number of points in each bin, default = 10.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The result with new bins</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="#masmod.api.estimation.vpc.VpcResult" title="masmod.api.estimation.vpc.VpcResult">VpcResult</a></p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="masmod.api.estimation.vpc.VpcResult.show_level">
 <span class="sig-name descname"><span class="pre">show_level</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">level</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#masmod.api.estimation.vpc.VpcResult" title="masmod.api.estimation.vpc.VpcResult"><span class="pre">VpcResult</span></a></span></span><a class="headerlink" href="#masmod.api.estimation.vpc.VpcResult.show_level" title="Permalink to this definition">#</a></dt>
-<dd></dd></dl>
+<dd><p>Change the confidence interval level in bootstrap</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>level</strong> (<em>float</em>) – confidence interval level, between 0~1</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The result with new confidence interval level</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="#masmod.api.estimation.vpc.VpcResult" title="masmod.api.estimation.vpc.VpcResult">VpcResult</a></p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="masmod.api.estimation.vpc.VpcResult.simulate_df">
 <em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">simulate_df</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">DataFrame</span></em><a class="headerlink" href="#masmod.api.estimation.vpc.VpcResult.simulate_df" title="Permalink to this definition">#</a></dt>
-<dd></dd></dl>
+<dd><p>Simulation data in VPC</p>
+</dd></dl>
 
 </dd></dl>
 
@@ -771,7 +816,8 @@ document.write(`
 <dl class="py property">
 <dt class="sig sig-object py" id="masmod.api.estimation.EstimationResult.shrinkage">
 <em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">shrinkage</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ndarray</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">dtype</span><span class="p"><span class="pre">[</span></span><span class="pre">float64</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#masmod.api.estimation.EstimationResult.shrinkage" title="Permalink to this definition">#</a></dt>
-<dd></dd></dl>
+<dd><p>Shrinkage Of Omega</p>
+</dd></dl>
 
 </dd></dl>
 
@@ -815,7 +861,7 @@ document.write(`
 
 <dl class="py class">
 <dt class="sig sig-object py" id="masmod.api.estimation.FitResult">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">masmod.api.estimation.</span></span><span class="sig-name descname"><span class="pre">FitResult</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model_ptr</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DittoPopModel</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="masmod.api.data.html#masmod.api.data.ModelData" title="mas.libs.masmod.api.data._data.ModelData"><span class="pre">ModelData</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">mod</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">InterpretedModule</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">estimator</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DittoEstimator</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">est_results</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#masmod.api.estimation.fit_result.EstimationResult" title="mas.libs.masmod.api.estimation.estimation_result.EstimationResult"><span class="pre">mas.libs.masmod.api.estimation.estimation_result.EstimationResult</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">init_pop_params</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="masmod.api.html#masmod.api.PopParams" title="mas.libs.masmod.api.parameters.PopParams"><span class="pre">PopParams</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">fit_args</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#masmod.api.estimation.FitResult" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">masmod.api.estimation.</span></span><span class="sig-name descname"><span class="pre">FitResult</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model_ptr</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DittoPopModel</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="masmod.api.html#masmod.api.ModelData" title="mas.libs.masmod.api.data._data.ModelData"><span class="pre">ModelData</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">mod</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">InterpretedModule</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">estimator</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DittoEstimator</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">est_results</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#masmod.api.estimation.fit_result.EstimationResult" title="mas.libs.masmod.api.estimation.estimation_result.EstimationResult"><span class="pre">mas.libs.masmod.api.estimation.estimation_result.EstimationResult</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">init_pop_params</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="masmod.api.html#masmod.api.PopParams" title="mas.libs.masmod.api.parameters.PopParams"><span class="pre">PopParams</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">fit_args</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#masmod.api.estimation.FitResult" title="Permalink to this definition">#</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <dl class="py method">
 <dt class="sig sig-object py" id="masmod.api.estimation.FitResult.compute_se">
@@ -845,7 +891,8 @@ document.write(`
 <dl class="py property">
 <dt class="sig sig-object py" id="masmod.api.estimation.FitResult.estimations">
 <em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">estimations</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#masmod.api.estimation.fit_result.EstimationResult" title="mas.libs.masmod.api.estimation.estimation_result.EstimationResult"><span class="pre">mas.libs.masmod.api.estimation.estimation_result.EstimationResult</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#masmod.api.estimation.FitResult.estimations" title="Permalink to this definition">#</a></dt>
-<dd></dd></dl>
+<dd><p>Result of each estimation</p>
+</dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="masmod.api.estimation.FitResult.final_obj_val">
@@ -862,7 +909,8 @@ document.write(`
 <dl class="py property">
 <dt class="sig sig-object py" id="masmod.api.estimation.FitResult.ipred">
 <em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ipred</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">DataFrame</span></em><a class="headerlink" href="#masmod.api.estimation.FitResult.ipred" title="Permalink to this definition">#</a></dt>
-<dd></dd></dl>
+<dd><p>Individual Prediction</p>
+</dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="masmod.api.estimation.FitResult.iter_details">
@@ -933,12 +981,15 @@ document.write(`
 <dl class="py method">
 <dt class="sig sig-object py" id="masmod.api.estimation.FitResult.plot_iteration_trace">
 <span class="sig-name descname"><span class="pre">plot_iteration_trace</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="masmod.api.html#masmod.api.plot.IterPlot" title="mas.libs.masmod.plot.iter_plot.IterPlot"><span class="pre">IterPlot</span></a></span></span><a class="headerlink" href="#masmod.api.estimation.FitResult.plot_iteration_trace" title="Permalink to this definition">#</a></dt>
-<dd></dd></dl>
+<dd><p>Plot Iteration trace</p>
+<p>Returns: The iteration plot</p>
+</dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="masmod.api.estimation.FitResult.pred">
 <em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">pred</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">DataFrame</span></em><a class="headerlink" href="#masmod.api.estimation.FitResult.pred" title="Permalink to this definition">#</a></dt>
-<dd></dd></dl>
+<dd><p>Population Prediction</p>
+</dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="masmod.api.estimation.FitResult.rse">
@@ -949,12 +1000,25 @@ document.write(`
 <dl class="py property">
 <dt class="sig sig-object py" id="masmod.api.estimation.FitResult.shrinkage">
 <em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">shrinkage</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ndarray</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">dtype</span><span class="p"><span class="pre">[</span></span><span class="pre">float64</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#masmod.api.estimation.FitResult.shrinkage" title="Permalink to this definition">#</a></dt>
-<dd></dd></dl>
+<dd><p>Shrinkage Of Omega</p>
+</dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="masmod.api.estimation.FitResult.simulate">
-<span class="sig-name descname"><span class="pre">simulate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="masmod.api.data.html#masmod.api.data.ModelData" title="mas.libs.masmod.api.data._data.ModelData"><span class="pre">ModelData</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="masmod.api.simulation.html#masmod.api.simulation.SimulationResult" title="mas.libs.masmod.api.simulation.simulation.SimulationResult"><span class="pre">SimulationResult</span></a></span></span><a class="headerlink" href="#masmod.api.estimation.FitResult.simulate" title="Permalink to this definition">#</a></dt>
-<dd></dd></dl>
+<span class="sig-name descname"><span class="pre">simulate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="masmod.api.html#masmod.api.ModelData" title="mas.libs.masmod.api.data._data.ModelData"><span class="pre">ModelData</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="masmod.api.simulation.html#masmod.api.simulation.SimulationResult" title="mas.libs.masmod.api.simulation.simulation.SimulationResult"><span class="pre">SimulationResult</span></a></span></span><a class="headerlink" href="#masmod.api.estimation.FitResult.simulate" title="Permalink to this definition">#</a></dt>
+<dd><p>Simulate Entry Point</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>data</strong> (<a class="reference internal" href="masmod.api.html#masmod.api.ModelData" title="mas.libs.masmod.api.data._data.ModelData"><em>ModelData</em></a><em> | </em><em>None</em><em>, </em><em>optional</em>) – Simulation data. Defaults to the fitted data in mod.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The result of simulation with the final population parameters in fitting.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="masmod.api.simulation.html#masmod.api.simulation.simulation.SimulationResult" title="masmod.api.simulation.simulation.SimulationResult">SimulationResult</a></p>
+</dd>
+</dl>
+</dd></dl>
 
 </dd></dl>
 
