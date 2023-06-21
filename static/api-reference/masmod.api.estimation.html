@@ -1,0 +1,1300 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>masmod.api.estimation package &#8212; Masmod API Reference</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'masmod.api.estimation';</script>
+    <link rel="canonical" href="/api-reference/masmod.api.estimation.html" />
+    <link rel="shortcut icon" href="_static/icon.png"/>
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="masmod.api.simulation package" href="masmod.api.simulation.html" />
+    <link rel="prev" title="masmod.api.data package" href="masmod.api.data.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+<div class="bd-header__inner bd-page-width">
+  <label class="sidebar-toggle primary-toggle" for="__primary">
+    <span class="fa-solid fa-bars"></span>
+  </label>
+  
+  <div class="navbar-header-items__start">
+    
+      <div class="navbar-item">
+  
+
+<a class="navbar-brand logo" href="modules.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/icon.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="_static/icon.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+    
+  </div>
+  
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item"><nav class="navbar-nav">
+  <p class="sidebar-header-items__title"
+     role="heading"
+     aria-level="1"
+     aria-label="Site Navigation">
+    Site Navigation
+  </p>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+                    <li class="nav-item current active">
+                      <a class="nav-link nav-internal" href="masmod.html">
+                        masmod package
+                      </a>
+                    </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="https://maspectra.com">
+                    Maspectra
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="https://maspectra.com/documentation/intro">
+                    Documentation
+                  </a>
+                </li>
+                
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+        </div>
+      
+      
+        <div class="navbar-item">
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script></div>
+      
+        <div class="navbar-item"><ul class="navbar-icon-links navbar-nav"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/maspectra" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-square-github"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+</ul></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+    </div>
+  
+
+  
+    <label class="sidebar-toggle secondary-toggle" for="__secondary">
+      <span class="fa-solid fa-outdent"></span>
+    </label>
+  
+</div>
+
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          <div class="navbar-item"><nav class="navbar-nav">
+  <p class="sidebar-header-items__title"
+     role="heading"
+     aria-level="1"
+     aria-label="Site Navigation">
+    Site Navigation
+  </p>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+                    <li class="nav-item current active">
+                      <a class="nav-link nav-internal" href="masmod.html">
+                        masmod package
+                      </a>
+                    </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="https://maspectra.com">
+                    Maspectra
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="https://maspectra.com/documentation/intro">
+                    Documentation
+                  </a>
+                </li>
+                
+  </ul>
+</nav></div>
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script></div>
+        
+          <div class="navbar-item"><ul class="navbar-icon-links navbar-nav"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/maspectra" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-square-github"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+</ul></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item"><nav class="bd-docs-nav bd-links"
+     aria-label="Section Navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
+  <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="masmod.api.html">masmod.api package</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="masmod.api.data.html">masmod.api.data package</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">masmod.api.estimation package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="masmod.api.simulation.html">masmod.api.simulation package</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="masmod.ast_worker.html">masmod.ast_worker package</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="masmod.ast_worker.if_else.html">masmod.ast_worker.if_else package</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="masmod.compiler.html">masmod.compiler package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="masmod.functional.html">masmod.functional package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="masmod.module.html">masmod.module package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="masmod.plot.html">masmod.plot package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="masmod.symbols.html">masmod.symbols package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="masmod.translator.html">masmod.translator package</a></li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+
+
+<nav aria-label="Breadcrumbs">
+  <ul class="bd-breadcrumbs" role="navigation" aria-label="Breadcrumb">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="modules.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="masmod.html" class="nav-link">masmod package</a></li>
+    
+    
+    <li class="breadcrumb-item"><a href="masmod.api.html" class="nav-link">masmod.api package</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page">masmod.api.estimation package</li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section id="masmod-api-estimation-package">
+<h1>masmod.api.estimation package<a class="headerlink" href="#masmod-api-estimation-package" title="Permalink to this heading">#</a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this heading">#</a></h2>
+</section>
+<section id="module-masmod.api.estimation.bootstrap">
+<span id="masmod-api-estimation-bootstrap-module"></span><h2>masmod.api.estimation.bootstrap module<a class="headerlink" href="#module-masmod.api.estimation.bootstrap" title="Permalink to this heading">#</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="masmod.api.estimation.bootstrap.BootstrapResult">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">masmod.api.estimation.bootstrap.</span></span><span class="sig-name descname"><span class="pre">BootstrapResult</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fit_result</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="masmod.api.html#masmod.api.FitResult" title="mas.libs.masmod.api.estimation.fit_result.FitResult"><span class="pre">FitResult</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">bootstrap_result_list</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="masmod.api.html#masmod.api.FitResult" title="mas.libs.masmod.api.estimation.fit_result.FitResult"><span class="pre">mas.libs.masmod.api.estimation.fit_result.FitResult</span></a><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elapsed_time</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">timedelta</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ci_range</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bootstrap_df</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">DataFrame</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#masmod.api.estimation.bootstrap.BootstrapResult" title="Permalink to this definition">#</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">IIPythonDisplayable</span></code></p>
+<dl class="py property">
+<dt class="sig sig-object py" id="masmod.api.estimation.bootstrap.BootstrapResult.df">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">df</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">DataFrame</span></em><a class="headerlink" href="#masmod.api.estimation.bootstrap.BootstrapResult.df" title="Permalink to this definition">#</a></dt>
+<dd><p>Bootstrap Result Data</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="masmod.api.estimation.bootstrap.BootstrapResult.level">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">level</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#masmod.api.estimation.bootstrap.BootstrapResult.level" title="Permalink to this definition">#</a></dt>
+<dd><p>The confidence interval level</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="masmod.api.estimation.bootstrap.BootstrapResult.show_level">
+<span class="sig-name descname"><span class="pre">show_level</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">level</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#masmod.api.estimation.bootstrap.BootstrapResult" title="masmod.api.estimation.bootstrap.BootstrapResult"><span class="pre">BootstrapResult</span></a></span></span><a class="headerlink" href="#masmod.api.estimation.bootstrap.BootstrapResult.show_level" title="Permalink to this definition">#</a></dt>
+<dd><p>Change the confidence interval level in bootstrap</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>level</strong> (<em>float</em>) – confidence interval level, between 0~1</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The result with new confidence interval level</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="#masmod.api.estimation.bootstrap.BootstrapResult" title="masmod.api.estimation.bootstrap.BootstrapResult">BootstrapResult</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="masmod.api.estimation.bootstrap.bootstrap">
+<span class="sig-prename descclassname"><span class="pre">masmod.api.estimation.bootstrap.</span></span><span class="sig-name descname"><span class="pre">bootstrap</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fit_result</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="masmod.api.html#masmod.api.FitResult" title="mas.libs.masmod.api.estimation.fit_result.FitResult"><span class="pre">FitResult</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">samples</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">seed</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#masmod.api.estimation.bootstrap.BootstrapResult" title="masmod.api.estimation.bootstrap.BootstrapResult"><span class="pre">BootstrapResult</span></a></span></span><a class="headerlink" href="#masmod.api.estimation.bootstrap.bootstrap" title="Permalink to this definition">#</a></dt>
+<dd><p>Run bootstrap</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>fit_result</strong> – The result of the model fit</p></li>
+<li><p><strong>samples</strong> – The number of bootstraps</p></li>
+<li><p><strong>seed</strong> – Random seed</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Bootstrap results</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-masmod.api.estimation.estimation_method">
+<span id="masmod-api-estimation-estimation-method-module"></span><h2>masmod.api.estimation.estimation_method module<a class="headerlink" href="#module-masmod.api.estimation.estimation_method" title="Permalink to this heading">#</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="masmod.api.estimation.estimation_method.FO">
+<span class="sig-prename descclassname"><span class="pre">masmod.api.estimation.estimation_method.</span></span><span class="sig-name descname"><span class="pre">FO</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">print</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">print_type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Literal</span><span class="p"><span class="pre">[</span></span><span class="s"><span class="pre">'details'</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span class="pre">'progress'</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'details'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">log_level</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Literal</span><span class="p"><span class="pre">[</span></span><span class="s"><span class="pre">'no'</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span class="pre">'info'</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span class="pre">'trace'</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'info'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxiter</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">2000</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">xtol</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1e-06</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ftol</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1e-06</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">minimize_method</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Literal</span><span class="p"><span class="pre">[</span></span><span class="s"><span class="pre">'nm'</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span class="pre">'powell'</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span class="pre">'bobyqa'</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span class="pre">'lbfgs'</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span class="pre">'lbfgs_b'</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'bobyqa'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">LaplacianLikeAlgorithmSettings</span></span></span><a class="headerlink" href="#masmod.api.estimation.estimation_method.FO" title="Permalink to this definition">#</a></dt>
+<dd><p>First Order Estimation</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>print</strong> (<em>int</em><em>, </em><em>optional</em>) – Print details for every {print} iterations, note this only works when <cite>print_type=’details’</cite>. Default to <cite>1</cite></p></li>
+<li><p><strong>print_type</strong> (<em>Literal</em><em>[</em><em>&quot;details&quot;</em><em>, </em><em>&quot;progress&quot;</em><em>]</em><em>, </em><em>optional</em>) – Print iteration with details (<cite>x</cite> and <cite>f</cite>) or progress (progress-bar like visualization). Default to <cite>‘details’</cite></p></li>
+<li><p><strong>log_level</strong> (<em>Literal</em><em>[</em><em>&quot;no&quot;</em><em>, </em><em>&quot;info&quot;</em><em>, </em><em>&quot;trace&quot;</em><em>]</em><em>, </em><em>optional</em>) – Level to print log, if <cite>log_level=’no’</cite>, nothing will be print. Default to <cite>‘info’</cite></p></li>
+<li><p><strong>maxiter</strong> (<em>int</em><em>, </em><em>optional</em>) – Max number of iterations. Default to <cite>2000</cite></p></li>
+<li><p><strong>xtol</strong> (<em>float</em><em>, </em><em>optional</em>) – Converging <cite>x</cite> tolerance. Default to <cite>1e-6</cite></p></li>
+<li><p><strong>ftol</strong> (<em>float</em><em>, </em><em>optional</em>) – Converging <cite>f</cite> (objective function) tolerance. Default to <cite>1e-6</cite></p></li>
+<li><p><strong>minimize_method</strong> (<em>Literal</em><em>[</em><em>&quot;nm&quot;</em><em>, </em><em>&quot;powell&quot;</em><em>, </em><em>&quot;bobyqa&quot;</em><em>, </em><em>&quot;lbfgs&quot;</em><em>, </em><em>&quot;lbfgs_b&quot;</em><em>]</em><em>, </em><em>optional</em>) – Minimization method (optimizer choice). Default to <cite>‘bobyqa’</cite></p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="masmod.api.estimation.estimation_method.FOCEi">
+<span class="sig-prename descclassname"><span class="pre">masmod.api.estimation.estimation_method.</span></span><span class="sig-name descname"><span class="pre">FOCEi</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">print</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">print_type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Literal</span><span class="p"><span class="pre">[</span></span><span class="s"><span class="pre">'details'</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span class="pre">'progress'</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'details'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">log_level</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Literal</span><span class="p"><span class="pre">[</span></span><span class="s"><span class="pre">'no'</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span class="pre">'info'</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span class="pre">'trace'</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'info'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxiter</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">2000</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">xtol</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1e-06</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ftol</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1e-06</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">minimize_method</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Literal</span><span class="p"><span class="pre">[</span></span><span class="s"><span class="pre">'nm'</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span class="pre">'powell'</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span class="pre">'bobyqa'</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span class="pre">'lbfgs'</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span class="pre">'lbfgs_b'</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'bobyqa'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">LaplacianLikeAlgorithmSettings</span></span></span><a class="headerlink" href="#masmod.api.estimation.estimation_method.FOCEi" title="Permalink to this definition">#</a></dt>
+<dd><p>First Order Conditional Estimation with Interaction</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>print</strong> (<em>int</em><em>, </em><em>optional</em>) – Print details for every {print} iterations, note this only works when <cite>print_type=’details’</cite>. Default to <cite>1</cite></p></li>
+<li><p><strong>print_type</strong> (<em>Literal</em><em>[</em><em>&quot;details&quot;</em><em>, </em><em>&quot;progress&quot;</em><em>]</em><em>, </em><em>optional</em>) – Print iteration with details (<cite>x</cite> and <cite>f</cite>) or progress (progress-bar like visualization). Default to <cite>‘details’</cite></p></li>
+<li><p><strong>log_level</strong> (<em>Literal</em><em>[</em><em>&quot;no&quot;</em><em>, </em><em>&quot;info&quot;</em><em>, </em><em>&quot;trace&quot;</em><em>]</em><em>, </em><em>optional</em>) – Level to print log, if <cite>log_level=’no’</cite>, nothing will be print. Default to <cite>‘info’</cite></p></li>
+<li><p><strong>maxiter</strong> (<em>int</em><em>, </em><em>optional</em>) – Max number of iterations. Default to <cite>2000</cite></p></li>
+<li><p><strong>xtol</strong> (<em>float</em><em>, </em><em>optional</em>) – Converging <cite>x</cite> tolerance. Default to <cite>1e-6</cite></p></li>
+<li><p><strong>ftol</strong> (<em>float</em><em>, </em><em>optional</em>) – Converging <cite>f</cite> (objective function) tolerance. Default to <cite>1e-6</cite></p></li>
+<li><p><strong>minimize_method</strong> (<em>Literal</em><em>[</em><em>&quot;nm&quot;</em><em>, </em><em>&quot;powell&quot;</em><em>, </em><em>&quot;bobyqa&quot;</em><em>, </em><em>&quot;lbfgs&quot;</em><em>, </em><em>&quot;lbfgs_b&quot;</em><em>]</em><em>, </em><em>optional</em>) – Minimization method (optimizer choice). Default to <cite>‘bobyqa’</cite></p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="masmod.api.estimation.estimation_method.Laplace">
+<span class="sig-prename descclassname"><span class="pre">masmod.api.estimation.estimation_method.</span></span><span class="sig-name descname"><span class="pre">Laplace</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">print</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">print_type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Literal</span><span class="p"><span class="pre">[</span></span><span class="s"><span class="pre">'details'</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span class="pre">'progress'</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'details'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">log_level</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Literal</span><span class="p"><span class="pre">[</span></span><span class="s"><span class="pre">'no'</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span class="pre">'info'</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span class="pre">'trace'</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'info'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxiter</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">2000</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">xtol</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1e-06</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ftol</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1e-06</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">minimize_method</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Literal</span><span class="p"><span class="pre">[</span></span><span class="s"><span class="pre">'nm'</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span class="pre">'powell'</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span class="pre">'bobyqa'</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span class="pre">'lbfgs'</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span class="pre">'lbfgs_b'</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'bobyqa'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">LaplacianLikeAlgorithmSettings</span></span></span><a class="headerlink" href="#masmod.api.estimation.estimation_method.Laplace" title="Permalink to this definition">#</a></dt>
+<dd><p>Laplace Estimation</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>print</strong> (<em>int</em><em>, </em><em>optional</em>) – Print details for every {print} iterations, note this only works when <cite>print_type=’details’</cite>. Default to <cite>1</cite></p></li>
+<li><p><strong>print_type</strong> (<em>Literal</em><em>[</em><em>&quot;details&quot;</em><em>, </em><em>&quot;progress&quot;</em><em>]</em><em>, </em><em>optional</em>) – Print iteration with details (<cite>x</cite> and <cite>f</cite>) or progress (progress-bar like visualization). Default to <cite>‘details’</cite></p></li>
+<li><p><strong>log_level</strong> (<em>Literal</em><em>[</em><em>&quot;no&quot;</em><em>, </em><em>&quot;info&quot;</em><em>, </em><em>&quot;trace&quot;</em><em>]</em><em>, </em><em>optional</em>) – Level to print log, if <cite>log_level=’no’</cite>, nothing will be print. Default to <cite>‘info’</cite></p></li>
+<li><p><strong>maxiter</strong> (<em>int</em><em>, </em><em>optional</em>) – Max number of iterations. Default to <cite>2000</cite></p></li>
+<li><p><strong>xtol</strong> (<em>float</em><em>, </em><em>optional</em>) – Converging <cite>x</cite> tolerance. Default to <cite>1e-6</cite></p></li>
+<li><p><strong>ftol</strong> (<em>float</em><em>, </em><em>optional</em>) – Converging <cite>f</cite> (objective function) tolerance. Default to <cite>1e-6</cite></p></li>
+<li><p><strong>minimize_method</strong> (<em>Literal</em><em>[</em><em>&quot;nm&quot;</em><em>, </em><em>&quot;powell&quot;</em><em>, </em><em>&quot;bobyqa&quot;</em><em>, </em><em>&quot;lbfgs&quot;</em><em>, </em><em>&quot;lbfgs_b&quot;</em><em>]</em><em>, </em><em>optional</em>) – Minimization method (optimizer choice). Default to <cite>‘bobyqa’</cite></p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="masmod.api.estimation.estimation_method.SAEM">
+<span class="sig-prename descclassname"><span class="pre">masmod.api.estimation.estimation_method.</span></span><span class="sig-name descname"><span class="pre">SAEM</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">seed</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">46</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_burnin</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_chain</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_mode1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_mode2</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_mode3</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_mode4</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kappa_min</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0.01</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kappa_max</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">100.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">negative_feedback</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0.4</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">optimal_acceptance</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0.3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_stochastic</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">200</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_accumulative</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">100</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sa_omega</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0.95</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sa_sigma</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">alpha</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0.7</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">is_auto_converge</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">SAEMEstimationSettings</span></span></span><a class="headerlink" href="#masmod.api.estimation.estimation_method.SAEM" title="Permalink to this definition">#</a></dt>
+<dd><p>SAEM Estimation Method (Stochastic Approximation Expectation Maximum)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>seed</strong> (<em>int</em><em>, </em><em>optional</em>) – Seed for random number generator. Default to <cite>46</cite></p></li>
+<li><p><strong>n_burnin</strong> (<em>int</em><em>, </em><em>optional</em>) – Number of iterations to do in burnin phase. Default to <cite>5</cite></p></li>
+<li><p><strong>n_chain</strong> (<em>int</em><em>, </em><em>optional</em>) – Number of parallel Markov Chain. Default to <cite>2</cite></p></li>
+<li><p><strong>n_mode1</strong> (<em>int</em><em>, </em><em>optional</em>) – Number of iterations in Mode1 for MC sampling. Default to <cite>2</cite></p></li>
+<li><p><strong>n_mode2</strong> (<em>int</em><em>, </em><em>optional</em>) – Number of iterations in Mode2 for MC sampling. Default to <cite>0</cite></p></li>
+<li><p><strong>n_mode3</strong> (<em>int</em><em>, </em><em>optional</em>) – Number of iterations in Mode3 for MC sampling. Default to <cite>2</cite></p></li>
+<li><p><strong>n_mode4</strong> (<em>int</em><em>, </em><em>optional</em>) – Number of iterations in Mode4 for MC sampling. Default to <cite>0</cite></p></li>
+<li><p><strong>kappa_min</strong> (<em>float</em><em>, </em><em>optional</em>) – Minimum adjust factor for MC sampling. Default to <cite>0.01</cite></p></li>
+<li><p><strong>(</strong><strong>float</strong> (<em>kappa_max</em>) – Maximum adjust factor for MC sampling. Default to <cite>100.0</cite></p></li>
+<li><p><strong>optional</strong> – Maximum adjust factor for MC sampling. Default to <cite>100.0</cite></p></li>
+<li><p><strong>negative_feedback</strong> (<em>float</em><em>, </em><em>optional</em>) – Negative feedback rate for MC sampling. Default to <cite>0.4</cite></p></li>
+<li><p><strong>optimal_acceptance</strong> (<em>float</em><em>, </em><em>optional</em>) – Optimal rate of acceptance for MC sampling. Default to <cite>0.3</cite></p></li>
+<li><p><strong>n_stochastic</strong> (<em>int</em><em>, </em><em>optional</em>) – Number of iterations in stochastic approximation phase. Default to <cite>200</cite></p></li>
+<li><p><strong>n_accumulative</strong> (<em>int</em><em>, </em><em>optional</em>) – Number of iterations in accumulative approximation phase. Default to <cite>100</cite></p></li>
+<li><p><strong>sa_omega</strong> (<em>float</em><em>, </em><em>optional</em>) – Decreasing rate Simulated-Annealing for Omega. Default to <cite>0.95</cite></p></li>
+<li><p><strong>sa_sigma</strong> (<em>float</em><em>, </em><em>optional</em>) – Decreasing rate Simulated-Annealing for Sigma. Default to <cite>1.0</cite></p></li>
+<li><p><strong>alpha</strong> (<em>float</em><em>, </em><em>optional</em>) – Learning rate in accumulative approximation phase. Default to <cite>0.7</cite></p></li>
+<li><p><strong>is_auto_converge</strong> (<em>bool</em><em>, </em><em>optional</em>) – Whether to use auto converge criterial. Default to <cite>True</cite></p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-masmod.api.estimation.estimation_result">
+<span id="masmod-api-estimation-estimation-result-module"></span><h2>masmod.api.estimation.estimation_result module<a class="headerlink" href="#module-masmod.api.estimation.estimation_result" title="Permalink to this heading">#</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="masmod.api.estimation.estimation_result.EstimationResult">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">masmod.api.estimation.estimation_result.</span></span><span class="sig-name descname"><span class="pre">EstimationResult</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model_ptr</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DittoPopModel</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mod</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">InterpretedModule</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ditto_est_results</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DittoEstimationResult</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elapsed_time</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">timedelta</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">previous_est_result</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#masmod.api.estimation.estimation_result.EstimationResult" title="masmod.api.estimation.estimation_result.EstimationResult"><span class="pre">EstimationResult</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#masmod.api.estimation.estimation_result.EstimationResult" title="Permalink to this definition">#</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py property">
+<dt class="sig sig-object py" id="masmod.api.estimation.estimation_result.EstimationResult.converged">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">converged</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#masmod.api.estimation.estimation_result.EstimationResult.converged" title="Permalink to this definition">#</a></dt>
+<dd><p>If the estimation is converged</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="masmod.api.estimation.estimation_result.EstimationResult.elapsed_time">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">elapsed_time</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">timedelta</span></em><a class="headerlink" href="#masmod.api.estimation.estimation_result.EstimationResult.elapsed_time" title="Permalink to this definition">#</a></dt>
+<dd><p>Total elapsed time for the estimation</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="masmod.api.estimation.estimation_result.EstimationResult.empirical_bayesian_estimation">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">empirical_bayesian_estimation</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">numpy.ndarray</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">numpy.dtype</span><span class="p"><span class="pre">[</span></span><span class="pre">numpy.float64</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#masmod.api.estimation.estimation_result.EstimationResult.empirical_bayesian_estimation" title="Permalink to this definition">#</a></dt>
+<dd><p>Empirical Bayesian Estimation (eta_hat)</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="masmod.api.estimation.estimation_result.EstimationResult.final_obj_val">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">final_obj_val</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#masmod.api.estimation.estimation_result.EstimationResult.final_obj_val" title="Permalink to this definition">#</a></dt>
+<dd><p>Final objective function value</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="masmod.api.estimation.estimation_result.EstimationResult.final_pop_params">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">final_pop_params</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="masmod.api.html#masmod.api.PopParams" title="mas.libs.masmod.api.parameters.PopParams"><span class="pre">PopParams</span></a></em><a class="headerlink" href="#masmod.api.estimation.estimation_result.EstimationResult.final_pop_params" title="Permalink to this definition">#</a></dt>
+<dd><p>Final population parameter</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="masmod.api.estimation.estimation_result.EstimationResult.iter_details">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">iter_details</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">mas.libs.ditto.build._ditto.nonlinear.estimation.DittoEstimationIterationResults</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#masmod.api.estimation.estimation_result.EstimationResult.iter_details" title="Permalink to this definition">#</a></dt>
+<dd><p>Iteration details</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="masmod.api.estimation.estimation_result.EstimationResult.n_iter">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">n_iter</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><a class="headerlink" href="#masmod.api.estimation.estimation_result.EstimationResult.n_iter" title="Permalink to this definition">#</a></dt>
+<dd><p>Total number of iterations</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="masmod.api.estimation.estimation_result.EstimationResult.previous_est_result">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">previous_est_result</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#masmod.api.estimation.estimation_result.EstimationResult" title="masmod.api.estimation.estimation_result.EstimationResult"><span class="pre">masmod.api.estimation.estimation_result.EstimationResult</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#masmod.api.estimation.estimation_result.EstimationResult.previous_est_result" title="Permalink to this definition">#</a></dt>
+<dd><p>Previous estimation result</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="masmod.api.estimation.estimation_result.EstimationResult.shrinkage">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">shrinkage</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ndarray</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">dtype</span><span class="p"><span class="pre">[</span></span><span class="pre">float64</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#masmod.api.estimation.estimation_result.EstimationResult.shrinkage" title="Permalink to this definition">#</a></dt>
+<dd><p>Shrinkage Of Omega</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-masmod.api.estimation.fit_result">
+<span id="masmod-api-estimation-fit-result-module"></span><h2>masmod.api.estimation.fit_result module<a class="headerlink" href="#module-masmod.api.estimation.fit_result" title="Permalink to this heading">#</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="masmod.api.estimation.fit_result.EstimationResult">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">masmod.api.estimation.fit_result.</span></span><span class="sig-name descname"><span class="pre">EstimationResult</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model_ptr</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DittoPopModel</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mod</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">InterpretedModule</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ditto_est_results</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DittoEstimationResult</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elapsed_time</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">timedelta</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">previous_est_result</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#masmod.api.estimation.fit_result.EstimationResult" title="mas.libs.masmod.api.estimation.estimation_result.EstimationResult"><span class="pre">EstimationResult</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#masmod.api.estimation.fit_result.EstimationResult" title="Permalink to this definition">#</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py property">
+<dt class="sig sig-object py" id="masmod.api.estimation.fit_result.EstimationResult.converged">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">converged</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#masmod.api.estimation.fit_result.EstimationResult.converged" title="Permalink to this definition">#</a></dt>
+<dd><p>If the estimation is converged</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="masmod.api.estimation.fit_result.EstimationResult.elapsed_time">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">elapsed_time</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">timedelta</span></em><a class="headerlink" href="#masmod.api.estimation.fit_result.EstimationResult.elapsed_time" title="Permalink to this definition">#</a></dt>
+<dd><p>Total elapsed time for the estimation</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="masmod.api.estimation.fit_result.EstimationResult.empirical_bayesian_estimation">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">empirical_bayesian_estimation</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">numpy.ndarray</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">numpy.dtype</span><span class="p"><span class="pre">[</span></span><span class="pre">numpy.float64</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#masmod.api.estimation.fit_result.EstimationResult.empirical_bayesian_estimation" title="Permalink to this definition">#</a></dt>
+<dd><p>Empirical Bayesian Estimation (eta_hat)</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="masmod.api.estimation.fit_result.EstimationResult.final_obj_val">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">final_obj_val</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#masmod.api.estimation.fit_result.EstimationResult.final_obj_val" title="Permalink to this definition">#</a></dt>
+<dd><p>Final objective function value</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="masmod.api.estimation.fit_result.EstimationResult.final_pop_params">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">final_pop_params</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="masmod.api.html#masmod.api.PopParams" title="mas.libs.masmod.api.parameters.PopParams"><span class="pre">PopParams</span></a></em><a class="headerlink" href="#masmod.api.estimation.fit_result.EstimationResult.final_pop_params" title="Permalink to this definition">#</a></dt>
+<dd><p>Final population parameter</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="masmod.api.estimation.fit_result.EstimationResult.iter_details">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">iter_details</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">mas.libs.ditto.build._ditto.nonlinear.estimation.DittoEstimationIterationResults</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#masmod.api.estimation.fit_result.EstimationResult.iter_details" title="Permalink to this definition">#</a></dt>
+<dd><p>Iteration details</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="masmod.api.estimation.fit_result.EstimationResult.n_iter">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">n_iter</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><a class="headerlink" href="#masmod.api.estimation.fit_result.EstimationResult.n_iter" title="Permalink to this definition">#</a></dt>
+<dd><p>Total number of iterations</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="masmod.api.estimation.fit_result.EstimationResult.previous_est_result">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">previous_est_result</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#masmod.api.estimation.fit_result.EstimationResult" title="mas.libs.masmod.api.estimation.estimation_result.EstimationResult"><span class="pre">mas.libs.masmod.api.estimation.estimation_result.EstimationResult</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#masmod.api.estimation.fit_result.EstimationResult.previous_est_result" title="Permalink to this definition">#</a></dt>
+<dd><p>Previous estimation result</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="masmod.api.estimation.fit_result.EstimationResult.shrinkage">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">shrinkage</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ndarray</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">dtype</span><span class="p"><span class="pre">[</span></span><span class="pre">float64</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#masmod.api.estimation.fit_result.EstimationResult.shrinkage" title="Permalink to this definition">#</a></dt>
+<dd><p>Shrinkage Of Omega</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-masmod.api.estimation.vpc">
+<span id="masmod-api-estimation-vpc-module"></span><h2>masmod.api.estimation.vpc module<a class="headerlink" href="#module-masmod.api.estimation.vpc" title="Permalink to this heading">#</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="masmod.api.estimation.vpc.VpcResult">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">masmod.api.estimation.vpc.</span></span><span class="sig-name descname"><span class="pre">VpcResult</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataFrame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">subject_id_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">meta</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">level</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">idv_columns</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dv_columns</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label_idv</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label_dv</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">auto_bin</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">int</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">min_points</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">idv_group</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">is_plot_subgraph</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#masmod.api.estimation.vpc.VpcResult" title="Permalink to this definition">#</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">AbstractGroupbyablePlotlyPlot</span></code></p>
+<dl class="py property">
+<dt class="sig sig-object py" id="masmod.api.estimation.vpc.VpcResult.ci_df">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ci_df</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">DataFrame</span></em><a class="headerlink" href="#masmod.api.estimation.vpc.VpcResult.ci_df" title="Permalink to this definition">#</a></dt>
+<dd><p>The confidence interval data in VPC</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="masmod.api.estimation.vpc.VpcResult.level">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">level</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#masmod.api.estimation.vpc.VpcResult.level" title="Permalink to this definition">#</a></dt>
+<dd><p>The confidence interval level</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="masmod.api.estimation.vpc.VpcResult.show_bin">
+<span class="sig-name descname"><span class="pre">show_bin</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">auto_bin</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">int</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">min_points_in_each_bin</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#masmod.api.estimation.vpc.VpcResult" title="masmod.api.estimation.vpc.VpcResult"><span class="pre">VpcResult</span></a></span></span><a class="headerlink" href="#masmod.api.estimation.vpc.VpcResult.show_bin" title="Permalink to this definition">#</a></dt>
+<dd><p>Set the auto bin settings in VPC</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>auto_bin</strong> (<em>bool</em><em> | </em><em>int</em><em> | </em><em>tuple</em><em>[</em><em>int</em><em>, </em><em>int</em><em>]</em><em>, </em><em>optional</em>) – Whether to automatically calculate bin, optional parameters include False: regardless of bin; True : Calculated according to the default setting; int: the number of bins; tuple[int, int]: the range for bins.</p></li>
+<li><p><strong>min_points_in_each_bin</strong> (<em>int</em><em> | </em><em>None</em><em>, </em><em>optional</em>) – The min number of points in each bin, default = 10.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The result with new bins</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="#masmod.api.estimation.vpc.VpcResult" title="masmod.api.estimation.vpc.VpcResult">VpcResult</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="masmod.api.estimation.vpc.VpcResult.show_level">
+<span class="sig-name descname"><span class="pre">show_level</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">level</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#masmod.api.estimation.vpc.VpcResult" title="masmod.api.estimation.vpc.VpcResult"><span class="pre">VpcResult</span></a></span></span><a class="headerlink" href="#masmod.api.estimation.vpc.VpcResult.show_level" title="Permalink to this definition">#</a></dt>
+<dd><p>Change the confidence interval level in bootstrap</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>level</strong> (<em>float</em>) – confidence interval level, between 0~1</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The result with new confidence interval level</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="#masmod.api.estimation.vpc.VpcResult" title="masmod.api.estimation.vpc.VpcResult">VpcResult</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="masmod.api.estimation.vpc.VpcResult.simulate_df">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">simulate_df</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">DataFrame</span></em><a class="headerlink" href="#masmod.api.estimation.vpc.VpcResult.simulate_df" title="Permalink to this definition">#</a></dt>
+<dd><p>Simulation data in VPC</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="masmod.api.estimation.vpc.vpc">
+<span class="sig-prename descclassname"><span class="pre">masmod.api.estimation.vpc.</span></span><span class="sig-name descname"><span class="pre">vpc</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fit_result</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="masmod.api.html#masmod.api.FitResult" title="mas.libs.masmod.api.estimation.fit_result.FitResult"><span class="pre">FitResult</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">samples</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">level</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0.95</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">auto_bin</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">int</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">min_points_in_each_bin</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'Visual</span> <span class="pre">Predictive</span> <span class="pre">Check'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">idv_columns</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dv_columns</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label_idv</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label_dv</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#masmod.api.estimation.vpc.VpcResult" title="masmod.api.estimation.vpc.VpcResult"><span class="pre">VpcResult</span></a></span></span><a class="headerlink" href="#masmod.api.estimation.vpc.vpc" title="Permalink to this definition">#</a></dt>
+<dd><p>Plot VPC figure</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>fit_result</strong> – The result of the model fit</p></li>
+<li><p><strong>samples</strong> – The number of simulations of the VPC</p></li>
+<li><p><strong>level</strong> – The range of confidence intervals used by the VPC, between 0~1</p></li>
+<li><p><strong>auto_bin</strong> – Whether to automatically calculate bin, optional parameters include False: regardless of bin; True : Calculated according to the default setting; int: the number of bins; tuple[int, int]: the range for bins</p></li>
+<li><p><strong>min_points_in_each_bin</strong> – The min number of points in each bin, default = 10</p></li>
+<li><p><strong>title</strong> – The title of the VPC figure,which defaults to “Visual Predictive Check”</p></li>
+<li><p><strong>idv_columns</strong> – The name of the idv column used by plotting, if you do not define the column defined by the defined idv column when the model was built</p></li>
+<li><p><strong>dv_columns</strong> – The name of the dv column used by plotting, if you do not define the column defined by the defined dv column when the model was built</p></li>
+<li><p><strong>label_idv</strong> – The text label of the horizontal axis corresponding to the idv, if not defined, defaults to the column name in the data</p></li>
+<li><p><strong>label_dv</strong> – The text label of the vertical axis corresponding to the dv, if not defined, defaults to the column name in the data</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>VPC graph objects, which can be displayed by .show() and get by .figure().</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-masmod.api.estimation.wres">
+<span id="masmod-api-estimation-wres-module"></span><h2>masmod.api.estimation.wres module<a class="headerlink" href="#module-masmod.api.estimation.wres" title="Permalink to this heading">#</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="masmod.api.estimation.wres.Wres">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">masmod.api.estimation.wres.</span></span><span class="sig-name descname"><span class="pre">Wres</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">est_result</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DittoEstimationResult</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">model_ptr</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DittoPopModel</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">method</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DittoEstimationMethod</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#masmod.api.estimation.wres.Wres" title="Permalink to this definition">#</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="masmod.api.estimation.wres.Wres.compute_wres_list">
+<span class="sig-name descname"><span class="pre">compute_wres_list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">option</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Literal</span><span class="p"><span class="pre">[</span></span><span class="s"><span class="pre">'WRES'</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span class="pre">'CWRES'</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span class="pre">'CWRESI'</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span class="pre">'IWRES'</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span class="pre">'CIWRES'</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span class="pre">'CIWRESI'</span></span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">numpy.ndarray</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">numpy.dtype</span><span class="p"><span class="pre">[</span></span><span class="pre">numpy.float64</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#masmod.api.estimation.wres.Wres.compute_wres_list" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="masmod.api.estimation.wres.Wres.compute_wres_series">
+<span class="sig-name descname"><span class="pre">compute_wres_series</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">option</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Literal</span><span class="p"><span class="pre">[</span></span><span class="s"><span class="pre">'WRES'</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span class="pre">'CWRES'</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span class="pre">'CWRESI'</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span class="pre">'IWRES'</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span class="pre">'CIWRES'</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span class="pre">'CIWRESI'</span></span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Series</span></span></span><a class="headerlink" href="#masmod.api.estimation.wres.Wres.compute_wres_series" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-masmod.api.estimation">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-masmod.api.estimation" title="Permalink to this heading">#</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="masmod.api.estimation.EstimationResult">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">masmod.api.estimation.</span></span><span class="sig-name descname"><span class="pre">EstimationResult</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model_ptr</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DittoPopModel</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mod</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">InterpretedModule</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ditto_est_results</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DittoEstimationResult</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elapsed_time</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">timedelta</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">previous_est_result</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#masmod.api.estimation.estimation_result.EstimationResult" title="masmod.api.estimation.estimation_result.EstimationResult"><span class="pre">EstimationResult</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#masmod.api.estimation.EstimationResult" title="Permalink to this definition">#</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py property">
+<dt class="sig sig-object py" id="masmod.api.estimation.EstimationResult.converged">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">converged</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#masmod.api.estimation.EstimationResult.converged" title="Permalink to this definition">#</a></dt>
+<dd><p>If the estimation is converged</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="masmod.api.estimation.EstimationResult.elapsed_time">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">elapsed_time</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">timedelta</span></em><a class="headerlink" href="#masmod.api.estimation.EstimationResult.elapsed_time" title="Permalink to this definition">#</a></dt>
+<dd><p>Total elapsed time for the estimation</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="masmod.api.estimation.EstimationResult.empirical_bayesian_estimation">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">empirical_bayesian_estimation</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">numpy.ndarray</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">numpy.dtype</span><span class="p"><span class="pre">[</span></span><span class="pre">numpy.float64</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#masmod.api.estimation.EstimationResult.empirical_bayesian_estimation" title="Permalink to this definition">#</a></dt>
+<dd><p>Empirical Bayesian Estimation (eta_hat)</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="masmod.api.estimation.EstimationResult.final_obj_val">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">final_obj_val</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#masmod.api.estimation.EstimationResult.final_obj_val" title="Permalink to this definition">#</a></dt>
+<dd><p>Final objective function value</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="masmod.api.estimation.EstimationResult.final_pop_params">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">final_pop_params</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="masmod.api.html#masmod.api.PopParams" title="mas.libs.masmod.api.parameters.PopParams"><span class="pre">PopParams</span></a></em><a class="headerlink" href="#masmod.api.estimation.EstimationResult.final_pop_params" title="Permalink to this definition">#</a></dt>
+<dd><p>Final population parameter</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="masmod.api.estimation.EstimationResult.iter_details">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">iter_details</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">mas.libs.ditto.build._ditto.nonlinear.estimation.DittoEstimationIterationResults</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#masmod.api.estimation.EstimationResult.iter_details" title="Permalink to this definition">#</a></dt>
+<dd><p>Iteration details</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="masmod.api.estimation.EstimationResult.n_iter">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">n_iter</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><a class="headerlink" href="#masmod.api.estimation.EstimationResult.n_iter" title="Permalink to this definition">#</a></dt>
+<dd><p>Total number of iterations</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="masmod.api.estimation.EstimationResult.previous_est_result">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">previous_est_result</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#masmod.api.estimation.estimation_result.EstimationResult" title="masmod.api.estimation.estimation_result.EstimationResult"><span class="pre">masmod.api.estimation.estimation_result.EstimationResult</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#masmod.api.estimation.EstimationResult.previous_est_result" title="Permalink to this definition">#</a></dt>
+<dd><p>Previous estimation result</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="masmod.api.estimation.EstimationResult.shrinkage">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">shrinkage</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ndarray</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">dtype</span><span class="p"><span class="pre">[</span></span><span class="pre">float64</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#masmod.api.estimation.EstimationResult.shrinkage" title="Permalink to this definition">#</a></dt>
+<dd><p>Shrinkage Of Omega</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="masmod.api.estimation.FO">
+<span class="sig-prename descclassname"><span class="pre">masmod.api.estimation.</span></span><span class="sig-name descname"><span class="pre">FO</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">print</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">print_type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Literal</span><span class="p"><span class="pre">[</span></span><span class="s"><span class="pre">'details'</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span class="pre">'progress'</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'details'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">log_level</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Literal</span><span class="p"><span class="pre">[</span></span><span class="s"><span class="pre">'no'</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span class="pre">'info'</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span class="pre">'trace'</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'info'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxiter</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">2000</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">xtol</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1e-06</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ftol</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1e-06</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">minimize_method</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Literal</span><span class="p"><span class="pre">[</span></span><span class="s"><span class="pre">'nm'</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span class="pre">'powell'</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span class="pre">'bobyqa'</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span class="pre">'lbfgs'</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span class="pre">'lbfgs_b'</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'bobyqa'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">LaplacianLikeAlgorithmSettings</span></span></span><a class="headerlink" href="#masmod.api.estimation.FO" title="Permalink to this definition">#</a></dt>
+<dd><p>First Order Estimation</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>print</strong> (<em>int</em><em>, </em><em>optional</em>) – Print details for every {print} iterations, note this only works when <cite>print_type=’details’</cite>. Default to <cite>1</cite></p></li>
+<li><p><strong>print_type</strong> (<em>Literal</em><em>[</em><em>&quot;details&quot;</em><em>, </em><em>&quot;progress&quot;</em><em>]</em><em>, </em><em>optional</em>) – Print iteration with details (<cite>x</cite> and <cite>f</cite>) or progress (progress-bar like visualization). Default to <cite>‘details’</cite></p></li>
+<li><p><strong>log_level</strong> (<em>Literal</em><em>[</em><em>&quot;no&quot;</em><em>, </em><em>&quot;info&quot;</em><em>, </em><em>&quot;trace&quot;</em><em>]</em><em>, </em><em>optional</em>) – Level to print log, if <cite>log_level=’no’</cite>, nothing will be print. Default to <cite>‘info’</cite></p></li>
+<li><p><strong>maxiter</strong> (<em>int</em><em>, </em><em>optional</em>) – Max number of iterations. Default to <cite>2000</cite></p></li>
+<li><p><strong>xtol</strong> (<em>float</em><em>, </em><em>optional</em>) – Converging <cite>x</cite> tolerance. Default to <cite>1e-6</cite></p></li>
+<li><p><strong>ftol</strong> (<em>float</em><em>, </em><em>optional</em>) – Converging <cite>f</cite> (objective function) tolerance. Default to <cite>1e-6</cite></p></li>
+<li><p><strong>minimize_method</strong> (<em>Literal</em><em>[</em><em>&quot;nm&quot;</em><em>, </em><em>&quot;powell&quot;</em><em>, </em><em>&quot;bobyqa&quot;</em><em>, </em><em>&quot;lbfgs&quot;</em><em>, </em><em>&quot;lbfgs_b&quot;</em><em>]</em><em>, </em><em>optional</em>) – Minimization method (optimizer choice). Default to <cite>‘bobyqa’</cite></p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="masmod.api.estimation.FOCEi">
+<span class="sig-prename descclassname"><span class="pre">masmod.api.estimation.</span></span><span class="sig-name descname"><span class="pre">FOCEi</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">print</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">print_type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Literal</span><span class="p"><span class="pre">[</span></span><span class="s"><span class="pre">'details'</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span class="pre">'progress'</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'details'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">log_level</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Literal</span><span class="p"><span class="pre">[</span></span><span class="s"><span class="pre">'no'</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span class="pre">'info'</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span class="pre">'trace'</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'info'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxiter</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">2000</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">xtol</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1e-06</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ftol</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1e-06</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">minimize_method</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Literal</span><span class="p"><span class="pre">[</span></span><span class="s"><span class="pre">'nm'</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span class="pre">'powell'</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span class="pre">'bobyqa'</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span class="pre">'lbfgs'</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span class="pre">'lbfgs_b'</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'bobyqa'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">LaplacianLikeAlgorithmSettings</span></span></span><a class="headerlink" href="#masmod.api.estimation.FOCEi" title="Permalink to this definition">#</a></dt>
+<dd><p>First Order Conditional Estimation with Interaction</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>print</strong> (<em>int</em><em>, </em><em>optional</em>) – Print details for every {print} iterations, note this only works when <cite>print_type=’details’</cite>. Default to <cite>1</cite></p></li>
+<li><p><strong>print_type</strong> (<em>Literal</em><em>[</em><em>&quot;details&quot;</em><em>, </em><em>&quot;progress&quot;</em><em>]</em><em>, </em><em>optional</em>) – Print iteration with details (<cite>x</cite> and <cite>f</cite>) or progress (progress-bar like visualization). Default to <cite>‘details’</cite></p></li>
+<li><p><strong>log_level</strong> (<em>Literal</em><em>[</em><em>&quot;no&quot;</em><em>, </em><em>&quot;info&quot;</em><em>, </em><em>&quot;trace&quot;</em><em>]</em><em>, </em><em>optional</em>) – Level to print log, if <cite>log_level=’no’</cite>, nothing will be print. Default to <cite>‘info’</cite></p></li>
+<li><p><strong>maxiter</strong> (<em>int</em><em>, </em><em>optional</em>) – Max number of iterations. Default to <cite>2000</cite></p></li>
+<li><p><strong>xtol</strong> (<em>float</em><em>, </em><em>optional</em>) – Converging <cite>x</cite> tolerance. Default to <cite>1e-6</cite></p></li>
+<li><p><strong>ftol</strong> (<em>float</em><em>, </em><em>optional</em>) – Converging <cite>f</cite> (objective function) tolerance. Default to <cite>1e-6</cite></p></li>
+<li><p><strong>minimize_method</strong> (<em>Literal</em><em>[</em><em>&quot;nm&quot;</em><em>, </em><em>&quot;powell&quot;</em><em>, </em><em>&quot;bobyqa&quot;</em><em>, </em><em>&quot;lbfgs&quot;</em><em>, </em><em>&quot;lbfgs_b&quot;</em><em>]</em><em>, </em><em>optional</em>) – Minimization method (optimizer choice). Default to <cite>‘bobyqa’</cite></p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="masmod.api.estimation.FitResult">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">masmod.api.estimation.</span></span><span class="sig-name descname"><span class="pre">FitResult</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model_ptr</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DittoPopModel</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="masmod.api.html#masmod.api.ModelData" title="mas.libs.masmod.api.data._data.ModelData"><span class="pre">ModelData</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">mod</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">InterpretedModule</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">estimator</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DittoEstimator</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">est_results</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#masmod.api.estimation.fit_result.EstimationResult" title="mas.libs.masmod.api.estimation.estimation_result.EstimationResult"><span class="pre">mas.libs.masmod.api.estimation.estimation_result.EstimationResult</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">init_pop_params</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="masmod.api.html#masmod.api.PopParams" title="mas.libs.masmod.api.parameters.PopParams"><span class="pre">PopParams</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">fit_args</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#masmod.api.estimation.FitResult" title="Permalink to this definition">#</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="masmod.api.estimation.FitResult.compute_se">
+<span class="sig-name descname"><span class="pre">compute_se</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">se_option</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Literal</span><span class="p"><span class="pre">[</span></span><span class="s"><span class="pre">'S'</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span class="pre">'R'</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span class="pre">'RS'</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">ndarray</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">dtype</span><span class="p"><span class="pre">[</span></span><span class="pre">float64</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#masmod.api.estimation.FitResult.compute_se" title="Permalink to this definition">#</a></dt>
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">compute_se</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">se_option</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Literal</span><span class="p"><span class="pre">[</span></span><span class="s"><span class="pre">'LINEAR'</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span class="pre">'SA'</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">saem_se_settings</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">mas.libs.ditto.build._ditto.nonlinear.estimation.DittoSASESetting</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">ndarray</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">dtype</span><span class="p"><span class="pre">[</span></span><span class="pre">float64</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="masmod.api.estimation.FitResult.converged">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">converged</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#masmod.api.estimation.FitResult.converged" title="Permalink to this definition">#</a></dt>
+<dd><p>If the fit is converged</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="masmod.api.estimation.FitResult.elapsed_time">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">elapsed_time</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">timedelta</span></em><a class="headerlink" href="#masmod.api.estimation.FitResult.elapsed_time" title="Permalink to this definition">#</a></dt>
+<dd><p>Total elapsed time for the fit</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="masmod.api.estimation.FitResult.empirical_bayesian_estimation">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">empirical_bayesian_estimation</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">numpy.ndarray</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">numpy.dtype</span><span class="p"><span class="pre">[</span></span><span class="pre">numpy.float64</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#masmod.api.estimation.FitResult.empirical_bayesian_estimation" title="Permalink to this definition">#</a></dt>
+<dd><p>Empirical Bayesian Estimation (eta_hat)</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="masmod.api.estimation.FitResult.estimations">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">estimations</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#masmod.api.estimation.fit_result.EstimationResult" title="mas.libs.masmod.api.estimation.estimation_result.EstimationResult"><span class="pre">mas.libs.masmod.api.estimation.estimation_result.EstimationResult</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#masmod.api.estimation.FitResult.estimations" title="Permalink to this definition">#</a></dt>
+<dd><p>Result of each estimation</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="masmod.api.estimation.FitResult.final_obj_val">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">final_obj_val</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#masmod.api.estimation.FitResult.final_obj_val" title="Permalink to this definition">#</a></dt>
+<dd><p>Final objective function value</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="masmod.api.estimation.FitResult.final_pop_params">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">final_pop_params</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="masmod.api.html#masmod.api.PopParams" title="mas.libs.masmod.api.parameters.PopParams"><span class="pre">PopParams</span></a></em><a class="headerlink" href="#masmod.api.estimation.FitResult.final_pop_params" title="Permalink to this definition">#</a></dt>
+<dd><p>Final population parameter</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="masmod.api.estimation.FitResult.ipred">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ipred</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">DataFrame</span></em><a class="headerlink" href="#masmod.api.estimation.FitResult.ipred" title="Permalink to this definition">#</a></dt>
+<dd><p>Individual Prediction</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="masmod.api.estimation.FitResult.iter_details">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">iter_details</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">mas.libs.ditto.build._ditto.nonlinear.estimation.DittoEstimationIterationResults</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#masmod.api.estimation.FitResult.iter_details" title="Permalink to this definition">#</a></dt>
+<dd><p>Iteration details</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="masmod.api.estimation.FitResult.n_iter">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">n_iter</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><a class="headerlink" href="#masmod.api.estimation.FitResult.n_iter" title="Permalink to this definition">#</a></dt>
+<dd><p>Total number of iterations</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="masmod.api.estimation.FitResult.plot_goodness_of_fit">
+<span class="sig-name descname"><span class="pre">plot_goodness_of_fit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">title</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'Goodness</span> <span class="pre">of</span> <span class="pre">fit'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">idv_columns</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dv_columns</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pred_columns</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'_PRED_'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ipred_columns</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'_IPRED_'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wres_option</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Literal</span><span class="p"><span class="pre">[</span></span><span class="s"><span class="pre">'WRES'</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span class="pre">'CWRES'</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span class="pre">'CWRESI'</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'CWRESI'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">iwres_option</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Literal</span><span class="p"><span class="pre">[</span></span><span class="s"><span class="pre">'IWRES'</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span class="pre">'CIWRES'</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span class="pre">'CIWRESI'</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'CIWRESI'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label_idv</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label_dv</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'DV'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label_pred</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'PRED'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label_ipred</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'IPRED'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label_wres</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label_iwres</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">outliers</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">4</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="masmod.api.html#masmod.api.plot.GofPlot" title="mas.libs.masmod.plot.gof_plot.GofPlot"><span class="pre">GofPlot</span></a></span></span><a class="headerlink" href="#masmod.api.estimation.FitResult.plot_goodness_of_fit" title="Permalink to this definition">#</a></dt>
+<dd><p>Plot goodness of fit</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>title</strong> – The title of the goodness of fit, which defaults to “Goodness Of Fit”</p></li>
+<li><p><strong>idv_columns</strong> – The name of the idv column used by plotting, if you do not define the column defined by the defined idv column when the model was built</p></li>
+<li><p><strong>dv_columns</strong> – The name of the dv column used by plotting, if you do not define the column defined by the defined dv column when the model was built</p></li>
+<li><p><strong>pred_columns</strong> – The name of the population prediction column used by plotting, which defaults to “PRED”</p></li>
+<li><p><strong>ipred_columns</strong> – The name of the individual prediction column used by plotting, which defaults to “IPRED”</p></li>
+<li><p><strong>wres_option</strong> – The weighted residual type used in ploting, which can only be ‘WRES’, ‘CWRES’ or ‘CWRESI’, defaults to ‘CWRESI’</p></li>
+<li><p><strong>iwres_option</strong> – Theindividual weighted residual type used in ploting, which can only be ‘IWRES’, ‘CIWRES’ or ‘CIWRESI’, defaults to  ‘CIWRESI’</p></li>
+<li><p><strong>label_idv</strong> – The text label of the horizontal axis corresponding to the independent variable, if not defined, defaults to the column name in the data</p></li>
+<li><p><strong>label_dv</strong> – The text label of the horizontal axis corresponding to the dependent variable, which defaults to “DV”</p></li>
+<li><p><strong>label_pred</strong> – The text label of the horizontal axis corresponding to the population prediction, which defaults to “PRED”</p></li>
+<li><p><strong>label_ipred</strong> – The text label of the horizontal axis corresponding to the individual prediction, which defaults to “IPRED”</p></li>
+<li><p><strong>label_wres</strong> – The text label of the vertical axis corresponding to the weighted residual, which is the same as the type of weighted residual if not defined</p></li>
+<li><p><strong>label_iwres</strong> – The text label of the vertical axis corresponding to the individual weighted residual, which is the same as the type of individual weighted residual if do not be defined</p></li>
+<li><p><strong>outliers</strong> – Outliers ranges of the weighted residuals and individual weighted residuals, default = ±4</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Goodness of fit plot graph object, which can be displayed by .show() and get by .figure().</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="masmod.api.estimation.FitResult.plot_individual_fit">
+<span class="sig-name descname"><span class="pre">plot_individual_fit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">title</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'Individual</span> <span class="pre">fit</span> <span class="pre">plot'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">idv_columns</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dv_columns</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pred_columns</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'_PRED_'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ipred_columns</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'_IPRED_'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label_dv</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'DV'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label_pred</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'PRED'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label_ipred</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'IPRED'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rows</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cols</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="masmod.api.html#masmod.api.plot.IndFitPlot" title="mas.libs.masmod.plot.ind_fit_plot.IndFitPlot"><span class="pre">IndFitPlot</span></a></span></span><a class="headerlink" href="#masmod.api.estimation.FitResult.plot_individual_fit" title="Permalink to this definition">#</a></dt>
+<dd><p>Plot individual fits</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>title</strong> – The title of the individual fit plot, which defaults to “Individual Fit Plot”</p></li>
+<li><p><strong>idv_columns</strong> – The name of the idv column used by plotting, if you do not define the column defined by the defined idv column when the model was built</p></li>
+<li><p><strong>dv_columns</strong> – The name of the dv column used by plotting, if you do not define the column defined by the defined dv column when the model was built</p></li>
+<li><p><strong>pred_columns</strong> – The name of the population prediction column used by plotting, which defaults to “PRED”</p></li>
+<li><p><strong>ipred_columns</strong> – The name of the individual prediction column used by plotting, which defaults to “IPRED”</p></li>
+<li><p><strong>label_dv</strong> – The text label of the legend of the dependent variable which defaults to “DV”</p></li>
+<li><p><strong>label_pred</strong> – The text label of the legend of the population prediction which defaults to “PRED”</p></li>
+<li><p><strong>label_ipred</strong> – The text label of the legend of the individual prediction which defaults to “IPRED”</p></li>
+<li><p><strong>rows</strong> – The number of rows of the subgraph when plotting, if not defined, it will be automatically calculated</p></li>
+<li><p><strong>cols</strong> – The number of columns of the subgraph when plotting, if not defined,  it will be automatically calculated</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Individual fit plot graph objects, which can be displayed by .show() and get by .figure().</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="masmod.api.estimation.FitResult.plot_iteration_trace">
+<span class="sig-name descname"><span class="pre">plot_iteration_trace</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="masmod.api.html#masmod.api.plot.IterPlot" title="mas.libs.masmod.plot.iter_plot.IterPlot"><span class="pre">IterPlot</span></a></span></span><a class="headerlink" href="#masmod.api.estimation.FitResult.plot_iteration_trace" title="Permalink to this definition">#</a></dt>
+<dd><p>Plot Iteration trace</p>
+<p>Returns: The iteration plot</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="masmod.api.estimation.FitResult.pred">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">pred</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">DataFrame</span></em><a class="headerlink" href="#masmod.api.estimation.FitResult.pred" title="Permalink to this definition">#</a></dt>
+<dd><p>Population Prediction</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="masmod.api.estimation.FitResult.rse">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">rse</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ndarray</span><span class="p"><span class="pre">[</span></span><span class="pre">Literal</span><span class="p"><span class="pre">[</span></span><span class="m"><span class="pre">1</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">dtype</span><span class="p"><span class="pre">[</span></span><span class="pre">float64</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#masmod.api.estimation.FitResult.rse" title="Permalink to this definition">#</a></dt>
+<dd><p>Final standard error for parameters</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="masmod.api.estimation.FitResult.shrinkage">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">shrinkage</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ndarray</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">dtype</span><span class="p"><span class="pre">[</span></span><span class="pre">float64</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#masmod.api.estimation.FitResult.shrinkage" title="Permalink to this definition">#</a></dt>
+<dd><p>Shrinkage Of Omega</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="masmod.api.estimation.FitResult.simulate">
+<span class="sig-name descname"><span class="pre">simulate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="masmod.api.html#masmod.api.ModelData" title="mas.libs.masmod.api.data._data.ModelData"><span class="pre">ModelData</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="masmod.api.simulation.html#masmod.api.simulation.SimulationResult" title="mas.libs.masmod.api.simulation.simulation.SimulationResult"><span class="pre">SimulationResult</span></a></span></span><a class="headerlink" href="#masmod.api.estimation.FitResult.simulate" title="Permalink to this definition">#</a></dt>
+<dd><p>Simulate Entry Point</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>data</strong> (<a class="reference internal" href="masmod.api.html#masmod.api.ModelData" title="mas.libs.masmod.api.data._data.ModelData"><em>ModelData</em></a><em> | </em><em>None</em><em>, </em><em>optional</em>) – Simulation data. Defaults to the fitted data in mod.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The result of simulation with the final population parameters in fitting.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="masmod.api.simulation.html#masmod.api.simulation.simulation.SimulationResult" title="masmod.api.simulation.simulation.SimulationResult">SimulationResult</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="masmod.api.estimation.Laplace">
+<span class="sig-prename descclassname"><span class="pre">masmod.api.estimation.</span></span><span class="sig-name descname"><span class="pre">Laplace</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">print</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">print_type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Literal</span><span class="p"><span class="pre">[</span></span><span class="s"><span class="pre">'details'</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span class="pre">'progress'</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'details'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">log_level</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Literal</span><span class="p"><span class="pre">[</span></span><span class="s"><span class="pre">'no'</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span class="pre">'info'</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span class="pre">'trace'</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'info'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxiter</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">2000</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">xtol</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1e-06</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ftol</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1e-06</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">minimize_method</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Literal</span><span class="p"><span class="pre">[</span></span><span class="s"><span class="pre">'nm'</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span class="pre">'powell'</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span class="pre">'bobyqa'</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span class="pre">'lbfgs'</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span class="pre">'lbfgs_b'</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'bobyqa'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">LaplacianLikeAlgorithmSettings</span></span></span><a class="headerlink" href="#masmod.api.estimation.Laplace" title="Permalink to this definition">#</a></dt>
+<dd><p>Laplace Estimation</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>print</strong> (<em>int</em><em>, </em><em>optional</em>) – Print details for every {print} iterations, note this only works when <cite>print_type=’details’</cite>. Default to <cite>1</cite></p></li>
+<li><p><strong>print_type</strong> (<em>Literal</em><em>[</em><em>&quot;details&quot;</em><em>, </em><em>&quot;progress&quot;</em><em>]</em><em>, </em><em>optional</em>) – Print iteration with details (<cite>x</cite> and <cite>f</cite>) or progress (progress-bar like visualization). Default to <cite>‘details’</cite></p></li>
+<li><p><strong>log_level</strong> (<em>Literal</em><em>[</em><em>&quot;no&quot;</em><em>, </em><em>&quot;info&quot;</em><em>, </em><em>&quot;trace&quot;</em><em>]</em><em>, </em><em>optional</em>) – Level to print log, if <cite>log_level=’no’</cite>, nothing will be print. Default to <cite>‘info’</cite></p></li>
+<li><p><strong>maxiter</strong> (<em>int</em><em>, </em><em>optional</em>) – Max number of iterations. Default to <cite>2000</cite></p></li>
+<li><p><strong>xtol</strong> (<em>float</em><em>, </em><em>optional</em>) – Converging <cite>x</cite> tolerance. Default to <cite>1e-6</cite></p></li>
+<li><p><strong>ftol</strong> (<em>float</em><em>, </em><em>optional</em>) – Converging <cite>f</cite> (objective function) tolerance. Default to <cite>1e-6</cite></p></li>
+<li><p><strong>minimize_method</strong> (<em>Literal</em><em>[</em><em>&quot;nm&quot;</em><em>, </em><em>&quot;powell&quot;</em><em>, </em><em>&quot;bobyqa&quot;</em><em>, </em><em>&quot;lbfgs&quot;</em><em>, </em><em>&quot;lbfgs_b&quot;</em><em>]</em><em>, </em><em>optional</em>) – Minimization method (optimizer choice). Default to <cite>‘bobyqa’</cite></p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="masmod.api.estimation.SAEM">
+<span class="sig-prename descclassname"><span class="pre">masmod.api.estimation.</span></span><span class="sig-name descname"><span class="pre">SAEM</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">seed</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">46</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_burnin</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_chain</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_mode1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_mode2</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_mode3</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_mode4</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kappa_min</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0.01</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kappa_max</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">100.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">negative_feedback</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0.4</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">optimal_acceptance</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0.3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_stochastic</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">200</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_accumulative</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">100</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sa_omega</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0.95</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sa_sigma</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">alpha</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0.7</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">is_auto_converge</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">SAEMEstimationSettings</span></span></span><a class="headerlink" href="#masmod.api.estimation.SAEM" title="Permalink to this definition">#</a></dt>
+<dd><p>SAEM Estimation Method (Stochastic Approximation Expectation Maximum)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>seed</strong> (<em>int</em><em>, </em><em>optional</em>) – Seed for random number generator. Default to <cite>46</cite></p></li>
+<li><p><strong>n_burnin</strong> (<em>int</em><em>, </em><em>optional</em>) – Number of iterations to do in burnin phase. Default to <cite>5</cite></p></li>
+<li><p><strong>n_chain</strong> (<em>int</em><em>, </em><em>optional</em>) – Number of parallel Markov Chain. Default to <cite>2</cite></p></li>
+<li><p><strong>n_mode1</strong> (<em>int</em><em>, </em><em>optional</em>) – Number of iterations in Mode1 for MC sampling. Default to <cite>2</cite></p></li>
+<li><p><strong>n_mode2</strong> (<em>int</em><em>, </em><em>optional</em>) – Number of iterations in Mode2 for MC sampling. Default to <cite>0</cite></p></li>
+<li><p><strong>n_mode3</strong> (<em>int</em><em>, </em><em>optional</em>) – Number of iterations in Mode3 for MC sampling. Default to <cite>2</cite></p></li>
+<li><p><strong>n_mode4</strong> (<em>int</em><em>, </em><em>optional</em>) – Number of iterations in Mode4 for MC sampling. Default to <cite>0</cite></p></li>
+<li><p><strong>kappa_min</strong> (<em>float</em><em>, </em><em>optional</em>) – Minimum adjust factor for MC sampling. Default to <cite>0.01</cite></p></li>
+<li><p><strong>(</strong><strong>float</strong> (<em>kappa_max</em>) – Maximum adjust factor for MC sampling. Default to <cite>100.0</cite></p></li>
+<li><p><strong>optional</strong> – Maximum adjust factor for MC sampling. Default to <cite>100.0</cite></p></li>
+<li><p><strong>negative_feedback</strong> (<em>float</em><em>, </em><em>optional</em>) – Negative feedback rate for MC sampling. Default to <cite>0.4</cite></p></li>
+<li><p><strong>optimal_acceptance</strong> (<em>float</em><em>, </em><em>optional</em>) – Optimal rate of acceptance for MC sampling. Default to <cite>0.3</cite></p></li>
+<li><p><strong>n_stochastic</strong> (<em>int</em><em>, </em><em>optional</em>) – Number of iterations in stochastic approximation phase. Default to <cite>200</cite></p></li>
+<li><p><strong>n_accumulative</strong> (<em>int</em><em>, </em><em>optional</em>) – Number of iterations in accumulative approximation phase. Default to <cite>100</cite></p></li>
+<li><p><strong>sa_omega</strong> (<em>float</em><em>, </em><em>optional</em>) – Decreasing rate Simulated-Annealing for Omega. Default to <cite>0.95</cite></p></li>
+<li><p><strong>sa_sigma</strong> (<em>float</em><em>, </em><em>optional</em>) – Decreasing rate Simulated-Annealing for Sigma. Default to <cite>1.0</cite></p></li>
+<li><p><strong>alpha</strong> (<em>float</em><em>, </em><em>optional</em>) – Learning rate in accumulative approximation phase. Default to <cite>0.7</cite></p></li>
+<li><p><strong>is_auto_converge</strong> (<em>bool</em><em>, </em><em>optional</em>) – Whether to use auto converge criterial. Default to <cite>True</cite></p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+</section>
+
+
+                </article>
+              
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="masmod.api.data.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">masmod.api.data package</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="masmod.api.simulation.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">masmod.api.simulation package</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#submodules">Submodules</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module-masmod.api.estimation.bootstrap">masmod.api.estimation.bootstrap module</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#masmod.api.estimation.bootstrap.BootstrapResult"><code class="docutils literal notranslate"><span class="pre">BootstrapResult</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#masmod.api.estimation.bootstrap.BootstrapResult.df"><code class="docutils literal notranslate"><span class="pre">BootstrapResult.df</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#masmod.api.estimation.bootstrap.BootstrapResult.level"><code class="docutils literal notranslate"><span class="pre">BootstrapResult.level</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#masmod.api.estimation.bootstrap.BootstrapResult.show_level"><code class="docutils literal notranslate"><span class="pre">BootstrapResult.show_level()</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#masmod.api.estimation.bootstrap.bootstrap"><code class="docutils literal notranslate"><span class="pre">bootstrap()</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module-masmod.api.estimation.estimation_method">masmod.api.estimation.estimation_method module</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#masmod.api.estimation.estimation_method.FO"><code class="docutils literal notranslate"><span class="pre">FO()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#masmod.api.estimation.estimation_method.FOCEi"><code class="docutils literal notranslate"><span class="pre">FOCEi()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#masmod.api.estimation.estimation_method.Laplace"><code class="docutils literal notranslate"><span class="pre">Laplace()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#masmod.api.estimation.estimation_method.SAEM"><code class="docutils literal notranslate"><span class="pre">SAEM()</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module-masmod.api.estimation.estimation_result">masmod.api.estimation.estimation_result module</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#masmod.api.estimation.estimation_result.EstimationResult"><code class="docutils literal notranslate"><span class="pre">EstimationResult</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#masmod.api.estimation.estimation_result.EstimationResult.converged"><code class="docutils literal notranslate"><span class="pre">EstimationResult.converged</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#masmod.api.estimation.estimation_result.EstimationResult.elapsed_time"><code class="docutils literal notranslate"><span class="pre">EstimationResult.elapsed_time</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#masmod.api.estimation.estimation_result.EstimationResult.empirical_bayesian_estimation"><code class="docutils literal notranslate"><span class="pre">EstimationResult.empirical_bayesian_estimation</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#masmod.api.estimation.estimation_result.EstimationResult.final_obj_val"><code class="docutils literal notranslate"><span class="pre">EstimationResult.final_obj_val</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#masmod.api.estimation.estimation_result.EstimationResult.final_pop_params"><code class="docutils literal notranslate"><span class="pre">EstimationResult.final_pop_params</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#masmod.api.estimation.estimation_result.EstimationResult.iter_details"><code class="docutils literal notranslate"><span class="pre">EstimationResult.iter_details</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#masmod.api.estimation.estimation_result.EstimationResult.n_iter"><code class="docutils literal notranslate"><span class="pre">EstimationResult.n_iter</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#masmod.api.estimation.estimation_result.EstimationResult.previous_est_result"><code class="docutils literal notranslate"><span class="pre">EstimationResult.previous_est_result</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#masmod.api.estimation.estimation_result.EstimationResult.shrinkage"><code class="docutils literal notranslate"><span class="pre">EstimationResult.shrinkage</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module-masmod.api.estimation.fit_result">masmod.api.estimation.fit_result module</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#masmod.api.estimation.fit_result.EstimationResult"><code class="docutils literal notranslate"><span class="pre">EstimationResult</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#masmod.api.estimation.fit_result.EstimationResult.converged"><code class="docutils literal notranslate"><span class="pre">EstimationResult.converged</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#masmod.api.estimation.fit_result.EstimationResult.elapsed_time"><code class="docutils literal notranslate"><span class="pre">EstimationResult.elapsed_time</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#masmod.api.estimation.fit_result.EstimationResult.empirical_bayesian_estimation"><code class="docutils literal notranslate"><span class="pre">EstimationResult.empirical_bayesian_estimation</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#masmod.api.estimation.fit_result.EstimationResult.final_obj_val"><code class="docutils literal notranslate"><span class="pre">EstimationResult.final_obj_val</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#masmod.api.estimation.fit_result.EstimationResult.final_pop_params"><code class="docutils literal notranslate"><span class="pre">EstimationResult.final_pop_params</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#masmod.api.estimation.fit_result.EstimationResult.iter_details"><code class="docutils literal notranslate"><span class="pre">EstimationResult.iter_details</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#masmod.api.estimation.fit_result.EstimationResult.n_iter"><code class="docutils literal notranslate"><span class="pre">EstimationResult.n_iter</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#masmod.api.estimation.fit_result.EstimationResult.previous_est_result"><code class="docutils literal notranslate"><span class="pre">EstimationResult.previous_est_result</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#masmod.api.estimation.fit_result.EstimationResult.shrinkage"><code class="docutils literal notranslate"><span class="pre">EstimationResult.shrinkage</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module-masmod.api.estimation.vpc">masmod.api.estimation.vpc module</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#masmod.api.estimation.vpc.VpcResult"><code class="docutils literal notranslate"><span class="pre">VpcResult</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#masmod.api.estimation.vpc.VpcResult.ci_df"><code class="docutils literal notranslate"><span class="pre">VpcResult.ci_df</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#masmod.api.estimation.vpc.VpcResult.level"><code class="docutils literal notranslate"><span class="pre">VpcResult.level</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#masmod.api.estimation.vpc.VpcResult.show_bin"><code class="docutils literal notranslate"><span class="pre">VpcResult.show_bin()</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#masmod.api.estimation.vpc.VpcResult.show_level"><code class="docutils literal notranslate"><span class="pre">VpcResult.show_level()</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#masmod.api.estimation.vpc.VpcResult.simulate_df"><code class="docutils literal notranslate"><span class="pre">VpcResult.simulate_df</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#masmod.api.estimation.vpc.vpc"><code class="docutils literal notranslate"><span class="pre">vpc()</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module-masmod.api.estimation.wres">masmod.api.estimation.wres module</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#masmod.api.estimation.wres.Wres"><code class="docutils literal notranslate"><span class="pre">Wres</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#masmod.api.estimation.wres.Wres.compute_wres_list"><code class="docutils literal notranslate"><span class="pre">Wres.compute_wres_list()</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#masmod.api.estimation.wres.Wres.compute_wres_series"><code class="docutils literal notranslate"><span class="pre">Wres.compute_wres_series()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module-masmod.api.estimation">Module contents</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#masmod.api.estimation.EstimationResult"><code class="docutils literal notranslate"><span class="pre">EstimationResult</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#masmod.api.estimation.EstimationResult.converged"><code class="docutils literal notranslate"><span class="pre">EstimationResult.converged</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#masmod.api.estimation.EstimationResult.elapsed_time"><code class="docutils literal notranslate"><span class="pre">EstimationResult.elapsed_time</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#masmod.api.estimation.EstimationResult.empirical_bayesian_estimation"><code class="docutils literal notranslate"><span class="pre">EstimationResult.empirical_bayesian_estimation</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#masmod.api.estimation.EstimationResult.final_obj_val"><code class="docutils literal notranslate"><span class="pre">EstimationResult.final_obj_val</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#masmod.api.estimation.EstimationResult.final_pop_params"><code class="docutils literal notranslate"><span class="pre">EstimationResult.final_pop_params</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#masmod.api.estimation.EstimationResult.iter_details"><code class="docutils literal notranslate"><span class="pre">EstimationResult.iter_details</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#masmod.api.estimation.EstimationResult.n_iter"><code class="docutils literal notranslate"><span class="pre">EstimationResult.n_iter</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#masmod.api.estimation.EstimationResult.previous_est_result"><code class="docutils literal notranslate"><span class="pre">EstimationResult.previous_est_result</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#masmod.api.estimation.EstimationResult.shrinkage"><code class="docutils literal notranslate"><span class="pre">EstimationResult.shrinkage</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#masmod.api.estimation.FO"><code class="docutils literal notranslate"><span class="pre">FO()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#masmod.api.estimation.FOCEi"><code class="docutils literal notranslate"><span class="pre">FOCEi()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#masmod.api.estimation.FitResult"><code class="docutils literal notranslate"><span class="pre">FitResult</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#masmod.api.estimation.FitResult.compute_se"><code class="docutils literal notranslate"><span class="pre">FitResult.compute_se()</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#masmod.api.estimation.FitResult.converged"><code class="docutils literal notranslate"><span class="pre">FitResult.converged</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#masmod.api.estimation.FitResult.elapsed_time"><code class="docutils literal notranslate"><span class="pre">FitResult.elapsed_time</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#masmod.api.estimation.FitResult.empirical_bayesian_estimation"><code class="docutils literal notranslate"><span class="pre">FitResult.empirical_bayesian_estimation</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#masmod.api.estimation.FitResult.estimations"><code class="docutils literal notranslate"><span class="pre">FitResult.estimations</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#masmod.api.estimation.FitResult.final_obj_val"><code class="docutils literal notranslate"><span class="pre">FitResult.final_obj_val</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#masmod.api.estimation.FitResult.final_pop_params"><code class="docutils literal notranslate"><span class="pre">FitResult.final_pop_params</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#masmod.api.estimation.FitResult.ipred"><code class="docutils literal notranslate"><span class="pre">FitResult.ipred</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#masmod.api.estimation.FitResult.iter_details"><code class="docutils literal notranslate"><span class="pre">FitResult.iter_details</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#masmod.api.estimation.FitResult.n_iter"><code class="docutils literal notranslate"><span class="pre">FitResult.n_iter</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#masmod.api.estimation.FitResult.plot_goodness_of_fit"><code class="docutils literal notranslate"><span class="pre">FitResult.plot_goodness_of_fit()</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#masmod.api.estimation.FitResult.plot_individual_fit"><code class="docutils literal notranslate"><span class="pre">FitResult.plot_individual_fit()</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#masmod.api.estimation.FitResult.plot_iteration_trace"><code class="docutils literal notranslate"><span class="pre">FitResult.plot_iteration_trace()</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#masmod.api.estimation.FitResult.pred"><code class="docutils literal notranslate"><span class="pre">FitResult.pred</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#masmod.api.estimation.FitResult.rse"><code class="docutils literal notranslate"><span class="pre">FitResult.rse</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#masmod.api.estimation.FitResult.shrinkage"><code class="docutils literal notranslate"><span class="pre">FitResult.shrinkage</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#masmod.api.estimation.FitResult.simulate"><code class="docutils literal notranslate"><span class="pre">FitResult.simulate()</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#masmod.api.estimation.Laplace"><code class="docutils literal notranslate"><span class="pre">Laplace()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#masmod.api.estimation.SAEM"><code class="docutils literal notranslate"><span class="pre">SAEM()</span></code></a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+  <p class="copyright">
+    
+      © Copyright 2023, Maspectra Dev Team.
+      <br/>
+    
+  </p>
+</div>
+      
+        <div class="footer-item">
+  <p class="sphinx-version">
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 5.3.0.
+    <br/>
+  </p>
+</div>
+      
+    </div>
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item"><p class="theme-version">
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.13.3.
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>

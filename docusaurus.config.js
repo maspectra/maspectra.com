@@ -92,13 +92,13 @@ const config = {
         },
         items: [
           {
-            to: "pathname:///manual/intro",
-            label: "Manual",
+            to: "pathname:///documentation/intro",
+            label: "Documentation",
             position: "left"
           },
           {
-            to: "pathname:///apidoc/modules",
-            label: "API",
+            to: "pathname:///api-reference/modules",
+            label: "API Reference",
             position: "left"
           },
           {
@@ -108,7 +108,7 @@ const config = {
             className: "maspectra-portal-link"
           },
           {
-            href: "https://github.com/orgs/maspectra/discussions",
+            href: "https://github.com/orgs/maspectra",
             label: "Our Company",
             position: "left",
             className: "maspectra-portal-link"
@@ -119,7 +119,7 @@ const config = {
           },
           {
             label: "Sign In",
-            href: "https://account.maspectra.com",
+            href: "https://account.maspectra.com/login/",
             position: "right",
             className: "maspectra-portal-signup maspectra-portal-link"
           }
@@ -132,8 +132,12 @@ const config = {
             title: "Docs",
             items: [
               {
-                label: "Tutorial",
-                to: "/docs/intro"
+                label: "Documentation",
+                to: "pathname:///documentation/intro"
+              },
+              {
+                label: "API Reference",
+                to: "pathname:///api-reference/modules"
               }
             ]
           },
@@ -149,10 +153,6 @@ const config = {
           {
             title: "More",
             items: [
-              {
-                label: "Blog",
-                to: "/blog"
-              },
               {
                 label: "GitHub",
                 href: "https://github.com/maspectra/maspectra.com"
