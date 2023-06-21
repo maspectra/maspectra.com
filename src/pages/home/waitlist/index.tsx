@@ -41,6 +41,7 @@ const WaitList: React.FC = () => {
             size="large"
             className={sharedCss.button}
             href="https://account.maspectra.com/login/"
+            as="a"
           >
             <Translate>Sign Up and Join Wait List</Translate>
           </Button>
