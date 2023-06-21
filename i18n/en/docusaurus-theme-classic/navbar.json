@@ -11,9 +11,9 @@
     "message": "Product",
     "description": "Navbar item with label Product"
   },
-  "item.label.Get Started": {
-    "message": "Get Started",
-    "description": "Navbar item with label Get Started"
+  "item.label.Manual": {
+    "message": "Manual",
+    "description": "Navbar item with label Manual"
   },
   "item.label.Examples": {
     "message": "Examples",
@@ -35,8 +35,8 @@
     "message": "Our Company",
     "description": "Navbar item with label Our Company"
   },
-  "item.label.API Reference": {
-    "message": "API Reference",
-    "description": "Navbar item with label API Reference"
+  "item.label.API": {
+    "message": "API",
+    "description": "Navbar item with label API"
   }
 }

@@ -11,9 +11,9 @@
     "message": "产品",
     "description": "Navbar item with label Product"
   },
-  "item.label.Get Started": {
-    "message": "快速开始",
-    "description": "Navbar item with label Get Started"
+  "item.label.Manual": {
+    "message": "文档",
+    "description": "Navbar item with label Manual"
   },
   "item.label.Examples": {
     "message": "示例",
@@ -35,8 +35,8 @@
     "message": "Our Company",
     "description": "Navbar item with label Our Company"
   },
-  "item.label.API Reference": {
-    "message": "API 文档",
-    "description": "Navbar item with label API Reference"
+  "item.label.API": {
+    "message": "API",
+    "description": "Navbar item with label API"
   }
 }

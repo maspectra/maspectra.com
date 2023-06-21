@@ -82,15 +82,16 @@ const MasmodScreenshots: React.FC = () => {
           )}
         >
           <h2 className={sharedCss.titleH2}>
-            🗂️ <Translate>NONMEM Capable</Translate>
+            🗂️ <Translate>NONMEM Compatible</Translate>
           </h2>
           <p className={clsx(sharedCss.text, sharedCss.paragraph)}>
             <Translate>
-              Capable of NONMEM models by an easy one-click translation.
+              Easily convert NONMEM control files into masmod with just a
+              single click.
             </Translate>
             <Translate>
-              Jump start your modeling and simulation with masmod from NONMEM
-              models with no pain.
+              Initiate your modeling and simulation process using masmod
+              effortlessly.
             </Translate>
           </p>
         </div>

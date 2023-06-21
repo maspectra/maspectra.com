@@ -440,13 +440,13 @@
   "Accelerate your Modeling and Simulation with code completion, auto suggestion, syntax hight-light, inline documentation, and more.": {
     "message": "使用代码补全、自动建议、语法高亮、内联文档等功能，加速您的建模和仿真分析。"
   },
-  "NONMEM Capable": {
+  "NONMEM Compatible": {
     "message": "NONMEM 兼容"
   },
-  "Capable of NONMEM models by an easy one-click translation.": {
+  "Easily convert NONMEM control files into masmod with just a single click.": {
     "message": "通过一键翻译，轻松支持 NONMEM 模型。"
   },
-  "Jump start your modeling and simulation with masmod from NONMEM models with no pain.": {
+  "Initiate your modeling and simulation process using masmod effortlessly.": {
     "message": "从 NONMEM 模型开始使用 masmod 的建模和仿真功能，零成本轻松上手。"
   },
   "Learnability": {

@@ -92,13 +92,13 @@ const config = {
         },
         items: [
           {
-            to: "/docs/intro",
-            label: "Get Started",
+            to: "pathname:///manual/intro",
+            label: "Manual",
             position: "left"
           },
           {
             to: "pathname:///apidoc/modules",
-            label: "API Reference",
+            label: "API",
             position: "left"
           },
           {
