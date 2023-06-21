@@ -63,7 +63,7 @@ const Header: React.FC = () => {
                 size="large"
                 as="a"
                 className={sharedCss.button}
-                href="/manual/quickstart"
+                href="/documentation/quickstart"
               >
                 <Translate>Get Started</Translate>
               </Button>
