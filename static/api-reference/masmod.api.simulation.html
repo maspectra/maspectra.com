@@ -399,11 +399,43 @@ document.write(`
 <dt class="sig sig-object py" id="masmod.api.simulation.parameter_set.ParameterSet">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">masmod.api.simulation.parameter_set.</span></span><span class="sig-name descname"><span class="pre">ParameterSet</span></span><a class="headerlink" href="#masmod.api.simulation.parameter_set.ParameterSet" title="Permalink to this definition">#</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
-<p>Parameter Set used for simulate</p>
+<p>ParameterSet used for simulate</p>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">class</span> <span class="nc">SimpleParameterSet</span><span class="p">(</span><span class="n">ParameterSet</span><span class="p">):</span>
+<span class="gp">... </span>    <span class="bp">self</span><span class="o">.</span><span class="n">theta_Cl</span> <span class="o">=</span> <span class="n">theta</span><span class="p">(</span><span class="mf">0.134</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="bp">self</span><span class="o">.</span><span class="n">theta_V</span> <span class="o">=</span> <span class="n">theta</span><span class="p">(</span><span class="mf">7.81</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="bp">self</span><span class="o">.</span><span class="n">theta_ka</span> <span class="o">=</span> <span class="n">theta</span><span class="p">(</span><span class="mf">0.571</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="bp">self</span><span class="o">.</span><span class="n">theta_alag</span> <span class="o">=</span> <span class="n">theta</span><span class="p">(</span><span class="mf">0.823</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="bp">self</span><span class="o">.</span><span class="n">eta_Cl</span> <span class="o">=</span> <span class="n">omega</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="bp">self</span><span class="o">.</span><span class="n">eta_V</span> <span class="o">=</span> <span class="n">omega</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="bp">self</span><span class="o">.</span><span class="n">eta_ka</span> <span class="o">=</span> <span class="n">omega</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="bp">self</span><span class="o">.</span><span class="n">eta_alag</span> <span class="o">=</span> <span class="n">omega</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="bp">self</span><span class="o">.</span><span class="n">eps_prop</span> <span class="o">=</span> <span class="n">sigma</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="bp">self</span><span class="o">.</span><span class="n">eps_add</span> <span class="o">=</span> <span class="n">sigma</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Used for simulate
+&gt;&gt;&gt; model.simulate(parameters=SimpleParameterSet())
+or
+&gt;&gt;&gt; model.simulate(parameters=SimpleParameterSet)
+or
+&gt;&gt;&gt; model.simulate(parameters=SimpleParameterSet().to_dict())</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="masmod.api.simulation.parameter_set.ParameterSet.to_dict">
 <span class="sig-name descname"><span class="pre">to_dict</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">mas.libs.masmod.symbols._theta.Theta</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">mas.libs.masmod.symbols._omega.Eta</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">mas.libs.masmod.symbols._sigma.Eps</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#masmod.api.simulation.parameter_set.ParameterSet.to_dict" title="Permalink to this definition">#</a></dt>
-<dd></dd></dl>
+<dd><p>Transform population parameters in ParameterSet to dict</p>
+<dl class="field-list simple">
+<dt class="field-odd">Raises<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>KeyError</strong> – Raising when ParameterSet property is not a instance of Theta, Eta or Eps.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>the dict of parameters.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dict[str, float | Theta | Eta | Eps]</p>
+</dd>
+</dl>
+</dd></dl>
 
 </dd></dl>
 
@@ -446,14 +478,11 @@ document.write(`
 <li><p><strong>y_scale</strong> (<em>Literal</em><em>[</em><em>&quot;linear&quot;</em><em>, </em><em>&quot;log&quot;</em><em>]</em><em>, </em><em>optional</em>) – y scale type. Defaults to “linear”.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Raises<span class="colon">:</span></dt>
-<dd class="field-even"><p><strong>ValueError</strong> – </p>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Simulate individual plot object</p>
 </dd>
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
-<dd class="field-odd"><p>Simulate individual plot object</p>
-</dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
-<dd class="field-even"><p><a class="reference internal" href="masmod.plot.html#masmod.plot.simulate_plot.SimulateIndividualPlot" title="masmod.plot.simulate_plot.SimulateIndividualPlot">SimulateIndividualPlot</a></p>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="masmod.plot.html#masmod.plot.simulate_plot.SimulateIndividualPlot" title="masmod.plot.simulate_plot.SimulateIndividualPlot">SimulateIndividualPlot</a></p>
 </dd>
 </dl>
 </dd></dl>
@@ -461,7 +490,7 @@ document.write(`
 <dl class="py method">
 <dt class="sig sig-object py" id="masmod.api.simulation.simulation.SimulationResult.plot_interval">
 <span class="sig-name descname"><span class="pre">plot_interval</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">y_axis</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'_Y_'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x_scale</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Literal</span><span class="p"><span class="pre">[</span></span><span class="s"><span class="pre">'linear'</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span class="pre">'log'</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'linear'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_scale</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Literal</span><span class="p"><span class="pre">[</span></span><span class="s"><span class="pre">'linear'</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span class="pre">'log'</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'linear'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">SimulateIntervalPlot</span></span></span><a class="headerlink" href="#masmod.api.simulation.simulation.SimulationResult.plot_interval" title="Permalink to this definition">#</a></dt>
-<dd><p>_summary_</p>
+<dd><p>Interval plot</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
@@ -494,7 +523,7 @@ document.write(`
 
 <dl class="py function">
 <dt class="sig sig-object py" id="masmod.api.simulation.simulation.simulate">
-<span class="sig-prename descclassname"><span class="pre">masmod.api.simulation.simulation.</span></span><span class="sig-name descname"><span class="pre">simulate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mod</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">InterpretedModule</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">model_ptr</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DittoPopModel</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="masmod.api.html#masmod.api.ModelData" title="mas.libs.masmod.api.data._data.ModelData"><span class="pre">ModelData</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">parameters</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">mas.libs.masmod.symbols._theta.Theta</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">mas.libs.masmod.symbols._omega.Eta</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">mas.libs.masmod.symbols._sigma.Eps</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="masmod.api.html#masmod.api.ParameterSet" title="mas.libs.masmod.api.simulation.parameter_set.ParameterSet"><span class="pre">ParameterSet</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="masmod.api.html#masmod.api.ParameterSet" title="mas.libs.masmod.api.simulation.parameter_set.ParameterSet"><span class="pre">ParameterSet</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">seed</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1234</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#masmod.api.simulation.simulation.SimulationResult" title="masmod.api.simulation.simulation.SimulationResult"><span class="pre">SimulationResult</span></a></span></span><a class="headerlink" href="#masmod.api.simulation.simulation.simulate" title="Permalink to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">masmod.api.simulation.simulation.</span></span><span class="sig-name descname"><span class="pre">simulate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mod</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">InterpretedModule</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">model_ptr</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DittoPopModel</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="masmod.api.data.html#masmod.api.data.ModelData" title="mas.libs.masmod.api.data._data.ModelData"><span class="pre">ModelData</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">parameters</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">mas.libs.masmod.symbols._theta.Theta</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">mas.libs.masmod.symbols._omega.Eta</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">mas.libs.masmod.symbols._sigma.Eps</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="masmod.api.html#masmod.api.ParameterSet" title="mas.libs.masmod.api.simulation.parameter_set.ParameterSet"><span class="pre">ParameterSet</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="masmod.api.html#masmod.api.ParameterSet" title="mas.libs.masmod.api.simulation.parameter_set.ParameterSet"><span class="pre">ParameterSet</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">seed</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1234</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#masmod.api.simulation.simulation.SimulationResult" title="masmod.api.simulation.simulation.SimulationResult"><span class="pre">SimulationResult</span></a></span></span><a class="headerlink" href="#masmod.api.simulation.simulation.simulate" title="Permalink to this definition">#</a></dt>
 <dd></dd></dl>
 
 </section>
@@ -516,14 +545,11 @@ document.write(`
 <li><p><strong>y_scale</strong> (<em>Literal</em><em>[</em><em>&quot;linear&quot;</em><em>, </em><em>&quot;log&quot;</em><em>]</em><em>, </em><em>optional</em>) – y scale type. Defaults to “linear”.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Raises<span class="colon">:</span></dt>
-<dd class="field-even"><p><strong>ValueError</strong> – </p>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Simulate individual plot object</p>
 </dd>
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
-<dd class="field-odd"><p>Simulate individual plot object</p>
-</dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
-<dd class="field-even"><p><a class="reference internal" href="masmod.plot.html#masmod.plot.simulate_plot.SimulateIndividualPlot" title="masmod.plot.simulate_plot.SimulateIndividualPlot">SimulateIndividualPlot</a></p>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="masmod.plot.html#masmod.plot.simulate_plot.SimulateIndividualPlot" title="masmod.plot.simulate_plot.SimulateIndividualPlot">SimulateIndividualPlot</a></p>
 </dd>
 </dl>
 </dd></dl>
@@ -531,7 +557,7 @@ document.write(`
 <dl class="py method">
 <dt class="sig sig-object py" id="masmod.api.simulation.SimulationResult.plot_interval">
 <span class="sig-name descname"><span class="pre">plot_interval</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">y_axis</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'_Y_'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x_scale</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Literal</span><span class="p"><span class="pre">[</span></span><span class="s"><span class="pre">'linear'</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span class="pre">'log'</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'linear'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_scale</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Literal</span><span class="p"><span class="pre">[</span></span><span class="s"><span class="pre">'linear'</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span class="pre">'log'</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'linear'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">SimulateIntervalPlot</span></span></span><a class="headerlink" href="#masmod.api.simulation.SimulationResult.plot_interval" title="Permalink to this definition">#</a></dt>
-<dd><p>_summary_</p>
+<dd><p>Interval plot</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
