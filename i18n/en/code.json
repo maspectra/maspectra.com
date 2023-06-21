@@ -430,5 +430,41 @@
   "theme.tags.tagsPageTitle": {
     "message": "Tags",
     "description": "The title of the tag list page"
+  },
+  "Learnability": {
+    "message": "Learnability"
+  },
+  "Readability": {
+    "message": "Readability"
+  },
+  "Extensibility": {
+    "message": "Extensibility"
+  },
+  "IDE Experience": {
+    "message": "IDE Experience"
+  },
+  "Enjoy a IDE-like coding experience using Maspectra Code Editor.": {
+    "message": "Enjoy a IDE-like coding experience using Maspectra Code Editor. "
+  },
+  "Accelerate your Modeling and Simulation with code completion, auto suggestion, syntax hight-light, inline documentation, and more.": {
+    "message": "Accelerate your Modeling and Simulation with code completion, auto suggestion, syntax hight-light, inline documentation, and more. "
+  },
+  "NONMEM Capable": {
+    "message": "NONMEM Capable"
+  },
+  "Capable of NONMEM models by an easy one-click translation.": {
+    "message": "Capable of NONMEM models by an easy one-click translation. "
+  },
+  "Jump start your modeling and simulation with masmod from NONMEM models with no pain.": {
+    "message": "Jump start your modeling and simulation with masmod from NONMEM models with no pain. "
+  },
+  "Using {masmod} is as simple as writing a Python script. The syntax is designed to be intuitive and easy to learn. Any experienced Python user can start using {masmod} in a few minutes.": {
+    "message": "Using {masmod} is as simple as writing a Python script. The syntax is designed to be intuitive and easy to learn. Any experienced Python user can start using {masmod} in a few minutes. "
+  },
+  "{masmod} is easy to read and understand. The syntax is designed to be as close as possible to the mathematical notation used in pharmacometrics.": {
+    "message": "{masmod} is easy to read and understand. The syntax is designed to be as close as possible to the mathematical notation used in pharmacometrics. "
+  },
+  "{masmod} is designed to be extensible. You can easily reach out to the underlying Python code to add new methodology/algorithm or to customize the behavior of the library.": {
+    "message": "{masmod} is designed to be extensible. You can easily reach out to the underlying Python code to add new methodology/algorithm or to customize the behavior of the library. "
   }
 }

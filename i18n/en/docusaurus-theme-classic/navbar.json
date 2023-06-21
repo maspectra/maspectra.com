@@ -34,5 +34,9 @@
   "item.label.Our Company": {
     "message": "Our Company",
     "description": "Navbar item with label Our Company"
+  },
+  "item.label.API Reference": {
+    "message": "API Reference",
+    "description": "Navbar item with label API Reference"
   }
 }

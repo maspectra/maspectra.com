@@ -73,26 +73,35 @@ fit_result = model.fit(FOCEi)`}
             📚 <Translate>Learnability</Translate>
           </h2>
           <p className={clsx(sharedCss.text, sharedCss.paragraph)}>
-            Using <b>masmod</b> is as simple as writing a Python script. The
-            syntax is designed to be intuitive and easy to learn. Any
-            experienced Python user can start using <b>masmod</b> in a few
-            minutes.
+            <Translate
+              values={{
+                masmod: <b>masmod</b>
+              }}
+            >
+              {
+                "Using {masmod} is as simple as writing a Python script. The syntax is designed to be intuitive and easy to learn. Any experienced Python user can start using {masmod} in a few minutes."
+              }
+            </Translate>
           </p>
           <h2 className={sharedCss.titleH2}>
             📖 <Translate>Readability</Translate>
           </h2>
           <p className={clsx(sharedCss.text, sharedCss.paragraph)}>
-            <b>masmod</b> is easy to read and understand. The syntax is
-            designed to be as close as possible to the mathematical notation
-            used in pharmacometrics.
+            <Translate values={{ masmod: <b>masmod</b> }}>
+              {
+                "{masmod} is easy to read and understand. The syntax is designed to be as close as possible to the mathematical notation used in pharmacometrics."
+              }
+            </Translate>
           </p>
           <h2 className={sharedCss.titleH2}>
             🔌 <Translate>Extensibility</Translate>
           </h2>
           <p className={clsx(sharedCss.text, sharedCss.paragraph)}>
-            <b>masmod</b> is designed to be extensible. You can easily reach
-            out to the underlying Python code to add new methodology/algorithm
-            or to customize the behavior of the library.
+            <Translate values={{ masmod: <b>masmod</b> }}>
+              {
+                "{masmod} is designed to be extensible. You can easily reach out to the underlying Python code to add new methodology/algorithm or to customize the behavior of the library."
+              }
+            </Translate>
           </p>
         </div>
       </div>

@@ -86,7 +86,7 @@ const MasmodScreenshots: React.FC = () => {
           </h2>
           <p className={clsx(sharedCss.text, sharedCss.paragraph)}>
             <Translate>
-              Capable of NONMEM models with one-click translation.
+              Capable of NONMEM models by an easy one-click translation.
             </Translate>
             <Translate>
               Jump start your modeling and simulation with masmod from NONMEM

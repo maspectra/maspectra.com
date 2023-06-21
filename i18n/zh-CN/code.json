@@ -430,5 +430,41 @@
   "theme.tags.tagsPageTitle": {
     "message": "标签",
     "description": "The title of the tag list page"
+  },
+  "IDE Experience": {
+    "message": "IDE 体验"
+  },
+  "Enjoy a IDE-like coding experience using Maspectra Code Editor.": {
+    "message": "使用 Maspectra 代码编辑器，体验 IDE 般的编码体验。"
+  },
+  "Accelerate your Modeling and Simulation with code completion, auto suggestion, syntax hight-light, inline documentation, and more.": {
+    "message": "使用代码补全、自动建议、语法高亮、内联文档等功能，加速您的建模和仿真分析。"
+  },
+  "NONMEM Capable": {
+    "message": "NONMEM 兼容"
+  },
+  "Capable of NONMEM models by an easy one-click translation.": {
+    "message": "通过一键翻译，轻松支持 NONMEM 模型。"
+  },
+  "Jump start your modeling and simulation with masmod from NONMEM models with no pain.": {
+    "message": "从 NONMEM 模型开始使用 masmod 的建模和仿真功能，零成本轻松上手。"
+  },
+  "Learnability": {
+    "message": "Learnability"
+  },
+  "Readability": {
+    "message": "Readability"
+  },
+  "Extensibility": {
+    "message": "Extensibility"
+  },
+  "Using {masmod} is as simple as writing a Python script. The syntax is designed to be intuitive and easy to learn. Any experienced Python user can start using {masmod} in a few minutes.": {
+    "message": "使用 {masmod} 就像编写 Python 脚本一样简单。其语法设计直观易懂，易于学习。任何有经验的 Python 用户都可以在几分钟内开始使用 {masmod}。"
+  },
+  "{masmod} is easy to read and understand. The syntax is designed to be as close as possible to the mathematical notation used in pharmacometrics.": {
+    "message": "{masmod} 是一种易于阅读和理解的语言。其语法设计尽可能接近药代动力学中使用的数学符号。"
+  },
+  "{masmod} is designed to be extensible. You can easily reach out to the underlying Python code to add new methodology/algorithm or to customize the behavior of the library.": {
+    "message": "{masmod} 的设计目标是可扩展性。您可以轻松地访问底层的 Python 代码，以添加新的方法/算法或自定义库的行为。"
   }
 }
