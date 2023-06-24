@@ -77,6 +77,14 @@ const config = {
     ({
       // Replace with your project's social card
       image: "img/logo/icon.png",
+      // Announcement
+      announcementBar: {
+        id: "page_meeting",
+        content:
+          "We will be present on <a href='https://www.page-meeting.org/default.asp?id=48&keuze=meeting' target='_blank'>31st PAGE meeting 2023 - A Coruña</a>@Booth#9, come and talk with us 😄!",
+        textColor: "#091E42",
+        isCloseable: false
+      },
       metadata: [
         {
           name: "keywords",
@@ -99,6 +107,11 @@ const config = {
           {
             to: "pathname:///api-reference/modules",
             label: "API Reference",
+            position: "left"
+          },
+          {
+            to: "/blog",
+            label: "Blog",
             position: "left"
           },
           {
@@ -153,6 +166,10 @@ const config = {
           {
             title: "More",
             items: [
+              {
+                to: "/blog",
+                label: "Blog"
+              },
               {
                 label: "GitHub",
                 href: "https://github.com/maspectra/maspectra.com"
