@@ -1,0 +1,84 @@
+---
+slug: introduce
+title: Introducing Maspectra
+authors: [chongyi]
+tags: [blog, maspectra]
+---
+
+import CodeBlock from "@theme/CodeBlock";
+
+We are very happy to introduce Maspectra to help you acclerate modeling & simluation process for drug development.
+
+Maspectra is designed to be a high-performance, easy-to-use, and extensible data analysis platform for both **PHARMACOLOGY & STATISTICS** researchers in the field of drug development.
+
+Our development mainly focused on **_two_** aspects:
+
+### **masmod**
+
+**masmod** is a high-performance pharmacokinetic/pharmacodynamic (PK/PD) modeling & simulation framework with a well-designed `Python` interface. It provides a set of tools for modeling/simulation, including model definition, parameter estimation, model evaluation, and visualization. It is also designed to be compatible with other pharmacokinetic/pharmacodynamic modeling frameworks, such as [NONMEM](https://www.iconplc.com/solutions/technologies/nonmem/), etc.
+
+The syntax of **masmod** follows Python's syntax, which means it is easy to learn and use. It is also designed to be extensible, which means you can easily add your own model to **masmod**.
+
+Writing and reading a <b>masmod</b> model is as easy as writing and reading math equations. You can also use <b>masmod</b> to simulate the model and visualize the results. If you are familiar with <a href="https://pytorch.org/">PyTorch</a>, you can see that the syntax of <b>masmod</b> is very similar.
+
+<details>
+  <summary>Show me a demo!</summary>
+  <CodeBlock
+    language="python"
+    title="/models/warfarin_final.py"
+    showLineNumbers
+  >
+    {`class DemoPopPKProblem(Module):\n\n
+    def __init__(self):
+        super().__init__()\n
+        # pk parameters
+        self.tv_v = theta(8.06, bounds=(0.01, 20))
+        self.tv_cl = theta(0.131, bounds=(0.01, 1))
+        self.tv_ka = theta(1.325, bounds=(0.01, None))
+        self.tv_alag = theta(1.03, bounds=(0.01, 24))
+        self.eta_v = omega(0.016744)
+        self.eta_cl = omega(0.0662868)
+        self.eta_ka = omega(0.452064)
+        self.eta_alag = omega(0.302627)
+        self.eps_prop_pk = sigma(0.00478)
+        self.eps_add_pk = sigma(0.135)\n
+        # Compartments
+        self.dose_cmt = compartment(default_dose=True)
+        self.central_cmt = compartment(default_obs=True)\n
+        # From Data Input
+        self.wt, self.dvid = column(['WT', 'DVID'])\n
+    def pred(self):
+        cl = self.tv_cl * (self.wt / 70)**0.75 * exp(self.eta_cl)  # Clearance
+        v = self.tv_v * (self.wt / 70) * exp(self.eta_v)  # Volume
+        ka = self.tv_ka * exp(self.eta_ka)  # Absorption rate
+        alag = self.tv_alag * exp(self.eta_alag)  # Absorption lag time
+        k20 = cl / v\n
+        self.dose_cmt.alag = alag  # Alag on dosing compartment
+        cp = self.central_cmt.A / v  # Central compartment concentration
+        self.dose_cmt.dAdt = -ka * self.dose_cmt.A  # Dose compartment dynamics
+        self.central_cmt.dAdt = ka * self.dose_cmt.A - k20 * self.central_cmt.A  # Central compartment dynamics\n
+        y = cp * (1 + self.eps_prop_pk) + self.eps_add_pk  # Additive and proportional error
+        return y`}
+
+  </CodeBlock>
+</details>
+
+> If you are interested in <b>masmod</b>, please check out our <a href="https://maspectra.com/documentation/quickstart">quickstart</a> for more details.
+
+### **Maspectra.App**
+
+**Maspectra.App** is a desktop application for modeling & simulation workflow. It plays the role of an integrated development environment (IDE) for _Modeling Information Drug Discovery and Development (MID3)_.
+
+It is an all-in-one solution for any workflow related to drug development, including pharmacokinetic/pharmacodynamic modeling, statistical analysis, data processing, visualization, and more. It is designed to be a cross-platform application, which means it can run on Windows, macOS, (and maybe Linux later).
+
+We will give more details about **Maspectra.App** in future blogs. Keep an eye on us 👀!
+
+This is the first post of this blog. Thanks for reading. We will keep updating this blog to share our progress with you. If you are interested in our project, please follow us on [GitHub](https://github.com/maspectra). Also, we will post some more interesting things here. Stay tuned!
+
+:::tip
+
+We recommand you to [join our wait list](https://account.maspectra.com/login) to experience **Maspectra** first-in-place as soon as it becomes available to public.
+
+:::
+
+![pikachu-jump-with-satoshi](./pikachu-jump-with-satoshi.jpg)
