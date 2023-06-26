@@ -119,11 +119,11 @@
   "Plot Editor": {
     "message": "Plot Editor"
   },
-  "View your workflow in a single glance.": {
-    "message": "View your workflow in a single glance. "
+  "Gain a comprehensive overview of your workflow at a single glance.": {
+    "message": "Gain a comprehensive overview of your workflow at a single glance."
   },
-  "Present your workflow to your team and clients with ease. No more messy flowcharts!": {
-    "message": "Present your workflow to your team and clients with ease. No more messy flowcharts! "
+  "Present your workflow to your team and clients with ease.": {
+    "message": "Present your workflow to your team and clients with ease."
   },
   "Understand your analysis results in prettier-formatted summary tables.": {
     "message": "Understand your analysis results in prettier-formatted summary tables. "
@@ -443,11 +443,11 @@
   "IDE Experience": {
     "message": "IDE Experience"
   },
-  "Enjoy a IDE-like coding experience using Maspectra Code Editor.": {
-    "message": "Enjoy a IDE-like coding experience using Maspectra Code Editor. "
+  "Enjoy an IDE-like coding experience using Maspectra Code Editor.": {
+    "message": "Enjoy an IDE-like coding experience using Maspectra Code Editor."
   },
-  "Accelerate your Modeling and Simulation with code completion, auto suggestion, syntax hight-light, inline documentation, and more.": {
-    "message": "Accelerate your Modeling and Simulation with code completion, auto suggestion, syntax hight-light, inline documentation, and more. "
+  "Improve your productivity with code completion, autosuggestion, syntax hight-light, inline documentation, and more.": {
+    "message": "Improve your productivity with code completion, autosuggestion, syntax hight-light, inline documentation, and more."
   },
   "NONMEM Compatible": {
     "message": "NONMEM Compatible"
