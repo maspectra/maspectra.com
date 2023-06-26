@@ -31,7 +31,7 @@ const MasmodScreenshots: React.FC = () => {
           </h2>
           <p className={clsx(sharedCss.text, sharedCss.paragraph)}>
             <Translate>
-              Enjoy a IDE-like coding experience using Maspectra Code Editor.
+              Enjoy an IDE-like coding experience using Maspectra Code Editor.
             </Translate>
             <Translate>
               Accelerate your Modeling and Simulation with code completion,

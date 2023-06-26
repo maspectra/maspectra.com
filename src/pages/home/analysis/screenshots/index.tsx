@@ -107,7 +107,7 @@ const AnalysisScreenshots: React.FC = () => {
               <Translate>Workflow Visualization</Translate>
             </h2>
             <p className={clsx(sharedCss.text, sharedCss.paragraph)}>
-              <Translate>View your workflow in a single glance.</Translate>
+              <Translate>Gain a comprehensive overview of your workflow at a single glance.</Translate>
               <Translate>
                 Present your workflow to your team and clients with ease. No
                 more messy flowcharts!

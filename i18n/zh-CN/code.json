@@ -107,11 +107,11 @@
   "Plot Editor": {
     "message": "图形编辑器"
   },
-  "View your workflow in a single glance.": {
+  "Gain a comprehensive overview of your workflow at a single glance.": {
     "message": "一目了然的掌握分析工作流的全部内容。"
   },
-  "Present your workflow to your team and clients with ease. No more messy flowcharts!": {
-    "message": "向你的团队和客户展现你的分析流程。不再被混乱的流程图困扰！"
+  "Present your workflow to your team and clients with ease.": {
+    "message": "向你的团队和客户展现你的分析流程。"
   },
   "Understand your analysis results in prettier-formatted summary tables.": {
     "message": "以更美观的形式展现你的分析结果。"
@@ -434,10 +434,10 @@
   "IDE Experience": {
     "message": "IDE 体验"
   },
-  "Enjoy a IDE-like coding experience using Maspectra Code Editor.": {
+  "Enjoy an IDE-like coding experience using Maspectra Code Editor.": {
     "message": "使用 Maspectra 代码编辑器，体验 IDE 般的编码体验。"
   },
-  "Accelerate your Modeling and Simulation with code completion, auto suggestion, syntax hight-light, inline documentation, and more.": {
+  "Improve your productivity with code completion, autosuggestion, syntax hight-light, inline documentation, and more.": {
     "message": "使用代码补全、自动建议、语法高亮、内联文档等功能，加速您的建模和仿真分析。"
   },
   "NONMEM Compatible": {
