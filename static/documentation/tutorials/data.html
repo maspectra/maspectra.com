@@ -66,8 +66,8 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="../_static/logo.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Simulation" href="simulation.html" />
-    <link rel="prev" title="Build and run models" href="model.html" />
+    <link rel="next" title="Cases" href="../cases/cases.html" />
+    <link rel="prev" title="Build and fit models" href="model.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -347,9 +347,8 @@ document.write(`
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
   <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="model.html">Build and run models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="model.html">Build and fit models</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Create data for models</a></li>
-<li class="toctree-l1"><a class="reference internal" href="simulation.html">Simulation</a></li>
 </ul>
 </div>
 </nav></div>
@@ -408,15 +407,26 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="create-data-for-models">
-<h1>Create data for models<a class="headerlink" href="#create-data-for-models" title="Permalink to this heading">#</a></h1>
-<p>The data structure in Maspectra <code class="docutils literal notranslate"><span class="pre">masmod</span></code> is compatible with the NONMEM® software.</p>
-<p>A <code class="docutils literal notranslate"><span class="pre">ModelData</span></code> object consists of the follwing fields (<code class="docutils literal notranslate"><span class="pre">[Optional]</span></code> indicates that the column does not require to be explicitely mapped):</p>
+<span id="tutorial-data"></span><h1>Create data for models<a class="headerlink" href="#create-data-for-models" title="Permalink to this heading">#</a></h1>
+<p>Data used for modeling and simulation in <strong>masmod</strong> are referred to as a <code class="docutils literal notranslate"><span class="pre">ModelData</span></code> object, which is an extension of the <code class="docutils literal notranslate"><span class="pre">DataFrame</span></code> class from the popular Python library <a class="reference external" href="https://pandas.pydata.org/">Pandas</a>.</p>
+<p>A <code class="docutils literal notranslate"><span class="pre">ModelData</span></code> comprises the following fields (<code class="docutils literal notranslate"><span class="pre">[Optional]</span></code> denotes columns that do not require explicit mapping/specification):</p>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">id</span></code>: indentification for each subject.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">time</span> <span class="pre">[Optional]</span></code>: the time column for dosing/observation/other events.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">idv</span> <span class="pre">[Optional]</span></code>: the independent variable (IDV) for modeling. This column is used as the x-axis in data exploration, model diagnostic plots, vpc, and etc. Note that <code class="docutils literal notranslate"><span class="pre">time</span></code> is a special case of <code class="docutils literal notranslate"><span class="pre">idv</span></code>, so that there can only be one column be mapped to <code class="docutils literal notranslate"><span class="pre">time</span></code> or <code class="docutils literal notranslate"><span class="pre">idv</span></code>. These two fields cannot exist in one <code class="docutils literal notranslate"><span class="pre">ModelData</span></code>.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">evid</span> <span class="pre">[Optional]</span></code>: the events identification number. If this field is not mapped to any column, a column will be inferred and shown for the sake of inspection.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">id</span></code>: ID number assigned to each subject.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">time</span> <span class="pre">[Optional]</span></code>: Column representing time for dosing, observation, or other events.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">idv</span> <span class="pre">[Optional]</span></code>: Independent variable (IDV) used for modeling. This column serves as the x-axis for plotting in exploratory data analysis, model diagnostics, VPC (Visual Predictive Check), and other analyses. It’s important to note that time is a special case of idv, so there can only be one column mapped to either time or idv. These two fields cannot coexist within a single ModelData object.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">dv</span></code>: Dependent variables (DV). For observation event, <code class="docutils literal notranslate"><span class="pre">nan</span></code> indicates missing values in modeling, and a placeholder for the specified sampling time/idv in simulation.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">amt</span> <span class="pre">[Optional]</span></code>: Column representing the amount of drug administered at the dosing time specified in the <code class="docutils literal notranslate"><span class="pre">time</span></code> column.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">evid</span> <span class="pre">[Optional]</span></code>: Identification number for events. If this field is not explicitly mapped to any column, a column will be automatically inferred and displayed for inspection purposes.</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">evid</span> <span class="pre">=</span> <span class="pre">0</span></code>: Observation event.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">evid</span> <span class="pre">=</span> <span class="pre">1</span></code>: Dose event.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">evid</span> <span class="pre">=</span> <span class="pre">2</span></code>: Other event.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">evid</span> <span class="pre">=</span> <span class="pre">3</span></code>: Reset event.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">evid</span> <span class="pre">=</span> <span class="pre">4</span></code>: Reset &amp; dose event.</p></li>
 </ul>
+</li>
+</ul>
+<p>See <a class="reference internal" href="../cases/warfarin.html#case-warfarin"><span class="std std-ref">Warfarin PopPk</span></a> for example.</p>
 </section>
 
     <script type="text/x-thebe-config">
@@ -455,15 +465,15 @@ document.write(`
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Build and run models</p>
+        <p class="prev-next-title">Build and fit models</p>
       </div>
     </a>
     <a class="right-next"
-       href="simulation.html"
+       href="../cases/cases.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Simulation</p>
+        <p class="prev-next-title">Cases</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

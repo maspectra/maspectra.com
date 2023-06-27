@@ -67,7 +67,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Tutorials" href="tutorials/tutorials.html" />
-    <link rel="prev" title="Maspectra™ Documentation" href="intro.html" />
+    <link rel="prev" title="Maspectra™ documentation" href="intro.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -393,10 +393,10 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="quickstart">
 <h1>Quickstart<a class="headerlink" href="#quickstart" title="Permalink to this heading">#</a></h1>
-<p>This is a five-minute quickstart tutorial for modeling and simulation using Maspectra <code class="docutils literal notranslate"><span class="pre">masmod</span></code> library.</p>
-<section id="import-the-model-package">
-<h2>Import the <code class="docutils literal notranslate"><span class="pre">model</span></code> package<a class="headerlink" href="#import-the-model-package" title="Permalink to this heading">#</a></h2>
-<p>Everything is available in the the <code class="docutils literal notranslate"><span class="pre">mas.model</span></code> package, so we can always start by importing the required classes and functions.</p>
+<p>This is a five-minute quickstart tutorial for Maspectra™ <code class="docutils literal notranslate"><span class="pre">masmod</span></code> – the modeling and simulation framework in Python.</p>
+<section id="import-the-mas-model-package">
+<h2>Import the <code class="docutils literal notranslate"><span class="pre">mas.model</span></code> package<a class="headerlink" href="#import-the-mas-model-package" title="Permalink to this heading">#</a></h2>
+<p>All the necessary functions and components for constructing a model are available within the <code class="docutils literal notranslate"><span class="pre">mas.model</span></code> package. Therefore, we can begin by importing them to facilitate the model construction process.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">mas.model</span> <span class="kn">import</span> <span class="o">*</span>
@@ -412,21 +412,26 @@ document.write(`
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">EmaxModel</span><span class="p">(</span><span class="n">Module</span><span class="p">):</span>
     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-        <span class="c1"># TODO: change the init values</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">tv_emax</span> <span class="o">=</span> <span class="n">theta</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">tv_ec50</span> <span class="o">=</span> <span class="n">theta</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+        <span class="c1"># definitions of the parameters</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">tv_emax</span> <span class="o">=</span> <span class="n">theta</span><span class="p">(</span><span class="mi">150</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">tv_ec50</span> <span class="o">=</span> <span class="n">theta</span><span class="p">(</span><span class="mi">40</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">tv_baseline</span> <span class="o">=</span> <span class="n">theta</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>
 
-        <span class="bp">self</span><span class="o">.</span><span class="n">eta_emax</span> <span class="o">=</span> <span class="n">omega</span><span class="p">(</span><span class="mf">0.1</span><span class="p">)</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">eta_ec50</span> <span class="o">=</span> <span class="n">omega</span><span class="p">(</span><span class="mf">0.1</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">eta_emax</span> <span class="o">=</span> <span class="n">omega</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">eta_ec50</span> <span class="o">=</span> <span class="n">omega</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">eta_baseline</span> <span class="o">=</span> <span class="n">omega</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
 
-        <span class="bp">self</span><span class="o">.</span><span class="n">eps_add</span> <span class="o">=</span> <span class="n">sigma</span><span class="p">(</span><span class="mf">0.01</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">eps_add</span> <span class="o">=</span> <span class="n">sigma</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
 
+        <span class="c1"># declare the data columns required for the model</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">cc</span> <span class="o">=</span> <span class="n">column</span><span class="p">(</span><span class="s1">&#39;CC&#39;</span><span class="p">)</span>
 
     <span class="k">def</span> <span class="nf">pred</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Expression</span><span class="p">:</span>
         <span class="n">emax</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">tv_emax</span> <span class="o">*</span> <span class="n">exp</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">eta_emax</span><span class="p">)</span>
         <span class="n">ec50</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">tv_ec50</span> <span class="o">*</span> <span class="n">exp</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">eta_ec50</span><span class="p">)</span>
-        <span class="n">ipred</span> <span class="o">=</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">cc</span> <span class="o">*</span> <span class="n">emax</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">cc</span> <span class="o">+</span> <span class="n">ec50</span><span class="p">)</span>
+        <span class="n">baseline</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">tv_baseline</span> <span class="o">*</span> <span class="n">exp</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">eta_baseline</span><span class="p">)</span>
+
+        <span class="n">ipred</span> <span class="o">=</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">cc</span> <span class="o">*</span> <span class="n">emax</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">cc</span> <span class="o">+</span> <span class="n">ec50</span><span class="p">)</span> <span class="o">+</span> <span class="n">baseline</span>
 
         <span class="n">y</span> <span class="o">=</span> <span class="n">ipred</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">eps_add</span>
 
@@ -435,19 +440,27 @@ document.write(`
 </div>
 </div>
 </div>
-<p>If we want to estimate or simulate from a Population Model, we should construct it from the <code class="docutils literal notranslate"><span class="pre">PopModel</span></code> class. This automatically compile and bundle the model data to the defined model (if the model is compiled before, the compiling step is skipped).</p>
+<p>To estimate or simulate from a Population Model, we declare so via the <code class="docutils literal notranslate"><span class="pre">PopModel</span></code> class (see example below), which compiles and validates the <code class="docutils literal notranslate"><span class="pre">ModelData</span></code> (if provided) is compatible with the defined model. If the model has been compiled before and no changes have been made, the compiling step is skipped.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pop_model</span> <span class="o">=</span> <span class="n">PopModel</span><span class="p">(</span><span class="n">EmaxModel</span><span class="p">())</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">emax_model_simu</span> <span class="o">=</span> <span class="n">PopModel</span><span class="p">(</span><span class="n">EmaxModel</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>➡️ Since build cache already exists, skip compile
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>🔧 CXX compiler /opt/homebrew/bin/g++
+📦 Compiling build target...
+🔗 Linking dynamic library...
+✅ Compilation Finished
 </pre></div>
 </div>
 </div>
 </div>
+<p>To learn more about <code class="docutils literal notranslate"><span class="pre">PopModel</span></code>, please refer to the <a class="reference internal" href="tutorials/model.html#tutorial-model"><span class="std std-ref">Build and fit models</span></a> section. For further information on <code class="docutils literal notranslate"><span class="pre">ModelData</span></code>, please consult the <a class="reference internal" href="tutorials/data.html#tutorial-data"><span class="std std-ref">Create data for models</span></a> section.</p>
+</section>
+<section id="model-estimation-and-simulation">
+<h2>Model estimation and simulation<a class="headerlink" href="#model-estimation-and-simulation" title="Permalink to this heading">#</a></h2>
+<p>An example is presented in <code class="docutils literal notranslate"><span class="pre">ref</span></code>{case-warfarin}.</p>
 </section>
 </section>
 
@@ -487,7 +500,7 @@ document.write(`
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Maspectra™ Documentation</p>
+        <p class="prev-next-title">Maspectra™ documentation</p>
       </div>
     </a>
     <a class="right-next"
@@ -517,8 +530,9 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#import-the-model-package">Import the <code class="docutils literal notranslate"><span class="pre">model</span></code> package</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#import-the-mas-model-package">Import the <code class="docutils literal notranslate"><span class="pre">mas.model</span></code> package</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#write-a-model">Write a model</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#model-estimation-and-simulation">Model estimation and simulation</a></li>
 </ul>
   </nav></div>
 

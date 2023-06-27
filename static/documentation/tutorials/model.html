@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Build and run models &#8212; Get-Started in Maspectra</title>
+    <title>Build and fit models &#8212; Get-Started in Maspectra</title>
   
   
   
@@ -347,9 +347,8 @@ document.write(`
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
   <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Build and run models</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Build and fit models</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data.html">Create data for models</a></li>
-<li class="toctree-l1"><a class="reference internal" href="simulation.html">Simulation</a></li>
 </ul>
 </div>
 </nav></div>
@@ -390,7 +389,7 @@ document.write(`
     
     <li class="breadcrumb-item"><a href="tutorials.html" class="nav-link">Tutorials</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page">Build and run models</li>
+    <li class="breadcrumb-item active" aria-current="page">Build and fit models</li>
   </ul>
 </nav>
 </div>
@@ -407,21 +406,21 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="build-and-run-models">
-<h1>Build and run models<a class="headerlink" href="#build-and-run-models" title="Permalink to this heading">#</a></h1>
-<section id="ways-of-defining-models">
-<h2>Ways of defining models<a class="headerlink" href="#ways-of-defining-models" title="Permalink to this heading">#</a></h2>
-<p>In essence, most population pharmacokinetic models are ordinary differential equations (ODEs) to describe the distribution of drug molecules. Hence, there are three approaches to writing a PopPK model in the Maspectra <code class="docutils literal notranslate"><span class="pre">masmod</span></code> library:</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="build-and-fit-models">
+<span id="tutorial-model"></span><h1>Build and fit models<a class="headerlink" href="#build-and-fit-models" title="Permalink to this heading">#</a></h1>
+<section id="approaches-to-model-definition">
+<h2>Approaches to Model Definition<a class="headerlink" href="#approaches-to-model-definition" title="Permalink to this heading">#</a></h2>
+<p>Fundamentally, most pharmacokinetic models are ordinary differential equations (ODEs) characterizing the distribution of drug molecules. Therefore, when working with the Maspectra masmod framework, there are three methods available for constructing a Population Pharmacokinetic (PopPK) model:</p>
 <ol class="arabic simple">
-<li><p><strong>Use the built-in PK library</strong>.</p></li>
-<li><p><strong>Closed-form equations:</strong> Express the structural model with the closed-form solution for the ODE equations.</p></li>
-<li><p><strong>ODE models:</strong> Define user-customized compartments and the corresponding ODEs.</p></li>
+<li><p><strong>Use the built-in compartment model library:</strong> Take advantage of the pre-existing library of compartment models.</p></li>
+<li><p><strong>Closed-form equations:</strong> Describe the structural model using closed-form solutions for the ODE equations.</p></li>
+<li><p><strong>ODE models:</strong> Define custom compartments and their associated ODEs, allowing for user-specific model configurations.</p></li>
 </ol>
-<section id="use-the-built-in-pk-library">
-<h3>Use the built-in PK library<a class="headerlink" href="#use-the-built-in-pk-library" title="Permalink to this heading">#</a></h3>
-<p>Most commonly-used PK compartment models are implemented in Maspectra model library. They are fast and easy-to-use.</p>
-<p>The builtin compartment models are essentially solved ODEs. The compartments in the built-in models are pre-defined and cannot be modified.</p>
-<p>For example,</p>
+<section id="use-the-built-in-compartment-model-library">
+<h3>Use the built-in compartment model library<a class="headerlink" href="#use-the-built-in-compartment-model-library" title="Permalink to this heading">#</a></h3>
+<p>The Maspectra model library provides implementations of the most commonly used PK compartment models, offering a combination of speed and user-friendliness.</p>
+<p>The built-in compartment models are essentially pre-solved ODEs, where the compartments are predefined and cannot be modified.</p>
+<p>Here is an example showcasing the usage of the compartment model library.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">mas.model</span> <span class="kn">import</span> <span class="o">*</span>
@@ -460,7 +459,7 @@ document.write(`
 </section>
 <section id="closed-form-equations">
 <h3>Closed-form equations<a class="headerlink" href="#closed-form-equations" title="Permalink to this heading">#</a></h3>
-<p>If the closed form equations of the ODEs is known, we may directly use the equations to write the models. For example</p>
+<p>When we possess the closed-form equations for the ODEs, we have the option to directly incorporate them into our model. Here’s an example illustrating this approach.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">mas.model</span> <span class="kn">import</span> <span class="o">*</span>
@@ -481,7 +480,7 @@ document.write(`
         <span class="bp">self</span><span class="o">.</span><span class="n">eps_add</span> <span class="o">=</span> <span class="n">sigma</span><span class="p">(</span><span class="mf">0.15</span><span class="p">)</span>
 
         <span class="c1"># retrieve the dose amounts from the ModelData </span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">dose</span> <span class="o">=</span> <span class="n">column</span><span class="p">(</span><span class="s1">&#39;DOSE&#39;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">dose</span> <span class="o">=</span> <span class="n">column</span><span class="p">(</span><span class="s1">&#39;dose&#39;</span><span class="p">)</span>
 
     <span class="k">def</span> <span class="nf">pred</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Expression</span><span class="p">:</span>
         <span class="n">cl</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">tv_cl</span> <span class="o">*</span> <span class="n">exp</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">eta_cl</span><span class="p">)</span>
@@ -501,14 +500,14 @@ document.write(`
 </div>
 </div>
 </div>
-<p>Note that here dose is input as a data column, so we must make sure there is a column in each row to indicate the dose amount.</p>
+<p>Please note that in this case, <code class="docutils literal notranslate"><span class="pre">dose</span></code> is provided as a data column. Therefore, it is essential to ensure that there is a corresponding column in each row to indicate the amount of the dose.</p>
 </section>
 <section id="ode-models">
 <h3>ODE models<a class="headerlink" href="#ode-models" title="Permalink to this heading">#</a></h3>
-<p>ODE models provide more flexibility, especially when the structure model is complex/mechanism-related.</p>
-<p>First, the compartments must be defined in the <code class="docutils literal notranslate"><span class="pre">__init__</span></code> method. We can specify which compartment is the default for dosing and which is for observation.</p>
-<p>The ODEs are defined in the <code class="docutils literal notranslate"><span class="pre">pred</span></code> method.</p>
-<p>The following example demonstrates an oral one-compartment model identical to the models defined above.</p>
+<p>ODE models offer enhanced flexibility, particularly when dealing with complex or mechanism-related structural models.</p>
+<p>In ODE models, the compartments are initially defined within the <code class="docutils literal notranslate"><span class="pre">__init__</span></code> method. It is possible to designate the default compartment for dosing and observation.</p>
+<p>The ODEs themselves are defined within the <code class="docutils literal notranslate"><span class="pre">pred</span></code> method.</p>
+<p>Below is an example showcasing an oral one-compartment model, same as the previously defined models.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">mas.model</span> <span class="kn">import</span> <span class="o">*</span>
@@ -555,20 +554,22 @@ document.write(`
 </section>
 <section id="model-estimation">
 <h2>Model estimation<a class="headerlink" href="#model-estimation" title="Permalink to this heading">#</a></h2>
-<p>Maspectra supports varies of model estimation algorithms:</p>
+<p>Maspectra supports various model estimation algorithms, including:</p>
 <ul class="simple">
 <li><p>Laplacian methods: FO/FOCEi/Laplace</p></li>
-<li><p>EM methods: SAEM</p></li>
+<li><p>EM (Expectation-Maximization) methods: SAEM</p></li>
 </ul>
+<p>Maspectra supports a range of minimization methods, including BOBYQA, Nelder-Mead, and BFGS, among others.</p>
 </section>
 <section id="model-diagnostics">
 <h2>Model diagnostics<a class="headerlink" href="#model-diagnostics" title="Permalink to this heading">#</a></h2>
-<p>Model estimation results can be evaluated via diagnostic plots:</p>
+<p>To evaluate the model estimatio, you can utlize diagnostic plots:</p>
 <ul class="simple">
-<li><p>Goodness-of-fit plots: this can be produced via <code class="docutils literal notranslate"><span class="pre">FitResult.plot_goodness_of_fit()</span></code></p></li>
-<li><p>Individual fit plots: this can be produced via <code class="docutils literal notranslate"><span class="pre">FitResult.plot_individual_fit()</span></code></p></li>
+<li><p>Goodness-of-fit plots: these can be generated using <code class="docutils literal notranslate"><span class="pre">FitResult.plot_goodness_of_fit()</span></code></p></li>
+<li><p>Individual fit plots: these can be generated using <code class="docutils literal notranslate"><span class="pre">FitResult.plot_individual_fit()</span></code></p></li>
 </ul>
-<p>We also provide commonly-used diagnostic tools such as Visual Predictive Checks (VPC) and Boostrap.</p>
+<p>In addition, we offer commonly used diagnostic tools such as Visual Predictive Checks (VPC) and Bootstrap analysis.</p>
+<p>See <a class="reference internal" href="../cases/warfarin.html#case-warfarin"><span class="std std-ref">Warfarin PopPk</span></a> for example.</p>
 </section>
 </section>
 
@@ -638,8 +639,8 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ways-of-defining-models">Ways of defining models</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#use-the-built-in-pk-library">Use the built-in PK library</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#approaches-to-model-definition">Approaches to Model Definition</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#use-the-built-in-compartment-model-library">Use the built-in compartment model library</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#closed-form-equations">Closed-form equations</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ode-models">ODE models</a></li>
 </ul>
